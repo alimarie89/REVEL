@@ -47,7 +47,11 @@ Everyone begins with a shared opening ceremony where we establish collective agr
     <div className="home">
       {/* Hero Section */}
       <section className="hero" style={{backgroundImage: 'url(/revel-hero.png)'}}>
+        <div className="hero-overlay"></div>
         <div className="hero-content">
+          <p className="hero-meta">Sunrise Ranch, Loveland, Colorado · July 2–5, 2026</p>
+          <h1 className="hero-title">REVEL</h1>
+          <p className="hero-tagline">A convergence where intimacy is held at scale, and the right people create something alive together.</p>
           <a 
             href="https://events.humanitix.com/revel2026" 
             target="_blank" 
