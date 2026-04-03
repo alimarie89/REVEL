@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import TalentCard from '../components/TalentCard'
 import '../styles/Home.css'
 
 function Home() {
+  const [expandedSection, setExpandedSection] = useState(null)
   const [talent, setTalent] = useState([])
-  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetchTalent()
@@ -17,9 +16,11 @@ function Home() {
       setTalent(data)
     } catch (error) {
       console.error('Error fetching talent:', error)
-    } finally {
-      setLoading(false)
     }
+  }
+
+  const toggleSection = (id) => {
+    setExpandedSection(expandedSection === id ? null : id)
   }
 
   return (

@@ -2,16 +2,27 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --cream: #f5f1ed;
+  --cream-dark: #efe9e3;
+  --text-dark: #2a2a2a;
+  --text-muted: #555555;
+  --earth-brown: #6b4423;
+  --rust: #a85c3f;
+  --neon-pink: #ff1493;
+  --coral: #e8714a;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #1a1a1a;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: var(--cream);
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #f5f5f5;
+  color: var(--text-dark);
 }
 
 #root {
@@ -22,24 +33,35 @@ body {
 
 .App {
   min-height: 100vh;
-  background: #1a1a1a;
+  background: var(--cream);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  color: var(--earth-brown);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
 }
 
 a {
-  color: #d4a574;
+  color: var(--rust);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #e8c9a0;
+  color: var(--neon-pink);
 }
 
 p {
   font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-muted);
 }
