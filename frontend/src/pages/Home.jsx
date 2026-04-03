@@ -36,7 +36,7 @@ You choose what calls you. You follow the thread that wants to be explored. And 
     {
       id: 'container',
       title: 'Held in Explicit Safety',
-      subtitle: 'Safety isn't passive. It's actively held.',
+      subtitle: "Safety isn't passive. It's actively held.",
       content: `Somatic support. Trauma-informed protocols. Real safety structures. And still space for real edge and real transformation.
 
 When safety is made explicit, vulnerability becomes possible. When vulnerability is honored, power becomes clean. When power is clean and vulnerability is present, intimacy deepens without collapse. This is what's possible in a well-held container.`
