@@ -11,35 +11,35 @@ function Home() {
   const sections = [
     {
       id: 'convergence',
-      title: 'Convergence Over Festival',
-      subtitle: 'The space itself becomes the teacher.',
-      content: `Multiple facilitators. Varied modalities. Rhythm and landing. Designed so hundreds can move together without losing real contact or depth.
+      title: 'Field Co-Creation Over Consumption',
+      subtitle: 'Everyone here is a creator, not a spectator.',
+      content: `Festivals are built for consumption. You buy a ticket, watch the show, and leave. REVEL is built for co-creation. Your presence, your energy, your desire—it all shapes what emerges. There are no pedestals here. The people leading the space are moving, dancing, exploring right alongside you.
 
-Large-scale experiences are often anonymous, extractive, performative. You can be surrounded by thousands and feel utterly alone. REVEL is different. The social architecture itself is designed to hold intimacy at scale—not despite the number of people, but through explicit design that makes real contact possible.`
+When everyone shows up as a creator rather than a consumer, the field transforms. Energy circulates instead of flows one direction. Intimacy becomes possible at scale.`
     },
     {
       id: 'participation',
-      title: 'Participation Over Consumption',
-      subtitle: 'Your presence shapes the field itself.',
-      content: `You're not here to absorb. You're here to contribute—your presence, your desire, your vulnerability all shape what emerges. The people moving us most aren't on pedestals. They're shoulder-to-shoulder with you, dancing the same dancefloors, exploring the same edges, building the same container.
+      title: 'Closed Container Over Open Access',
+      subtitle: 'Intention and alignment create coherence.',
+      content: `A closed container means everyone signed up for the same thing. We begin with a shared opening ceremony where we establish explicit agreements. We end together. In between, the field stays coherent.
 
-We move, eat, dance, and rest together. There are no spectators here.`
+This is what made Hawaii Tantra Festival work so powerfully. Not the size, but the fact that hundreds of us were intentionally aligned—building the same container, exploring the same edges, creating the same space together. That alignment is what allows intimacy to hold at scale.`
     },
     {
       id: 'depth',
-      title: 'Depth Without Lock-In',
-      subtitle: 'Real depth on your own terms.',
-      content: `Real transformation takes real time. At a typical retreat, you're bound to one facilitator's arc for a week. At a festival, you're lost in the crowd. REVEL offers something else: curated depth across multiple dimensions—tantra, dance, embodiment, ritual, music, rest.
+      title: 'Choice Within a Held Space',
+      subtitle: 'Freedom and structure working together.',
+      content: `At a typical retreat, you're locked into one facilitator's arc for a week with little choice. At a festival, you're lost in the crowd with too much choice and no coherence. REVEL offers something else: multiple modalities, varied facilitators, and you choose what calls you—all held within an intentional container.
 
-You choose what calls you. You follow the thread that wants to be explored. And the field holds you while you decide how deep to go.`
+You have agency. You follow what wants to be explored. And at the same time, the field is held. You're not alone in your choice. The whole group is creating this together.`
     },
     {
       id: 'container',
-      title: 'Held in Explicit Safety',
-      subtitle: "Safety isn't passive. It's actively held.",
-      content: `Somatic support. Trauma-informed protocols. Real safety structures. And still space for real edge and real transformation.
+      title: "The Container Itself Is the Teacher",
+      subtitle: 'Safety, intention, and aligned energy.',
+      content: `A strong container isn't just safety protocols. It's the alignment of intention that allows hundreds of people to move together without losing coherence or depth. When power dynamics are made explicit and safety is actively held, vulnerability becomes possible. When vulnerability is honored, the field clarifies.
 
-When safety is made explicit, vulnerability becomes possible. When vulnerability is honored, power becomes clean. When power is clean and vulnerability is present, intimacy deepens without collapse. This is what's possible in a well-held container.`
+This is what holds intimacy at scale. Not the facilitators. Not the programming. The container itself.`
     }
   ]
 
