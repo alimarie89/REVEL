@@ -20,7 +20,7 @@ Large-scale experiences are often anonymous, performative, and extractive. You c
     {
       id: 'participation',
       title: 'Participation Over Consumption',
-      subtitle: 'You're not here to consume. You're here to contribute.',
+      subtitle: 'Not here to consume. Here to contribute.',
       content: `Facilitators, artists, and participants move, eat, dance, and rest together. There are no pedestals here. The people who move us most are shoulder-to-shoulder with you, exploring the same edges, dancing the same dancefloors, building the same container.
 
 You choose your path. You follow what calls you. And at the same time, the whole group is held inside a shared field.`
@@ -29,7 +29,7 @@ You choose your path. You follow what calls you. And at the same time, the whole
       id: 'depth',
       title: 'Depth Without Lock-In',
       subtitle: 'Go as deep as you want, on your own terms.',
-      content: `At a typical retreat, you're bound to one facilitator's arc for a week. At a festival, you're lost in the crowd. REVEL offers something else: curated modalities, rituals, and practices that allow you to go really deep—and then the group is set free to explore what wants to emerge.
+      content: `At a typical retreat, you are bound to one facilitator's arc for a week. At a festival, you are lost in the crowd. REVEL offers something else: curated modalities, rituals, and practices that allow you to go really deep—and then the group is set free to explore what wants to emerge.
 
 Dance, tantra, embodiment, rituals, music, rest. Multiple dimensions. You stay as present as you choose.`
     },
