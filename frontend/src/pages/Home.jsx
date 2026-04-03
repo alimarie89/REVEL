@@ -1,146 +1,183 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../styles/Home.css'
 
 function Home() {
   const [expandedSection, setExpandedSection] = useState(null)
-  const [talent, setTalent] = useState([])
-
-  useEffect(() => {
-    fetchTalent()
-  }, [])
-
-  const fetchTalent = async () => {
-    try {
-      const response = await fetch('/api/talent')
-      const data = await response.json()
-      setTalent(data)
-    } catch (error) {
-      console.error('Error fetching talent:', error)
-    }
-  }
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
   }
 
+  const sections = [
+    {
+      id: 'convergence',
+      title: 'Convergence Over Festival',
+      subtitle: 'More intimate than a festival. More free than a retreat.',
+      content: `What happens when the right people, the right conditions, and the right leadership come into alignment? Something alive begins to form between them.
+
+Large-scale experiences are often anonymous, performative, and extractive. You can be surrounded by people and still feel alone. REVEL is different—it is an experiment in what becomes possible when intimacy is held at scale.`
+    },
+    {
+      id: 'participation',
+      title: 'Participation Over Consumption',
+      subtitle: 'You're not here to consume. You're here to contribute.',
+      content: `Facilitators, artists, and participants move, eat, dance, and rest together. There are no pedestals here. The people who move us most are shoulder-to-shoulder with you, exploring the same edges, dancing the same dancefloors, building the same container.
+
+You choose your path. You follow what calls you. And at the same time, the whole group is held inside a shared field.`
+    },
+    {
+      id: 'depth',
+      title: 'Depth Without Lock-In',
+      subtitle: 'Go as deep as you want, on your own terms.',
+      content: `At a typical retreat, you're bound to one facilitator's arc for a week. At a festival, you're lost in the crowd. REVEL offers something else: curated modalities, rituals, and practices that allow you to go really deep—and then the group is set free to explore what wants to emerge.
+
+Dance, tantra, embodiment, rituals, music, rest. Multiple dimensions. You stay as present as you choose.`
+    },
+    {
+      id: 'container',
+      title: 'Held in Explicit Safety',
+      subtitle: 'Somatic support + trauma-informed + real edge.',
+      content: `A strong, explicit container that prioritizes both safety and aliveness. Somatic support and trauma-informed protocols that still invite real transformation. A field where artists, teachers, and participants move, eat, dance, and rest together.
+
+Everyone begins with a shared opening ceremony where we establish collective agreements and agreements that carry us through the convergence.`
+    }
+  ]
+
   return (
     <div className="home">
-      {/* Hero Section with Image */}
+      {/* Hero Section */}
       <section className="hero" style={{backgroundImage: 'url(/revel-hero.png)'}}>
-        <div className="hero-overlay"></div>
         <div className="hero-content">
-          <div className="hero-text">
-            <a 
-              href="https://events.humanitix.com/revel2026" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="cta-button primary"
-            >
-              Get Your Tickets
-            </a>
-          </div>
+          <a 
+            href="https://events.humanitix.com/revel2026" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cta-button primary"
+          >
+            Get Your Tickets
+          </a>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="intro">
-        <h2>What is REVEL?</h2>
-        <p className="intro-text">
-          More intimate than a festival. More free and expansive than a retreat. 
-          REVEL is a culture-making convergence at the intersection of dance, tantra, 
-          art, somatics, sexuality, community, and collective evolution.
-        </p>
-      </section>
-
-      {/* Image Section 1 */}
-      <section className="image-section left">
-        <div className="image-container">
-          <img src="https://images.squarespace-cdn.com/content/v1/68851ba563f1ff020743936c/3012169d-b4e3-4e44-af82-0b64f18e8b05/web_55.JPG?format=1500w" alt="Dancing and connection" />
-        </div>
-        <div className="text-container">
-          <h3>A Choose-Your-Own-Adventure</h3>
-          <p>
-            Multiple tracks of programming woven throughout day and night. 
-            Dance, embodiment, and connection workshops interspersed with down-time, 
-            pool hangs, rituals, talks, and live DJ sets.
+      {/* What is REVEL */}
+      <section className="positioning">
+        <div className="positioning-content">
+          <h2>What is REVEL</h2>
+          <p className="positioning-text">
+            A convergence is what happens when the right people, the right conditions, and the right leadership come into alignment... and something alive begins to form between them.
+          </p>
+          <p className="positioning-subtext">
+            REVEL is an experiment in what becomes possible when intimacy is held at scale. Hundreds of people. Real contact. Energy moving. And the space still feels coherent, connected, and deeply human.
           </p>
         </div>
       </section>
 
-      {/* Image Section 2 */}
-      <section className="image-section right">
-        <div className="text-container">
-          <h3>Held in Safety and Presence</h3>
-          <p>
-            A strong, explicit container that prioritizes safety and aliveness. 
-            Somatic support and trauma-informed protocols that still invite real edge 
-            and transformation. A field where artists, teachers, and participants move, 
-            eat, dance, and rest together.
-          </p>
+      {/* The Experience - Key Themes */}
+      <section className="experience">
+        <h2>The Experience</h2>
+        <div className="experience-grid">
+          {sections.map((section) => (
+            <div key={section.id} className="experience-node">
+              <div 
+                className="node-header"
+                onClick={() => toggleSection(section.id)}
+              >
+                <h3>{section.title}</h3>
+                <p className="node-subtitle">{section.subtitle}</p>
+                <span className="expand-toggle">{expandedSection === section.id ? '−' : '+'}</span>
+              </div>
+              {expandedSection === section.id && (
+                <div className="node-content">
+                  {section.content.split('\n\n').map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-        <div className="image-container">
-          <img src="https://images.squarespace-cdn.com/content/v1/68851ba563f1ff020743936c/14b1052a-51f6-4a4f-9666-318d6804abb9/web_95.JPG?format=1500w" alt="Presence and connection" />
-        </div>
-      </section>
-
-      {/* Featured Talent */}
-      <section className="talent-section">
-        <h2>Featured Facilitators & Artists</h2>
-        {loading ? (
-          <p>Loading talent information...</p>
-        ) : talent.length > 0 ? (
-          <div className="talent-grid">
-            {talent.map(person => (
-              <TalentCard key={person.id} person={person} />
-            ))}
-          </div>
-        ) : (
-          <p>Full artist lineup coming soon! Check back for updates.</p>
-        )}
       </section>
 
       {/* What's Included */}
-      <section className="includes">
-        <div className="includes-content">
+      <section className="included">
+        <div className="included-content">
           <h2>What's Included with Your Ticket</h2>
-          <ul className="includes-list">
-            <li>All workshops, dances, rituals, concerts, and talks</li>
-            <li>Morning practices and opening/closing ceremonies</li>
-            <li>Access to all grounds and chill spaces</li>
-            <li>Parking</li>
-          </ul>
-          <p className="note">Indoor lodging and meal plan available as upgrades</p>
-        </div>
-        <div className="image-container">
-          <img src="https://images.squarespace-cdn.com/content/v1/68851ba563f1ff020743936c/8f8f8f8f-0f27-4568-a520-a8ecd8001983/web_48.JPG?format=1500w" alt="Gathering and community" />
+          <div className="included-grid">
+            <div className="included-item">
+              <h4>All Programming</h4>
+              <p>Workshops, dances, rituals, concerts, talks, and live music</p>
+            </div>
+            <div className="included-item">
+              <h4>Ceremonies & Practices</h4>
+              <p>Opening & closing ceremonies, morning practices, grounding rituals</p>
+            </div>
+            <div className="included-item">
+              <h4>Full Access</h4>
+              <p>Grounds, chill spaces, pool, nature areas, parking</p>
+            </div>
+            <div className="included-item">
+              <h4>Optional Upgrades</h4>
+              <p>Indoor lodging and farm-fresh meal plan available</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Venue Section */}
-      <section className="venue">
-        <h2>Sunrise Ranch</h2>
-        <div className="venue-content">
-          <div className="venue-info">
-            <p>
-              Set against stunning red-rock bluffs, Sunrise Ranch is a long-standing sanctuary 
-              for transformation. Once home to the beloved ARISE Festival, the land continues 
-              to host visionary teachers, healers, and artists.
+      {/* Where & When */}
+      <section className="details">
+        <div className="details-content">
+          <div className="detail-item">
+            <h3>Sunrise Ranch</h3>
+            <p className="detail-location">Loveland, Colorado</p>
+            <p className="detail-description">
+              Set against stunning red-rock bluffs, Sunrise Ranch is a long-standing sanctuary for transformation. Once home to the beloved ARISE Festival, the land continues to host visionary teachers, healers, and artists.
             </p>
-            <p className="venue-details">
-              <strong>Location:</strong> Loveland, CO<br/>
-              <strong>Distance:</strong> 1 hour north of Boulder | 1.5 hours from Denver<br/>
-              <strong>Accommodations:</strong> Shaded camping, cozy lodging, farm-to-table meals
+            <p className="detail-info">
+              1 hour north of Boulder<br/>
+              1.5 hours from Denver International Airport
             </p>
           </div>
-          <div className="image-container">
-            <img src="https://images.squarespace-cdn.com/content/v1/68851ba563f1ff020743936c/3ba3ecb6-fe4f-403d-9385-51e17c518d6b/web_39%20%281%29.JPG?format=1500w" alt="Sunrise Ranch venue" />
+          <div className="detail-item">
+            <h3>July 2–5, 2026</h3>
+            <p className="detail-dates">Thursday evening through Sunday afternoon</p>
+            <p className="detail-description">
+              Four days of dancing, rituals, embodiment practices, music, connection, and being held in community.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ways to Participate */}
+      <section className="participate">
+        <h2>Ways to Participate</h2>
+        <div className="participate-grid">
+          <div className="participate-card">
+            <h3>As a Participant</h3>
+            <p>Come to explore, dance, practice, and be shaped by the field.</p>
+            <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+              Get Tickets
+            </a>
+          </div>
+          <div className="participate-card">
+            <h3>As a Facilitator</h3>
+            <p>Apply to hold space, teach, guide rituals, or lead practices.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScGWYQLjNbZ5lOZ7D2P6d6YlHGKTY2NmVLNp8jTWMSxrQy_nA/viewform" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+              Apply
+            </a>
+          </div>
+          <div className="participate-card">
+            <h3>As a Creator</h3>
+            <p>Musicians, DJs, artists, and volunteers—we need your magic.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScmZ-0KLGvGfU_3Afl4UhUE_rdKGihPkJZNCaCbRIkOPMTdYQ/viewform" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+              Apply
+            </a>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="final-cta">
-        <h2>Ready to REVEL?</h2>
+        <h2>Ready to Converge?</h2>
         <a 
           href="https://events.humanitix.com/revel2026" 
           target="_blank" 
