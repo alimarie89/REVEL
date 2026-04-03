@@ -63,10 +63,9 @@ Everyone begins with a shared opening ceremony where we establish collective agr
         </div>
       </section>
 
-      {/* What is REVEL */}
+      {/* Positioning */}
       <section className="positioning">
         <div className="positioning-content">
-          <h2>What is REVEL</h2>
           <p className="positioning-text">
             A convergence is what happens when the right people, the right conditions, and the right leadership come into alignment... and something alive begins to form between them.
           </p>
