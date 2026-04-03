@@ -46,7 +46,7 @@ Everyone begins with a shared opening ceremony where we establish collective agr
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero" style={{backgroundImage: 'url(/revel-hero.png)'}}>
+      <section className="hero" style={{backgroundImage: 'url(/revel-background-only.png)'}}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <p className="hero-meta">Sunrise Ranch, Loveland, Colorado · July 2–5, 2026</p>
