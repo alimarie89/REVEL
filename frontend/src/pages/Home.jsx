@@ -12,34 +12,34 @@ function Home() {
     {
       id: 'convergence',
       title: 'Convergence Over Festival',
-      subtitle: 'More intimate than a festival. More free than a retreat.',
-      content: `What happens when the right people, the right conditions, and the right leadership come into alignment? Something alive begins to form between them.
+      subtitle: 'The space itself becomes the teacher.',
+      content: `Multiple facilitators. Varied modalities. Rhythm and landing. Designed so hundreds can move together without losing real contact or depth.
 
-Large-scale experiences are often anonymous, performative, and extractive. You can be surrounded by people and still feel alone. REVEL is different—it is an experiment in what becomes possible when intimacy is held at scale.`
+Large-scale experiences are often anonymous, extractive, performative. You can be surrounded by thousands and feel utterly alone. REVEL is different. The social architecture itself is designed to hold intimacy at scale—not despite the number of people, but through explicit design that makes real contact possible.`
     },
     {
       id: 'participation',
       title: 'Participation Over Consumption',
-      subtitle: 'Not here to consume. Here to contribute.',
-      content: `Facilitators, artists, and participants move, eat, dance, and rest together. There are no pedestals here. The people who move us most are shoulder-to-shoulder with you, exploring the same edges, dancing the same dancefloors, building the same container.
+      subtitle: 'Your presence shapes the field itself.',
+      content: `You're not here to absorb. You're here to contribute—your presence, your desire, your vulnerability all shape what emerges. The people moving us most aren't on pedestals. They're shoulder-to-shoulder with you, dancing the same dancefloors, exploring the same edges, building the same container.
 
-You choose your path. You follow what calls you. And at the same time, the whole group is held inside a shared field.`
+We move, eat, dance, and rest together. There are no spectators here.`
     },
     {
       id: 'depth',
       title: 'Depth Without Lock-In',
-      subtitle: 'Go as deep as you want, on your own terms.',
-      content: `At a typical retreat, you are bound to one facilitator's arc for a week. At a festival, you are lost in the crowd. REVEL offers something else: curated modalities, rituals, and practices that allow you to go really deep—and then the group is set free to explore what wants to emerge.
+      subtitle: 'Real depth on your own terms.',
+      content: `Real transformation takes real time. At a typical retreat, you're bound to one facilitator's arc for a week. At a festival, you're lost in the crowd. REVEL offers something else: curated depth across multiple dimensions—tantra, dance, embodiment, ritual, music, rest.
 
-Dance, tantra, embodiment, rituals, music, rest. Multiple dimensions. You stay as present as you choose.`
+You choose what calls you. You follow the thread that wants to be explored. And the field holds you while you decide how deep to go.`
     },
     {
       id: 'container',
       title: 'Held in Explicit Safety',
-      subtitle: 'Somatic support + trauma-informed + real edge.',
-      content: `A strong, explicit container that prioritizes both safety and aliveness. Somatic support and trauma-informed protocols that still invite real transformation. A field where artists, teachers, and participants move, eat, dance, and rest together.
+      subtitle: 'Safety isn't passive. It's actively held.',
+      content: `Somatic support. Trauma-informed protocols. Real safety structures. And still space for real edge and real transformation.
 
-Everyone begins with a shared opening ceremony where we establish collective agreements and agreements that carry us through the convergence.`
+When safety is made explicit, vulnerability becomes possible. When vulnerability is honored, power becomes clean. When power is clean and vulnerability is present, intimacy deepens without collapse. This is what's possible in a well-held container.`
     }
   ]
 
