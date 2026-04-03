@@ -65,13 +65,24 @@ Everyone begins with a shared opening ceremony where we establish collective agr
 
       {/* Positioning */}
       <section className="positioning">
-        <div className="positioning-content">
-          <p className="positioning-text">
-            A convergence is what happens when the right people, the right conditions, and the right leadership come into alignment... and something alive begins to form between them.
-          </p>
-          <p className="positioning-subtext">
-            REVEL is an experiment in what becomes possible when intimacy is held at scale. Hundreds of people. Real contact. Energy moving. And the space still feels coherent, connected, and deeply human.
-          </p>
+        <div className="positioning-node">
+          <div 
+            className="positioning-header"
+            onClick={() => toggleSection('positioning')}
+          >
+            <p className="positioning-label">WHAT THIS IS</p>
+            <p className="positioning-text">
+              A convergence is what happens when the right people, the right conditions, and the right leadership come into alignment... and something alive begins to form between them.
+            </p>
+            <span className="positioning-toggle">{expandedSection === 'positioning' ? 'CLOSE' : 'READ MORE'}</span>
+          </div>
+          {expandedSection === 'positioning' && (
+            <div className="positioning-content">
+              <p className="positioning-subtext">
+                REVEL is an experiment in what becomes possible when intimacy is held at scale. Hundreds of people. Real contact. Energy moving. And the space still feels coherent, connected, and deeply human.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
