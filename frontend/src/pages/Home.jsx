@@ -85,9 +85,10 @@ Everyone begins with a shared opening ceremony where we establish collective agr
                 className="node-header"
                 onClick={() => toggleSection(section.id)}
               >
+                <p className="node-label">{section.title.split(' ')[0].toUpperCase()}</p>
                 <h3>{section.title}</h3>
                 <p className="node-subtitle">{section.subtitle}</p>
-                <span className="expand-toggle">{expandedSection === section.id ? '−' : '+'}</span>
+                <span className="expand-toggle">{expandedSection === section.id ? 'CLOSE' : 'READ MORE'}</span>
               </div>
               {expandedSection === section.id && (
                 <div className="node-content">
