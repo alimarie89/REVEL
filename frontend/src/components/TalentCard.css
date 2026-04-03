@@ -1,16 +1,17 @@
 .talent-card {
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 20, 147, 0.3);
+  background: #ffffff;
+  border: 1px solid #efe9e3;
   padding: 40px 30px;
   text-align: center;
   transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(107, 68, 35, 0.08);
 }
 
 .talent-card:hover {
-  border-color: #ff1493;
-  box-shadow: 0 0 40px rgba(255, 20, 147, 0.3);
+  border-color: #a85c3f;
+  box-shadow: 0 8px 24px rgba(107, 68, 35, 0.15);
   transform: translateY(-8px);
 }
 
@@ -21,31 +22,30 @@
   object-fit: cover;
   margin-bottom: 25px;
   display: block;
-  border: 1px solid rgba(255, 20, 147, 0.2);
+  border: 1px solid #efe9e3;
 }
 
 .talent-card h3 {
   font-family: 'Bodoni Moda', serif;
   font-size: 1.6rem;
   margin: 20px 0 10px;
-  color: #f5f5f5;
+  color: #2a2a2a;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .talent-card .role {
-  color: #ff1493;
+  color: #a85c3f;
   font-weight: 600;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 10px rgba(255, 20, 147, 0.2);
 }
 
 .talent-card .bio {
   font-size: 0.95rem;
-  color: #d0d0d0;
+  color: #555555;
   margin: 20px 0;
   line-height: 1.6;
   font-weight: 300;
@@ -60,11 +60,11 @@
 }
 
 .talent-card .social-links a {
-  color: #ff1493;
+  color: #a85c3f;
   text-decoration: none;
   font-size: 0.8rem;
   padding: 8px 16px;
-  border: 1px solid #ff1493;
+  border: 1px solid #a85c3f;
   border-radius: 2px;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -73,9 +73,9 @@
 }
 
 .talent-card .social-links a:hover {
-  background: #ff1493;
-  color: #0a0a0a;
-  box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+  background: #a85c3f;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(168, 92, 63, 0.25);
 }
 
 @media (max-width: 768px) {

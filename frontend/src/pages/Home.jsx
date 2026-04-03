@@ -26,20 +26,19 @@ function Home() {
   return (
     <div className="home">
       {/* Hero Section with Image */}
-      <section className="hero" style={{backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/68851ba563f1ff020743936c/fe7f6e4b-0f27-4568-a520-a8ecd8001983/web_99.JPG?format=1500w)'}}>
+      <section className="hero" style={{backgroundImage: 'url(/revel-hero.png)'}}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>R E V E L</h1>
-          <p className="tagline">A Dance Meets Tantra Convergence</p>
-          <p className="dates">July 2 — 5, 2026</p>
-          <a 
-            href="https://events.humanitix.com/revel2026" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="cta-button primary"
-          >
-            Get Your Tickets
-          </a>
+          <div className="hero-text">
+            <a 
+              href="https://events.humanitix.com/revel2026" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="cta-button primary"
+            >
+              Get Your Tickets
+            </a>
+          </div>
         </div>
       </section>
 
