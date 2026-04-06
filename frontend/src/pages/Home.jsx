@@ -3,10 +3,56 @@ import '../styles/Home.css'
 
 function Home() {
   const [expandedSection, setExpandedSection] = useState(null)
+  const [selectedFacilitator, setSelectedFacilitator] = useState(null)
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
   }
+
+  const facilitators = [
+    {
+      id: 1,
+      name: 'Alison Williams',
+      role: 'Founder & Lead Facilitator',
+      photo: '/facilitator-1.jpg',
+      bio: 'Alison holds the vision and container for REVEL. She brings 10+ years of experience in somatic practices, tantra, and conscious community building.'
+    },
+    {
+      id: 2,
+      name: 'TBD',
+      role: 'TBD',
+      photo: '/facilitator-2.jpg',
+      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+    },
+    {
+      id: 3,
+      name: 'TBD',
+      role: 'TBD',
+      photo: '/facilitator-3.jpg',
+      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+    },
+    {
+      id: 4,
+      name: 'TBD',
+      role: 'TBD',
+      photo: '/facilitator-4.jpg',
+      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+    },
+    {
+      id: 5,
+      name: 'TBD',
+      role: 'TBD',
+      photo: '/facilitator-5.jpg',
+      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+    },
+    {
+      id: 6,
+      name: 'TBD',
+      role: 'TBD',
+      photo: '/facilitator-6.jpg',
+      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+    }
+  ]
 
   const sections = [
     {
@@ -81,6 +127,46 @@ This is what holds intimacy at scale. Not the facilitators. Not the programming.
               <p className="positioning-subtext">
                 REVEL is an experiment in what becomes possible when intimacy is held at scale. Hundreds of people. Real contact. Energy moving. And the space still feels coherent, connected, and deeply human.
               </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Facilitators Section */}
+      <section className="facilitators">
+        <div className="facilitators-container">
+          <h2>Meet the People Creating This</h2>
+          <div className="facilitators-grid">
+            {facilitators.map((facilitator) => (
+              <div 
+                key={facilitator.id} 
+                className="facilitator-photo-slot"
+                onClick={() => setSelectedFacilitator(selectedFacilitator?.id === facilitator.id ? null : facilitator)}
+              >
+                <div className="facilitator-photo-wrapper">
+                  <img src={facilitator.photo} alt={facilitator.name} className="facilitator-photo" />
+                </div>
+                <div className="facilitator-info">
+                  <p className="facilitator-name">{facilitator.name}</p>
+                  <p className="facilitator-role">{facilitator.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {selectedFacilitator && (
+            <div className="facilitator-modal-overlay" onClick={() => setSelectedFacilitator(null)}>
+              <div className="facilitator-modal" onClick={(e) => e.stopPropagation()}>
+                <button className="modal-close" onClick={() => setSelectedFacilitator(null)}>✕</button>
+                <div className="modal-content">
+                  <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
+                  <div className="modal-text">
+                    <h3>{selectedFacilitator.name}</h3>
+                    <p className="modal-role">{selectedFacilitator.role}</p>
+                    <p className="modal-bio">{selectedFacilitator.bio}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
