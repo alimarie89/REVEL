@@ -14,6 +14,7 @@ function Home() {
       id: 1,
       name: 'Alison Williams',
       role: 'Founder & Lead Facilitator',
+      description: 'Holds the vision and container for REVEL. 10+ years in somatic practices, tantra, and conscious community.',
       photo: '/facilitator-1.jpg',
       bio: 'Alison holds the vision and container for REVEL. She brings 10+ years of experience in somatic practices, tantra, and conscious community building.'
     },
@@ -21,6 +22,7 @@ function Home() {
       id: 2,
       name: 'TBD',
       role: 'TBD',
+      description: 'World-class facilitator joining the REVEL faculty.',
       photo: '/facilitator-2.jpg',
       bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     },
@@ -28,6 +30,7 @@ function Home() {
       id: 3,
       name: 'TBD',
       role: 'TBD',
+      description: 'World-class facilitator joining the REVEL faculty.',
       photo: '/facilitator-3.jpg',
       bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     },
@@ -35,6 +38,7 @@ function Home() {
       id: 4,
       name: 'TBD',
       role: 'TBD',
+      description: 'World-class facilitator joining the REVEL faculty.',
       photo: '/facilitator-4.jpg',
       bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     },
@@ -42,6 +46,7 @@ function Home() {
       id: 5,
       name: 'TBD',
       role: 'TBD',
+      description: 'World-class facilitator joining the REVEL faculty.',
       photo: '/facilitator-5.jpg',
       bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     },
@@ -49,6 +54,7 @@ function Home() {
       id: 6,
       name: 'TBD',
       role: 'TBD',
+      description: 'World-class facilitator joining the REVEL faculty.',
       photo: '/facilitator-6.jpg',
       bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     }
@@ -135,7 +141,7 @@ This is what holds intimacy at scale. Not the facilitators. Not the programming.
       {/* Facilitators Section */}
       <section className="facilitators">
         <div className="facilitators-container">
-          <h2>Meet the People Creating This</h2>
+          <h2>Meet the Team</h2>
           <div className="facilitators-grid">
             {facilitators.map((facilitator) => (
               <div 
@@ -149,6 +155,8 @@ This is what holds intimacy at scale. Not the facilitators. Not the programming.
                 <div className="facilitator-info">
                   <p className="facilitator-name">{facilitator.name}</p>
                   <p className="facilitator-role">{facilitator.role}</p>
+                  <p className="facilitator-description">{facilitator.description}</p>
+                  <p className="facilitator-read-more">Click to learn more →</p>
                 </div>
               </div>
             ))}
