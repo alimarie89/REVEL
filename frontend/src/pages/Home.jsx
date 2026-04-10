@@ -196,7 +196,7 @@ function Home() {
 
       {/* INVITATION */}
       <section className="invitation">
-        <p>If this resonates, you already feel it.</p>
+        <p>What becomes possible? What must you release?</p>
       </section>
 
       {/* FINAL CTA */}
