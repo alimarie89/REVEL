@@ -208,7 +208,7 @@ function Home() {
           rel="noopener noreferrer"
           className="cta-button primary large"
         >
-          Apply to Join
+          YES
         </a>
       </section>
     </div>
