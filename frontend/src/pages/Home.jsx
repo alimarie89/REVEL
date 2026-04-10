@@ -202,7 +202,6 @@ function Home() {
       {/* FINAL CTA */}
       <section className="final-cta">
         <h2>What lasts is what you help create.</h2>
-        <p style={{fontSize: '1.3rem', fontWeight: '300', margin: '30px 0 50px 0', color: 'var(--cream)', fontFamily: "'Montserrat', sans-serif"}}>This is not a festival. It is an investment in our evolution.</p>
         <a 
           href="https://events.humanitix.com/revel2026" 
           target="_blank" 
