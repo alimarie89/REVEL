@@ -204,7 +204,7 @@ function Home() {
             className="section-preview-cta"
             onClick={() => toggleSection('experience')}
           >
-            <span>{expandedSection === 'experience' ? 'CLOSE' : 'READ MORE'}</span>
+            <span>{expandedSection === 'experience' ? 'CLOSE' : 'yes tell me more about the experience'}</span>
           </div>
           {expandedSection === 'experience' && (
             <div className="section-expanded">
