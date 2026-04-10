@@ -60,88 +60,131 @@ function Home() {
     }
   ]
 
-  const sections = [
-    {
-      id: 'convergence',
-      title: 'Field Co-Creation Over Consumption',
-      subtitle: 'Everyone here is a creator, not a spectator.',
-      content: `Festivals are built for consumption. You buy a ticket, watch the show, and leave. REVEL is built for co-creation. Your presence, your energy, your desire—it all shapes what emerges. There are no pedestals here. The people leading the space are moving, dancing, exploring right alongside you.
-
-When everyone shows up as a creator rather than a consumer, the field transforms. Energy circulates instead of flows one direction. Intimacy becomes possible at scale.`
-    },
-    {
-      id: 'participation',
-      title: 'Closed Container Over Open Access',
-      subtitle: 'Intention and alignment create coherence.',
-      content: `A closed container means everyone signed up for the same thing. We begin with a shared opening ceremony where we establish explicit agreements. We end together. In between, the field stays coherent.
-
-This is what made Hawaii Tantra Festival work so powerfully. Not the size, but the fact that hundreds of us were intentionally aligned—building the same container, exploring the same edges, creating the same space together. That alignment is what allows intimacy to hold at scale.`
-    },
-    {
-      id: 'depth',
-      title: 'Choice Within a Held Space',
-      subtitle: 'Freedom and structure working together.',
-      content: `At a typical retreat, you're locked into one facilitator's arc for a week with little choice. At a festival, you're lost in the crowd with too much choice and no coherence. REVEL offers something else: multiple modalities, varied facilitators, and you choose what calls you—all held within an intentional container.
-
-You have agency. You follow what wants to be explored. And at the same time, the field is held. You're not alone in your choice. The whole group is creating this together.`
-    },
-    {
-      id: 'container',
-      title: "The Container Itself Is the Teacher",
-      subtitle: 'Safety, intention, and aligned energy.',
-      content: `A strong container isn't just safety protocols. It's the alignment of intention that allows hundreds of people to move together without losing coherence or depth. When power dynamics are made explicit and safety is actively held, vulnerability becomes possible. When vulnerability is honored, the field clarifies.
-
-This is what holds intimacy at scale. Not the facilitators. Not the programming. The container itself.`
-    }
-  ]
-
   return (
     <div className="home">
-      {/* Hero Section */}
+      {/* HERO */}
       <section className="hero" style={{backgroundImage: 'url(/revel-background-only.png)'}}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <p className="hero-meta">Sunrise Ranch, Loveland, Colorado · July 2–5, 2026</p>
-          <h1 className="hero-title">REVEL</h1>
-          <p className="hero-tagline">A convergence where intimacy is held at scale, and the right people create something alive together.</p>
+          <h1 className="hero-title">An intimate community gathering at the intersection of ritual, dance, embodiment and collective awakening where connection is built to last.</h1>
+          <p className="hero-sub">
+            This isn't just about who you meet.<br />
+            It's about who you keep.
+          </p>
           <a 
             href="https://events.humanitix.com/revel2026" 
             target="_blank" 
             rel="noopener noreferrer"
             className="cta-button primary"
           >
-            Get Your Tickets
+            Apply to Join
           </a>
         </div>
       </section>
 
-      {/* Positioning */}
-      <section className="positioning">
-        <div className="positioning-node">
-          <div 
-            className="positioning-header"
-            onClick={() => toggleSection('positioning')}
-          >
-            <p className="positioning-label">WHAT THIS IS</p>
-            <p className="positioning-text">
-              A convergence is what happens when the right people, the right conditions, and the right leadership come into alignment... and something alive begins to form between them.
-            </p>
-            <span className="positioning-toggle">{expandedSection === 'positioning' ? 'CLOSE' : 'READ MORE'}</span>
+      {/* HOW THE SPACE HOLDS */}
+      <section className="space-holds">
+        <div className="section-container">
+          <div className="section-preview">
+            <h2>Connection doesn't just happen.</h2>
+            <p>It's actively created and sustained.</p>
           </div>
-          {expandedSection === 'positioning' && (
-            <div className="positioning-content">
-              <p className="positioning-subtext">
-                REVEL is an experiment in what becomes possible when intimacy is held at scale. Hundreds of people. Real contact. Energy moving. And the space still feels coherent, connected, and deeply human.
+          <div 
+            className="section-preview-cta"
+            onClick={() => toggleSection('space-holds')}
+          >
+            <span>{expandedSection === 'space-holds' ? 'CLOSE' : 'READ MORE'}</span>
+          </div>
+          {expandedSection === 'space-holds' && (
+            <div className="section-expanded">
+              <p>This space is actively held.</p>
+              <p>
+                Not by one facilitator —<br />
+                but collectively, by many people who know how to do this.
               </p>
+              <ul>
+                <li>Creating conditions where people feel safe enough to drop their guard.</li>
+                <li>Guiding attention toward what's actually happening in the moment.</li>
+                <li>Interrupting patterns that disconnect people.</li>
+                <li>Inviting real contact instead of performance.</li>
+                <li>Helping people stay present under intensity instead of checking out.</li>
+                <li>Shaping the space so connection doesn't collapse or scatter.</li>
+              </ul>
             </div>
           )}
         </div>
       </section>
 
-      {/* Facilitators Section */}
-      <section className="facilitators">
-        <div className="facilitators-container">
-          <h2>Meet the Team</h2>
+      {/* ANCHOR LINE */}
+      <section className="anchor">
+        <h2>Connection only holds when people participate in it.</h2>
+      </section>
+
+      {/* THREE CARDS */}
+      <section className="cards">
+        <div className="card">
+          <h3>Something real forms</h3>
+          <p>
+            You don't just meet people.<br />
+            Something actually takes shape between you.
+          </p>
+        </div>
+        <div className="card">
+          <h3>You can go further</h3>
+          <p>
+            You're not bracing or performing in the same way.<br />
+            More becomes accessible.
+          </p>
+        </div>
+        <div className="card">
+          <h3>It carries beyond</h3>
+          <p>
+            What happens here doesn't stay here.<br />
+            It changes how you relate outside of it.
+          </p>
+        </div>
+      </section>
+
+      {/* TEAM / PEOPLE HOLDING THIS */}
+      <section className="team">
+        <div className="section-container">
+          <div className="section-preview">
+            <h2>This isn't held by one person.</h2>
+            <p>It's held collectively.</p>
+          </div>
+          <div 
+            className="section-preview-cta"
+            onClick={() => toggleSection('team-info')}
+          >
+            <span>{expandedSection === 'team-info' ? 'CLOSE' : 'READ MORE'}</span>
+          </div>
+          {expandedSection === 'team-info' && (
+            <div className="section-expanded">
+              <p>
+                REVEL is supported by a group of facilitators, artists, and leaders.
+              </p>
+              <p>
+                Not just leading sessions —<br />
+                but actively participating in the space as it unfolds.
+              </p>
+              <ul>
+                <li>Creating conditions where people feel safe enough to drop their guard.</li>
+                <li>Guiding attention toward what's actually happening in the moment.</li>
+                <li>Interrupting patterns that disconnect people.</li>
+                <li>Inviting real contact instead of performance.</li>
+                <li>Helping people stay present under intensity instead of checking out.</li>
+                <li>Shaping the space so connection doesn't collapse or scatter.</li>
+              </ul>
+              <p className="team-note">
+                This is what allows the experience to go further than it normally would.
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* TEAM GRID */}
+        <div className="team-grid">
+          <h3>Meet the Team</h3>
           <div className="facilitators-grid">
             {facilitators.map((facilitator) => (
               <div 
@@ -180,120 +223,51 @@ This is what holds intimacy at scale. Not the facilitators. Not the programming.
         </div>
       </section>
 
-      {/* The Experience - Key Themes */}
-      <section className="experience">
-        <h2>The Experience</h2>
-        <div className="experience-grid">
-          {sections.map((section) => (
-            <div key={section.id} className="experience-node">
-              <div 
-                className="node-header"
-                onClick={() => toggleSection(section.id)}
-              >
-                <p className="node-label">{section.title.split(' ')[0].toUpperCase()}</p>
-                <h3>{section.title}</h3>
-                <p className="node-subtitle">{section.subtitle}</p>
-                <span className="expand-toggle">{expandedSection === section.id ? 'CLOSE' : 'READ MORE'}</span>
-              </div>
-              {expandedSection === section.id && (
-                <div className="node-content">
-                  {section.content.split('\n\n').map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  ))}
-                </div>
-              )}
+      {/* WHO IT'S FOR */}
+      <section className="who">
+        <div className="section-container">
+          <div className="section-preview">
+            <h2>For people willing to participate</h2>
+            <p>not just consume</p>
+          </div>
+          <div 
+            className="section-preview-cta"
+            onClick={() => toggleSection('who')}
+          >
+            <span>{expandedSection === 'who' ? 'CLOSE' : 'READ MORE'}</span>
+          </div>
+          {expandedSection === 'who' && (
+            <div className="section-expanded">
+              <p>This only works if you're willing to be in it.</p>
+              <ul>
+                <li>To be real in the moment.</li>
+                <li>To engage instead of staying at a distance.</li>
+                <li>To remain present when things get uncomfortable.</li>
+              </ul>
+              <p>
+                If you're looking to be carried through an experience,<br />
+                this probably won't land.
+              </p>
             </div>
-          ))}
+          )}
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="included">
-        <div className="included-content">
-          <h2>What's Included with Your Ticket</h2>
-          <div className="included-grid">
-            <div className="included-item">
-              <h4>All Programming</h4>
-              <p>Workshops, dances, rituals, concerts, talks, and live music</p>
-            </div>
-            <div className="included-item">
-              <h4>Ceremonies & Practices</h4>
-              <p>Opening & closing ceremonies, morning practices, grounding rituals</p>
-            </div>
-            <div className="included-item">
-              <h4>Full Access</h4>
-              <p>Grounds, chill spaces, pool, nature areas, parking</p>
-            </div>
-            <div className="included-item">
-              <h4>Optional Upgrades</h4>
-              <p>Indoor lodging and farm-fresh meal plan available</p>
-            </div>
-          </div>
-        </div>
+      {/* INVITATION */}
+      <section className="invitation">
+        <p>If this resonates, you already feel it.</p>
       </section>
 
-      {/* Where & When */}
-      <section className="details">
-        <div className="details-content">
-          <div className="detail-item">
-            <h3>Sunrise Ranch</h3>
-            <p className="detail-location">Loveland, Colorado</p>
-            <p className="detail-description">
-              Set against stunning red-rock bluffs, Sunrise Ranch is a long-standing sanctuary for transformation. Once home to the beloved ARISE Festival, the land continues to host visionary teachers, healers, and artists.
-            </p>
-            <p className="detail-info">
-              1 hour north of Boulder<br/>
-              1.5 hours from Denver International Airport
-            </p>
-          </div>
-          <div className="detail-item">
-            <h3>July 2–5, 2026</h3>
-            <p className="detail-dates">Thursday evening through Sunday afternoon</p>
-            <p className="detail-description">
-              Four days of dancing, rituals, embodiment practices, music, connection, and being held in community.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Ways to Participate */}
-      <section className="participate">
-        <h2>Ways to Participate</h2>
-        <div className="participate-grid">
-          <div className="participate-card">
-            <h3>As a Participant</h3>
-            <p>Come to explore, dance, practice, and be shaped by the field.</p>
-            <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
-              Get Tickets
-            </a>
-          </div>
-          <div className="participate-card">
-            <h3>As a Facilitator</h3>
-            <p>Apply to hold space, teach, guide rituals, or lead practices.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScGWYQLjNbZ5lOZ7D2P6d6YlHGKTY2NmVLNp8jTWMSxrQy_nA/viewform" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
-              Apply
-            </a>
-          </div>
-          <div className="participate-card">
-            <h3>As a Creator</h3>
-            <p>Musicians, DJs, artists, and volunteers—we need your magic.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScmZ-0KLGvGfU_3Afl4UhUE_rdKGihPkJZNCaCbRIkOPMTdYQ/viewform" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
-              Apply
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
+      {/* FINAL CTA */}
       <section className="final-cta">
-        <h2>Ready to Converge?</h2>
+        <h2>What lasts is what you help create.</h2>
         <a 
           href="https://events.humanitix.com/revel2026" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cta-button primary large"
         >
-          Secure Your Spot
+          Apply to Join
         </a>
       </section>
     </div>
