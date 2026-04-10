@@ -106,7 +106,7 @@ function Home() {
       {/* THREE PILLARS */}
       <section className="cards">
         <div className="section-container">
-          <h2 style={{textAlign: 'center', fontSize: '2.5rem', fontWeight: '300', margin: '0', fontFamily: "'Laluxess Serif', serif", fontStyle: 'italic'}}>Consciously evolving our culture through these three pillars</h2>
+          <h2 style={{textAlign: 'center', fontSize: '2.5rem', fontWeight: '300', margin: '0', fontFamily: "'Laluxess Serif', serif", fontStyle: 'italic'}}>The three pillars of conscious evolution</h2>
         </div>
         <div className="cards-grid">
           <div className="card">
