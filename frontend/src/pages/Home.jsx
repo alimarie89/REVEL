@@ -97,9 +97,8 @@ function Home() {
               <li>To engage instead of staying at a distance.</li>
               <li>To remain present when things get uncomfortable.</li>
             </ul>
-            <p>
-              If you're looking to be carried through an experience,<br />
-              this probably won't land.
+            <p style={{marginTop: '30px'}}>
+              We're all stepping in to self regulation, self containment, and adult consciousness.
             </p>
           </div>
         </div>
