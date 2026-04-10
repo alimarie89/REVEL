@@ -90,26 +90,19 @@ function Home() {
             <p>instead of just consuming it.</p>
           </div>
           <div className="section-expanded">
-            <p>This space is actively held.</p>
-            <p>
-              Not by one facilitator —<br />
-              but collectively, by many people who know how to do this.
-            </p>
+            <h3>Connection only holds when people participate in it.</h3>
+            <p style={{marginTop: '30px'}}>This only works if you're willing to be in it.</p>
             <ul>
-              <li>Creating conditions where people feel safe enough to drop their guard.</li>
-              <li>Guiding attention toward what's actually happening in the moment.</li>
-              <li>Interrupting patterns that disconnect people.</li>
-              <li>Inviting real contact instead of performance.</li>
-              <li>Helping people stay present under intensity instead of checking out.</li>
-              <li>Shaping the space so connection doesn't collapse or scatter.</li>
+              <li>To be real in the moment.</li>
+              <li>To engage instead of staying at a distance.</li>
+              <li>To remain present when things get uncomfortable.</li>
             </ul>
+            <p>
+              If you're looking to be carried through an experience,<br />
+              this probably won't land.
+            </p>
           </div>
         </div>
-      </section>
-
-      {/* ANCHOR LINE */}
-      <section className="anchor">
-        <h2>Connection only holds when people participate in it.</h2>
       </section>
 
       {/* THREE CARDS */}
@@ -222,26 +215,6 @@ function Home() {
             <h2>For people willing to participate</h2>
             <p>not just consume</p>
           </div>
-          <div 
-            className="section-preview-cta"
-            onClick={() => toggleSection('who')}
-          >
-            <span>{expandedSection === 'who' ? 'CLOSE' : 'READ MORE'}</span>
-          </div>
-          {expandedSection === 'who' && (
-            <div className="section-expanded">
-              <p>This only works if you're willing to be in it.</p>
-              <ul>
-                <li>To be real in the moment.</li>
-                <li>To engage instead of staying at a distance.</li>
-                <li>To remain present when things get uncomfortable.</li>
-              </ul>
-              <p>
-                If you're looking to be carried through an experience,<br />
-                this probably won't land.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
