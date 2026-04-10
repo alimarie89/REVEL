@@ -194,6 +194,40 @@ function Home() {
         </div>
       </section>
 
+      {/* WHAT YOU'LL EXPERIENCE */}
+      <section className="space-holds">
+        <div className="section-container">
+          <div className="section-preview">
+            <h2>Do you have a love of dance, nature, connection, eros, and personal growth?</h2>
+          </div>
+          <div 
+            className="section-preview-cta"
+            onClick={() => toggleSection('experience')}
+          >
+            <span>{expandedSection === 'experience' ? 'CLOSE' : 'READ MORE'}</span>
+          </div>
+          {expandedSection === 'experience' && (
+            <div className="section-expanded">
+              <p>
+                Your morning begins with presence. You wake in a container held by people who know how to do this. There's ritual, embodied practice, movement that wakes your body and opens your field.
+              </p>
+              <p>
+                Throughout the day, you move between intimate circles and collective experience. You dance. You sit in conversation with people who show up as themselves. You taste food that's shared with intention. You spend time in nature, feeling the earth and sky.
+              </p>
+              <p>
+                There are moments of intensity where connection deepens beyond what normally happens. There are moments of softness where you're held. You're invited into your own aliveness—not performing it, actually living it.
+              </p>
+              <p>
+                The evening gathers you again. There's ritual, music, dance, intimacy. You end each day integrated, more alive, more real.
+              </p>
+              <p>
+                And through it all, the people holding this space are in it with you—not teaching from the front, but co-creating what's alive and possible.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* INVITATION */}
       <section className="invitation">
         <p>This is not a festival. It is an investment in our cultural evolution.</p>
