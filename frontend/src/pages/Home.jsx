@@ -90,7 +90,6 @@ function Home() {
             <p>instead of just consuming it.</p>
           </div>
           <div className="section-expanded">
-            <p style={{marginTop: '0'}}>We're all stepping in to self regulation, self containment, and adult consciousness.</p>
             <h3 style={{fontSize: '1.5rem', color: 'var(--text-light)', fontStyle: 'italic', fontFamily: "'Laluxess Serif', serif", margin: '40px 0 20px 0', fontWeight: '300'}}>What does it mean to be a co-creative participant?</h3>
             <ul>
               <li>To be real in the moment.</li>
