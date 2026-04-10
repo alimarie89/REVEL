@@ -90,8 +90,7 @@ function Home() {
             <p>instead of just consuming it.</p>
           </div>
           <div className="section-expanded">
-            <h3>Connection only holds when people participate in it.</h3>
-            <p style={{marginTop: '30px'}}>This only works if you're willing to be in it.</p>
+            <p style={{marginTop: '0'}}>We're all stepping in to self regulation, self containment, and adult consciousness.</p>
             <ul>
               <li>To be real in the moment.</li>
               <li>To engage instead of staying at a distance.</li>
