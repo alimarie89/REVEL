@@ -105,28 +105,22 @@ function Home() {
         </div>
       </section>
 
-      {/* THREE CARDS */}
+      {/* THREE PILLARS */}
       <section className="cards">
         <div className="card">
-          <h3>Something real forms</h3>
-          <p>
-            You don't just meet people.<br />
-            Something actually takes shape between you.
-          </p>
+          <h3>Relational Field</h3>
+          <p className="card-question">What happens when two people show up in full presence?</p>
+          <p className="card-answer">Something new forms between them.</p>
         </div>
         <div className="card">
-          <h3>You can go further</h3>
-          <p>
-            You're not bracing or performing in the same way.<br />
-            More becomes accessible.
-          </p>
+          <h3>Group Field</h3>
+          <p className="card-question">What happens when you aren't bracing or performing?</p>
+          <p className="card-answer">Liberation becomes possible.</p>
         </div>
         <div className="card">
-          <h3>It carries beyond</h3>
-          <p>
-            What happens here doesn't stay here.<br />
-            It changes how you relate outside of it.
-          </p>
+          <h3>Cultural Field</h3>
+          <p className="card-question">What happens when you take what you have learned out into the world?</p>
+          <p className="card-answer">It changes the world around you.</p>
         </div>
       </section>
 
