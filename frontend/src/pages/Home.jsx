@@ -196,7 +196,7 @@ function Home() {
 
       {/* INVITATION */}
       <section className="invitation">
-        <p>What becomes possible? What must you release?</p>
+        <p>This is not a festival. It is an investment in our collective evolution.</p>
       </section>
 
       {/* FINAL CTA */}
