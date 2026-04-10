@@ -131,8 +131,7 @@ function Home() {
       <section className="team">
         <div className="section-container">
           <div className="section-preview">
-            <h2>This isn't held by one person.</h2>
-            <p>It's held collectively.</p>
+            <h2>What happens when world class facilitators hold the field collectively?</h2>
           </div>
           <div 
             className="section-preview-cta"
@@ -142,24 +141,14 @@ function Home() {
           </div>
           {expandedSection === 'team-info' && (
             <div className="section-expanded">
-              <p>
-                REVEL is supported by a group of facilitators, artists, and leaders.
-              </p>
-              <p>
-                Not just leading sessions —<br />
-                but actively participating in the space as it unfolds.
-              </p>
               <ul>
-                <li>Creating conditions where people feel safe enough to drop their guard.</li>
-                <li>Guiding attention toward what's actually happening in the moment.</li>
-                <li>Interrupting patterns that disconnect people.</li>
-                <li>Inviting real contact instead of performance.</li>
-                <li>Helping people stay present under intensity instead of checking out.</li>
-                <li>Shaping the space so connection doesn't collapse or scatter.</li>
+                <li>Conditions are created where people feel safe enough to drop their guard.</li>
+                <li>Attention is guided toward what's actually happening in the moment.</li>
+                <li>Patterns that disconnect people are interrupted.</li>
+                <li>Real contact is invited instead of performance.</li>
+                <li>People are helped to stay present under intensity instead of checking out.</li>
+                <li>The space is shaped so connection doesn't collapse or scatter.</li>
               </ul>
-              <p className="team-note">
-                This is what allows the experience to go further than it normally would.
-              </p>
             </div>
           )}
         </div>
