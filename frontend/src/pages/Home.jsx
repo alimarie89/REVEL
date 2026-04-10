@@ -194,16 +194,6 @@ function Home() {
         </div>
       </section>
 
-      {/* WHO IT'S FOR */}
-      <section className="who">
-        <div className="section-container">
-          <div className="section-preview">
-            <h2>For people willing to participate</h2>
-            <p>not just consume</p>
-          </div>
-        </div>
-      </section>
-
       {/* INVITATION */}
       <section className="invitation">
         <p>If this resonates, you already feel it.</p>
