@@ -105,20 +105,25 @@ function Home() {
 
       {/* THREE PILLARS */}
       <section className="cards">
-        <div className="card">
-          <h3>Relational Field</h3>
-          <p className="card-question">What happens when two people show up in full presence?</p>
-          <p className="card-answer">Something new forms between them.</p>
+        <div className="section-container">
+          <h2 style={{textAlign: 'center', fontSize: '2.5rem', fontWeight: '300', margin: '0', fontFamily: "'Laluxess Serif', serif", fontStyle: 'italic'}}>Consciously evolving our culture through these three pillars</h2>
         </div>
-        <div className="card">
-          <h3>Group Field</h3>
-          <p className="card-question">What happens when you aren't bracing or performing?</p>
-          <p className="card-answer">Liberation becomes possible.</p>
-        </div>
-        <div className="card">
-          <h3>Cultural Field</h3>
-          <p className="card-question">What happens when you take what you have learned out into the world?</p>
-          <p className="card-answer">It changes the world around you.</p>
+        <div className="cards-grid">
+          <div className="card">
+            <h3>Relational Field</h3>
+            <p className="card-question">What happens when two people show up in full presence?</p>
+            <p className="card-answer">Something new forms between them.</p>
+          </div>
+          <div className="card">
+            <h3>Group Field</h3>
+            <p className="card-question">What happens when you aren't bracing or performing?</p>
+            <p className="card-answer">Liberation becomes possible.</p>
+          </div>
+          <div className="card">
+            <h3>Cultural Field</h3>
+            <p className="card-question">What happens when you take what you have learned out into the world?</p>
+            <p className="card-answer">It changes the world around you.</p>
+          </div>
         </div>
       </section>
 
