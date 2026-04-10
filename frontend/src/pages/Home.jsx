@@ -86,32 +86,24 @@ function Home() {
       <section className="space-holds">
         <div className="section-container">
           <div className="section-preview">
-            <h2>Connection doesn't just happen.</h2>
-            <p>It's actively created and sustained.</p>
+            <h2>Cocreate the field with us</h2>
+            <p>instead of just consuming it.</p>
           </div>
-          <div 
-            className="section-preview-cta"
-            onClick={() => toggleSection('space-holds')}
-          >
-            <span>{expandedSection === 'space-holds' ? 'CLOSE' : 'READ MORE'}</span>
+          <div className="section-expanded">
+            <p>This space is actively held.</p>
+            <p>
+              Not by one facilitator —<br />
+              but collectively, by many people who know how to do this.
+            </p>
+            <ul>
+              <li>Creating conditions where people feel safe enough to drop their guard.</li>
+              <li>Guiding attention toward what's actually happening in the moment.</li>
+              <li>Interrupting patterns that disconnect people.</li>
+              <li>Inviting real contact instead of performance.</li>
+              <li>Helping people stay present under intensity instead of checking out.</li>
+              <li>Shaping the space so connection doesn't collapse or scatter.</li>
+            </ul>
           </div>
-          {expandedSection === 'space-holds' && (
-            <div className="section-expanded">
-              <p>This space is actively held.</p>
-              <p>
-                Not by one facilitator —<br />
-                but collectively, by many people who know how to do this.
-              </p>
-              <ul>
-                <li>Creating conditions where people feel safe enough to drop their guard.</li>
-                <li>Guiding attention toward what's actually happening in the moment.</li>
-                <li>Interrupting patterns that disconnect people.</li>
-                <li>Inviting real contact instead of performance.</li>
-                <li>Helping people stay present under intensity instead of checking out.</li>
-                <li>Shaping the space so connection doesn't collapse or scatter.</li>
-              </ul>
-            </div>
-          )}
         </div>
       </section>
 
