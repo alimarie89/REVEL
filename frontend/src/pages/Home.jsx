@@ -201,7 +201,7 @@ function Home() {
 
       {/* FINAL CTA */}
       <section className="final-cta">
-        <h2>Are you a player on the cutting edge of this great change?</h2>
+        <h2>Are you a key player in this time of great change?</h2>
         <a 
           href="https://events.humanitix.com/revel2026" 
           target="_blank" 
