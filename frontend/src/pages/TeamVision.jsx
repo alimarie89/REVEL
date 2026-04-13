@@ -79,7 +79,7 @@ function TeamVision() {
               This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing your time, presence, and resources — because we're building something together that we all care about. We're showing up in a spirit that's closer to friends and family, which means no one is compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
             </p>
             <p>
-              The investment we're asking you to make is to support building lasting community that you want to be part of. When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and stay engaged even when things get complex.
+              The investment we're asking you to make is to support building lasting community that you want to be part of. When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and lean in when shit gets real.
             </p>
           </div>
         </div>
