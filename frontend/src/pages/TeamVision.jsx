@@ -76,7 +76,7 @@ function TeamVision() {
               Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
-              This is a different way of doing things. Everyone here is a co-creator of the field. We're all showing up in a spirit that's closer to friends and family than to a standard professional arrangement. No one is being compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
+              Everyone here is a co-creator of the field. We're all showing up in a spirit that's closer to friends and family than to a standard professional arrangement. No one is being compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
             </p>
             <p>
               And because people are relying on you: we need people who follow through, communicate clearly, and stay engaged even when things get complex. That's what allows this kind of co-creation to actually work.
