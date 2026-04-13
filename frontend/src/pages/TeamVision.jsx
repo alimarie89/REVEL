@@ -73,7 +73,7 @@ function TeamVision() {
           
           <div className="overview-content">
             <p>
-              Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more — to actively shape the tone, the texture, the way people land and the way they leave.
+              Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
               This is a different way of doing things. Everyone here is a co-creator of the field. That means offering your presence, your leadership, your specific gifts. It can also mean financial support. It's a bigger ask than a ticket, and it's meant to be.
