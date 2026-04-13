@@ -69,25 +69,20 @@ function TeamVision() {
       {/* TEAM OVERVIEW */}
       <section className="vision-section team-overview">
         <div className="vision-container">
-          <h2>Being Part of This Team</h2>
+          <h2>If you're reading this, it means you've been asked to be an architect — of the container, the field, the experience that's about to unfold.</h2>
+          
           <div className="overview-content">
             <p>
-              Being part of the REVEL team means getting to build something from the inside. Not just attending an experience, but shaping it — the tone of it, the texture of it, the way people land and the way they leave. There's something rare about being in a space where the people around you aren't just consuming what's happening, but actively creating it together. That's the kind of field we're aiming for.
+              Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more — to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
-              Because of that, we're orienting around co-creation rather than consumption. The people on this team aren't just here to receive the experience — they're part of what makes it possible. That can look like offering your skills, your presence, your leadership, and in some cases your financial support as well. It's a bigger ask than simply buying a ticket, and it's meant to be.
+              This is a different way of doing things. Everyone here is a co-creator of the field. That means offering your presence, your leadership, your specific gifts. It can also mean financial support. It's a bigger ask than a ticket, and it's meant to be.
             </p>
             <p>
-              We're inviting people into this because we value what they bring, and because this kind of project only works when the people inside it care about what's being built. The exchange isn't designed to be perfectly balanced in a transactional sense. It's closer to putting your energy behind something you believe in, alongside others who are doing the same.
+              REVEL is a community-level build — closer to friends and family building something together than a standard professional arrangement. That might mean contributing at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
             </p>
             <p>
-              REVEL is a community-level build. Much of the team is showing up in a spirit that's closer to friends and family than to a standard professional contract. That might mean offering your work at a lower rate than usual, wearing more than one hat, or contributing in ways that go beyond a clearly defined role. The shared thread is a willingness to be part of making something real, not just benefiting from it.
-            </p>
-            <p>
-              And at the same time, what you hold here matters. When you take on a role, people are relying on you. We're looking for people who follow through, communicate clearly, and stay engaged even when things stretch or get complex. That's what allows this kind of co-creation to actually work.
-            </p>
-            <p>
-              This is for people who feel energized by building something together — who want to be part of the creation, not just the outcome. If that's you, you'll likely feel at home here.
+              And because people are relying on you: we need people who follow through, communicate clearly, and stay engaged even when things get complex. That's what allows this kind of co-creation to actually work.
             </p>
           </div>
         </div>
