@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/Home.css'
 
 function Home() {
@@ -81,6 +82,12 @@ function Home() {
           </a>
         </div>
       </section>
+
+      {/* NAVIGATION TABS */}
+      <nav className="page-tabs">
+        <Link to="/" className="tab-link active">Experience</Link>
+        <Link to="/team" className="tab-link">The Team</Link>
+      </nav>
 
       {/* HOW THE SPACE HOLDS */}
       <section className="space-holds">
@@ -191,6 +198,11 @@ function Home() {
               </div>
             </div>
           )}
+        </div>
+
+        {/* LINK TO FULL TEAM PAGE */}
+        <div className="team-full-link">
+          <Link to="/team" className="see-full-team-cta">See the Full Team</Link>
         </div>
       </section>
 

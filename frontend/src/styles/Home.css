@@ -537,8 +537,73 @@
   }
 }
 
+/* ========== NAVIGATION TABS ========== */
+.page-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: var(--dark);
+  padding: 40px 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--rust);
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-link:hover {
+  color: var(--cream);
+  border-bottom-color: var(--rust);
+}
+
+.tab-link.active {
+  color: var(--cream);
+  border-bottom-color: var(--rust);
+}
+
+/* ========== TEAM FULL LINK ========== */
+.team-full-link {
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.see-full-team-cta {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--rust);
+  font-family: 'Laluxess Serif', serif;
+  font-style: italic;
+  padding: 15px 40px;
+  border: 2px solid var(--rust);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.see-full-team-cta:hover {
+  background: var(--rust);
+  color: var(--cream);
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
+  .page-tabs {
+    padding: 30px 50px;
+    gap: 40px;
+  }
+
   .space-holds,
   .team,
   .who {
@@ -577,6 +642,16 @@
     font-size: 1rem;
   }
 
+  .page-tabs {
+    padding: 25px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tab-link {
+    font-size: 0.85rem;
+  }
+
   .section-preview h2 {
     font-size: 1.8rem;
   }
@@ -609,5 +684,32 @@
   .invitation p,
   .final-cta h2 {
     font-size: 1.5rem;
+  }
+
+  .see-full-team-cta {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-tabs {
+    padding: 20px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .tab-link {
+    font-size: 0.75rem;
+    padding-bottom: 6px;
+  }
+
+  .team-full-link {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .see-full-team-cta {
+    font-size: 0.9rem;
+    padding: 10px 25px;
   }
 }
