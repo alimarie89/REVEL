@@ -76,10 +76,7 @@ function TeamVision() {
               Because of your unique skills and the extensive growth work you've done, you're being asked to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
-              This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing your time, presence, and resources — because we're building something together that we all care about. We all share in what we create.
-            </p>
-            <p>
-              We're all showing up in a spirit that's closer to friends and family than to a standard professional arrangement. No one is being compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
+              This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing your time, presence, and resources — because we're building something together that we all care about. We're showing up in a spirit that's closer to friends and family, which means no one is compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
             </p>
             <p>
               The investment we're asking you to make is to support building lasting community that you want to be part of. When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and stay engaged even when things get complex.
