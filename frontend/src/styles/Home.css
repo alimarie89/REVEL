@@ -194,6 +194,25 @@
   margin-top: 30px;
 }
 
+/* ========== PURPOSE ITEMS ========== */
+.purpose-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.purpose-item {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--rust);
+  border-radius: 2px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--cream);
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* ========== ANCHOR SECTION ========== */
 .anchor {
   background: var(--cream);
@@ -620,6 +639,11 @@
     height: 150px;
   }
 
+  .purpose-item {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
   .facilitator-modal {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -711,5 +735,11 @@
   .see-full-team-cta {
     font-size: 0.9rem;
     padding: 10px 25px;
+  }
+
+  .purpose-item {
+    padding: 12px;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }

@@ -148,14 +148,14 @@ function Home() {
           </div>
           {expandedSection === 'team-info' && (
             <div className="section-expanded">
-              <ul>
-                <li>Conditions are created where people feel safe enough to drop their guard.</li>
-                <li>Attention is guided toward what's actually happening in the moment.</li>
-                <li>Patterns that disconnect people are interrupted.</li>
-                <li>Real contact is invited instead of performance.</li>
-                <li>People are helped to stay present under intensity instead of checking out.</li>
-                <li>The space is shaped so connection doesn't collapse or scatter.</li>
-              </ul>
+              <div className="purpose-items">
+                <div className="purpose-item">Conditions are created where people feel safe enough to drop their guard.</div>
+                <div className="purpose-item">Attention is guided toward what's actually happening in the moment.</div>
+                <div className="purpose-item">Patterns that disconnect people are interrupted.</div>
+                <div className="purpose-item">Real contact is invited instead of performance.</div>
+                <div className="purpose-item">People are helped to stay present under intensity instead of checking out.</div>
+                <div className="purpose-item">The space is shaped so connection doesn't collapse or scatter.</div>
+              </div>
             </div>
           )}
         </div>
