@@ -73,10 +73,10 @@ function TeamVision() {
           
           <div className="overview-content">
             <p>
-              Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
+              Because of your unique skills and the extensive growth work you've done, you're being asked to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
-              This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing skills, time, money, presence — because we're building something together that we all care about. We all share in what we create.
+              This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing your time, presence, and resources — because we're building something together that we all care about. We all share in what we create.
             </p>
             <p>
               We're all showing up in a spirit that's closer to friends and family than to a standard professional arrangement. No one is being compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
