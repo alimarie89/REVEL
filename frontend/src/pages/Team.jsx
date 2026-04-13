@@ -14,21 +14,21 @@ function Team() {
     {
       id: 1,
       name: 'Alison Williams',
-      role: 'Co-Founder & Core Producer',
+      role: 'COO',
       bio: 'Alison holds the vision and container for REVEL. [Bio to come]',
       photo: '/team/alison-williams.jpg'
     },
     {
       id: 2,
       name: 'Spencer Jacobson',
-      role: 'Co-Founder & Core Producer',
+      role: 'Visionary',
       bio: 'Spencer brings [Bio to come]',
       photo: '/team/spencer-jacobson.jpg'
     },
     {
       id: 3,
       name: 'Venus Codes',
-      role: 'Co-Founder & Core Producer',
+      role: 'Marketing Director & Experience Design',
       bio: 'Venus contributes [Bio to come]',
       photo: '/team/venus-codes.jpg'
     }
