@@ -73,7 +73,7 @@ function TeamVision() {
           
           <div className="overview-content">
             <p>
-              Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
+              Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
               This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing skills, time, money, presence — because we're building something together that we all care about. We all share in what we create.
