@@ -76,10 +76,7 @@ function TeamVision() {
               Not someone consuming what's happening. Not someone buying a ticket and showing up. Because of your skills, your talent, and your extensive growth work, you're being asked to contribute much more than people who simply pay for a ticket and show up — to actively shape the tone, the texture, the way people land and the way they leave.
             </p>
             <p>
-              This is a different way of doing things. Everyone here is a co-creator of the field. That means offering your presence, your leadership, your specific gifts. It can also mean financial support. It's a bigger ask than a ticket, and it's meant to be.
-            </p>
-            <p>
-              REVEL is a community-level build — closer to friends and family building something together than a standard professional arrangement. That might mean contributing at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
+              This is a different way of doing things. Everyone here is a co-creator of the field. We're all showing up in a spirit that's closer to friends and family than to a standard professional arrangement. No one is being compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
             </p>
             <p>
               And because people are relying on you: we need people who follow through, communicate clearly, and stay engaged even when things get complex. That's what allows this kind of co-creation to actually work.
@@ -185,6 +182,40 @@ function TeamVision() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* HOW WE SHOW UP */}
+      <section className="vision-section how-we-show-up">
+        <div className="vision-container">
+          <h2>How We Show Up Together</h2>
+          <p className="subtitle">What we model and help each other step into</p>
+
+          <div className="show-up-grid">
+            <div className="show-up-item">
+              <h3>To be real in the moment.</h3>
+              <p>Not performing. Not polished. Actually present with what's true, what's alive, what's happening right now.</p>
+            </div>
+
+            <div className="show-up-item">
+              <h3>To engage instead of staying at a distance.</h3>
+              <p>When things matter, show up. When someone needs support, step in. When the space needs you, be there — not watching from the sidelines.</p>
+            </div>
+
+            <div className="show-up-item">
+              <h3>To remain present when things get uncomfortable.</h3>
+              <p>Discomfort is where growth happens. We stay in the conversation, stay in the feeling, stay in the space instead of checking out or leaving when it gets hard.</p>
+            </div>
+
+            <div className="show-up-item">
+              <h3>To step into self-regulation, self-containment, and adult consciousness.</h3>
+              <p>We manage our own nervous systems. We don't dump our stuff on others. We take responsibility for our experience and our impact. We grow up in how we show up.</p>
+            </div>
+          </div>
+
+          <p className="show-up-closing">
+            These aren't just practices we embody — they're what we teach, model, and help others discover. If someone is uncomfortable or scared when stepping into these practices, we help them. We remember what it felt like when we first learned what this takes.
+          </p>
         </div>
       </section>
 
