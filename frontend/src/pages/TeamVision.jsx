@@ -61,7 +61,7 @@ function TeamVision() {
       <section className="vision-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Team Vision</h1>
+          <h1><span className="brand">REVEL</span> Team Vision</h1>
           <p>What we're building together</p>
         </div>
       </section>
