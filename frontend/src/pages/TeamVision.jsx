@@ -116,8 +116,11 @@ function TeamVision() {
               <div className="circle-number">3</div>
               <h3>Group Field</h3>
               <p className="circle-subheader">(Collective Attunement)</p>
-              <p className="circle-question">What happens when you aren't bracing or performing? Liberation becomes possible.</p>
-              <p className="circle-context">We manage our own nervous systems so we're not dumping our stuff on the group. We take responsibility for both our experience and our impact on the field. We care for the collective nervous system by being self-regulated, self-contained, and growing up in how we show up. This is adult consciousness—knowing we're not separate, we affect the whole, and we're responsible for that. When enough people show up this way, liberation becomes possible.</p>
+              <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
+              <p className="circle-context">We regulate ourselves so we are not dumping activation onto the group. We take responsibility for both our experience and our impact on the field.</p>
+              <p className="circle-context">We care for the collective nervous system by becoming more self-aware, more self-contained, and more adult in how we show up.</p>
+              <p className="circle-context">We are not separate from the field. We affect it, and we are responsible for that.</p>
+              <p className="circle-context">When enough people take that seriously, coherence becomes possible.</p>
             </div>
 
             <div className="circle-card">

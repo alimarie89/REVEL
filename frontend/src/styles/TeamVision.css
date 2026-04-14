@@ -291,6 +291,18 @@
   font-style: italic;
 }
 
+.circle-context {
+  font-size: 0.98rem;
+  line-height: 2.1;
+  color: var(--text-light);
+  font-weight: 300;
+  margin: 0 0 25px;
+}
+
+.circle-context:last-of-type {
+  margin-bottom: 0;
+}
+
 .circle-content p {
   margin: 0 0 25px;
   line-height: 2.1;
