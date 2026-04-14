@@ -3,8 +3,8 @@
 :root {
   --cream: #f4f1ed;
   --dark: #0f0a0a;
-  --text-light: #f5f1ed;
-  --text-muted: #b8b8b8;
+  --text-light: #e8e4e0;
+  --text-muted: #c5bfb9;
   --gold: #d4a574;
   --gold-light: #e8c9a8;
   --divider: rgba(212, 165, 116, 0.2);
@@ -140,13 +140,21 @@
   font-weight: 400;
   color: var(--text-muted);
   margin: 0 0 60px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .team-overview {
-  line-height: 1.8;
+  line-height: 2.1;
   font-size: 1.05rem;
   color: var(--text-light);
+}
+
+.team-overview p {
+  margin: 0 0 30px;
+}
+
+.team-overview p:last-child {
+  margin-bottom: 0;
 }
 
 .foundation-grid {
@@ -173,15 +181,15 @@
 
 .foundation-item p {
   margin: 0;
-  line-height: 1.7;
+  line-height: 2.0;
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 
 .circles-intro {
   margin-bottom: 80px;
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 2.0;
   color: var(--text-light);
 }
 
@@ -231,15 +239,17 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--gold-light);
-  margin: 0 0 20px;
-  line-height: 1.6;
+  margin: 0 0 25px;
+  line-height: 1.8;
   font-style: italic;
 }
 
 .circle-content p {
-  margin: 0 0 15px;
-  line-height: 1.8;
+  margin: 0 0 20px;
+  line-height: 2.0;
   color: var(--text-light);
+  font-size: 0.98rem;
+}
 }
 
 .color-check-intro {
@@ -271,10 +281,17 @@
   margin: 0 0 10px;
 }
 
+.color-state p {
+  margin: 0;
+  line-height: 1.95;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
 .roles-intro {
   margin-bottom: 60px;
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 2.0;
   color: var(--text-light);
 }
 
@@ -334,16 +351,17 @@
 }
 
 .role-description p {
-  margin: 0 0 15px;
-  line-height: 1.8;
-  font-size: 0.95rem;
+  margin: 0 0 18px;
+  line-height: 2.0;
+  font-size: 0.97rem;
+  color: var(--text-light);
 }
 
 .vision-closing {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-style: italic;
-  line-height: 1.8;
+  line-height: 2.0;
   color: var(--text-light);
 }
 
