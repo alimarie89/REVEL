@@ -137,45 +137,73 @@ function TeamVision() {
           <h2>The Color Check System</h2>
           <p className="subtitle">Shared language for the collective nervous system</p>
           
-          <p className="color-intro">The color check system provides shared language to describe a weather report of our nervous system state. This practice is built on two foundational values: <strong>care for the collective nervous system</strong> and <strong>the power of developing language together</strong>.</p>
-          
-          <p className="color-intro">When we can name what's happening in our bodies and hearts, we move from isolation into connection. When you share your color, you're inviting the collective to know you, to adjust, to care.</p>
+          <p className="color-intro">
+            The color check system provides shared language to describe a weather report of our nervous system state. When we can name what's happening in our bodies and hearts, we move from isolation into connection.
+          </p>
 
-          <div className="colors-grid">
-            <div className="color-item green">
-              <h4>Green</h4>
-              <p>Regulated and present.</p>
+          {/* SPECTRUM VISUALIZATION */}
+          <div className="color-spectrum">
+            <div className="spectrum-band"></div>
+            
+            {/* Primary Activation Spectrum */}
+            <div className="color-states-row">
+              <div className="color-point green">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Green</h4>
+                  <p>Regulated and present</p>
+                </div>
+              </div>
+
+              <div className="color-point chartreuse">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Chartreuse</h4>
+                  <p>Slightly activated but managing</p>
+                </div>
+              </div>
+
+              <div className="color-point yellow">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Yellow</h4>
+                  <p>Somewhat activated, may need support</p>
+                </div>
+              </div>
+
+              <div className="color-point orange">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Orange</h4>
+                  <p>Highly activated, immediate support required</p>
+                </div>
+              </div>
+
+              <div className="color-point red">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Red</h4>
+                  <p>Complete reactivity or collapse—danger zone we prevent</p>
+                </div>
+              </div>
             </div>
 
-            <div className="color-item chartreuse">
-              <h4>Chartreuse</h4>
-              <p>Not green, but not yellow either. Slightly activated but managing.</p>
-            </div>
-
-            <div className="color-item yellow">
-              <h4>Yellow</h4>
-              <p>Somewhat activated, may need support.</p>
-            </div>
-
-            <div className="color-item orange">
-              <h4>Orange</h4>
-              <p>Highly activated, immediate support required.</p>
-            </div>
-
-            <div className="color-item red">
-              <h4>Red</h4>
-              <p>Complete reactivity or collapse; this is a danger zone we aim to prevent through proactive use of the color system.</p>
-            </div>
-
-            <div className="color-item blue">
-              <h4>Blue</h4>
-              <p>Dissociated or numb, may need support.</p>
+            {/* Blue State (Separate) */}
+            <div className="color-states-separate">
+              <div className="color-point blue">
+                <div className="color-dot"></div>
+                <div className="color-label">
+                  <h4>Blue</h4>
+                  <p>Dissociated or numb, may need support</p>
+                </div>
+              </div>
             </div>
           </div>
 
+          {/* HOW WE USE IT */}
           <div className="color-practice">
             <h4>How We Use It</h4>
-            <p>We take care of ourselves by tracking our own color and take care of others by asking if we notice they might be activated. The facilitator's job is to not lose track of you. This helps create a safety net for you to explore difficult areas.</p>
+            <p>We track our own color and ask others if they might be activated. When you share your color, you're inviting the collective to know you, to adjust, and to care. The facilitator's job is to not lose track of you, creating a safety net to explore difficult areas.</p>
             <p className="color-example"><em>For example: "Yellow and the flavor is nervousness and excitement about what is going to happen during this session."</em></p>
           </div>
         </div>
