@@ -85,66 +85,139 @@ function TeamVision() {
         </div>
       </section>
 
-      {/* THE CONTAINER WE'RE CREATING */}
-      <section className="vision-section three-pillars-vision">
+      {/* OUR FOUNDATION */}
+      <section className="vision-section our-foundation">
         <div className="vision-container">
-          <h2>The Container We're Creating</h2>
-          <p className="subtitle">The three pillars of conscious evolution</p>
+          <h2>Our Foundation</h2>
+          <p className="subtitle">Universal commitments that enable all presence</p>
+
+          <div className="foundation-grid">
+            <div className="foundation-item">
+              <h3>Show Up Real</h3>
+              <p>Not performing, not half-present. Bringing your actual self—your concerns, your gifts, your presence.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Engage Instead of Staying at a Distance</h3>
+              <p>When things matter, show up. When someone needs support, step in. When the space needs you, be there.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Remain Present When Things Get Uncomfortable</h3>
+              <p>Discomfort is where growth happens. We stay in the conversation, stay in the feeling, instead of checking out when it gets hard.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Step Into Adult Consciousness</h3>
+              <p>We manage our own nervous systems. We take responsibility for our experience and our impact.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Follow Through</h3>
+              <p>When you commit to something on this team, people are relying on you. Communication, reliability, and integrity matter.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Contribute Your Unique Gifts</h3>
+              <p>Whether it's your skills, your presence, your leadership, your creativity—we value what only you can bring.</p>
+            </div>
+          </div>
+
+          <p className="foundation-closing">
+            These aren't just practices we embody — they're what we teach, model, and help others discover. If someone is uncomfortable or scared when stepping into these practices, we help them. We remember what it felt like when we first learned what this takes.
+          </p>
+        </div>
+      </section>
+
+      {/* CONCENTRIC CIRCLES OF PRESENCE */}
+      <section className="vision-section concentric-circles">
+        <div className="vision-container">
+          <h2>The Concentric Circles of Presence</h2>
+          <p className="subtitle">Building from the inside out—interoception to stewardship</p>
           
-          <div className="pillars-grid">
-            <div className="pillar-card">
+          <div className="circles-grid">
+            <div className="circle-card">
+              <div className="circle-number">1</div>
+              <h3>Individual Field</h3>
+              <p className="circle-subheader">(Interoception)</p>
+              <p className="circle-question">Can I be present with what's happening inside me?</p>
+              <p className="circle-context">This is where it starts. Before we can show up for others, we need to be available to ourselves—aware of what's happening inside us, what we're feeling, what we actually care about. Integrity begins here. This is the foundation for everything that follows.</p>
+            </div>
+
+            <div className="circle-card">
+              <div className="circle-number">2</div>
               <h3>Relational Field</h3>
-              <p className="pillar-question">What happens when two people show up in full presence?</p>
-              <p className="pillar-answer">Something new forms between them.</p>
-              <p className="pillar-context">We're architecting moments and spaces where real contact is possible. This starts with us — the team — showing up for each other.</p>
+              <p className="circle-subheader">(Attunement)</p>
+              <p className="circle-question">Can I create real contact with another person?</p>
+              <p className="circle-context">When two people show up in full presence, something new forms between them. We're architecting moments and spaces where real contact is possible. This is built on the ability to attune to another person's nervous system—to accurately sense what's happening over there in the other and between us. Real contact is the antidote to performance and disconnection.</p>
             </div>
 
-            <div className="pillar-card">
+            <div className="circle-card">
+              <div className="circle-number">3</div>
               <h3>Group Field</h3>
-              <p className="pillar-question">What happens when you aren't bracing or performing?</p>
-              <p className="pillar-answer">Liberation becomes possible.</p>
-              <p className="pillar-context">We're creating a group container strong enough to hold vulnerability. That requires all of us to be present, to care, and to follow through.</p>
+              <p className="circle-subheader">(Collective Attunement)</p>
+              <p className="circle-question">What happens when you aren't bracing or performing? Liberation becomes possible.</p>
+              <p className="circle-context">We manage our own nervous systems so we're not dumping our stuff on the group. We take responsibility for both our experience and our impact on the field. We care for the collective nervous system by being self-regulated, self-contained, and growing up in how we show up. This is adult consciousness—knowing we're not separate, we affect the whole, and we're responsible for that. When enough people show up this way, liberation becomes possible.</p>
             </div>
 
-            <div className="pillar-card">
+            <div className="circle-card">
+              <div className="circle-number">4</div>
               <h3>Cultural Field</h3>
-              <p className="pillar-question">What happens when you take what you have learned out into the world?</p>
-              <p className="pillar-answer">It changes the world around you.</p>
-              <p className="pillar-context">We're not just creating one event. We're modeling something for a larger cultural conversation about connection, consciousness, and what's possible together.</p>
+              <p className="circle-subheader">(Steward of Humanity)</p>
+              <p className="circle-question">What happens when you take what you have learned out into the world? It changes the world around you.</p>
+              <p className="circle-context">We're not just creating one event. We're modeling something for a larger cultural conversation about connection, consciousness, and what's possible together. As stewards of humanity, we carry what we've learned beyond REVEL, rippling consciousness into the world. We recognize that what we build together affects the larger cultural field.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PURPOSE OF FACILITATORS */}
-      <section className="vision-section facilitators-purpose">
+      {/* COLOR CHECK SYSTEM */}
+      <section className="vision-section color-check-system">
         <div className="vision-container">
-          <h2>What Happens When World-Class Facilitators Hold the Field Collectively</h2>
+          <h2>The Color Check System</h2>
+          <p className="subtitle">Shared language for the collective nervous system</p>
           
-          <div className="purpose-list">
-            <div className="purpose-item">
-              <h4>Conditions are created where people feel safe enough to drop their guard.</h4>
+          <p className="color-intro">The color check system provides shared language to describe a weather report of our nervous system state. This practice is built on two foundational values: <strong>care for the collective nervous system</strong> and <strong>the power of developing language together</strong>.</p>
+          
+          <p className="color-intro">When we can name what's happening in our bodies and hearts, we move from isolation into connection. When you share your color, you're inviting the collective to know you, to adjust, to care.</p>
+
+          <div className="colors-grid">
+            <div className="color-item green">
+              <h4>Green</h4>
+              <p>Regulated and present.</p>
             </div>
-            <div className="purpose-item">
-              <h4>Attention is guided toward what's actually happening in the moment.</h4>
+
+            <div className="color-item chartreuse">
+              <h4>Chartreuse</h4>
+              <p>Not green, but not yellow either. Slightly activated but managing.</p>
             </div>
-            <div className="purpose-item">
-              <h4>Patterns that disconnect people are interrupted.</h4>
+
+            <div className="color-item yellow">
+              <h4>Yellow</h4>
+              <p>Somewhat activated, may need support.</p>
             </div>
-            <div className="purpose-item">
-              <h4>Real contact is invited instead of performance.</h4>
+
+            <div className="color-item orange">
+              <h4>Orange</h4>
+              <p>Highly activated, immediate support required.</p>
             </div>
-            <div className="purpose-item">
-              <h4>People are helped to stay present under intensity instead of checking out.</h4>
+
+            <div className="color-item red">
+              <h4>Red</h4>
+              <p>Complete reactivity or collapse; this is a danger zone we aim to prevent through proactive use of the color system.</p>
             </div>
-            <div className="purpose-item">
-              <h4>The space is shaped so connection doesn't collapse or scatter.</h4>
+
+            <div className="color-item blue">
+              <h4>Blue</h4>
+              <p>Dissociated or numb, may need support.</p>
             </div>
           </div>
 
-          <p className="purpose-closing">
-            <em>And all of this depends on the people behind the scenes — the ones coordinating, the ones holding logistics, the ones showing up in their specific roles. Every person in this container is part of making that possible.</em>
-          </p>
+          <div className="color-practice">
+            <h4>How We Use It</h4>
+            <p>We take care of ourselves by tracking our own color and take care of others by asking if we notice they might be activated. The facilitator's job is to not lose track of you. This helps create a safety net for you to explore difficult areas.</p>
+            <p className="color-example"><em>For example: "Yellow and the flavor is nervousness and excitement about what is going to happen during this session."</em></p>
+          </div>
         </div>
       </section>
 
@@ -181,79 +254,6 @@ function TeamVision() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* HOW WE SHOW UP */}
-      <section className="vision-section how-we-show-up">
-        <div className="vision-container">
-          <h2>How We Show Up Together</h2>
-          <p className="subtitle">What we model and help each other step into</p>
-
-          <div className="show-up-grid">
-            <div className="show-up-item">
-              <h3>To be real in the moment.</h3>
-              <p>Not performing. Not polished. Actually present with what's true, what's alive, what's happening right now.</p>
-            </div>
-
-            <div className="show-up-item">
-              <h3>To engage instead of staying at a distance.</h3>
-              <p>When things matter, show up. When someone needs support, step in. When the space needs you, be there — not watching from the sidelines.</p>
-            </div>
-
-            <div className="show-up-item">
-              <h3>To remain present when things get uncomfortable.</h3>
-              <p>Discomfort is where growth happens. We stay in the conversation, stay in the feeling, stay in the space instead of checking out or leaving when it gets hard.</p>
-            </div>
-
-            <div className="show-up-item">
-              <h3>To step into self-regulation, self-containment, and adult consciousness.</h3>
-              <p>We manage our own nervous systems. We don't dump our stuff on others. We take responsibility for our experience and our impact. We grow up in how we show up.</p>
-            </div>
-          </div>
-
-          <p className="show-up-closing">
-            These aren't just practices we embody — they're what we teach, model, and help others discover. If someone is uncomfortable or scared when stepping into these practices, we help them. We remember what it felt like when we first learned what this takes.
-          </p>
-        </div>
-      </section>
-
-      {/* OUR COMMITMENT */}
-      <section className="vision-section our-commitment">
-        <div className="vision-container">
-          <h2>Our Commitment</h2>
-          
-          <div className="commitment-grid">
-            <div className="commitment-item">
-              <h3>Show Up Real</h3>
-              <p>Not performing, not half-present. Bringing your actual self — your concerns, your gifts, your presence.</p>
-            </div>
-
-            <div className="commitment-item">
-              <h3>Follow Through</h3>
-              <p>When you commit to something on this team, people are relying on you. Communication, reliability, and integrity matter.</p>
-            </div>
-
-            <div className="commitment-item">
-              <h3>Care About What's Being Built</h3>
-              <p>This isn't transactional. We're looking for people who genuinely care about creating something rare and real.</p>
-            </div>
-
-            <div className="commitment-item">
-              <h3>Stay Engaged Through Complexity</h3>
-              <p>Building something meaningful gets messy. We need people who can stay present and adaptive when things stretch.</p>
-            </div>
-
-            <div className="commitment-item">
-              <h3>Contribute Your Unique Gifts</h3>
-              <p>Whether it's your skills, your presence, your leadership, your creativity — we value what only you can bring.</p>
-            </div>
-
-            <div className="commitment-item">
-              <h3>Trust the Container We're Building</h3>
-              <p>There's something happening here that's bigger than any one person. Trust the vision, the team, and the process.</p>
-            </div>
           </div>
         </div>
       </section>
