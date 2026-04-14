@@ -2,7 +2,7 @@
 
 :root {
   --cream: #f4f1ed;
-  --dark: #0d0d0d;
+  --dark: #0f0a0a;
   --text-light: #f5f1ed;
   --text-muted: #b8b8b8;
   --gold: #d4a574;
@@ -17,22 +17,47 @@
 
 .team-vision-page {
   background: var(--dark);
+  background-image: 
+    radial-gradient(ellipse at center, rgba(139, 40, 40, 0.4) 0%, rgba(15, 10, 10, 0.8) 70%),
+    url('../../../design/images/hero/REVEL%20Backdrop%20Horizontal.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.9) contrast(1.1);
   color: var(--text-light);
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.team-vision-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .vision-hero {
   height: 70vh;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--divider);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content {
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .vision-hero h1 {
@@ -69,11 +94,15 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .vision-section {
   padding: 110px 0;
   border-bottom: 1px solid var(--divider);
+  position: relative;
+  z-index: 2;
 }
 
 .vision-section:last-child {
@@ -302,7 +331,17 @@
   color: var(--text-light);
 }
 
+/* Mobile backdrop image */
 @media (max-width: 768px) {
+  .team-vision-page {
+    background-image: 
+      radial-gradient(ellipse at center, rgba(139, 40, 40, 0.4) 0%, rgba(15, 10, 10, 0.8) 70%),
+      url('../../../design/images/hero/REVEL%20Backdrop%20Vertical.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
   .vision-hero h1 {
     font-size: 3rem;
     letter-spacing: 2px;
