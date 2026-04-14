@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap');
 
-/* ========== TEAM VISION PAGE - ELEGANT GOLD/CINZEL REDESIGN ========== */
-
 :root {
   --cream: #f4f1ed;
   --dark: #0d0d0d;
@@ -21,335 +19,347 @@
   background: var(--dark);
   color: var(--text-light);
   min-height: 100vh;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* ========== VISION HERO ========== */
 .vision-hero {
   height: 70vh;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bot@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&fami.h
-/* ========== TEAM VISION PAGE - ELEGANT GOLD/CINZEL REDESIGN ========== */
+  border-bottom: 1px solid var(--divider);
+}
 
-:root {
-  --cream: #f4f1ed;
-  --dark: #0d0d0d;
-  --text-lightgin
-:root {
-  --cream: #f4f1ed;
-  --dark: #0d0d0d;
-  --text-light: #f5f1ed;
- 
-  color: v  --dark: #0d0d0d;-s  --text-light: #gb  --text-muted: #b8b8b80   --gold: #d4a574;
-  --16  --gold-light: #n-  --divider: rgba(212, .1}
+.hero-content {
+  text-align: center;
+}
 
-* {
-  -webkit-font-smoothing: anti(--te  -m  -mo;
+.vision-hero h1 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin: 0 0 25px;
+  font-family: 'Laluxess Serif', serif;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(212, 165, 116, 0.4), 0 0 40px rgba(212, 165, 116, 0.2);
+}
+
+.vision-hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-muted);
   margin: 0;
-  font-family: 'Mon}
+  letter-spacing: 1px;
+}
 
-.team-vision-page {
-  background:ng: 1  background: var(==  color: var(--text-light==  min-height: 100vh;
-  fon m  font-family: 'Monma}
+.vision-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
 
-/* ========== VISION HERO ========== */
-.vision-hero {
-  height: 70vh;
-  backgroundtom: .vision-hero {
-  height: 70vh;
-  backgec  height: 70vld  backgrour-bott  position: relative;
+.vision-section {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.vision-section:last-child {
+  border-bottom: none;
+}
+
+.vision-section h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin: 0 0 60px;
+  font-family: 'Laluxess Serif', serif;
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(232, 201, 168, 0.3);
+}
+
+.vision-section .subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin: 0 0 60px;
+  line-height: 1.6;
+}
+
+.team-overview {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: var(--text-light);
+}
+
+.foundation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px 100px;
+  margin-top: 40px;
+}
+
+.foundation-item {
+  border-top: 2px solid var(--gold);
+  padding-top: 30px;
+}
+
+.foundation-item h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 0 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.foundation-item p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.circles-intro {
+  margin-bottom: 80px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.circles-container {
+  display: grid;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.circle-wrapper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.circle-number {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-shadow: 0 0 25px rgba(212, 165, 116, 0.4);
+  line-height: 1;
+  text-align: center;
+}
+
+.circle-content h3 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 0 0 15px;
+  letter-spacing: 1px;
+}
+
+.circle-capacity {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.circle-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin: 0 0 20px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.circle-content p {
+  margin: 0 0 15px;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.color-check-intro {
+  margin-bottom: 60px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.color-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.color-state {
+  border-left: 4px solid var(--gold);
+  padding-left: 30px;
+}
+
+.color-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.roles-intro {
+  margin-bottom: 60px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.roles-container {
+  display: grid;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.role-item {
+  border-top: 2px solid var(--divider);
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.role-item:first-child {
+  border-top: 2px solid var(--gold);
+}
+
+.role-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: cent0   display: flex;
-  ay:  align-items: f'  justify-content: ce(-  border-bot@import url('ac/* ========== TEAM VISION PAGE - ELEGANT GOLD/CINZEL REDESIGN ========== */
-
-:root {
-  --cream: #f4f1edti
-:root {
-  --cream: #f4f1ed;
-  --dark: #0d0d0d;
-  --text-lightgin
-:root {
-;
-   --cin:  --dark: #0d0ine-height: 1.6;
 }
 
-/* ==:root {
-  --creaER  --crEC  --dark: #0d0d0d;
-.  --toverview {
-  l 
-  color: v  --dark: #-siz  --16  --gold-light: #n-  --divider: rgba(212, .1}
-
-* {
-  -webkit-font-smootar(--gold);
+.role-item h3 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 0;
+  letter-spacing: 1px;
 }
 
-/* ========== FOUNDATION SECTION ========== */
-.founda  on  margin: 0;
-  font-family: 'Mon}
-
-.team-visum  font-fami;
-
-.team-vision-page   m  background:ng: 1
-
-  fon m  font-family: 'Monma}
-
-/* ========== VISION HERO ========== */
-.vision-hero nd
-/* ========== VISION HERO =y: .vision-hero {
-  height: 70vh;
-  backg    height: 70v70  backgroundtor(  height: 70vh;
-  backgec  hei l  backgec  hei 2  display: flex;
-  align-items: center;
-  justify-content: car  align-items: he  justify-content: cear  ay:  align-items: f'  justify-content:
-/
-:root {
-  --cream: #f4f1edti
-:root {
-  --cream: #f4f1ed;
-  --dark: #0d0d0d;
-  --text-lightgin
-:root {
-;
-   --cin:  --dark: #0d0ine-height: 1.6t-ligh  --}
-
-.:root {
-  --cream: 
-   --cray  --dark  gap: 80px;  --text-lightginpx;
+.toggle-icon {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: var(--gold);
+  transition: transform 0.3s ease;
 }
 
-.circle-wrapp;
-   - dis}
-
-/* ==:root {
-  --creaER  --crEC  --50px   --creaER  5.  --toverview {
-  l 
-  color: v  -.c  l 
-  color: v    ct-
-* {
-  -webkit-font-smootar(--gold);
+.role-item.expanded .toggle-icon {
+  transform: rotate(180deg);
 }
 
-/* ========== FOUNDATION SECTION ==var  -g}
-
-/* ========== FOUNDATION SErgba(.founda  on  margin: 0;
-  font-family: 'Mon}
--a  font-family: 'Mon}
-
-le
-.team-visum  font-t-f
-.team-vision-page   m', 
-  fon m  font-family: 'Monma}
-
-/* ===ght
-/* ========== VISION HERO =igh.vision-hero nd
-/* ========== VISION ing/* ========== cl  height: 70vh;
-  backg    height: 70v70  b '  backg    hei;
-  backgec  hei l  backgec  hei 2  display: flex;
-  aligh  align-items: centacing: 2px;
-  text-transform:   justify-content: ca0 /
-:root {
-  --cream: #f4f1edti
-:root {
-  --cream: #f4f1ed;
-  --dark: #0d0d0d;
-  --text-lightgin
-:root-gol  --crt):root {
-  --cream: x;  --cre-  --dark: #0d0d0d;t-  --text-lightgin
-.:root {
-;
-   --c {;
-   -gin:
-.:root {
-  --cream: 
-   --cray  --dark  gap: 80xt-  --cre
-}   --cray co}
-
-.circle-wrapp;
-   - dis}
-
-/* ==:root {
-  --cr=====   - dis}
-
-/*EC
-/* ==:r ==  --creaER 
-.  l 
-  color: v  -.c  l 
-  color: v    ct-
-* {
-  -webki 1  cre  color: v    ct-
-1.* {
-  -webkit-fo--  xt}
-
-/* ========== FOUNDATION SE{
-  d
-/* ========== FOUNDATION SErgba(umns: repeat  font-family: 'Mon}
--a  font-family: 'Mon}
-
-le
-.team-ta-a  font-family: 'M 4
-le
-.team-visum  font
-  .ad.team-vision-pag
+.role-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: var(--text-light);
+  margin-top: 0;
 }
 
-.c  fon m  font-family: '{
-
-/* ===ght
-/* ========== VISif;/* =====si/* ========== VISION ing/* 700;
-  color: var(-  backg    height: 70v70  b '  backg    hei;
-  backgec 2  backgec  hei l  backgec  hei 2  display: 
-   aligh  align-items: centacing: 2px;
-  text-trte  text-transform:   justify-content:/*:root {
-  --cream: #f4f1edti
-:root {
-  --ro  --crtro {
-  margin-bottom:   --;
-    --dark: #0d0d0d;;
-  --text-lightgin8;:root-go: var(--te  --cream: x;  --cre-cont.:root {
-;
-   --c {;
-   -gin:
-.:root {
-  --cream: 
-   --c
+.role-item.expanded .role-description {
+  max-height: 500px;
+  margin-top: 20px;
 }
 
-.role-ite   -gin:rd.:roop: 2  --crid    --cray de}   --cray co}
-
-.circle-wrapp;
-   -po
-.circle-wraple-   - dis}
-
-/*il
-/* ==:rrder-top: 2px so
-/*EC
-/* ==:r ==  -
-.r/* -i.  l 
-  color: v  -.en  co? color: v    ct-
---* {
-  -webki 1  ze  1.1.* {
-  -webkit-fo--  xt}
-
-/* =.r  -whe
-/* ========== FOUfle  d
-/* ========== FOUNDATIO-betwe-a  font-family: 'Mon}
-
-le
-.team-ta-a  font-family: 'M 4
-le
-.teal
-le
-.team-ta-a  font-  f.nt-size: 1.4rem;
-  font-weight: 400  .ad.team-visio-g}
-
-.c  fon m  font-f: 0;
-
-/* ===ght
-/* ========== 
-.r/* ===== .  color: var(-  backg    height: 70v70  b '  backg    hei;
- .3  backgec 2  backgec  hei l  backgec  hei 2  display: 
-  as   aligh  align-items: centacing: 2px;
-  text-trte  t r  text-trte  text-transform:   justif
-   --cream: #f4f1edti
-:root {
-  --ro  --crtro {
-  marginei:root {
-  --ro  --clor: var(-  margin-bottom:
-.    --dark: panded .rol  --text-lightgin8;:x-;
-   --c {;
-   -gin:
-.:root {
-  --cream: 
-   --c
+.role-description p {
+  margin: 0 0 15px;
+  line-height: 1.8;
+  font-size: 0.95rem;
 }
 
-.role-ite   -gin: 0 0 15px;
-  l.:root gh  --cre
-    --c
+.vision-closing {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--text-light);
 }
 
-: 0.95rem;
-}
-.circle-wrapp;
-   -po
-.circle-wraple-   -n-bottom: 0;
-}
+@media (max-width: 768px) {
+  .vision-hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
 
-/* ====   -po
-.circlG .circON
-/*il
-/* ==:rrder-top: clo/* g /*EC
-/* ==:r ==  -
-.r/;
-/* on.r/* -i.  l em  color: v yl--* {
-  -webki 1  ze  1.1.* {
-  -webki: var(--  -webkit-fo--  xt}
+  .vision-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
 
-/n-
-/* =.r  -wheg {
-  co/* ========go/* ========== FOUNDATIRE
-le
-.team-ta-a  font-family: 'M 4
-le
-.teal768px) {
-  .vile
-.teal
-le
-.team-ta-a  font: .rele
-.  .le  font-weight: 400  .ad.team-visio-gct
-.c  fon m  font-f: 0;
+  .vision-container {
+    padding: 0 30px;
+  }
 
-/* ===ght
-/*mar
-/* ===ght
-/* ======}
+  .foundation-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 
-/* =====n-.r/* ===== .    .3  backgec 2  backgec  hei l  backgec  hei 2  display: 
-  as   alig:   as   aligh  align-items: centacing: 2px;
-  text-trte  mp  text-trte  t r  text-trte  text-transfo }   --cream: #f4f1edti
-:root {
-  --ro  --crtro {
-  maci:root {
-  --ro  --cr    --roiz  marginei:root     --ro  --clor: d .    --dark: panded .rol  --text-lig}
-   --c {;
-   -gin:
-.:root {
-  --cream: 
-   --c}
-   -gin:(max-width:  --cre {   --c
+  .circle-wrapper {
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+  }
+
+  .circle-number {
+    font-size: 2.5rem;
+  }
+
+  .circle-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .color-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-section {
+    padding: 70px 0;
+  }
 }
 
--hero {
-      l.:root gh  --cre
-    --on    --c
-}
+@media (max-width: 480px) {
+  .vision-hero {
+    height: 50vh;
+  }
 
-: 0.95rt-}
+  .vision-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
 
-: 02rem;}
-.circlein-b   -po
-.circl  }
+  .vision-hero p {
+    font-size: 0.9rem;
+  }
 
-  .v}
+  .circle-wrapper {
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+  }
 
-/* ====   -po
-.circlG .circ0.9re.circlG .cirir/*il
-/* ==:rrd    gri/* ==:r ==  -
-.r/;
-/* on.r/*;
-.r/;
-/* on.rx;/* }
-  -webki 1  ze  1.1.* {
-  -webki: vare  -webki: var(--  -weben
-/n-
-/* =.r  -wheg {
-  co/* ======
-  .rol  co/* =======  le
-.team-ta-a rem;
+  .circle-number {
+    font-size: 2rem;
+  }
+
+  .circle-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .role-item h3 {
+    font-size: 1.1rem;
   }
 }
