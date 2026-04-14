@@ -19,7 +19,7 @@
   background: var(--dark);
   background-image: 
     radial-gradient(ellipse at center, rgba(139, 40, 40, 0.4) 0%, rgba(15, 10, 10, 0.8) 70%),
-    url('../../../design/images/hero/REVEL%20Backdrop%20Horizontal.jpg');
+    url('/REVEL%20Backdrop%20Horizontal.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -336,7 +336,7 @@
   .team-vision-page {
     background-image: 
       radial-gradient(ellipse at center, rgba(139, 40, 40, 0.4) 0%, rgba(15, 10, 10, 0.8) 70%),
-      url('../../../design/images/hero/REVEL%20Backdrop%20Vertical.jpg');
+      url('/REVEL%20Backdrop%20Vertical.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
