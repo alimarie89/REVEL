@@ -157,6 +157,39 @@
   margin-bottom: 0;
 }
 
+.holding-principles-intro {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 40px 0 25px;
+  letter-spacing: 0.5px;
+}
+
+.holding-principles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.holding-principles li {
+  margin: 0 0 20px;
+  padding-left: 30px;
+  line-height: 2.0;
+  color: var(--text-light);
+  font-size: 0.98rem;
+  position: relative;
+}
+
+.holding-principles li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.6rem;
+  top: 0.5em;
+}
+
 .foundation-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,60 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/TeamVision.css'
 
 function TeamVision() {
-  const [expandedRole, setExpandedRole] = useState(null)
-
-  const toggleRole = (id) => {
-    setExpandedRole(expandedRole === id ? null : id)
-  }
-
-  const roles = [
-    {
-      id: 'core',
-      title: 'Core Production Team',
-      description: 'Hold the vision and container',
-      responsibilities: [
-        'Strategic decision-making and direction',
-        'Holding the overall container and integrity of the space',
-        'Mentoring and supporting other team members',
-        'Ensuring follow-through and communication'
-      ]
-    },
-    {
-      id: 'talent',
-      title: 'Talent & Facilitators',
-      description: 'Shape the experience moment to moment',
-      responsibilities: [
-        'Leading workshops, circles, and practices',
-        'Bringing your specific skills and presence',
-        'Holding presence with participants',
-        'Contributing to the texture and tone of the gathering'
-      ]
-    },
-    {
-      id: 'staff',
-      title: 'Staff & Support',
-      description: 'Make the logistics of magic possible',
-      responsibilities: [
-        'Operations, logistics, and coordination',
-        'Creating the physical and logistical container',
-        'Supporting participants and team members',
-        'Problem-solving and adapting in real time'
-      ]
-    },
-    {
-      id: 'partners',
-      title: 'Partners & Collaborators',
-      description: 'Extend the reach and impact',
-      responsibilities: [
-        'Bringing specialized expertise and resources',
-        'Helping shape specific aspects of the experience',
-        'Contributing your unique gifts and perspective',
-        'Being part of the larger ecosystem'
-      ]
-    }
-  ]
-
   return (
     <div className="team-vision-page">
       {/* HERO */}
@@ -69,18 +16,31 @@ function TeamVision() {
       {/* TEAM OVERVIEW */}
       <section className="vision-section team-overview">
         <div className="vision-container">
-          <h2>If you're reading this, it means you've been asked to be an architect — of the container, the field, the experience that's about to unfold.</h2>
+          <h2>If you're reading this, it means you've been asked to be an architect of the container, the field, and the experience we're about to create together.</h2>
           
           <div className="overview-content">
             <p>
-              Because of your unique skills and the extensive growth work you've done, you're being asked to actively shape the tone, the texture, the way people land and the way they leave.
+              Because of your skill, your presence, and the work you've done on yourself, you're being asked to shape how this space actually feels — from the moment people arrive to the moment they leave.
             </p>
             <p>
-              This isn't organized top-down by a few people making profit. Everyone on this team has skin in the game — contributing your time, presence, and resources — because we're building something together that we all care about. We're showing up in a spirit that's closer to friends and family, which means no one is compensated at a professional level. That might mean contributing your work at a lower rate than usual, wearing multiple hats, or giving in ways that go beyond a clearly defined role.
+              Everyone on this team has skin in the game, contributing time, care, and presence to something we're building together.
             </p>
             <p>
-              The investment we're asking you to make is to support building lasting community that you want to be part of. When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and lean in when shit gets real.
+              That may mean working at a lower rate than usual, wearing multiple hats, or giving in ways that exceed a tightly defined role. What we're investing in is not just an event, but a kind of community and culture we want to help make real.
             </p>
+            <p>
+              When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and stay engaged when things get complex.
+            </p>
+
+            <h3 className="holding-principles-intro">We get to:</h3>
+            <ul className="holding-principles">
+              <li>Create conditions where people feel safe enough to drop their guard</li>
+              <li>Direct attention toward what's actually happening in the moment</li>
+              <li>Interrupt patterns that lead to disconnection or performance</li>
+              <li>Redirect participants from performance into real contact</li>
+              <li>Support people in staying present when intensity rises</li>
+              <li>Stabilize the field so connection doesn't collapse or scatter</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -88,43 +48,43 @@ function TeamVision() {
       {/* OUR FOUNDATION */}
       <section className="vision-section our-foundation">
         <div className="vision-container">
-          <h2>Our Foundation</h2>
-          <p className="subtitle">Universal commitments that enable all presence</p>
+          <h2>How We Show Up</h2>
+          <p className="subtitle">Our Commitments</p>
 
           <div className="foundation-grid">
             <div className="foundation-item">
               <h3>Show Up Real</h3>
-              <p>Not performing, not half-present. Bringing your actual self—your concerns, your gifts, your presence.</p>
+              <p>Not performing. Not half-present. Bring your actual self, your concerns, your gifts, your attention.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Engage Instead of Staying at a Distance</h3>
-              <p>When things matter, show up. When someone needs support, step in. When the space needs you, be there.</p>
+              <p>When something matters, engage. When support is needed, respond. When the space calls for you, step in.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Remain Present When Things Get Uncomfortable</h3>
-              <p>Discomfort is where growth happens. We stay in the conversation, stay in the feeling, instead of checking out when it gets hard.</p>
+              <p>Discomfort is not failure. Stay in the conversation. Stay in the feeling. Resist the impulse to check out the moment things get hard.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Step Into Adult Consciousness</h3>
-              <p>We manage our own nervous systems. We take responsibility for our experience and our impact.</p>
+              <p>Take responsibility for your inner state, your choices, and your impact. Regulate what you can. Own what is yours.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Follow Through</h3>
-              <p>When you commit to something on this team, people are relying on you. Communication, reliability, and integrity matter.</p>
+              <p>Reliability matters here. Clear communication, integrity, and follow-through are part of how the whole thing holds.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Contribute Your Unique Gifts</h3>
-              <p>Whether it's your skills, your presence, your leadership, your creativity—we value what only you can bring.</p>
+              <p>Your skills matter, but so do your presence, creativity, discernment, and leadership. Bring what is actually yours to bring.</p>
             </div>
           </div>
 
           <p className="foundation-closing">
-            These aren't just practices we embody — they're what we teach, model, and help others discover. If someone is uncomfortable or scared when stepping into these practices, we help them. We remember what it felt like when we first learned what this takes.
+            These are not just values we hope people feel. They are practices we model, teach, and help others grow into. And when someone feels scared, awkward, or uncertain inside them, we meet that with clarity and care.
           </p>
         </div>
       </section>
@@ -221,48 +181,11 @@ function TeamVision() {
         </div>
       </section>
 
-      {/* EVERY ROLE MATTERS */}
-      <section className="vision-section every-role-matters">
-        <div className="vision-container">
-          <h2>Every Role Is Architecture</h2>
-          <p className="subtitle">What each tier contributes to the whole</p>
-
-          <div className="roles-list">
-            {roles.map((role) => (
-              <div key={role.id} className="role-item">
-                <button 
-                  className="role-header"
-                  onClick={() => toggleRole(role.id)}
-                >
-                  <div className="role-title-section">
-                    <h3>{role.title}</h3>
-                    <p className="role-description">{role.description}</p>
-                  </div>
-                  <span className="role-toggle">
-                    {expandedRole === role.id ? '−' : '+'}
-                  </span>
-                </button>
-
-                {expandedRole === role.id && (
-                  <div className="role-content">
-                    <ul>
-                      {role.responsibilities.map((resp, idx) => (
-                        <li key={idx}>{resp}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CLOSING */}
       <section className="vision-section vision-closing">
         <div className="vision-container">
           <p className="closing-text">
-            We're grateful you're here. Not just to participate, but to actively shape what REVEL becomes. The container we're building is stronger, more textured, and more alive because you're part of it.
+            What we're building only works because of how it's held, and because of the people willing to help hold it. We're grateful you're here — not just to participate, but to help shape what REVEL becomes.
           </p>
         </div>
       </section>
