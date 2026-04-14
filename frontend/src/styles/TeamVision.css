@@ -409,6 +409,112 @@
   color: var(--text-light);
 }
 
+.container-pressure h2 {
+  margin-bottom: 80px;
+}
+
+.pressure-intro {
+  margin-bottom: 100px;
+  border-left: 3px solid var(--gold);
+  padding-left: 40px;
+}
+
+.pressure-intro p {
+  font-size: 1.05rem;
+  line-height: 2.0;
+  color: var(--text-light);
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+
+.pressure-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.support-section {
+  margin-bottom: 100px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.support-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.support-section h3 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 0 0 40px;
+  letter-spacing: 1px;
+}
+
+.support-section h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 35px 0 20px;
+}
+
+.support-section h4:first-of-type {
+  margin-top: 0;
+}
+
+.support-section p {
+  font-size: 1rem;
+  line-height: 2.0;
+  color: var(--text-light);
+  font-weight: 300;
+  margin: 0 0 25px;
+}
+
+.support-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.support-note {
+  font-style: italic;
+  color: var(--gold-light);
+  padding: 20px 30px;
+  border-left: 3px solid var(--gold);
+  margin: 40px 0;
+  font-size: 0.98rem !important;
+}
+
+.support-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.support-section li {
+  padding-left: 30px;
+  margin: 0 0 18px;
+  line-height: 2.0;
+  color: var(--text-light);
+  font-size: 0.98rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.support-section li:last-child {
+  margin-bottom: 0;
+}
+
+.support-section li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 600;
+}
+
 .vision-closing {
   text-align: center;
   font-size: 1.08rem;
@@ -477,6 +583,29 @@
 
   .vision-section {
     padding: 100px 0;
+  }
+
+  .container-pressure h2 {
+    margin-bottom: 60px;
+  }
+
+  .pressure-intro {
+    margin-bottom: 80px;
+    padding-left: 30px;
+  }
+
+  .support-section {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+  }
+
+  .support-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  .support-section h4 {
+    margin: 30px 0 18px;
   }
 }
 
@@ -579,5 +708,53 @@
 
   .role-item h3 {
     font-size: 1.1rem;
+  }
+
+  .container-pressure h2 {
+    margin-bottom: 40px;
+  }
+
+  .pressure-intro {
+    margin-bottom: 60px;
+    padding-left: 25px;
+  }
+
+  .pressure-intro p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+  }
+
+  .support-section {
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+  }
+
+  .support-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .support-section h4 {
+    font-size: 0.85rem;
+    margin: 25px 0 15px;
+  }
+
+  .support-section p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin: 0 0 20px;
+  }
+
+  .support-note {
+    padding: 18px 25px;
+    margin: 30px 0;
+    font-size: 0.9rem !important;
+  }
+
+  .support-section li {
+    padding-left: 25px;
+    margin: 0 0 15px;
+    font-size: 0.92rem;
+    line-height: 1.9;
   }
 }

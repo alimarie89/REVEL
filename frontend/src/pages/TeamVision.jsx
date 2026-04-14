@@ -181,6 +181,118 @@ function TeamVision() {
         </div>
       </section>
 
+      {/* HOW THE CONTAINER HOLDS UNDER PRESSURE */}
+      <section className="vision-section container-pressure">
+        <div className="vision-container">
+          <h2>How the Container Holds Under Pressure</h2>
+
+          <div className="pressure-intro">
+            <p>When intensity rises, the container is revealed in how we respond.</p>
+
+            <p>The field is not held by a single person or role.<br/>
+            It is held across layers.</p>
+
+            <p>Some offer grounded presence.<br/>
+            Some support emotional regulation.<br/>
+            Some step in when situations require deeper skill and authority.</p>
+
+            <p>What matters is not the title,<br/>
+            but the ability to recognize what is needed —<br/>
+            and respond accordingly.</p>
+          </div>
+
+          {/* EMOTIONAL SUPPORT ANGELS */}
+          <div className="support-section">
+            <h3>Emotional Support Angels</h3>
+
+            <p>
+              Emotional Support Angels are available points of contact for participants who need support returning to themselves.
+            </p>
+
+            <p>
+              When available, they wear a designated wristband.<br/>
+              When at capacity, they remove it.
+            </p>
+
+            <h4>Role</h4>
+            <p>
+              Offer grounded, regulated presence that others can orient to when they feel activated, overwhelmed, or disconnected.
+            </p>
+
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>Offer grounded support for nervous system regulation</li>
+              <li>Notice when someone may be in a yellow or blue state and check in</li>
+              <li>Use the Color Check system to orient to participant state</li>
+              <li>Support participants in returning toward green through presence and simple grounding</li>
+              <li>Maintain awareness of the surrounding field</li>
+            </ul>
+
+            <p className="support-note">
+              When activation is high, prioritize regulation over conversation.
+            </p>
+
+            <h4>Escalation</h4>
+            <ul>
+              <li>A participant is in orange or red</li>
+              <li>There is significant activation or charge</li>
+              <li>A participant reports a boundary crossing or violation</li>
+              <li>A situation moves beyond your capacity</li>
+            </ul>
+
+            <h4>Limitations</h4>
+            <p>
+              This role does not include resolving complex situations or processing trauma.
+            </p>
+          </div>
+
+          {/* INTEGRATION TEAM */}
+          <div className="support-section">
+            <h3>Integration Team</h3>
+
+            <p>
+              The Integration Team holds the deeper layer of support within the container.
+            </p>
+
+            <p>
+              They work with participants experiencing significant activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels.
+            </p>
+
+            <p>
+              This team consists of experienced facilitators trained to work with complex emotional and relational processes.
+            </p>
+
+            <p>
+              One member of the team is a licensed mental health professional specializing in crisis intervention and clinical assessment.
+            </p>
+
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>Track the overall emotional field</li>
+              <li>Receive escalations and assess what is happening</li>
+              <li>Work directly with participants in orange or red states</li>
+              <li>Support regulation using somatic and relational approaches</li>
+              <li>Address boundary violations, relational ruptures, and consent issues</li>
+              <li>Support participants processing significant activation</li>
+              <li>Coordinate with Emotional Support Angels and provide guidance</li>
+              <li>Maintain availability and responsiveness during event hours</li>
+              <li>Document significant incidents and ongoing support needs</li>
+              <li>Debrief daily to maintain container coherence</li>
+            </ul>
+
+            <h4>Licensed Mental Health Professional</h4>
+            <ul>
+              <li>Provide crisis intervention for highest-need participants</li>
+              <li>Support individuals experiencing severe dysregulation or acute distress</li>
+              <li>Assist with risk assessment and complex situations</li>
+              <li>Coordinate referrals to external care if needed</li>
+              <li>Support the Integration Team with clinical perspective</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
       {/* CLOSING */}
       <section className="vision-section vision-closing">
         <div className="vision-container">
