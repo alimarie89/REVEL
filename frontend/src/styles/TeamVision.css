@@ -301,45 +301,124 @@
   font-weight: 300;
 }
 
-.circles-container {
+/* CONCENTRIC CIRCLES VISUALIZATION */
+.circles-visualization {
   display: grid;
-  gap: 100px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
   margin-top: 80px;
+  position: relative;
 }
 
-.circle-wrapper {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 60px;
-  align-items: flex-start;
+/* RINGS CONTAINER */
+.circles-rings {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.circle-number {
+.circle-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.35, 0, 0.25, 1);
+  opacity: 0.6;
+}
+
+.circle-ring.ring-1 {
+  width: 20%;
+  aspect-ratio: 1;
+  border: 2px solid rgba(212, 165, 116, 0.4);
+  box-shadow: 0 0 20px rgba(212, 165, 116, 0.2);
+}
+
+.circle-ring.ring-2 {
+  width: 45%;
+  aspect-ratio: 1;
+  border: 2px solid rgba(212, 165, 116, 0.35);
+  box-shadow: 0 0 25px rgba(212, 165, 116, 0.15);
+}
+
+.circle-ring.ring-3 {
+  width: 70%;
+  aspect-ratio: 1;
+  border: 2px solid rgba(212, 165, 116, 0.3);
+  box-shadow: 0 0 30px rgba(212, 165, 116, 0.1);
+}
+
+.circle-ring.ring-4 {
+  width: 95%;
+  aspect-ratio: 1;
+  border: 2px solid rgba(212, 165, 116, 0.25);
+  box-shadow: 0 0 35px rgba(212, 165, 116, 0.08);
+}
+
+.circle-ring:hover {
+  opacity: 1;
+  border-color: rgba(212, 165, 116, 0.7);
+  box-shadow: 0 0 40px rgba(212, 165, 116, 0.4);
+}
+
+/* Ring markers (1, 2, 3, 4) */
+.ring-marker {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Cinzel', serif;
-  font-size: 5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--gold);
-  text-shadow: 0 0 25px rgba(212, 165, 116, 0.4);
-  line-height: 1;
-  text-align: center;
+  text-shadow: 0 0 15px rgba(212, 165, 116, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.circle-content h3 {
+.circle-ring:hover .ring-marker {
+  opacity: 1;
+}
+
+/* CONTENT AREA */
+.circles-content {
+  position: relative;
+  min-height: 300px;
+}
+
+.content-item {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.35, 0, 0.25, 1), transform 0.4s cubic-bezier(0.35, 0, 0.25, 1);
+  transform: translateY(10px);
+}
+
+.content-item:first-child {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.content-item h3 {
   font-family: 'Laluxess Serif', serif;
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--gold-light);
-  margin: 0 0 15px;
+  margin: 0 0 8px;
   letter-spacing: 1px;
 }
 
-.circle-capacity {
+.circle-subheader {
   font-family: 'Cinzel', serif;
   font-size: 0.85rem;
   color: var(--gold);
   font-weight: 600;
   letter-spacing: 2px;
-  text-transform: uppercase;
   margin: 0 0 20px;
 }
 
@@ -347,7 +426,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--gold-light);
-  margin: 0 0 30px;
+  margin: 0 0 25px;
   line-height: 1.9;
   font-style: italic;
 }
@@ -357,19 +436,41 @@
   line-height: 2.1;
   color: var(--text-light);
   font-weight: 300;
-  margin: 0 0 25px;
+  margin: 0;
 }
 
 .circle-context:last-of-type {
   margin-bottom: 0;
 }
 
-.circle-content p {
-  margin: 0 0 25px;
+.content-item p {
+  margin: 0 0 15px;
   line-height: 2.1;
   color: var(--text-light);
   font-size: 0.98rem;
   font-weight: 300;
+}
+
+.content-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* ACTIVE STATES */
+.circle-ring.active {
+  opacity: 1;
+  border-color: rgba(212, 165, 116, 0.9);
+  box-shadow: 0 0 50px rgba(212, 165, 116, 0.6);
+}
+
+.circle-ring.active .ring-marker {
+  opacity: 1;
+  text-shadow: 0 0 25px rgba(212, 165, 116, 0.8);
+}
+
+.content-item.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .color-check-system {
@@ -850,6 +951,15 @@
     gap: 40px;
   }
 
+  .circles-visualization {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .circles-rings {
+    max-width: 300px;
+  }
+
   .circle-number {
     font-size: 3rem;
   }
@@ -998,6 +1108,35 @@
   .circle-wrapper {
     grid-template-columns: 80px 1fr;
     gap: 25px;
+  }
+
+  .circles-visualization {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .circles-rings {
+    max-width: 220px;
+  }
+
+  .circle-ring.ring-1 {
+    width: 22%;
+  }
+
+  .circle-ring.ring-2 {
+    width: 48%;
+  }
+
+  .circle-ring.ring-3 {
+    width: 74%;
+  }
+
+  .circle-ring.ring-4 {
+    width: 100%;
+  }
+
+  .circles-content {
+    min-height: 280px;
   }
 
   .circle-number {

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/TeamVision.css'
 
 function TeamVision() {
+  const [activeCircle, setActiveCircle] = useState('individual')
   return (
     <div className="team-vision-page">
       {/* HERO */}
@@ -104,39 +105,68 @@ Do not let disconnection spread unnoticed.</p>
           <h2>The Concentric Circles of Presence</h2>
           <p className="subtitle">Building from the inside out—interoception to stewardship</p>
           
-          <div className="circles-grid">
-            <div className="circle-card">
-              <div className="circle-number">1</div>
-              <h3>Individual Field</h3>
-              <p className="circle-subheader">(Interoception)</p>
-              <p className="circle-question">Can I stay present with what is happening inside of me?</p>
-              <p className="circle-context">Safety is sourced in your ability to stay with yourself.</p>
+          <div className="circles-visualization">
+            <div className="circles-rings">
+              <div 
+                className={`circle-ring ring-1 ${activeCircle === 'individual' ? 'active' : ''}`}
+                onClick={() => setActiveCircle('individual')}
+                onMouseEnter={() => setActiveCircle('individual')}
+              >
+                <div className="ring-marker">1</div>
+              </div>
+              <div 
+                className={`circle-ring ring-2 ${activeCircle === 'relational' ? 'active' : ''}`}
+                onClick={() => setActiveCircle('relational')}
+                onMouseEnter={() => setActiveCircle('relational')}
+              >
+                <div className="ring-marker">2</div>
+              </div>
+              <div 
+                className={`circle-ring ring-3 ${activeCircle === 'group' ? 'active' : ''}`}
+                onClick={() => setActiveCircle('group')}
+                onMouseEnter={() => setActiveCircle('group')}
+              >
+                <div className="ring-marker">3</div>
+              </div>
+              <div 
+                className={`circle-ring ring-4 ${activeCircle === 'cultural' ? 'active' : ''}`}
+                onClick={() => setActiveCircle('cultural')}
+                onMouseEnter={() => setActiveCircle('cultural')}
+              >
+                <div className="ring-marker">4</div>
+              </div>
             </div>
+            
+            <div className="circles-content">
+              <div className={`content-item ${activeCircle === 'individual' ? 'active' : ''}`}>
+                <h3>Individual Field</h3>
+                <p className="circle-subheader">(Interoception)</p>
+                <p className="circle-question">Can I stay present with what is happening inside of me?</p>
+                <p className="circle-context">Safety is sourced in your ability to stay with yourself.</p>
+              </div>
 
-            <div className="circle-card">
-              <div className="circle-number">2</div>
-              <h3>Relational Field</h3>
-              <p className="circle-subheader">(Attunement)</p>
-              <p className="circle-question">Can I stay in real contact with another without performing?</p>
-              <p className="circle-context">When two people show up in full presence,
+              <div className={`content-item ${activeCircle === 'relational' ? 'active' : ''}`}>
+                <h3>Relational Field</h3>
+                <p className="circle-subheader">(Attunement)</p>
+                <p className="circle-question">Can I stay in real contact with another without performing?</p>
+                <p className="circle-context">When two people show up in full presence,
 something new forms between them.</p>
-            </div>
+              </div>
 
-            <div className="circle-card">
-              <div className="circle-number">3</div>
-              <h3>Group Field</h3>
-              <p className="circle-subheader">(Collective Attunement)</p>
-              <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
-              <p className="circle-context">When individuals take responsibility for their impact,
+              <div className={`content-item ${activeCircle === 'group' ? 'active' : ''}`}>
+                <h3>Group Field</h3>
+                <p className="circle-subheader">(Collective Attunement)</p>
+                <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
+                <p className="circle-context">When individuals take responsibility for their impact,
 the field holds.</p>
-            </div>
+              </div>
 
-            <div className="circle-card">
-              <div className="circle-number">4</div>
-              <h3>Cultural Field</h3>
-              <p className="circle-subheader">(Stewardship)</p>
-              <p className="circle-question">How do I carry what I practice here into the world?</p>
-              <p className="circle-context">What happens here shows up in how you live.</p>
+              <div className={`content-item ${activeCircle === 'cultural' ? 'active' : ''}`}>
+                <h3>Cultural Field</h3>
+                <p className="circle-subheader">(Stewardship)</p>
+                <p className="circle-question">How do I carry what I practice here into the world?</p>
+                <p className="circle-context">What happens here shows up in how you live.</p>
+              </div>
             </div>
           </div>
         </div>
