@@ -29,14 +29,14 @@ function TeamVision() {
             </p>
 
             <h3 className="holding-principles-intro">We get to:</h3>
-            <ul className="holding-principles">
-              <li>Create conditions where people feel safe enough to drop their guard</li>
-              <li>Direct attention toward what's actually happening in the moment</li>
-              <li>Interrupt patterns that lead to disconnection or performance</li>
-              <li>Redirect participants from performance into real contact</li>
-              <li>Support people in staying present when intensity rises</li>
-              <li>Stabilize the field so connection doesn't collapse or scatter</li>
-            </ul>
+            <div className="we-get-to-cards">
+              <div className="practice-card">Create conditions where people feel safe enough to drop their guard</div>
+              <div className="practice-card">Direct attention toward what's actually happening in the moment</div>
+              <div className="practice-card">Interrupt patterns that lead to disconnection or performance</div>
+              <div className="practice-card">Redirect participants from performance into real contact</div>
+              <div className="practice-card">Support people in staying present when intensity rises</div>
+              <div className="practice-card">Stabilize the field so connection doesn't collapse or scatter</div>
+            </div>
           </div>
         </div>
       </section>
