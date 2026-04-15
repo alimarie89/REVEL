@@ -48,33 +48,45 @@ function TeamVision() {
 
           <div className="foundation-grid">
             <div className="foundation-item">
-              <h3>Show Up Real</h3>
-              <p>Not performing. Not half-present. Bring your actual self, your concerns, your gifts, your attention.</p>
-            </div>
-
-            <div className="foundation-item">
-              <h3>Engage Instead of Staying at a Distance</h3>
-              <p>When something matters, engage. When support is needed, respond. When the space calls for you, step in.</p>
-            </div>
-
-            <div className="foundation-item">
-              <h3>Remain Present When Things Get Uncomfortable</h3>
-              <p>Discomfort is not failure. Stay in the conversation. Stay in the feeling. Resist the impulse to check out the moment things get hard.</p>
-            </div>
-
-            <div className="foundation-item">
               <h3>Step Into Adult Consciousness</h3>
-              <p>Take responsibility for your inner state, your choices, and your impact. Regulate what you can. Own what is yours.</p>
+              <p>Take responsibility for your inner state, your choices, and your impact.
+Regulate what you can.
+Own what is yours.</p>
             </div>
 
             <div className="foundation-item">
               <h3>Follow Through</h3>
-              <p>Reliability matters here. Clear communication, integrity, and follow-through are part of how the whole thing holds.</p>
+              <p>People organize around what you commit to.
+Clear communication, integrity, and follow-through are part of how the whole holds.</p>
             </div>
 
             <div className="foundation-item">
-              <h3>Contribute Your Unique Gifts</h3>
-              <p>Your skills matter, but so do your presence, creativity, discernment, and leadership. Bring what is actually yours to bring.</p>
+              <h3>Stay Present</h3>
+              <p>Stay with what is actually happening.
+Move at a pace you can stay present with.
+Pause when needed — and allow yourself to be paused.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Practice Consent</h3>
+              <p>All interaction is invitational.
+Give clear signals.
+Receive others clearly.
+Update consent as it changes.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Stay in Reality</h3>
+              <p>Stay close to direct experience.
+Check assumptions before acting on them.
+Do not assign meaning without confirmation.</p>
+            </div>
+
+            <div className="foundation-item">
+              <h3>Care for the Field</h3>
+              <p>Track what is happening around you.
+Respond when support is needed.
+Do not let disconnection spread unnoticed.</p>
             </div>
           </div>
 
