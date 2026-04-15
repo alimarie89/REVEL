@@ -112,40 +112,40 @@ Do not let disconnection spread unnoticed.</p>
                 onClick={() => setActiveCircle('individual')}
                 onMouseEnter={() => setActiveCircle('individual')}
               >
-                <div className="ring-marker">1</div>
+                <div className="ring-label">Individual</div>
               </div>
               <div 
                 className={`circle-ring ring-2 ${activeCircle === 'relational' ? 'active' : ''}`}
                 onClick={() => setActiveCircle('relational')}
                 onMouseEnter={() => setActiveCircle('relational')}
               >
-                <div className="ring-marker">2</div>
+                <div className="ring-label">Relational</div>
               </div>
               <div 
                 className={`circle-ring ring-3 ${activeCircle === 'group' ? 'active' : ''}`}
                 onClick={() => setActiveCircle('group')}
                 onMouseEnter={() => setActiveCircle('group')}
               >
-                <div className="ring-marker">3</div>
+                <div className="ring-label">Group</div>
               </div>
               <div 
                 className={`circle-ring ring-4 ${activeCircle === 'cultural' ? 'active' : ''}`}
                 onClick={() => setActiveCircle('cultural')}
                 onMouseEnter={() => setActiveCircle('cultural')}
               >
-                <div className="ring-marker">4</div>
+                <div className="ring-label">Cultural</div>
               </div>
             </div>
             
-            <div className="circles-content">
-              <div className={`content-item ${activeCircle === 'individual' ? 'active' : ''}`}>
+            <div className="circles-detail-panel">
+              <div className={`detail-content ${activeCircle === 'individual' ? 'active' : ''}`}>
                 <h3>Individual Field</h3>
                 <p className="circle-subheader">(Interoception)</p>
                 <p className="circle-question">Can I stay present with what is happening inside of me?</p>
                 <p className="circle-context">Safety is sourced in your ability to stay with yourself.</p>
               </div>
 
-              <div className={`content-item ${activeCircle === 'relational' ? 'active' : ''}`}>
+              <div className={`detail-content ${activeCircle === 'relational' ? 'active' : ''}`}>
                 <h3>Relational Field</h3>
                 <p className="circle-subheader">(Attunement)</p>
                 <p className="circle-question">Can I stay in real contact with another without performing?</p>
@@ -153,7 +153,7 @@ Do not let disconnection spread unnoticed.</p>
 something new forms between them.</p>
               </div>
 
-              <div className={`content-item ${activeCircle === 'group' ? 'active' : ''}`}>
+              <div className={`detail-content ${activeCircle === 'group' ? 'active' : ''}`}>
                 <h3>Group Field</h3>
                 <p className="circle-subheader">(Collective Attunement)</p>
                 <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
@@ -161,7 +161,7 @@ something new forms between them.</p>
 the field holds.</p>
               </div>
 
-              <div className={`content-item ${activeCircle === 'cultural' ? 'active' : ''}`}>
+              <div className={`detail-content ${activeCircle === 'cultural' ? 'active' : ''}`}>
                 <h3>Cultural Field</h3>
                 <p className="circle-subheader">(Stewardship)</p>
                 <p className="circle-question">How do I carry what I practice here into the world?</p>
