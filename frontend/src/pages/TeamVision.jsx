@@ -20,16 +20,15 @@ function TeamVision() {
           
           <div className="overview-content">
             <p>
-              Because of your skill, your presence, and the work you've done on yourself, you're being asked to shape how this space actually feels — from the moment people arrive to the moment they leave.
+              If you're reading this, you've been asked to help shape the container, the field, and the experience we're creating together.
             </p>
             <p>
-              Everyone on this team has skin in the game, contributing time, care, and presence to something we're building together.
+              Your embodied presence shapes how this space feels — from arrival to departure.
             </p>
             <p>
-              That may mean working at a lower rate than usual, wearing multiple hats, or giving in ways that exceed a tightly defined role. What we're investing in is not just an event, but a kind of community and culture we want to help make real.
-            </p>
-            <p>
-              When you commit to something on this team, people are relying on you. We need people who follow through, communicate clearly, and stay engaged when things get complex.
+              Everyone on this team has skin in the game.
+              All of us are contributing our time, care, and presence at a friends-and-family rate.
+              What we are investing in is not just an event, but a community and culture we are building together.
             </p>
 
             <h3 className="holding-principles-intro">We get to:</h3>
