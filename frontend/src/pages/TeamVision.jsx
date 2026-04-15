@@ -95,10 +95,6 @@ Respond when support is needed.
 Do not let disconnection spread unnoticed.</p>
             </div>
           </div>
-
-          <p className="foundation-closing">
-            These are not just values we hope people feel. They are practices we model, teach, and help others grow into. And when someone feels scared, awkward, or uncertain inside them, we meet that with clarity and care.
-          </p>
         </div>
       </section>
 
