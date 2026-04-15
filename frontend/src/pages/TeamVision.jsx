@@ -70,8 +70,7 @@ Reorient before continuing.</p>
             <div className="foundation-item">
               <h3>Stay Present</h3>
               <p>Stay with what is actually happening.
-Move at a pace you can stay present with.
-Pause when needed — and allow yourself to be paused.</p>
+Move at a pace you can stay present with.</p>
             </div>
 
             <div className="foundation-item">
