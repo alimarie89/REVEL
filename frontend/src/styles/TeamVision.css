@@ -185,16 +185,25 @@
 
 .practice-card {
   padding: 18px 24px;
+  padding-left: 22px;
   border-radius: 10px;
-  background: rgba(232, 201, 168, 0.02);
-  border: 1px solid rgba(232, 201, 168, 0.08);
+  background: linear-gradient(
+    to right,
+    rgba(232, 201, 168, 0.04) 0%,
+    rgba(232, 201, 168, 0.01) 30%,
+    rgba(232, 201, 168, 0) 100%
+  );
+  border-left: 2px solid rgba(245, 230, 200, 0.35);
+  border: 2px solid rgba(232, 201, 168, 0.08);
+  border-left: 2px solid rgba(245, 230, 200, 0.35);
+  border-radius: 8px;
   font-size: 0.98rem;
   line-height: 2.1;
   color: var(--text-light);
-  font-weight: 300;
+  font-weight: 400;
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .practice-card::before {
@@ -203,24 +212,16 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 80px;
+  width: 120px;
   background: linear-gradient(
     to right,
-    rgba(245, 230, 200, 0.15) 0%,
+    rgba(245, 230, 200, 0.2) 0%,
+    rgba(245, 230, 200, 0.08) 60%,
     transparent 100%
   );
   pointer-events: none;
-  z-index: 0;
-}
-
-.practice-card {
-  color: rgba(232, 201, 168, 1);
-  background: linear-gradient(
-    to right,
-    rgba(232, 201, 168, 0.03) 0%,
-    rgba(232, 201, 168, 0.01) 50%,
-    rgba(232, 201, 168, 0) 100%
-  );
+  z-index: 1;
+  border-radius: 6px 0 0 6px;
 }
 
 .practice-card::after {
@@ -233,28 +234,31 @@
   background: linear-gradient(
     135deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.02) 50%,
+    rgba(255, 255, 255, 0.01) 50%,
     transparent 100%
   );
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
+  border-radius: 8px;
 }
 
 .practice-card:hover {
-  border-color: rgba(232, 201, 168, 0.25);
+  border-color: rgba(232, 201, 168, 0.2);
+  border-left-color: rgba(245, 230, 200, 0.55);
   background: linear-gradient(
     to right,
-    rgba(232, 201, 168, 0.06) 0%,
-    rgba(232, 201, 168, 0.02) 50%,
+    rgba(232, 201, 168, 0.08) 0%,
+    rgba(232, 201, 168, 0.03) 30%,
     rgba(232, 201, 168, 0) 100%
   );
-  box-shadow: 0 0 20px rgba(232, 201, 168, 0.1);
+  box-shadow: 0 0 15px rgba(232, 201, 168, 0.08), inset 0 0 20px rgba(245, 230, 200, 0.02);
 }
 
 .practice-card:hover::before {
   background: linear-gradient(
     to right,
-    rgba(245, 230, 200, 0.25) 0%,
+    rgba(245, 230, 200, 0.35) 0%,
+    rgba(245, 230, 200, 0.15) 60%,
     transparent 100%
   );
 }
