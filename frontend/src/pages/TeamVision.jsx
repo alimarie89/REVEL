@@ -32,8 +32,7 @@ function TeamVision() {
             <div className="we-get-to-cards">
               <div className="practice-card">Create conditions where people feel safe enough to drop their guard</div>
               <div className="practice-card">Direct attention toward what's actually happening in the moment</div>
-              <div className="practice-card">Interrupt patterns that lead to disconnection or performance</div>
-              <div className="practice-card">Redirect participants from performance into real contact</div>
+              <div className="practice-card">Interrupt and redirect performance into real contact</div>
               <div className="practice-card">Support people in staying present when intensity rises</div>
               <div className="practice-card">Stabilize the field so connection doesn't collapse or scatter</div>
             </div>
