@@ -24,9 +24,7 @@ function TeamVision() {
               Your embodied presence shapes how this space feels — from arrival to departure.
             </p>
             <p>
-              Everyone on this team has skin in the game.
-              All of us are contributing our time, care, and presence at a friends-and-family rate.
-              What we are investing in is not just an event, but a community and culture we are building together.
+              This is a team effort. All of us are contributing our time, care, and presence to create something impactful and amazing for ourselves, our communities, and the world.
             </p>
 
             <h3 className="holding-principles-intro">We get to:</h3>
