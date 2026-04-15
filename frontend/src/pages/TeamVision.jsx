@@ -109,16 +109,17 @@ Do not let disconnection spread unnoticed.</p>
               <div className="circle-number">1</div>
               <h3>Individual Field</h3>
               <p className="circle-subheader">(Interoception)</p>
-              <p className="circle-question">Can I be present with what's happening inside me?</p>
-              <p className="circle-context">This is where it starts. Before we can show up for others, we need to be available to ourselves—aware of what's happening inside us, what we're feeling, what we actually care about. Integrity begins here. This is the foundation for everything that follows.</p>
+              <p className="circle-question">Can I stay present with what is happening inside of me?</p>
+              <p className="circle-context">Safety is sourced in your ability to stay with yourself.</p>
             </div>
 
             <div className="circle-card">
               <div className="circle-number">2</div>
               <h3>Relational Field</h3>
               <p className="circle-subheader">(Attunement)</p>
-              <p className="circle-question">Can I create real contact with another person?</p>
-              <p className="circle-context">When two people show up in full presence, something new forms between them. We're architecting moments and spaces where real contact is possible. This is built on the ability to attune to another person's nervous system—to accurately sense what's happening over there in the other and between us. Real contact is the antidote to performance and disconnection.</p>
+              <p className="circle-question">Can I stay in real contact with another without performing?</p>
+              <p className="circle-context">When two people show up in full presence,
+something new forms between them.</p>
             </div>
 
             <div className="circle-card">
@@ -126,18 +127,16 @@ Do not let disconnection spread unnoticed.</p>
               <h3>Group Field</h3>
               <p className="circle-subheader">(Collective Attunement)</p>
               <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
-              <p className="circle-context">We regulate ourselves so we are not dumping activation onto the group. We take responsibility for both our experience and our impact on the field.</p>
-              <p className="circle-context">We care for the collective nervous system by becoming more self-aware, more self-contained, and more adult in how we show up.</p>
-              <p className="circle-context">We are not separate from the field. We affect it, and we are responsible for that.</p>
-              <p className="circle-context">When enough people take that seriously, coherence becomes possible.</p>
+              <p className="circle-context">When individuals take responsibility for their impact,
+the field holds.</p>
             </div>
 
             <div className="circle-card">
               <div className="circle-number">4</div>
               <h3>Cultural Field</h3>
-              <p className="circle-subheader">(Steward of Humanity)</p>
-              <p className="circle-question">What happens when you take what you have learned out into the world? It changes the world around you.</p>
-              <p className="circle-context">We're not just creating one event. We're modeling something for a larger cultural conversation about connection, consciousness, and what's possible together. As stewards of humanity, we carry what we've learned beyond REVEL, rippling consciousness into the world. We recognize that what we build together affects the larger cultural field.</p>
+              <p className="circle-subheader">(Stewardship)</p>
+              <p className="circle-question">How do I carry what I practice here into the world?</p>
+              <p className="circle-context">What happens here shows up in how you live.</p>
             </div>
           </div>
         </div>
