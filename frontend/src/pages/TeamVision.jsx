@@ -20,9 +20,6 @@ function TeamVision() {
           
           <div className="overview-content">
             <p>
-              If you're reading this, you've been asked to help shape the container, the field, and the experience we're creating together.
-            </p>
-            <p>
               Your embodied presence shapes how this space feels — from arrival to departure.
             </p>
             <p>
