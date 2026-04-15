@@ -61,6 +61,13 @@ Clear communication, integrity, and follow-through are part of how the whole hol
             </div>
 
             <div className="foundation-item">
+              <h3>Pause</h3>
+              <p>Pause when something feels off.
+Allow yourself to be paused.
+Reorient before continuing.</p>
+            </div>
+
+            <div className="foundation-item">
               <h3>Stay Present</h3>
               <p>Stay with what is actually happening.
 Move at a pace you can stay present with.
