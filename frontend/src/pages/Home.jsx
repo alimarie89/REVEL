@@ -119,26 +119,28 @@ function Home() {
         <div className="hero-overlay"></div>
 
         <div className="hero-content revel-hero-content">
-          <h1 className="revel-hero-title">REVEL</h1>
+          <div className="revel-hero-inner">
+            <h1 className="revel-hero-title">REVEL</h1>
 
-          <div className="revel-hero-positioning">
-            <p>More intimate than a festival.</p>
-            <p>More expansive than a retreat.</p>
+            <div className="revel-hero-positioning">
+              <p>More intimate than a festival.</p>
+              <p>More expansive than a retreat.</p>
+            </div>
+
+            <div className="revel-hero-tagline">
+              <p>This isn't just about who you meet.</p>
+              <p>It's about who you keep.</p>
+            </div>
+
+            <a
+              href="https://events.humanitix.com/revel2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button primary"
+            >
+              Apply to Join
+            </a>
           </div>
-
-          <div className="revel-hero-tagline">
-            <p>This isn't just about who you meet.</p>
-            <p>It's about who you keep.</p>
-          </div>
-
-          <a
-            href="https://events.humanitix.com/revel2026"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button primary"
-          >
-            Apply to Join
-          </a>
         </div>
       </section>
 
