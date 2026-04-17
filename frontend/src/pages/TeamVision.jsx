@@ -338,6 +338,14 @@ the field holds.</p>
         </div>
       </section>
 
+      {/* FACILITATOR RESPONSIBILITY */}
+      <section className="vision-section facilitator-responsibility">
+        <div className="vision-container">
+          <h2>Facilitator Responsibility</h2>
+          <p>Each workshop requires someone designated to track the field throughout—noticing participants in blue or yellow states and checking in with them. This responsibility ensures that facilitators can remain present in their content while the collective field is being actively held and attended to.</p>
+        </div>
+      </section>
+
       {/* CLOSING */}
       <section className="vision-section vision-closing">
         <div className="vision-container">
