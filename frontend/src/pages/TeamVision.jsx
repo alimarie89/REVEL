@@ -274,8 +274,11 @@ the field holds.</p>
 
           <div className="pressure-intro">
             <p>When intensity rises, the container is revealed in how we respond.<br/>
+            <br/>
             Using the Color Check system, we recognize participant activation and match it with the appropriate level of support.<br/>
+            <br/>
             Emotional Support Angels notice and respond to yellow and blue states.<br/>
+            <br/>
             The Integration Team holds deeper support for orange and red states.</p>
           </div>
 
