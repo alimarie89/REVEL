@@ -125,6 +125,17 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+.revel-hero-meta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(245, 241, 237, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 48px;
+  font-style: normal;
+}
+
 .revel-hero-positioning {
   text-align: center;
   margin-bottom: 40px;
@@ -1065,6 +1076,24 @@
   }
 
   .hero-sub {
+    font-size: 1rem;
+  }
+
+  .revel-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .revel-hero-meta {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 36px;
+  }
+
+  .revel-hero-positioning p {
+    font-size: 1.1rem;
+  }
+
+  .revel-hero-tagline p {
     font-size: 1rem;
   }
 
