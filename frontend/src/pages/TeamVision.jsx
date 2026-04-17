@@ -257,20 +257,13 @@ the field holds.</p>
               </div>
             </div>
           </div>
-
-          {/* HOW WE USE IT */}
-          <div className="color-practice">
-            <h4>How We Use It</h4>
-            <p>We track our own color and ask others if they might be activated. When you share your color, you're inviting the collective to know you, to adjust, and to care. The facilitator's job is to not lose track of you, creating a safety net to explore difficult areas.</p>
-            <p className="color-example"><em>For example: "Yellow and the flavor is nervousness and excitement about what is going to happen during this session."</em></p>
-          </div>
         </div>
       </section>
 
-      {/* HOW THE CONTAINER HOLDS UNDER PRESSURE */}
+      {/* HOW WE USE THE COLOR CHECK SYSTEM TO HOLD THE CONTAINER UNDER PRESSURE */}
       <section className="vision-section container-pressure">
         <div className="vision-container">
-          <h2>How the Container Holds Under Pressure</h2>
+          <h2>How We Use the Color Check System to Hold the Container Under Pressure</h2>
 
           <div className="pressure-intro">
             <p>When intensity rises, the container is revealed in how we respond.<br/>
