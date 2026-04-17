@@ -115,7 +115,7 @@ function Home() {
 
   return (
     <div className="home">
-      {/* HERO */}
+      {/* 1. HERO */}
       <section
         className="hero revel-hero"
         style={{ backgroundImage: 'url("/REVEL Backdrop Horizontal.jpg")' }}
@@ -150,13 +150,14 @@ function Home() {
         </div>
       </section>
 
-      {/* NAVIGATION TABS */}
-      <nav className="page-tabs">
-        <Link to="/" className="tab-link active">Experience</Link>
-        <Link to="/team" className="tab-link">The Team</Link>
-      </nav>
+      {/* 2. ORIENTATION LINE */}
+      <section className="orientation-line">
+        <div className="section-container">
+          <p>A 350-person convergence where ritual, dance, embodiment, eros, and cultural awakening meet.</p>
+        </div>
+      </section>
 
-      {/* 1. COCREATE THE FIELD */}
+      {/* 3. CO-CREATION INVITATION */}
       <section className="space-holds cocreate-section">
         <div className="section-container">
           <div className="section-preview">
@@ -169,11 +170,12 @@ function Home() {
               <p className="cocreate-line">Engage instead of staying at a distance.</p>
               <p className="cocreate-line">Train your capacity to stay present when things get charged.</p>
             </div>
+            <p className="cocreate-closing">These are the levels of presence we cultivate together.</p>
           </div>
         </div>
       </section>
 
-      {/* 2. THE FIELD OF PRESENCE */}
+      {/* 4. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
         <div className="section-container">
           <div className="circles-header">
@@ -259,7 +261,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 3. HOW THE SPACE HOLDS */}
+      {/* 5. HOW THE SPACE HOLDS */}
       <section className="space-holds how-space-holds">
         <div className="section-container">
           <div className="section-preview">
@@ -274,18 +276,19 @@ function Home() {
           {expandedSection === 'space-holds-info' && (
             <div className="section-expanded">
               <div className="purpose-items">
-                <div className="purpose-item">Create conditions where people feel safe enough to drop their guard</div>
-                <div className="purpose-item">Direct attention toward what's actually happening in the moment</div>
-                <div className="purpose-item">Interrupt and redirect performance into real contact</div>
-                <div className="purpose-item">Support people in staying present when intensity rises</div>
-                <div className="purpose-item">Stabilize the field so connection doesn't collapse or scatter</div>
+                <div className="purpose-item">Conditions are created where people feel safe enough to drop their guard.</div>
+                <div className="purpose-item">Attention is guided toward what's actually happening in the moment.</div>
+                <div className="purpose-item">Patterns that disconnect people are interrupted.</div>
+                <div className="purpose-item">Real contact is invited instead of performance.</div>
+                <div className="purpose-item">People are helped to stay present under intensity instead of checking out.</div>
+                <div className="purpose-item">The field is shaped so connection doesn't collapse or scatter.</div>
               </div>
             </div>
           )}
         </div>
       </section>
 
-      {/* 4. WHAT IT FEELS LIKE */}
+      {/* 6. WHAT IT FEELS LIKE */}
       <section className="space-holds what-it-feels-like">
         <div className="section-container">
           <div className="section-preview">
@@ -319,7 +322,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 5. MEET THE TEAM */}
+      {/* 7. MEET THE TEAM */}
       <section className="team">
         <div className="team-grid">
           <h3>Meet the Team</h3>
@@ -366,12 +369,12 @@ function Home() {
         </div>
       </section>
 
-      {/* INVITATION */}
+      {/* 8. FINAL INVITATION */}
       <section className="invitation">
         <p>This is not a festival. It is an investment in our cultural evolution.</p>
       </section>
 
-      {/* FINAL CTA */}
+      {/* 9. FINAL CTA */}
       <section className="final-cta">
         <h2>Are you a key player in this time of great change?</h2>
         <a 
