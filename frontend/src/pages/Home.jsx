@@ -155,30 +155,30 @@ function Home() {
       </nav>
 
       {/* 1. COCREATE THE FIELD */}
-      <section className="space-holds">
+      <section className="space-holds cocreate-section">
         <div className="section-container">
           <div className="section-preview">
             <h2>Cocreate the field with us</h2>
             <p>instead of just consuming it.</p>
           </div>
           <div className="section-expanded">
-            <ul>
-              <li>Be real in the moment.</li>
-              <li>Engage instead of staying at a distance.</li>
-              <li>Remain present when things get uncomfortable.</li>
-            </ul>
-            <p style={{marginTop: '30px'}}>
-              We're all stepping in to self regulation, self containment, and adult consciousness.
+            <div className="cocreate-invitations">
+              <p className="cocreate-line">Be real in the moment.</p>
+              <p className="cocreate-line">Engage instead of staying at a distance.</p>
+              <p className="cocreate-line">Remain present when things get uncomfortable.</p>
+            </div>
+            <p className="cocreate-bridge">
+              These are the levels of presence we cultivate together.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 2. THE CONCENTRIC CIRCLES OF PRESENCE */}
+      {/* 2. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
         <div className="section-container">
           <div className="circles-header">
-            <h2>The Concentric Circles of Presence</h2>
+            <h2>The Field of Presence</h2>
             <p className="circles-subtitle">What we practice here becomes the world we live in</p>
           </div>
 
