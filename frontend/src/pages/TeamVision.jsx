@@ -2,9 +2,23 @@ import React, { useState } from 'react'
 import '../styles/TeamVision.css'
 
 function TeamVision() {
-  const [activeCircle, setActiveCircle] = useState('individual')
+  const [selectedCircle, setSelectedCircle] = useState('individual')
+  const [hoveredCircle, setHoveredCircle] = useState(null)
 
-  const handleRingInteraction = (e) => {
+  // Determine which level is displayed (hovered > selected > default)
+  const displayedCircle = hoveredCircle || selectedCircle || 'individual'
+
+  // Calculate which ring based on distance from center
+  const getRingFromDistance = (distance) => {
+    // Ring zones: 0-0.25 (with enlarged hit area for center), 0.25-0.50, 0.50-0.77, 0.77-1.0
+    if (distance <= 0.25) return 'individual'
+    if (distance <= 0.50) return 'relational'
+    if (distance <= 0.77) return 'group'
+    return 'cultural'
+  }
+
+  // Handle mouse movement on SVG overlay
+  const handleRingHover = (e) => {
     const svg = e.currentTarget;
     const rect = svg.getBoundingClientRect();
     const centerX = rect.width / 2;
@@ -12,21 +26,43 @@ function TeamVision() {
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
     
-    // Calculate distance from center (normalized to 0-1)
     const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+    const ring = getRingFromDistance(distance);
+    setHoveredCircle(ring);
+  }
+
+  // Handle mouse leaving SVG
+  const handleRingLeave = () => {
+    setHoveredCircle(null)
+  }
+
+  // Handle click to lock selection
+  const handleRingClick = (e) => {
+    const svg = e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
     
-    // Determine which ring based on CSS visual sizes
-    let ring = 'cultural'; // default to outermost
-    if (distance <= 0.20) {
-      ring = 'individual'; // ring-1: 20% width
-    } else if (distance <= 0.45) {
-      ring = 'relational'; // ring-2: 45% width
-    } else if (distance <= 0.70) {
-      ring = 'group'; // ring-3: 70% width
-    }
-    
-    setActiveCircle(ring);
-  };
+    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+    const ring = getRingFromDistance(distance);
+    setSelectedCircle(ring);
+  }
+
+  // Handle label clicks for alternative interaction path
+  const handleLabelClick = (level) => {
+    setSelectedCircle(level)
+    setHoveredCircle(null)
+  }
+
+  const handleLabelHover = (level) => {
+    setHoveredCircle(level)
+  }
+
+  const handleLabelLeave = () => {
+    setHoveredCircle(null)
+  }
 
   return (
     <div className="team-vision-page">
@@ -129,40 +165,75 @@ Do not let disconnection spread unnoticed.</p>
           <p className="subtitle">Building from the inside out—interoception to stewardship</p>
           
           <div className="circles-visualization">
-            <div className="circles-rings">
-              <div className={`circle-ring ring-1 ${activeCircle === 'individual' ? 'active' : ''}`}>
-                <div className="ring-label">Individual</div>
+            <div className="circles-column">
+              <div className="circles-rings">
+                <div className={`circle-ring ring-1 ${displayedCircle === 'individual' ? 'active' : ''} ${selectedCircle === 'individual' ? 'selected' : ''}`}>
+                </div>
+                <div className={`circle-ring ring-2 ${displayedCircle === 'relational' ? 'active' : ''} ${selectedCircle === 'relational' ? 'selected' : ''}`}>
+                </div>
+                <div className={`circle-ring ring-3 ${displayedCircle === 'group' ? 'active' : ''} ${selectedCircle === 'group' ? 'selected' : ''}`}>
+                </div>
+                <div className={`circle-ring ring-4 ${displayedCircle === 'cultural' ? 'active' : ''} ${selectedCircle === 'cultural' ? 'selected' : ''}`}>
+                </div>
+                
+                {/* Interactive SVG overlay for precise ring zones */}
+                <svg 
+                  className="rings-interactive" 
+                  viewBox="0 0 400 400"
+                  onMouseMove={handleRingHover}
+                  onMouseLeave={handleRingLeave}
+                  onClick={handleRingClick}
+                >
+                  <circle cx="200" cy="200" r="200" fill="transparent" pointerEvents="auto" />
+                </svg>
               </div>
-              <div className={`circle-ring ring-2 ${activeCircle === 'relational' ? 'active' : ''}`}>
-                <div className="ring-label">Relational</div>
+
+              {/* Ring labels as alternative interaction path */}
+              <div className="circles-labels">
+                <button 
+                  className={`circle-label-btn ${displayedCircle === 'individual' ? 'active' : ''} ${selectedCircle === 'individual' ? 'selected' : ''}`}
+                  onMouseEnter={() => handleLabelHover('individual')}
+                  onMouseLeave={handleLabelLeave}
+                  onClick={() => handleLabelClick('individual')}
+                >
+                  Self
+                </button>
+                <button 
+                  className={`circle-label-btn ${displayedCircle === 'relational' ? 'active' : ''} ${selectedCircle === 'relational' ? 'selected' : ''}`}
+                  onMouseEnter={() => handleLabelHover('relational')}
+                  onMouseLeave={handleLabelLeave}
+                  onClick={() => handleLabelClick('relational')}
+                >
+                  Relational
+                </button>
+                <button 
+                  className={`circle-label-btn ${displayedCircle === 'group' ? 'active' : ''} ${selectedCircle === 'group' ? 'selected' : ''}`}
+                  onMouseEnter={() => handleLabelHover('group')}
+                  onMouseLeave={handleLabelLeave}
+                  onClick={() => handleLabelClick('group')}
+                >
+                  Group
+                </button>
+                <button 
+                  className={`circle-label-btn ${displayedCircle === 'cultural' ? 'active' : ''} ${selectedCircle === 'cultural' ? 'selected' : ''}`}
+                  onMouseEnter={() => handleLabelHover('cultural')}
+                  onMouseLeave={handleLabelLeave}
+                  onClick={() => handleLabelClick('cultural')}
+                >
+                  Cultural
+                </button>
               </div>
-              <div className={`circle-ring ring-3 ${activeCircle === 'group' ? 'active' : ''}`}>
-                <div className="ring-label">Group</div>
-              </div>
-              <div className={`circle-ring ring-4 ${activeCircle === 'cultural' ? 'active' : ''}`}>
-                <div className="ring-label">Cultural</div>
-              </div>
-              
-              {/* Interactive SVG overlay for proper ring detection */}
-              <svg 
-                className="rings-interactive" 
-                viewBox="0 0 400 400"
-                onMouseMove={handleRingInteraction}
-                onClick={handleRingInteraction}
-              >
-                <circle cx="200" cy="200" r="200" fill="transparent" pointerEvents="auto" />
-              </svg>
             </div>
             
             <div className="circles-detail-panel">
-              <div className={`detail-content ${activeCircle === 'individual' ? 'active' : ''}`}>
+              <div className={`detail-content ${displayedCircle === 'individual' ? 'active' : ''}`} key="individual">
                 <h3>Individual Field</h3>
                 <p className="circle-subheader">(Interoception)</p>
                 <p className="circle-question">Can I stay present with what is happening inside of me?</p>
                 <p className="circle-context">Safety is sourced in your ability to stay with yourself.</p>
               </div>
 
-              <div className={`detail-content ${activeCircle === 'relational' ? 'active' : ''}`}>
+              <div className={`detail-content ${displayedCircle === 'relational' ? 'active' : ''}`} key="relational">
                 <h3>Relational Field</h3>
                 <p className="circle-subheader">(Attunement)</p>
                 <p className="circle-question">Can I stay in real contact with another without performing?</p>
@@ -170,7 +241,7 @@ Do not let disconnection spread unnoticed.</p>
 something new forms between them.</p>
               </div>
 
-              <div className={`detail-content ${activeCircle === 'group' ? 'active' : ''}`}>
+              <div className={`detail-content ${displayedCircle === 'group' ? 'active' : ''}`} key="group">
                 <h3>Group Field</h3>
                 <p className="circle-subheader">(Collective Attunement)</p>
                 <p className="circle-question">What does it take for a group to stay coherent under pressure?</p>
@@ -178,7 +249,7 @@ something new forms between them.</p>
 the field holds.</p>
               </div>
 
-              <div className={`detail-content ${activeCircle === 'cultural' ? 'active' : ''}`}>
+              <div className={`detail-content ${displayedCircle === 'cultural' ? 'active' : ''}`} key="cultural">
                 <h3>Cultural Field</h3>
                 <p className="circle-subheader">(Stewardship)</p>
                 <p className="circle-question">How do I carry what I practice here into the world?</p>
