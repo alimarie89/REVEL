@@ -277,9 +277,9 @@ the field holds.</p>
             <br/>
             Using the Color Check system, we recognize participant activation and match it with the appropriate level of support.<br/>
             <br/>
-            Emotional Support Angels notice and respond to yellow and blue states.<br/>
+            Yellow and blue are valid states—Emotional Support Angels check in and ask if someone needs support, offering presence without assuming change is needed.<br/>
             <br/>
-            The Integration Team holds deeper support for orange and red states.</p>
+            Orange and red call for active intervention—the Integration Team mobilizes deeper support.</p>
           </div>
 
           {/* EMOTIONAL SUPPORT ANGELS */}
