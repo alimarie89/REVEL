@@ -279,7 +279,7 @@ the field holds.</p>
             <br/>
             Yellow and blue are valid states—Emotional Support Angels check in and ask if someone needs support, offering presence without assuming change is needed.<br/>
             <br/>
-            Orange and red call for active intervention—the Integration Team mobilizes deeper support.</p>
+            Orange needs to be held in a container—the Integration Team mobilizes to witness and support. Red requires active intervention—we go get them.</p>
           </div>
 
           {/* EMOTIONAL SUPPORT ANGELS */}
