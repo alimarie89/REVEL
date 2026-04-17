@@ -167,9 +167,6 @@ function Home() {
               <p className="cocreate-line">Engage instead of staying at a distance.</p>
               <p className="cocreate-line">Train your capacity to stay present when things get charged.</p>
             </div>
-            <p className="cocreate-bridge">
-              These are the levels of presence we cultivate together.
-            </p>
           </div>
         </div>
       </section>
