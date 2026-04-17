@@ -244,10 +244,7 @@ the field holds.</p>
                   <p>Complete reactivity or collapse—danger zone we prevent</p>
                 </div>
               </div>
-            </div>
 
-            {/* Blue State (Separate) */}
-            <div className="color-states-separate">
               <div className="color-point blue">
                 <div className="color-dot"></div>
                 <div className="color-label">

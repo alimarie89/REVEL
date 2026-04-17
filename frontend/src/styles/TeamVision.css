@@ -694,16 +694,10 @@
 }
 
 /* BLUE STATE - SEPARATE */
-.color-states-separate {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  padding-top: 60px;
-  border-top: 1px solid var(--divider);
-}
-
-.color-states-separate .color-point {
-  max-width: 200px;
+.color-point.blue {
+  border-left: 2px solid var(--divider);
+  padding-left: 30px;
+  margin-left: 20px;
 }
 
 /* Removed: "How We Use It" section combined into main container section */
@@ -994,9 +988,10 @@
     line-height: 1.6;
   }
 
-  .color-states-separate {
-    margin-top: 50px;
-    padding-top: 50px;
+  .color-point.blue {
+    border-left: 1px solid var(--divider);
+    padding-left: 20px;
+    margin-left: 15px;
   }
 
   .color-practice {
@@ -1182,13 +1177,10 @@
     line-height: 1.5;
   }
 
-  .color-states-separate {
-    margin-top: 40px;
-    padding-top: 40px;
-  }
-
-  .color-states-separate .color-point {
-    max-width: 160px;
+  .color-point.blue {
+    border-left: 1px solid var(--divider);
+    padding-left: 15px;
+    margin-left: 10px;
   }
 
   .color-practice {
