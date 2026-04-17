@@ -297,11 +297,8 @@ the field holds.</p>
 
             <h4>Responsibilities</h4>
             <ul>
-              <li>Offer grounded support for nervous system regulation</li>
-              <li>Notice when someone may be in a yellow or blue state and check in</li>
-              <li>Use the Color Check system to orient to participant state</li>
-              <li>Support participants in returning toward green through presence and simple grounding</li>
-              <li>Maintain awareness of the surrounding field</li>
+              <li>Use the Color Check system to notice participant state and check in with those in yellow or blue</li>
+              <li>Offer grounded presence and simple grounding to support participants in returning toward green</li>
             </ul>
 
             <p className="support-note">
