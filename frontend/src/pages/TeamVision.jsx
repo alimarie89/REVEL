@@ -430,12 +430,18 @@ the field holds.</p>
 
             <div className="facilitator-subsection">
               <h3>Support Team Meeting (Onsite)</h3>
-              <p>All support team members are expected to attend a live support team meeting at the beginning of REVEL 2026.<br/><strong>Thursday, 7/2, 11am–1pm MDT</strong></p>
+              <p>All support team members are expected to attend a live support team meeting at the beginning of REVEL 2026.</p>
+              <ul>
+                <li><strong>Thursday, 7/2, 11am–1pm MDT</strong></li>
+              </ul>
             </div>
 
             <div className="facilitator-subsection">
               <h3>Debrief & Staff Integration</h3>
-              <p>A 90-minute debrief call will be scheduled for all core and support team members to integrate the experience.<br/><strong>Thursday, 7/23, 2–3:30pm MDT</strong></p>
+              <p>A 90-minute debrief call will be scheduled for all core and support team members to integrate the experience.</p>
+              <ul>
+                <li><strong>Thursday, 7/23, 2–3:30pm MDT</strong></li>
+              </ul>
             </div>
           </div>
         </div>
