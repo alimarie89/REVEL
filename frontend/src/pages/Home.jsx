@@ -165,7 +165,7 @@ function Home() {
             <div className="cocreate-invitations">
               <p className="cocreate-line">Be real in the moment.</p>
               <p className="cocreate-line">Engage instead of staying at a distance.</p>
-              <p className="cocreate-line">Remain present when things get uncomfortable.</p>
+              <p className="cocreate-line">Train your capacity to stay present when things get charged.</p>
             </div>
             <p className="cocreate-bridge">
               These are the levels of presence we cultivate together.
