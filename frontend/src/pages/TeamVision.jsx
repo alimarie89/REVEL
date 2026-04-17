@@ -162,7 +162,7 @@ Do not let disconnection spread unnoticed.</p>
       <section className="vision-section concentric-circles">
         <div className="vision-container">
           <h2>The Concentric Circles of Presence</h2>
-          <p className="subtitle">Building from the inside out—interoception to stewardship</p>
+          <p className="subtitle">What we model and teach here becomes the world we live in</p>
           
           <div className="circles-visualization">
             <div className="circles-column">
