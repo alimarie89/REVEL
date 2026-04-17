@@ -292,17 +292,7 @@ the field holds.</p>
             <h3>Emotional Support Angels</h3>
 
             <p>
-              Emotional Support Angels are available points of contact for participants who need support returning to themselves.
-            </p>
-
-            <p>
-              When available, they wear a designated wristband.<br/>
-              When at capacity, they remove it.
-            </p>
-
-            <h4>Role</h4>
-            <p>
-              Offer grounded, regulated presence that others can orient to when they feel activated, overwhelmed, or disconnected.
+              Offer grounded, regulated presence that others can orient to when they feel activated, overwhelmed, or disconnected. When available, they wear a designated wristband—when at capacity, they remove it.
             </p>
 
             <h4>Responsibilities</h4>
@@ -337,19 +327,7 @@ the field holds.</p>
             <h3>Integration Team</h3>
 
             <p>
-              The Integration Team holds the deeper layer of support within the container.
-            </p>
-
-            <p>
-              They work with participants experiencing significant activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels.
-            </p>
-
-            <p>
-              This team consists of experienced facilitators trained to work with complex emotional and relational processes.
-            </p>
-
-            <p>
-              One member of the team is a licensed mental health professional specializing in crisis intervention and clinical assessment.
+              The Integration Team works with participants experiencing significant activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels. This team consists of experienced facilitators trained to work with complex emotional and relational processes, including one licensed mental health professional specializing in crisis intervention and clinical assessment.
             </p>
 
             <h4>Responsibilities</h4>
