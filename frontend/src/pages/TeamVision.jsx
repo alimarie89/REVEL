@@ -326,8 +326,6 @@ the field holds.</p>
               <li>Support regulation using somatic and relational approaches</li>
               <li>Address boundary violations, relational ruptures, and consent issues</li>
               <li>Support participants processing significant activation</li>
-              <li>Coordinate with Emotional Support Angels and provide guidance</li>
-              <li>Maintain availability and responsiveness during event hours</li>
               <li>Document significant incidents and ongoing support needs</li>
               <li>Debrief daily to maintain container coherence</li>
             </ul>
