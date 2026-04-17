@@ -253,7 +253,7 @@ the field holds.</p>
                 <h3>Cultural Field</h3>
                 <p className="circle-subheader">(Stewardship)</p>
                 <p className="circle-question">How do I carry what I practice here into the world?</p>
-                <p className="circle-context">What happens here shows up in how you live.</p>
+                <p className="circle-context">Take responsibility for modeling this presence in your daily life.</p>
               </div>
             </div>
           </div>
