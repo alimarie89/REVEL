@@ -273,18 +273,7 @@ the field holds.</p>
           <h2>How the Container Holds Under Pressure</h2>
 
           <div className="pressure-intro">
-            <p>When intensity rises, the container is revealed in how we respond.</p>
-
-            <p>The field is not held by a single person or role.<br/>
-            It is held across layers.</p>
-
-            <p>Some offer grounded presence.<br/>
-            Some support emotional regulation.<br/>
-            Some step in when situations require deeper skill and authority.</p>
-
-            <p>What matters is not the title,<br/>
-            but the ability to recognize what is needed —<br/>
-            and respond accordingly.</p>
+            <p>When intensity rises, the container is revealed in how we respond. Using the Color Check system, we recognize participant activation and match it with the appropriate level of support. Emotional Support Angels notice and respond to yellow and blue states. The Integration Team holds deeper support for orange and red states.</p>
           </div>
 
           {/* EMOTIONAL SUPPORT ANGELS */}
@@ -300,10 +289,6 @@ the field holds.</p>
               <li>Use the Color Check system to notice participant state and check in with those in yellow or blue</li>
               <li>Offer grounded presence and simple grounding to support participants in returning toward green</li>
             </ul>
-
-            <p className="support-note">
-              When activation is high, prioritize regulation over conversation.
-            </p>
 
             <h4>Escalation</h4>
             <ul>
