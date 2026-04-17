@@ -31,28 +31,32 @@ function Home() {
     {
       id: 'individual',
       label: 'Self',
-      title: 'Individual',
+      title: 'Individual Field',
+      subheader: '(Interoception)',
       question: 'Can I stay present with what is happening inside of me?',
       context: 'Safety is sourced in your ability to stay with yourself.'
     },
     {
       id: 'relational',
       label: 'Relational',
-      title: 'Relational',
+      title: 'Relational Field',
+      subheader: '(Attunement)',
       question: 'Can I stay in real contact with another without performing?',
       context: 'When two people show up in full presence, something new forms between them.'
     },
     {
       id: 'group',
       label: 'Group',
-      title: 'Group',
+      title: 'Group Field',
+      subheader: '(Collective Attunement)',
       question: 'What does it take for a group to stay coherent under pressure?',
       context: 'When individuals take responsibility for their impact, the field holds.'
     },
     {
       id: 'cultural',
       label: 'Cultural',
-      title: 'Cultural',
+      title: 'Cultural Field',
+      subheader: '(Stewardship)',
       question: 'How do I carry what I practice here into the world?',
       context: 'What happens here shows up in how you live.'
     }
@@ -170,21 +174,21 @@ function Home() {
         </div>
       </section>
 
-      {/* 2. THE LEVELS OF PRESENCE */}
-      <section className="levels-of-presence">
+      {/* 2. THE CONCENTRIC CIRCLES OF PRESENCE */}
+      <section className="concentric-circles-section">
         <div className="section-container">
-          <div className="levels-header">
-            <h2>The Levels of Presence</h2>
-            <p className="levels-subtitle">Presence moves through layers—self, relational, group, and beyond.</p>
+          <div className="circles-header">
+            <h2>The Concentric Circles of Presence</h2>
+            <p className="circles-subtitle">What we practice here becomes the world we live in</p>
           </div>
 
-          <div className="levels-visualization">
-            <div className="levels-circles">
-              <div className="levels-rings">
-                <div className={`level-ring ring-1 ${displayedLevel === 'individual' ? 'active' : ''} ${selectedLevel === 'individual' ? 'selected' : ''}`}></div>
-                <div className={`level-ring ring-2 ${displayedLevel === 'relational' ? 'active' : ''} ${selectedLevel === 'relational' ? 'selected' : ''}`}></div>
-                <div className={`level-ring ring-3 ${displayedLevel === 'group' ? 'active' : ''} ${selectedLevel === 'group' ? 'selected' : ''}`}></div>
-                <div className={`level-ring ring-4 ${displayedLevel === 'cultural' ? 'active' : ''} ${selectedLevel === 'cultural' ? 'selected' : ''}`}></div>
+          <div className="circles-visualization">
+            <div className="circles-column">
+              <div className="circles-rings">
+                <div className={`circle-ring ring-1 ${displayedLevel === 'individual' ? 'active' : ''} ${selectedLevel === 'individual' ? 'selected' : ''}`}></div>
+                <div className={`circle-ring ring-2 ${displayedLevel === 'relational' ? 'active' : ''} ${selectedLevel === 'relational' ? 'selected' : ''}`}></div>
+                <div className={`circle-ring ring-3 ${displayedLevel === 'group' ? 'active' : ''} ${selectedLevel === 'group' ? 'selected' : ''}`}></div>
+                <div className={`circle-ring ring-4 ${displayedLevel === 'cultural' ? 'active' : ''} ${selectedLevel === 'cultural' ? 'selected' : ''}`}></div>
                 
                 <svg 
                   className="rings-interactive" 
@@ -227,11 +231,11 @@ function Home() {
                 </svg>
               </div>
 
-              <div className="levels-labels">
+              <div className="circles-labels">
                 {levels.map((level) => (
                   <button
                     key={level.id}
-                    className={`level-label-btn ${displayedLevel === level.id ? 'active' : ''} ${selectedLevel === level.id ? 'selected' : ''}`}
+                    className={`circle-label-btn ${displayedLevel === level.id ? 'active' : ''} ${selectedLevel === level.id ? 'selected' : ''}`}
                     onMouseEnter={() => handleLevelHover(level.id)}
                     onMouseLeave={handleLevelLeave}
                     onClick={() => handleLevelClick(level.id)}
@@ -242,12 +246,13 @@ function Home() {
               </div>
             </div>
 
-            <div className="levels-detail-panel">
+            <div className="circles-detail-panel">
               {levels.map((level) => (
-                <div key={level.id} className={`level-content ${displayedLevel === level.id ? 'active' : ''}`}>
+                <div key={level.id} className={`detail-content ${displayedLevel === level.id ? 'active' : ''}`}>
                   <h3>{level.title}</h3>
-                  <p className="level-question">{level.question}</p>
-                  <p className="level-context">{level.context}</p>
+                  <p className="circle-subheader">{level.subheader}</p>
+                  <p className="circle-question">{level.question}</p>
+                  <p className="circle-context">{level.context}</p>
                 </div>
               ))}
             </div>
