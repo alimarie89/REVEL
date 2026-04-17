@@ -273,7 +273,10 @@ the field holds.</p>
           <h2>How the Container Holds Under Pressure</h2>
 
           <div className="pressure-intro">
-            <p>When intensity rises, the container is revealed in how we respond. Using the Color Check system, we recognize participant activation and match it with the appropriate level of support. Emotional Support Angels notice and respond to yellow and blue states. The Integration Team holds deeper support for orange and red states.</p>
+            <p>When intensity rises, the container is revealed in how we respond.<br/>
+            Using the Color Check system, we recognize participant activation and match it with the appropriate level of support.<br/>
+            Emotional Support Angels notice and respond to yellow and blue states.<br/>
+            The Integration Team holds deeper support for orange and red states.</p>
           </div>
 
           {/* EMOTIONAL SUPPORT ANGELS */}
