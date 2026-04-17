@@ -158,6 +158,68 @@ Do not let disconnection spread unnoticed.</p>
         </div>
       </section>
 
+      {/* FLOODING & FIELD COHERENCE SECTION */}
+      <section className="vision-section flooding-coherence">
+        <div className="vision-container">
+          <div className="transition-text">
+            <p>These commitments matter most when the field is under pressure.</p>
+            <p>These commitments are easy when we're resourced.
+Under pressure, most people don't rise to their values — they default to familiar patterns like overexplaining, defending, or persuading.
+Often, this floods the field.</p>
+          </div>
+
+          <h2>Flooding & Field Coherence</h2>
+
+          <div className="flooding-content">
+            <p>Intensity is welcome. Emotion is welcome. Activation is part of the work.</p>
+            <p>What we are practicing is the ability to stay in contact without overwhelming the field.</p>
+
+            <p>Flooding happens when activation moves faster than it can be held. It often looks like:</p>
+            <div className="flooding-signs">
+              <p>urgency that pressures others</p>
+              <p>rapid escalation without pause</p>
+              <p>repeating or intensifying without resolution</p>
+              <p>tone that transfers stress rather than communicates clearly</p>
+            </div>
+
+            <p>It can also show up as discharge — releasing activation into the field in a way that seeks relief, but creates pressure for others.</p>
+
+            <p>When flooding happens, connection breaks down and people begin to brace instead of relate.</p>
+
+            <h3 className="subheading-title">The Practice</h3>
+
+            <div className="practice-group">
+              <p>We slow down before we spill over.
+We allow ourselves to be paused.
+We return to presence before continuing.</p>
+
+              <p><em>When impact is named:</em></p>
+              <p>We take responsibility for our impact before explaining our experience.</p>
+            </div>
+
+            <h3 className="subheading-title">In the Moment</h3>
+
+            <p>Anyone can pause the field.</p>
+
+            <p className="simple-cues-label">Simple cues:</p>
+            <div className="simple-cues">
+              <p>"Pause"</p>
+              <p>"Can we slow this down?"</p>
+              <p>"Let's soften"</p>
+            </div>
+
+            <p><em>When a pause is called:</em></p>
+            <p>we stop, breathe, and reset tone and pacing before continuing.</p>
+
+            <h3 className="subheading-title">The Standard</h3>
+
+            <p>We are not trying to eliminate intensity.</p>
+
+            <p>We are building the capacity for intensity to exist without destabilizing connection.</p>
+          </div>
+        </div>
+      </section>
+
       {/* CONCENTRIC CIRCLES OF PRESENCE */}
       <section className="vision-section concentric-circles">
         <div className="vision-container">

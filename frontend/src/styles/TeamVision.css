@@ -293,6 +293,129 @@
   font-weight: 300;
 }
 
+/* FLOODING & FIELD COHERENCE SECTION */
+.flooding-coherence {
+  --section-spacing: 60px;
+}
+
+.transition-text {
+  margin: 0 0 80px;
+  padding: 40px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to right,
+    rgba(212, 165, 116, 0.04) 0%,
+    rgba(212, 165, 116, 0.01) 30%,
+    rgba(212, 165, 116, 0) 100%
+  );
+  border: 1px solid rgba(212, 165, 116, 0.08);
+  border-left: 2px solid rgba(232, 201, 168, 0.25);
+}
+
+.transition-text p {
+  margin: 0 0 20px;
+  line-height: 2.1;
+  color: var(--text-light);
+  font-size: 0.98rem;
+  font-weight: 300;
+}
+
+.transition-text p:last-child {
+  margin-bottom: 0;
+}
+
+.flooding-coherence h2 {
+  margin-bottom: 60px;
+}
+
+.flooding-content {
+  margin-top: 60px;
+}
+
+.flooding-content p {
+  margin: 0 0 30px;
+  line-height: 2.1;
+  color: var(--text-light);
+  font-size: 0.98rem;
+  font-weight: 300;
+}
+
+.flooding-content p:last-child {
+  margin-bottom: 0;
+}
+
+.flooding-content p em {
+  color: var(--gold-light);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.flooding-signs {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 30px;
+}
+
+.flooding-signs p {
+  margin: 0 0 12px 0;
+  padding-left: 0;
+  position: relative;
+  font-size: 0.98rem;
+}
+
+.flooding-signs p:before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+  color: var(--gold);
+}
+
+.flooding-signs p:last-child {
+  margin-bottom: 0;
+}
+
+.subheading-title {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 50px 0 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(232, 201, 168, 0.2);
+}
+
+.practice-group p {
+  margin: 0 0 20px;
+}
+
+.simple-cues-label {
+  font-style: italic;
+  color: var(--gold-light);
+  font-weight: 400;
+  margin: 30px 0 20px !important;
+}
+
+.simple-cues {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 30px;
+}
+
+.simple-cues p {
+  margin: 0 0 12px 0;
+  padding: 8px 12px;
+  background: rgba(212, 165, 116, 0.05);
+  border-radius: 4px;
+  border-left: 2px solid var(--gold);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--cream);
+  font-family: 'Montserrat', monospace;
+  letter-spacing: 0.5px;
+}
+
+.simple-cues p:last-child {
+  margin-bottom: 0;
+}
+
 .circles-intro {
   margin-bottom: 100px;
   font-size: 1.05rem;
@@ -998,6 +1121,24 @@
     gap: 60px;
   }
 
+  .transition-text {
+    margin: 0 0 60px;
+    padding: 30px;
+  }
+
+  .subheading-title {
+    font-size: 1.15rem;
+    margin: 40px 0 25px;
+  }
+
+  .flooding-signs {
+    padding-left: 25px;
+  }
+
+  .simple-cues {
+    padding-left: 25px;
+  }
+
   .circle-wrapper {
     grid-template-columns: 120px 1fr;
     gap: 40px;
@@ -1175,6 +1316,30 @@
   .practice-card {
     padding: 14px 18px;
     font-size: 0.92rem;
+  }
+
+  .transition-text {
+    margin: 0 0 50px;
+    padding: 20px;
+    font-size: 0.92rem;
+  }
+
+  .transition-text p {
+    margin: 0 0 15px;
+  }
+
+  .subheading-title {
+    font-size: 1.05rem;
+    margin: 35px 0 20px;
+  }
+
+  .flooding-signs,
+  .simple-cues {
+    padding-left: 20px;
+  }
+
+  .simple-cues p {
+    font-size: 0.88rem;
   }
 
   .circle-wrapper {
