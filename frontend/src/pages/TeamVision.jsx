@@ -318,6 +318,8 @@ the field holds.</p>
               The Integration Team holds orange and red states—providing deeper support for complex activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels. This team consists of experienced facilitators trained to work with complex emotional and relational processes.
             </p>
 
+            <div style={{marginTop: '30px'}}></div>
+
             <h4>Responsibilities</h4>
             <ul>
               <li>Track the overall emotional field</li>
