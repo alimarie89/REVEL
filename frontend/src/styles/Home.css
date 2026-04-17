@@ -62,6 +62,69 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* ========== REVEL HERO VARIANT ========== */
+.revel-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revel-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.revel-hero-title {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin: 0 0 40px;
+  color: var(--text-light);
+  letter-spacing: 3px;
+  font-family: 'Laluxess Serif', serif;
+  text-transform: uppercase;
+}
+
+.revel-hero-positioning {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.revel-hero-positioning p {
+  font-size: 1.35rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--cream);
+  letter-spacing: 0.5px;
+  margin: 0 0 12px;
+  font-family: 'Laluxess Serif', serif;
+  font-style: italic;
+}
+
+.revel-hero-positioning p:last-child {
+  margin-bottom: 0;
+}
+
+.revel-hero-tagline {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.revel-hero-tagline p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--cream);
+  letter-spacing: 0.3px;
+  margin: 0 0 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.revel-hero-tagline p:last-child {
+  margin-bottom: 0;
+}
+
 /* ========== CTA BUTTONS ========== */
 .cta-button {
   display: inline-block;
@@ -804,11 +867,39 @@
   border-bottom-color: var(--rust);
 }
 
+/* ========== SECTION VARIANTS FOR IMPROVED PACING ========== */
+/* How the space holds section - conceptually distinct from cocreate */
+.how-space-holds {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, var(--dark) 0%, rgba(26, 26, 26, 0.95) 100%);
+}
+
+/* What it feels like - experiential section with enhanced visual separation */
+.what-it-feels-like {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 26, 26, 0.98);
+}
+
+.what-it-feels-like .section-preview h2 {
+  font-size: 2.3rem;
+}
+
+/* ========== TEAM SECTION REFINEMENT ========== */
+.team {
+  padding-top: 140px;
+  background: var(--dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-grid {
+  margin-top: 0;
+}
+
 /* ========== TEAM FULL LINK ========== */
 .team-full-link {
   text-align: center;
-  margin-top: 80px;
-  padding-top: 80px;
+  margin-top: 100px;
+  padding-top: 100px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 

@@ -112,17 +112,28 @@ function Home() {
   return (
     <div className="home">
       {/* HERO */}
-      <section className="hero" style={{backgroundImage: 'url(/revel-background-only.png)'}}>
+      <section
+        className="hero revel-hero"
+        style={{ backgroundImage: 'url("/REVEL Backdrop Horizontal.jpg")' }}
+      >
         <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="hero-title">An intimate community gathering at the intersection of ritual, dance, embodiment and collective awakening where connection is built to last.</h1>
-          <p className="hero-sub">
-            This isn't just about who you meet.<br />
-            It's about who you keep.
-          </p>
-          <a 
-            href="https://events.humanitix.com/revel2026" 
-            target="_blank" 
+
+        <div className="hero-content revel-hero-content">
+          <h1 className="revel-hero-title">REVEL</h1>
+
+          <div className="revel-hero-positioning">
+            <p>More intimate than a festival.</p>
+            <p>More expansive than a retreat.</p>
+          </div>
+
+          <div className="revel-hero-tagline">
+            <p>This isn't just about who you meet.</p>
+            <p>It's about who you keep.</p>
+          </div>
+
+          <a
+            href="https://events.humanitix.com/revel2026"
+            target="_blank"
             rel="noopener noreferrer"
             className="cta-button primary"
           >
@@ -137,7 +148,7 @@ function Home() {
         <Link to="/team" className="tab-link">The Team</Link>
       </nav>
 
-      {/* HOW THE SPACE HOLDS */}
+      {/* 1. COCREATE THE FIELD */}
       <section className="space-holds">
         <div className="section-container">
           <div className="section-preview">
@@ -158,7 +169,7 @@ function Home() {
         </div>
       </section>
 
-      {/* THE LEVELS OF PRESENCE */}
+      {/* 2. THE LEVELS OF PRESENCE */}
       <section className="levels-of-presence">
         <div className="section-container">
           <div className="levels-header">
@@ -243,33 +254,68 @@ function Home() {
         </div>
       </section>
 
-      {/* TEAM / PEOPLE HOLDING THIS */}
-      <section className="team">
+      {/* 3. HOW THE SPACE HOLDS */}
+      <section className="space-holds how-space-holds">
         <div className="section-container">
           <div className="section-preview">
-            <h2>What happens when world class facilitators hold the field collectively?</h2>
+            <h2>How the space holds</h2>
           </div>
           <div 
             className="section-preview-cta"
-            onClick={() => toggleSection('team-info')}
+            onClick={() => toggleSection('space-holds-info')}
           >
-            <span>{expandedSection === 'team-info' ? 'CLOSE' : 'READ MORE'}</span>
+            <span>{expandedSection === 'space-holds-info' ? 'CLOSE' : 'READ MORE'}</span>
           </div>
-          {expandedSection === 'team-info' && (
+          {expandedSection === 'space-holds-info' && (
             <div className="section-expanded">
               <div className="purpose-items">
-                <div className="purpose-item">Conditions are created where people feel safe enough to drop their guard.</div>
-                <div className="purpose-item">Attention is guided toward what's actually happening in the moment.</div>
-                <div className="purpose-item">Patterns that disconnect people are interrupted.</div>
-                <div className="purpose-item">Real contact is invited instead of performance.</div>
-                <div className="purpose-item">People are helped to stay present under intensity instead of checking out.</div>
-                <div className="purpose-item">The space is shaped so connection doesn't collapse or scatter.</div>
+                <div className="purpose-item">Create conditions where people feel safe enough to drop their guard</div>
+                <div className="purpose-item">Direct attention toward what's actually happening in the moment</div>
+                <div className="purpose-item">Interrupt and redirect performance into real contact</div>
+                <div className="purpose-item">Support people in staying present when intensity rises</div>
+                <div className="purpose-item">Stabilize the field so connection doesn't collapse or scatter</div>
               </div>
             </div>
           )}
         </div>
+      </section>
 
-        {/* TEAM GRID */}
+      {/* 4. WHAT IT FEELS LIKE */}
+      <section className="space-holds what-it-feels-like">
+        <div className="section-container">
+          <div className="section-preview">
+            <h2>What it feels like</h2>
+          </div>
+          <div 
+            className="section-preview-cta"
+            onClick={() => toggleSection('experience')}
+          >
+            <span>{expandedSection === 'experience' ? 'CLOSE' : 'A day in the space'}</span>
+          </div>
+          {expandedSection === 'experience' && (
+            <div className="section-expanded">
+              <p>
+                Your morning begins with presence. You wake in a container held by people who know how to do this. There's ritual, embodied practice, movement that wakes your body and opens your field.
+              </p>
+              <p>
+                Throughout the day, you move between intimate circles and collective experience. You dance. You sit in conversation with people who show up as themselves. You taste food that's shared with intention. You spend time in nature, feeling the earth and sky.
+              </p>
+              <p>
+                There are moments of intensity where connection deepens beyond what normally happens. There are moments of softness where you're held. You're invited into your own aliveness—not performing it, actually living it.
+              </p>
+              <p>
+                The evening gathers you again. There's ritual, music, dance, intimacy. You end each day integrated, more alive, more real.
+              </p>
+              <p>
+                And through it all, the people holding this space are in it with you—not teaching from the front, but co-creating what's alive and possible.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* 5. MEET THE TEAM */}
+      <section className="team">
         <div className="team-grid">
           <h3>Meet the Team</h3>
           <div className="facilitators-grid">
@@ -312,40 +358,6 @@ function Home() {
         {/* LINK TO FULL TEAM PAGE */}
         <div className="team-full-link">
           <Link to="/team" className="see-full-team-cta">See the Full Team</Link>
-        </div>
-      </section>
-
-      {/* WHAT YOU'LL EXPERIENCE */}
-      <section className="space-holds">
-        <div className="section-container">
-          <div className="section-preview">
-            <h2>Do you have a love of dance, nature, connection, eros, and personal growth?</h2>
-          </div>
-          <div 
-            className="section-preview-cta"
-            onClick={() => toggleSection('experience')}
-          >
-            <span>{expandedSection === 'experience' ? 'CLOSE' : 'yes tell me more about the experience'}</span>
-          </div>
-          {expandedSection === 'experience' && (
-            <div className="section-expanded">
-              <p>
-                Your morning begins with presence. You wake in a container held by people who know how to do this. There's ritual, embodied practice, movement that wakes your body and opens your field.
-              </p>
-              <p>
-                Throughout the day, you move between intimate circles and collective experience. You dance. You sit in conversation with people who show up as themselves. You taste food that's shared with intention. You spend time in nature, feeling the earth and sky.
-              </p>
-              <p>
-                There are moments of intensity where connection deepens beyond what normally happens. There are moments of softness where you're held. You're invited into your own aliveness—not performing it, actually living it.
-              </p>
-              <p>
-                The evening gathers you again. There's ritual, music, dance, intimacy. You end each day integrated, more alive, more real.
-              </p>
-              <p>
-                And through it all, the people holding this space are in it with you—not teaching from the front, but co-creating what's alive and possible.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
