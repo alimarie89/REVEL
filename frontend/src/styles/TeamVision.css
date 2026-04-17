@@ -389,6 +389,17 @@
   opacity: 1;
 }
 
+/* INTERACTIVE SVG OVERLAY FOR RING DETECTION */
+.rings-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+}
+
 /* DETAIL PANEL */
 .circles-detail-panel {
   position: relative;

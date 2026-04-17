@@ -3,6 +3,31 @@ import '../styles/TeamVision.css'
 
 function TeamVision() {
   const [activeCircle, setActiveCircle] = useState('individual')
+
+  const handleRingInteraction = (e) => {
+    const svg = e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    
+    // Calculate distance from center (normalized to 0-1)
+    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+    
+    // Determine which ring based on CSS visual sizes
+    let ring = 'cultural'; // default to outermost
+    if (distance <= 0.20) {
+      ring = 'individual'; // ring-1: 20% width
+    } else if (distance <= 0.45) {
+      ring = 'relational'; // ring-2: 45% width
+    } else if (distance <= 0.70) {
+      ring = 'group'; // ring-3: 70% width
+    }
+    
+    setActiveCircle(ring);
+  };
+
   return (
     <div className="team-vision-page">
       {/* HERO */}
@@ -105,34 +130,28 @@ Do not let disconnection spread unnoticed.</p>
           
           <div className="circles-visualization">
             <div className="circles-rings">
-              <div 
-                className={`circle-ring ring-1 ${activeCircle === 'individual' ? 'active' : ''}`}
-                onClick={() => setActiveCircle('individual')}
-                onMouseEnter={() => setActiveCircle('individual')}
-              >
+              <div className={`circle-ring ring-1 ${activeCircle === 'individual' ? 'active' : ''}`}>
                 <div className="ring-label">Individual</div>
               </div>
-              <div 
-                className={`circle-ring ring-2 ${activeCircle === 'relational' ? 'active' : ''}`}
-                onClick={() => setActiveCircle('relational')}
-                onMouseEnter={() => setActiveCircle('relational')}
-              >
+              <div className={`circle-ring ring-2 ${activeCircle === 'relational' ? 'active' : ''}`}>
                 <div className="ring-label">Relational</div>
               </div>
-              <div 
-                className={`circle-ring ring-3 ${activeCircle === 'group' ? 'active' : ''}`}
-                onClick={() => setActiveCircle('group')}
-                onMouseEnter={() => setActiveCircle('group')}
-              >
+              <div className={`circle-ring ring-3 ${activeCircle === 'group' ? 'active' : ''}`}>
                 <div className="ring-label">Group</div>
               </div>
-              <div 
-                className={`circle-ring ring-4 ${activeCircle === 'cultural' ? 'active' : ''}`}
-                onClick={() => setActiveCircle('cultural')}
-                onMouseEnter={() => setActiveCircle('cultural')}
-              >
+              <div className={`circle-ring ring-4 ${activeCircle === 'cultural' ? 'active' : ''}`}>
                 <div className="ring-label">Cultural</div>
               </div>
+              
+              {/* Interactive SVG overlay for proper ring detection */}
+              <svg 
+                className="rings-interactive" 
+                viewBox="0 0 400 400"
+                onMouseMove={handleRingInteraction}
+                onClick={handleRingInteraction}
+              >
+                <circle cx="200" cy="200" r="200" fill="transparent" pointerEvents="auto" />
+              </svg>
             </div>
             
             <div className="circles-detail-panel">
