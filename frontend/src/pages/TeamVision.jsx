@@ -406,11 +406,38 @@ the field holds.</p>
         </div>
       </section>
 
-      {/* FACILITATOR RESPONSIBILITY */}
+      {/* FACILITATOR RESPONSIBILITIES */}
       <section className="vision-section facilitator-responsibility">
         <div className="vision-container">
-          <h2>Facilitator Responsibility</h2>
+          <h2>Facilitator Responsibilities</h2>
+          
           <p>Each workshop requires someone designated to track the field throughout—noticing participants in blue or yellow states and checking in with them. This responsibility ensures that facilitators can remain present in their content while the collective field is being actively held and attended to.</p>
+
+          <div className="facilitator-sections">
+            <div className="facilitator-subsection">
+              <h3>Preparation</h3>
+              <p>Two 90-minute live prep calls will be held for all core and support team members prior to REVEL 2026.</p>
+              <ul>
+                <li><strong>First Prep Call (Relational)</strong><br/>Thursday, 5/28, 2–3:30pm MDT</li>
+                <li><strong>Second Prep Call (Final Preparation)</strong><br/>Thursday, 6/25, 2–3:30pm MDT</li>
+              </ul>
+            </div>
+
+            <div className="facilitator-subsection">
+              <h3>Preparatory Materials</h3>
+              <p>Prior to the event, support team members will receive materials outlining shared language used at REVEL 2026. Support team members are expected to review these materials before arrival.</p>
+            </div>
+
+            <div className="facilitator-subsection">
+              <h3>Support Team Meeting (Onsite)</h3>
+              <p>All support team members are expected to attend a live support team meeting at the beginning of REVEL 2026.<br/><strong>Thursday, 7/2, 11am–1pm MDT</strong></p>
+            </div>
+
+            <div className="facilitator-subsection">
+              <h3>Debrief & Staff Integration</h3>
+              <p>A 90-minute debrief call will be scheduled for all core and support team members to integrate the experience.<br/><strong>Thursday, 7/23, 2–3:30pm MDT</strong></p>
+            </div>
+          </div>
         </div>
       </section>
 

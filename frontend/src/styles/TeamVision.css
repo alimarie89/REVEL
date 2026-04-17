@@ -892,6 +892,64 @@
   font-weight: 600;
 }
 
+/* FACILITATOR RESPONSIBILITIES */
+.facilitator-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 80px;
+  margin-top: 60px;
+}
+
+.facilitator-subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.facilitator-subsection h3 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+}
+
+.facilitator-subsection p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--text-light);
+  margin: 0 0 15px;
+  font-weight: 300;
+}
+
+.facilitator-subsection ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.facilitator-subsection li {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--text-light);
+  margin: 0 0 15px;
+  font-weight: 300;
+  padding-left: 20px;
+  position: relative;
+}
+
+.facilitator-subsection li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+.facilitator-subsection li strong {
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
 .vision-closing {
   text-align: center;
   font-size: 1.08rem;
@@ -1016,6 +1074,11 @@
     border-left: 1px solid var(--divider);
     padding-left: 20px;
     margin-left: 15px;
+  }
+
+  .facilitator-sections {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .color-practice {
@@ -1235,6 +1298,23 @@
   .color-example {
     font-size: 0.85rem;
     line-height: 1.7;
+  }
+
+  .facilitator-sections {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .facilitator-subsection h3 {
+    font-size: 1.15rem;
+  }
+
+  .facilitator-subsection p {
+    font-size: 0.9rem;
+  }
+
+  .facilitator-subsection li {
+    font-size: 0.9rem;
   }
 
   .vision-closing {
