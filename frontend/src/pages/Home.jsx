@@ -5,10 +5,58 @@ import '../styles/Home.css'
 function Home() {
   const [expandedSection, setExpandedSection] = useState(null)
   const [selectedFacilitator, setSelectedFacilitator] = useState(null)
+  const [selectedLevel, setSelectedLevel] = useState('individual')
+  const [hoveredLevel, setHoveredLevel] = useState(null)
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
   }
+
+  const handleLevelClick = (level) => {
+    setSelectedLevel(level)
+    setHoveredLevel(null)
+  }
+
+  const handleLevelHover = (level) => {
+    setHoveredLevel(level)
+  }
+
+  const handleLevelLeave = () => {
+    setHoveredLevel(null)
+  }
+
+  const displayedLevel = hoveredLevel || selectedLevel || 'individual'
+
+  const levels = [
+    {
+      id: 'individual',
+      label: 'Self',
+      title: 'Individual',
+      question: 'Can I stay present with what is happening inside of me?',
+      context: 'Safety is sourced in your ability to stay with yourself.'
+    },
+    {
+      id: 'relational',
+      label: 'Relational',
+      title: 'Relational',
+      question: 'Can I stay in real contact with another without performing?',
+      context: 'When two people show up in full presence, something new forms between them.'
+    },
+    {
+      id: 'group',
+      label: 'Group',
+      title: 'Group',
+      question: 'What does it take for a group to stay coherent under pressure?',
+      context: 'When individuals take responsibility for their impact, the field holds.'
+    },
+    {
+      id: 'cultural',
+      label: 'Cultural',
+      title: 'Cultural',
+      question: 'How do I carry what I practice here into the world?',
+      context: 'What happens here shows up in how you live.'
+    }
+  ]
 
   const facilitators = [
     {
@@ -110,26 +158,87 @@ function Home() {
         </div>
       </section>
 
-      {/* THREE PILLARS */}
-      <section className="cards">
+      {/* THE LEVELS OF PRESENCE */}
+      <section className="levels-of-presence">
         <div className="section-container">
-          <h2 style={{textAlign: 'center', fontSize: '2.5rem', fontWeight: '300', margin: '0', fontFamily: "'Laluxess Serif', serif", fontStyle: 'italic'}}>The three pillars of conscious evolution</h2>
-        </div>
-        <div className="cards-grid">
-          <div className="card">
-            <h3>Relational Field</h3>
-            <p className="card-question">What happens when two people show up in full presence?</p>
-            <p className="card-answer">Something new forms between them.</p>
+          <div className="levels-header">
+            <h2>The Levels of Presence</h2>
+            <p className="levels-subtitle">Presence moves through layers—self, relational, group, and beyond.</p>
           </div>
-          <div className="card">
-            <h3>Group Field</h3>
-            <p className="card-question">What happens when you aren't bracing or performing?</p>
-            <p className="card-answer">Liberation becomes possible.</p>
-          </div>
-          <div className="card">
-            <h3>Cultural Field</h3>
-            <p className="card-question">What happens when you take what you have learned out into the world?</p>
-            <p className="card-answer">It changes the world around you.</p>
+
+          <div className="levels-visualization">
+            <div className="levels-circles">
+              <div className="levels-rings">
+                <div className={`level-ring ring-1 ${displayedLevel === 'individual' ? 'active' : ''} ${selectedLevel === 'individual' ? 'selected' : ''}`}></div>
+                <div className={`level-ring ring-2 ${displayedLevel === 'relational' ? 'active' : ''} ${selectedLevel === 'relational' ? 'selected' : ''}`}></div>
+                <div className={`level-ring ring-3 ${displayedLevel === 'group' ? 'active' : ''} ${selectedLevel === 'group' ? 'selected' : ''}`}></div>
+                <div className={`level-ring ring-4 ${displayedLevel === 'cultural' ? 'active' : ''} ${selectedLevel === 'cultural' ? 'selected' : ''}`}></div>
+                
+                <svg 
+                  className="rings-interactive" 
+                  viewBox="0 0 400 400"
+                  onMouseMove={(e) => {
+                    const svg = e.currentTarget;
+                    const rect = svg.getBoundingClientRect();
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const mouseX = e.clientX - rect.left;
+                    const mouseY = e.clientY - rect.top;
+                    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+                    
+                    let level = 'cultural';
+                    if (distance <= 0.25) level = 'individual';
+                    else if (distance <= 0.50) level = 'relational';
+                    else if (distance <= 0.77) level = 'group';
+                    
+                    handleLevelHover(level);
+                  }}
+                  onMouseLeave={handleLevelLeave}
+                  onClick={(e) => {
+                    const svg = e.currentTarget;
+                    const rect = svg.getBoundingClientRect();
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const mouseX = e.clientX - rect.left;
+                    const mouseY = e.clientY - rect.top;
+                    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+                    
+                    let level = 'cultural';
+                    if (distance <= 0.25) level = 'individual';
+                    else if (distance <= 0.50) level = 'relational';
+                    else if (distance <= 0.77) level = 'group';
+                    
+                    handleLevelClick(level);
+                  }}
+                >
+                  <circle cx="200" cy="200" r="200" fill="transparent" pointerEvents="auto" />
+                </svg>
+              </div>
+
+              <div className="levels-labels">
+                {levels.map((level) => (
+                  <button
+                    key={level.id}
+                    className={`level-label-btn ${displayedLevel === level.id ? 'active' : ''} ${selectedLevel === level.id ? 'selected' : ''}`}
+                    onMouseEnter={() => handleLevelHover(level.id)}
+                    onMouseLeave={handleLevelLeave}
+                    onClick={() => handleLevelClick(level.id)}
+                  >
+                    {level.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="levels-detail-panel">
+              {levels.map((level) => (
+                <div key={level.id} className={`level-content ${displayedLevel === level.id ? 'active' : ''}`}>
+                  <h3>{level.title}</h3>
+                  <p className="level-question">{level.question}</p>
+                  <p className="level-context">{level.context}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
