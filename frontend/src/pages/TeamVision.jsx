@@ -315,14 +315,14 @@ the field holds.</p>
             <h3>Integration Team</h3>
 
             <p>
-              The Integration Team works with participants experiencing significant activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels. This team consists of experienced facilitators trained to work with complex emotional and relational processes, including one licensed mental health professional specializing in crisis intervention and clinical assessment.
+              The Integration Team holds orange and red states—providing deeper support for complex activation, relational rupture, or dysregulation beyond the scope of Emotional Support Angels. This team consists of experienced facilitators trained to work with complex emotional and relational processes, including one licensed mental health professional specializing in crisis intervention and clinical assessment.
             </p>
 
             <h4>Responsibilities</h4>
             <ul>
               <li>Track the overall emotional field</li>
               <li>Receive escalations and assess what is happening</li>
-              <li>Work directly with participants in orange or red states</li>
+              <li>Hold and contain orange states; actively intervene in red states</li>
               <li>Support regulation using somatic and relational approaches</li>
               <li>Address boundary violations, relational ruptures, and consent issues</li>
               <li>Support participants processing significant activation</li>
