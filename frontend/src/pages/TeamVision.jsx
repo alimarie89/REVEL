@@ -260,10 +260,10 @@ the field holds.</p>
         </div>
       </section>
 
-      {/* HOW WE USE THE COLOR CHECK SYSTEM TO HOLD THE CONTAINER UNDER PRESSURE */}
+      {/* HOW WE ADDRESS ACTIVATION IN THE FIELD */}
       <section className="vision-section container-pressure">
         <div className="vision-container">
-          <h2>How We Use the Color Check System to Hold the Container Under Pressure</h2>
+          <h2>How We Address Activation in the Field</h2>
 
           <div className="pressure-intro">
             <p>When intensity rises, the container is revealed in how we respond.<br/>
