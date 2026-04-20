@@ -480,8 +480,8 @@ the field holds.</p>
               <h3>Preparation</h3>
               <p>Two 90-minute live prep calls will be held for all core and support team members prior to REVEL 2026.</p>
               <ul>
-                <li><strong>First Prep Call (Relational)</strong><br/>Thursday, 5/28, 2–3:30pm MDT</li>
-                <li><strong>Second Prep Call (Final Preparation)</strong><br/>Thursday, 6/25, 2–3:30pm MDT</li>
+                <li><strong>First Prep Call (Relational)</strong><br/>Thursday, 5/21, 2–3:30pm MDT</li>
+                <li><strong>Second Prep Call (Final Preparation)</strong><br/>Thursday, 6/18, 2–3:30pm MDT</li>
               </ul>
             </div>
 
