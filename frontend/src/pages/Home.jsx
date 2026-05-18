@@ -308,6 +308,7 @@ function Home() {
               </div>
             ))}
         </div>
+      </div>
       </section>
 
       {/* FACILITATOR MODAL */}
