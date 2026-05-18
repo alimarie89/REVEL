@@ -115,6 +115,73 @@ function Home() {
     }
   ]
 
+  const showcaseFacilitators = [
+    {
+      id: 1,
+      name: 'David Block',
+      role: 'Artist',
+      workshop: 'Saturday Evening Sunset Collective Dance - The Human Experience',
+      photo: '/facilitators/david-block.jpg',
+      bio: 'Our collective "peak" will be a Saturday evening sunset dance journey woven by The Human Experience. David\'s music has been a soundtrack for many of our lives over the last decade+. His work has reached many millions and taken him around the globe. David is a visionary artist and collaborative genius behind projects like Gone Gone Beyond and albums with Rising Appalachia.'
+    },
+    {
+      id: 2,
+      name: 'Michaela Winters',
+      role: 'Transformational Coach',
+      workshop: 'Carnival DNGN',
+      photo: '/facilitators/michaela-winters.jpg',
+      bio: 'Carnival DNGN is a consent-centered, immersive experience where people are invited to stop performing, confront what they\'ve been avoiding, and reclaim parts of themselves they\'ve kept hidden, while being met with grounded support every step of the way. Michaela is a transformational coach and provocateur known for her unapologetically direct and edge-forward approach to growth.'
+    },
+    {
+      id: 3,
+      name: 'Atilla Cidam',
+      role: 'Facilitator',
+      workshop: 'Dancing with Death',
+      photo: '/facilitators/atilla-cidam.jpg',
+      bio: 'A ritual-based workshop exploring death as a doorway to deeper aliveness, where you\'ll engage grief, identity, and transformation through embodied practices and connection. Atilla is a co-founder of Dance Meets Tantra and a seasoned facilitator weaving eros, shadow work, and ritual into powerful transformational spaces.'
+    },
+    {
+      id: 4,
+      name: 'Yarixa Ferrao',
+      role: 'Facilitator',
+      workshop: 'Unleash!',
+      photo: '/facilitators/yarixa-ferrao.jpg',
+      bio: 'A high-energy, expressive experience designed to help you break through inhibition and fully embody your voice, movement, and creative power. Yarixa is the founder of Unleash! and a global facilitator known for activating bold self-expression and emotional freedom.'
+    },
+    {
+      id: 5,
+      name: 'Chloe Good',
+      role: 'Somatic Coach',
+      workshop: 'Attachment Alchemy',
+      photo: '/facilitators/chloe-good.jpg',
+      bio: 'A relational body of work where you explore and re-wire your attachment patterns in real time through guided partner exercises, building capacity for connection without losing yourself. Chloe is a somatic coach whose work focuses on embodied healing, emotional processing, and creating safety within the body.'
+    },
+    {
+      id: 6,
+      name: 'Victor Warring',
+      role: 'Somatic Educator',
+      workshop: 'DeColonizing Erotic Movement',
+      photo: '/facilitators/victor-warring.jpg',
+      bio: 'An embodied movement journey exploring how shame and conditioning live in the body, using dance, touch, and consent-based practices to reclaim pleasure and erotic sovereignty. Victor is a pioneer in somatic sexuality education, integrating decades of work in embodiment, intimacy, and cultural awareness.'
+    },
+    {
+      id: 7,
+      name: 'Peter Benjamin & Violet Starkey',
+      role: 'Facilitators',
+      workshop: 'Relational Interplay',
+      photo: '/facilitators/peter-benjamin.jpg',
+      bio: 'A dynamic, interactive practice using movement, voice, and structured exercises to build authentic connection, emotional intelligence, and embodied communication skills. Peter and Violet are the creators of Relational Interplay and have trained thousands.'
+    },
+    {
+      id: 8,
+      name: 'Zahava Griss',
+      role: 'Facilitator',
+      workshop: 'Dance of D&S / Primal Play',
+      photo: '/facilitators/zahava-griss.jpg',
+      bio: 'A playful, edgy exploration of power, instinct, and connection through movement, kink-informed dynamics, and relational exercises. Z is the founder of Embody More Love and has been guiding dance rituals for over two decades that blend intimacy, shadow, and liberation.'
+    }
+  ]
+
   return (
     <div className="home">
       {/* 1. HERO */}
@@ -196,32 +263,40 @@ function Home() {
         <div className="section-container">
           <p className="facilitators-caption">Rub shoulders with world-class facilitators</p>
           <div className="facilitators-grid">
-            <div className="facilitator-card">
-              <img src="/facilitators/david-block.jpg" alt="David Block" />
-              <p className="facilitator-name">David Block</p>
-              <p className="facilitator-workshop">Saturday Evening Sunset Collective Dance - The Human Experience</p>
-            </div>
-            <div className="facilitator-card">
-              <img src="/facilitators/michaela-winters.jpg" alt="Michaela Winters" />
-              <p className="facilitator-name">Michaela Winters</p>
-              <p className="facilitator-workshop">Carnival DNGN</p>
-            </div>
-            <div className="facilitator-card">
-              <img src="/facilitators/atilla-cidam.jpg" alt="Atilla Cidam" />
-              <p className="facilitator-name">Atilla Cidam</p>
-              <p className="facilitator-workshop">Dancing with Death</p>
-            </div>
-            <div className="facilitator-card">
-              <img src="/facilitators/yarixa-ferrao.jpg" alt="Yarixa Ferrao" />
-              <p className="facilitator-name">Yarixa Ferrao</p>
-              <p className="facilitator-workshop">Unleash!</p>
-            </div>
-            <div className="facilitator-card">
-              <img src="/facilitators/chloe-good.jpg" alt="Chloe Good" />
-              <p className="facilitator-name">Chloe Good</p>
-              <p className="facilitator-workshop">Attachment Alchemy</p>
-            </div>
+            {showcaseFacilitators.map((facilitator) => (
+              <div 
+                key={facilitator.id}
+                className="facilitator-card"
+                onClick={() => setSelectedFacilitator(selectedFacilitator?.id === facilitator.id ? null : facilitator)}
+                style={{ cursor: 'pointer' }}
+              >
+                <img src={facilitator.photo} alt={facilitator.name} />
+                <p className="facilitator-name">{facilitator.name}</p>
+                <p className="facilitator-workshop">{facilitator.workshop}</p>
+              </div>
+            ))}
           </div>
+          {selectedFacilitator && (
+            <div className="facilitator-modal">
+              <div className="facilitator-modal-content">
+                <button 
+                  className="modal-close"
+                  onClick={() => setSelectedFacilitator(null)}
+                >
+                  ✕
+                </button>
+                <div className="modal-body">
+                  <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
+                  <div className="modal-info">
+                    <h3>{selectedFacilitator.name}</h3>
+                    <p className="modal-role">{selectedFacilitator.role}</p>
+                    <p className="modal-workshop">{selectedFacilitator.workshop}</p>
+                    <p className="modal-bio">{selectedFacilitator.bio}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
