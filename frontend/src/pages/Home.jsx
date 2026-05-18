@@ -303,10 +303,8 @@ function Home() {
                 style={{ cursor: 'pointer' }}
               >
                 <img src={facilitator.photo} alt={facilitator.name} />
-                <div className="facilitator-card-info">
-                  <p className="facilitator-name">{facilitator.name}</p>
-                  <p className="facilitator-workshop">{facilitator.workshop}</p>
-                </div>
+                <p className="facilitator-name">{facilitator.name}</p>
+                <p className="facilitator-workshop">{facilitator.workshop}</p>
               </div>
             ))}
           </div>

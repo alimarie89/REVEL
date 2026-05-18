@@ -437,17 +437,17 @@
 
 .facilitators-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   margin-top: 40px;
 }
 
 .facilitator-card {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: left;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -457,23 +457,16 @@
 }
 
 .facilitator-card img {
-  width: 150px;
-  height: 190px;
+  width: 220px;
+  height: 280px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease;
-  flex-shrink: 0;
 }
 
 .facilitator-card:hover img {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-}
-
-.facilitator-card-info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .facilitator-name {
@@ -483,7 +476,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
-  text-align: left;
+  text-align: center;
 }
 
 .facilitator-workshop {
@@ -494,7 +487,7 @@
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.2px;
-  text-align: left;
+  text-align: center;
 }
 
 /* ========== FACILITATOR MODAL ========== */
