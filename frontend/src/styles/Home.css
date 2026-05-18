@@ -491,105 +491,7 @@
 }
 
 /* ========== FACILITATOR MODAL ========== */
-.facilitator-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-  padding: 40px;
-}
 
-.facilitator-modal-content {
-  background: var(--dark);
-  border: 1px solid rgba(245, 241, 237, 0.2);
-  border-radius: 8px;
-  max-width: 900px;
-  width: 100%;
-  max-height: 85vh;
-  overflow-y: auto;
-  position: relative;
-  padding: 50px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background: none;
-  border: none;
-  color: var(--cream);
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-close:hover {
-  color: var(--rust);
-}
-
-.modal-body {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 60px;
-  align-items: flex-start;
-  color: var(--text-light);
-}
-
-.modal-photo {
-  width: 320px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-}
-
-.modal-info h3 {
-  font-size: 2rem;
-  font-weight: 300;
-  color: var(--cream);
-  margin: 0 0 12px;
-  font-family: 'Laluxess Serif', serif;
-  letter-spacing: 0.5px;
-}
-
-.modal-role {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--rust);
-  margin: 0 0 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.modal-workshop {
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--cream);
-  margin: 0 0 24px;
-  line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.modal-bio {
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: rgba(245, 241, 237, 0.85);
-  line-height: 1.8;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.2px;
-}
 
 .cocreate-bridge {
   font-size: 1.1rem;
@@ -891,22 +793,6 @@
   margin: 8px 0 0 0;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-}
-
-/* ========== FACILITATOR MODAL ========== */
-.facilitator-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 20px;
-  animation: fadeIn 0.3s ease;
 }
 
 /* ========== CONCENTRIC CIRCLES SECTION ========== */
@@ -1340,17 +1226,7 @@
     font-size: 0.95rem;
   }
 
-  .facilitator-modal {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 40px;
-  }
 
-  .modal-photo {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {
