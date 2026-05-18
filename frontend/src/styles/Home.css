@@ -507,28 +507,28 @@
 
 .facilitator-modal-content {
   background: var(--dark);
-  border: 1px solid rgba(245, 241, 237, 0.1);
-  border-radius: 12px;
-  max-width: 900px;
+  border: 1px solid rgba(245, 241, 237, 0.2);
+  border-radius: 8px;
+  max-width: 850px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  padding: 40px;
+  padding: 50px 50px 50px 40px;
 }
 
 .modal-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   background: none;
   border: none;
   color: var(--cream);
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,44 +540,43 @@
 
 .modal-body {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 50px;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
   align-items: flex-start;
   color: var(--text-light);
 }
 
 .modal-photo {
-  width: 100%;
-  max-width: 300px;
+  width: 320px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  flex-shrink: 0;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .modal-info h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--cream);
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-family: 'Laluxess Serif', serif;
+  letter-spacing: 0.5px;
 }
 
 .modal-role {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--rust);
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .modal-workshop {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: var(--cream);
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }
@@ -585,11 +584,11 @@
 .modal-bio {
   font-size: 0.95rem;
   font-weight: 300;
-  color: rgba(245, 241, 237, 0.9);
+  color: rgba(245, 241, 237, 0.85);
   line-height: 1.8;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .cocreate-bridge {
