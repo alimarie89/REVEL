@@ -191,6 +191,40 @@ function Home() {
         </div>
       </section>
 
+      {/* 3.5 FACILITATORS SHOWCASE */}
+      <section className="facilitators-showcase">
+        <div className="section-container">
+          <p className="facilitators-caption">Rub shoulders with world-class facilitators</p>
+          <div className="facilitators-grid">
+            <div className="facilitator-card">
+              <img src="/facilitators/david-block.jpg" alt="David Block" />
+              <p className="facilitator-name">David Block</p>
+              <p className="facilitator-workshop">Saturday Evening Sunset Collective Dance - The Human Experience</p>
+            </div>
+            <div className="facilitator-card">
+              <img src="/facilitators/michaela-winters.jpg" alt="Michaela Winters" />
+              <p className="facilitator-name">Michaela Winters</p>
+              <p className="facilitator-workshop">Carnival DNGN</p>
+            </div>
+            <div className="facilitator-card">
+              <img src="/facilitators/atilla-cidam.jpg" alt="Atilla Cidam" />
+              <p className="facilitator-name">Atilla Cidam</p>
+              <p className="facilitator-workshop">Dancing with Death</p>
+            </div>
+            <div className="facilitator-card">
+              <img src="/facilitators/yarixa-ferrao.jpg" alt="Yarixa Ferrao" />
+              <p className="facilitator-name">Yarixa Ferrao</p>
+              <p className="facilitator-workshop">Unleash!</p>
+            </div>
+            <div className="facilitator-card">
+              <img src="/facilitators/chloe-good.jpg" alt="Chloe Good" />
+              <p className="facilitator-name">Chloe Good</p>
+              <p className="facilitator-workshop">Attachment Alchemy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
         <div className="section-container">
