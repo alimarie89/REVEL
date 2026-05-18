@@ -488,23 +488,6 @@ function Home() {
             ))}
           </div>
 
-          {selectedFacilitator && (
-            <div className="facilitator-modal-overlay" onClick={() => setSelectedFacilitator(null)}>
-              <div className="facilitator-modal" onClick={(e) => e.stopPropagation()}>
-                <button className="modal-close" onClick={() => setSelectedFacilitator(null)}>✕</button>
-                <div className="modal-content">
-                  <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
-                  <div className="modal-text">
-                    <h3>{selectedFacilitator.name}</h3>
-                    <p className="modal-role">{selectedFacilitator.role}</p>
-                    <p className="modal-bio">{selectedFacilitator.bio}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
         {/* LINK TO FULL TEAM PAGE */}
         <div className="team-full-link">
           <Link to="/team" className="see-full-team-cta">See the Full Team</Link>
