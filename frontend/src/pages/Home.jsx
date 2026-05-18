@@ -494,6 +494,7 @@ function Home() {
         <div className="team-full-link">
           <Link to="/team" className="see-full-team-cta">See the Full Team</Link>
         </div>
+        </div>
       </section>
 
       {/* 8. FINAL INVITATION */}
