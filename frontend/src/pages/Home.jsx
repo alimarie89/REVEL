@@ -280,7 +280,48 @@ function Home() {
         </div>
       )}
 
-      {/* 4. THE FIELD OF PRESENCE */}
+      {/* 4. THE VENUE */}
+      <section className="venue-section">
+        <div className="venue-hero" style={{ backgroundImage: 'url("/venue/Sunrise Ranch Rainbow.jpg")' }}>
+          <div className="venue-overlay"></div>
+          <div className="venue-hero-content">
+            <h2>Where we're gathering</h2>
+            <p>Sunrise Ranch, Eden Valley, Colorado</p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="venue-philosophy">
+            <p className="venue-tagline">Honoring Universal Being in all its forms</p>
+            <p className="venue-description">Sunrise Ranch is more than a beautiful location—it's a sacred space stewarded for over 75 years with spiritual intention. Since 1945, this valley has been dedicated to the transformation and awakening of consciousness. The atmosphere here carries decades of positive thought, intention, and service to the evolution of humanity.</p>
+          </div>
+
+          <div className="venue-gallery">
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Pavilion.jpg" alt="Sunrise Ranch Pavilion" />
+              <p>Gathering Space</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Pool.jpg" alt="Sunrise Ranch Pool" />
+              <p>Renewal & Play</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Green Ridge.jpg" alt="Sunrise Ranch Green Ridge" />
+              <p>Natural Beauty</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Camping.jpg" alt="Sunrise Ranch Camping" />
+              <p>Community Spaces</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Triple Room.jpg" alt="Sunrise Ranch Triple Room" />
+              <p>Accommodations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
         <div className="section-container">
           <div className="circles-header">
