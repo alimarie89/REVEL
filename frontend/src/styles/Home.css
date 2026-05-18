@@ -387,6 +387,16 @@
   letter-spacing: 0.3px;
 }
 
+.cocreate-photo-card .photo-title {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(245, 241, 237, 0.7);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
 .cocreate-invitations {
   display: flex;
   flex-direction: column;

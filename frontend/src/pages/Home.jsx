@@ -174,17 +174,18 @@ function Home() {
                   <p key={i} className="cocreate-line">{invitation}</p>
                 ))}
               </div>
-              <p className="cocreate-closing">These are the levels of presence we cultivate together.</p>
             </div>
           </div>
           <div className="cocreate-photos">
             <div className="cocreate-photo-card">
               <img src="/team/spencer-jacobson.jpg" alt="Spencer Jacobson" />
-              <p className="photo-name">Spencer</p>
+              <p className="photo-name">Spencer Jacobson</p>
+              <p className="photo-title">Visionary</p>
             </div>
             <div className="cocreate-photo-card">
-              <img src="/team/alison-williams.jpg" alt="Alison Williams" />
-              <p className="photo-name">Alison</p>
+              <img src="/team/alison-williams.jpg" alt="Ali Williams" />
+              <p className="photo-name">Ali Williams</p>
+              <p className="photo-title">COO</p>
             </div>
           </div>
         </div>
