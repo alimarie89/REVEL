@@ -357,9 +357,10 @@
 .cocreate-photos {
   grid-column: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 40px;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .cocreate-photo-card {
@@ -1311,7 +1312,6 @@
 
   .cocreate-photos {
     grid-column: 1;
-    justify-content: center;
     flex-direction: column;
   }
 
