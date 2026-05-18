@@ -538,17 +538,19 @@
 
 .modal-body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
   align-items: flex-start;
   color: var(--text-light);
 }
 
 .modal-photo {
   width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
 }
 
 .modal-info h3 {
