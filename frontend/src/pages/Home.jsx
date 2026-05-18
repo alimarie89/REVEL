@@ -307,30 +307,30 @@ function Home() {
                 <p className="facilitator-workshop">{facilitator.workshop}</p>
               </div>
             ))}
-          </div>
-          {selectedFacilitator && (
-            <div className="facilitator-modal">
-              <div className="facilitator-modal-content">
-                <button 
-                  className="modal-close"
-                  onClick={() => setSelectedFacilitator(null)}
-                >
-                  ✕
-                </button>
-                <div className="modal-body">
-                  <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
-                  <div className="modal-info">
-                    <h3>{selectedFacilitator.name}</h3>
-                    <p className="modal-role">{selectedFacilitator.role}</p>
-                    <p className="modal-workshop">{selectedFacilitator.workshop}</p>
-                    <p className="modal-bio">{selectedFacilitator.bio}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </section>
+
+      {selectedFacilitator && (
+        <div className="facilitator-modal">
+          <div className="facilitator-modal-content">
+            <button 
+              className="modal-close"
+              onClick={() => setSelectedFacilitator(null)}
+            >
+              ✕
+            </button>
+            <div className="modal-body">
+              <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
+              <div className="modal-info">
+                <h3>{selectedFacilitator.name}</h3>
+                <p className="modal-role">{selectedFacilitator.role}</p>
+                <p className="modal-workshop">{selectedFacilitator.workshop}</p>
+                <p className="modal-bio">{selectedFacilitator.bio}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 4. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
