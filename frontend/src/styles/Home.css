@@ -400,7 +400,7 @@
 .cocreate-invitations {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   margin-bottom: 50px;
 }
 
