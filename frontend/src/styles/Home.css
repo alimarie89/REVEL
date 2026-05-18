@@ -343,6 +343,48 @@
   padding-bottom: 160px !important;
 }
 
+.cocreate-with-team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.cocreate-text {
+  grid-column: 1;
+}
+
+.cocreate-photos {
+  grid-column: 2;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.cocreate-photo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cocreate-photo-card img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cocreate-photo-card .photo-name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
+}
+
 .cocreate-invitations {
   display: flex;
   flex-direction: column;
@@ -1255,6 +1297,21 @@
   .facilitator-photo-wrapper {
     width: 150px;
     height: 150px;
+  }
+
+  .cocreate-with-team {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cocreate-photos {
+    grid-column: 1;
+    justify-content: center;
+  }
+
+  .cocreate-photo-card img {
+    width: 200px;
+    height: 200px;
   }
 
   .anchor h2,

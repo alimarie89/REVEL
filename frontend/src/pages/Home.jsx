@@ -70,16 +70,16 @@ function Home() {
       name: 'Alison Williams',
       role: 'Founder & Lead Facilitator',
       description: 'Holds the vision and container for REVEL. 10+ years in somatic practices, tantra, and conscious community.',
-      photo: '/facilitator-1.jpg',
+      photo: '/team/alison-williams.jpg',
       bio: 'Alison holds the vision and container for REVEL. She brings 10+ years of experience in somatic practices, tantra, and conscious community building.'
     },
     {
       id: 2,
-      name: 'TBD',
-      role: 'TBD',
-      description: 'World-class facilitator joining the REVEL faculty.',
-      photo: '/facilitator-2.jpg',
-      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
+      name: 'Spencer Jacobson',
+      role: 'Visionary',
+      description: 'Brings vision and cultural stewardship to REVEL.',
+      photo: '/team/spencer-jacobson.jpg',
+      bio: 'Spencer brings vision and cultural stewardship. Coming soon for full bio.'
     },
     {
       id: 3,
@@ -162,18 +162,30 @@ function Home() {
 
       {/* 3. CO-CREATION INVITATION */}
       <section className="space-holds cocreate-section">
-        <div className="section-container">
-          <div className="section-preview">
-            <h2>Cocreate the field with us</h2>
-            <p>instead of just consuming it.</p>
-          </div>
-          <div className="section-expanded">
-            <div className="cocreate-invitations">
-              {content?.cocreateInvitations?.map((invitation, i) => (
-                <p key={i} className="cocreate-line">{invitation}</p>
-              ))}
+        <div className="section-container cocreate-with-team">
+          <div className="cocreate-text">
+            <div className="section-preview">
+              <h2>Cocreate the field with us</h2>
+              <p>instead of just consuming it.</p>
             </div>
-            <p className="cocreate-closing">These are the levels of presence we cultivate together.</p>
+            <div className="section-expanded">
+              <div className="cocreate-invitations">
+                {content?.cocreateInvitations?.map((invitation, i) => (
+                  <p key={i} className="cocreate-line">{invitation}</p>
+                ))}
+              </div>
+              <p className="cocreate-closing">These are the levels of presence we cultivate together.</p>
+            </div>
+          </div>
+          <div className="cocreate-photos">
+            <div className="cocreate-photo-card">
+              <img src="/team/alison-williams.jpg" alt="Alison Williams" />
+              <p className="photo-name">Alison</p>
+            </div>
+            <div className="cocreate-photo-card">
+              <img src="/team/spencer-jacobson.jpg" alt="Spencer Jacobson" />
+              <p className="photo-name">Spencer</p>
+            </div>
           </div>
         </div>
       </section>
