@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/Home.css'
 import { useHomeContent } from '../hooks/useHomeContent'
 
@@ -61,57 +60,6 @@ function Home() {
       subheader: '(Stewardship)',
       question: 'How do I carry what I practice here into the world?',
       context: 'What happens here shows up in how you live.'
-    }
-  ]
-
-  const facilitators = [
-    {
-      id: 1,
-      name: 'Alison Williams',
-      role: 'Founder & Lead Facilitator',
-      description: 'Holds the vision and container for REVEL. 10+ years in somatic practices, tantra, and conscious community.',
-      photo: '/team/alison-williams.jpg',
-      bio: 'Alison holds the vision and container for REVEL. She brings 10+ years of experience in somatic practices, tantra, and conscious community building.'
-    },
-    {
-      id: 2,
-      name: 'Spencer Jacobson',
-      role: 'Visionary',
-      description: 'Brings vision and cultural stewardship to REVEL.',
-      photo: '/team/spencer-jacobson.jpg',
-      bio: 'Spencer brings vision and cultural stewardship. Coming soon for full bio.'
-    },
-    {
-      id: 3,
-      name: 'TBD',
-      role: 'TBD',
-      description: 'World-class facilitator joining the REVEL faculty.',
-      photo: '/facilitator-3.jpg',
-      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
-    },
-    {
-      id: 4,
-      name: 'TBD',
-      role: 'TBD',
-      description: 'World-class facilitator joining the REVEL faculty.',
-      photo: '/facilitator-4.jpg',
-      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
-    },
-    {
-      id: 5,
-      name: 'TBD',
-      role: 'TBD',
-      description: 'World-class facilitator joining the REVEL faculty.',
-      photo: '/facilitator-5.jpg',
-      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
-    },
-    {
-      id: 6,
-      name: 'TBD',
-      role: 'TBD',
-      description: 'World-class facilitator joining the REVEL faculty.',
-      photo: '/facilitator-6.jpg',
-      bio: 'Coming soon. We are curating world-class facilitators and artists to join the REVEL faculty.'
     }
   ]
 
@@ -461,36 +409,6 @@ function Home() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* 7. MEET THE TEAM */}
-      <section className="team">
-        <div className="team-grid">
-          <h3>Meet the Team</h3>
-          <div className="facilitators-grid">
-            {facilitators.map((facilitator) => (
-              <div 
-                key={facilitator.id} 
-                className="facilitator-photo-slot"
-              >
-                <div className="facilitator-photo-wrapper">
-                  <img src={facilitator.photo} alt={facilitator.name} className="facilitator-photo" />
-                </div>
-                <div className="facilitator-info">
-                  <p className="facilitator-name">{facilitator.name}</p>
-                  <p className="facilitator-role">{facilitator.role}</p>
-                  <p className="facilitator-description">{facilitator.description}</p>
-                  <p className="facilitator-read-more">Click to learn more →</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        {/* LINK TO FULL TEAM PAGE */}
-        <div className="team-full-link">
-          <Link to="/team" className="see-full-team-cta">See the Full Team</Link>
-        </div>
         </div>
       </section>
 
