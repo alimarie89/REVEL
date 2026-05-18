@@ -200,7 +200,7 @@ function Home() {
       id: 11,
       name: 'Anaia Sundara',
       role: 'Facilitator',
-      workshop: 'TBD',
+      workshop: 'DJ Set',
       photo: '/facilitators/anaia-sundara.jpg',
       bio: 'Coming soon for workshop details.'
     },
