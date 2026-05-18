@@ -286,7 +286,7 @@ function Home() {
           <div className="venue-overlay"></div>
           <div className="venue-hero-content">
             <h2>Where we're gathering</h2>
-            <p>Sunrise Ranch, Eden Valley, Colorado</p>
+            <p>Sunrise Ranch, Loveland Colorado</p>
           </div>
         </div>
 
