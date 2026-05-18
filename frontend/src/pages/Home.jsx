@@ -179,12 +179,12 @@ function Home() {
           </div>
           <div className="cocreate-photos">
             <div className="cocreate-photo-card">
-              <img src="/team/alison-williams.jpg" alt="Alison Williams" />
-              <p className="photo-name">Alison</p>
-            </div>
-            <div className="cocreate-photo-card">
               <img src="/team/spencer-jacobson.jpg" alt="Spencer Jacobson" />
               <p className="photo-name">Spencer</p>
+            </div>
+            <div className="cocreate-photo-card">
+              <img src="/team/alison-williams.jpg" alt="Alison Williams" />
+              <p className="photo-name">Alison</p>
             </div>
           </div>
         </div>
