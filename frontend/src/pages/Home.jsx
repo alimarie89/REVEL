@@ -6,6 +6,7 @@ import { useHomeContent } from '../hooks/useHomeContent'
 function Home() {
   const { content } = useHomeContent()
   const [expandedSection, setExpandedSection] = useState(null)
+  const [selectedFacilitator, setSelectedFacilitator] = useState(null)
   const [selectedLevel, setSelectedLevel] = useState('individual')
   const [hoveredLevel, setHoveredLevel] = useState(null)
 
@@ -298,6 +299,8 @@ function Home() {
               <div 
                 key={facilitator.id}
                 className="facilitator-card"
+                onClick={() => setSelectedFacilitator(facilitator)}
+                style={{ cursor: 'pointer' }}
               >
                 <img src={facilitator.photo} alt={facilitator.name} />
                 <p className="facilitator-name">{facilitator.name}</p>
@@ -306,6 +309,27 @@ function Home() {
             ))}
         </div>
       </section>
+
+      {/* FACILITATOR MODAL */}
+      {selectedFacilitator && (
+        <div className="facilitator-modal" onClick={() => setSelectedFacilitator(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="modal-close-btn"
+              onClick={() => setSelectedFacilitator(null)}
+            >
+              ✕
+            </button>
+            <img src={selectedFacilitator.photo} alt={selectedFacilitator.name} className="modal-photo" />
+            <div className="modal-text">
+              <h2>{selectedFacilitator.name}</h2>
+              <p className="modal-role">{selectedFacilitator.role}</p>
+              <p className="modal-workshop">{selectedFacilitator.workshop}</p>
+              <p className="modal-bio">{selectedFacilitator.bio}</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 4. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
