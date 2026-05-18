@@ -179,6 +179,38 @@ function Home() {
       workshop: 'Dance of D&S / Primal Play',
       photo: '/facilitators/zahava-griss.jpg',
       bio: 'A playful, edgy exploration of power, instinct, and connection through movement, kink-informed dynamics, and relational exercises. Z is the founder of Embody More Love and has been guiding dance rituals for over two decades that blend intimacy, shadow, and liberation.'
+    },
+    {
+      id: 9,
+      name: 'Dr. Hazel-Grace Yates',
+      role: 'Relationship Coach',
+      workshop: 'The Art of REPAIR / Reconciliation Between Men & Women',
+      photo: '/facilitators/hazel-grace-yates.jpg',
+      bio: 'A skill-based workshop teaching how to navigate conflict, repair rupture, and restore connection using clear, embodied communication tools. Hazel-Grace is a relationship coach and creator of The Art of REPAIR, with over 15 years of experience in relational healing work.'
+    },
+    {
+      id: 10,
+      name: 'Ayce Kyptyn & Ephraim Mallery',
+      role: 'Facilitators',
+      workshop: 'Erotic Blueprints: Rewiring Your Relationship to Life',
+      photo: '/facilitators/ayce-kyptyn.jpg',
+      bio: 'Discover a map of five distinct erotic types—Energetic, Sensual, Sexual, Kinky, and Shapeshifter—each describing a unique language of turn-on, desire, and embodied pleasure. Knowing your Blueprint reveals not just what lights you up, but how you\'re wired for connection and aliveness. Ayce Kyptyn is a transmasc spiritual outlaw known for igniting sacred fire and dismantling the installed systems that sabotage the fullness of ourselves. Ephraim Mallery is an evolutionary trickster, playfully guiding you into the surprise of literally, deeply Making Love with Your Life.'
+    },
+    {
+      id: 11,
+      name: 'Anaia Sundara',
+      role: 'Facilitator',
+      workshop: 'TBD',
+      photo: '/facilitators/anaia-sundara.jpg',
+      bio: 'Coming soon for workshop details.'
+    },
+    {
+      id: 12,
+      name: 'Cody Reinheimer',
+      role: 'Facilitator',
+      workshop: 'TBD',
+      photo: '/facilitators/cody-reinheimer.jpg',
+      bio: 'Coming soon for workshop details.'
     }
   ]
 
