@@ -1,7 +1,9 @@
+import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
 import workshopRoutes from './routes/workshops.js'
 import talentRoutes from './routes/talent.js'
+import contentRoutes from './routes/content.js'
 
 const app = express()
 const PORT = process.env.PORT || 5001
@@ -14,6 +16,7 @@ app.use(express.static('public'))
 // API Routes
 app.use('/api/workshops', workshopRoutes)
 app.use('/api/talent', talentRoutes)
+app.use('/api/content', contentRoutes)
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

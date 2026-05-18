@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Home.css'
+import { useHomeContent } from '../hooks/useHomeContent'
 
 function Home() {
+  const { content } = useHomeContent()
   const [expandedSection, setExpandedSection] = useState(null)
   const [selectedFacilitator, setSelectedFacilitator] = useState(null)
   const [selectedLevel, setSelectedLevel] = useState('individual')
@@ -129,8 +131,9 @@ function Home() {
             <h1 className="revel-hero-title">REVEL</h1>
 
             <div className="revel-hero-positioning">
-              <p>More intimate than a festival.</p>
-              <p>More expansive than a retreat.</p>
+              {content?.heroTagline?.map((line, i) => (
+                <p key={i}>{line}</p>
+              ))}
             </div>
 
             <div className="revel-hero-tagline">
@@ -153,7 +156,7 @@ function Home() {
       {/* 2. ORIENTATION LINE */}
       <section className="orientation-line">
         <div className="section-container">
-          <p>A 350-person convergence where ritual, dance, embodiment, eros, and cultural awakening meet.</p>
+          <p>{content?.orientationLine}</p>
         </div>
       </section>
 
@@ -166,9 +169,9 @@ function Home() {
           </div>
           <div className="section-expanded">
             <div className="cocreate-invitations">
-              <p className="cocreate-line">Be real in the moment.</p>
-              <p className="cocreate-line">Engage instead of staying at a distance.</p>
-              <p className="cocreate-line">Train your capacity to stay present when things get charged.</p>
+              {content?.cocreateInvitations?.map((invitation, i) => (
+                <p key={i} className="cocreate-line">{invitation}</p>
+              ))}
             </div>
             <p className="cocreate-closing">These are the levels of presence we cultivate together.</p>
           </div>
@@ -180,7 +183,7 @@ function Home() {
         <div className="section-container">
           <div className="circles-header">
             <h2>The Field of Presence</h2>
-            <p className="circles-subtitle">What we practice here becomes the world we live in</p>
+            <p className="circles-subtitle">{content?.fieldOfPresence}</p>
           </div>
 
           <div className="circles-visualization">
@@ -276,12 +279,9 @@ function Home() {
           {expandedSection === 'space-holds-info' && (
             <div className="section-expanded">
               <div className="purpose-items">
-                <div className="purpose-item">Conditions are created where people feel safe enough to drop their guard.</div>
-                <div className="purpose-item">Attention is guided toward what's actually happening in the moment.</div>
-                <div className="purpose-item">Patterns that disconnect people are interrupted.</div>
-                <div className="purpose-item">Real contact is invited instead of performance.</div>
-                <div className="purpose-item">People are helped to stay present under intensity instead of checking out.</div>
-                <div className="purpose-item">The field is shaped so connection doesn't collapse or scatter.</div>
+                {content?.howTheSpaceHolds?.map((item, i) => (
+                  <div key={i} className="purpose-item">{item}</div>
+                ))}
               </div>
             </div>
           )}
@@ -302,21 +302,9 @@ function Home() {
           </div>
           {expandedSection === 'experience' && (
             <div className="section-expanded">
-              <p>
-                Your morning begins with presence. You wake in a container held by people who know how to do this. There's ritual, embodied practice, movement that wakes your body and opens your field.
-              </p>
-              <p>
-                Throughout the day, you move between intimate circles and collective experience. You dance. You sit in conversation with people who show up as themselves. You taste food that's shared with intention. You spend time in nature, feeling the earth and sky.
-              </p>
-              <p>
-                There are moments of intensity where connection deepens beyond what normally happens. There are moments of softness where you're held. You're invited into your own aliveness—not performing it, actually living it.
-              </p>
-              <p>
-                The evening gathers you again. There's ritual, music, dance, intimacy. You end each day integrated, more alive, more real.
-              </p>
-              <p>
-                And through it all, the people holding this space are in it with you—not teaching from the front, but co-creating what's alive and possible.
-              </p>
+              {content?.whatItFeelsLike?.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
             </div>
           )}
         </div>
@@ -371,12 +359,12 @@ function Home() {
 
       {/* 8. FINAL INVITATION */}
       <section className="invitation">
-        <p>This is not a festival. It is an investment in our cultural evolution.</p>
+        <p>{content?.finalInvitation}</p>
       </section>
 
       {/* 9. FINAL CTA */}
       <section className="final-cta">
-        <h2>Are you a key player in this time of great change?</h2>
+        <h2>{content?.finalCta}</h2>
         <a 
           href="https://events.humanitix.com/revel2026" 
           target="_blank" 
