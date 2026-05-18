@@ -345,9 +345,9 @@
 
 .cocreate-with-team {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
 }
 
 .cocreate-text {
@@ -355,7 +355,7 @@
 }
 
 .cocreate-photos {
-  grid-column: 1;
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1303,6 +1303,10 @@
   .cocreate-with-team {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .cocreate-text {
+    grid-column: 1;
   }
 
   .cocreate-photos {
