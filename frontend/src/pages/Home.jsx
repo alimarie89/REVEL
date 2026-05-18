@@ -128,7 +128,7 @@ function Home() {
           <div className="revel-hero-inner">
             <p className="revel-hero-meta">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
 
-            <h1 className="revel-hero-title">REVEL</h1>
+            <img src="/REVEL font.png" alt="REVEL" className="revel-hero-title-image" />
 
             <div className="revel-hero-positioning">
               {content?.heroTagline?.map((line, i) => (

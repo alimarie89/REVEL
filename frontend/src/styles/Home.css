@@ -125,6 +125,14 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+.revel-hero-title-image {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  margin: 0 0 32px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+}
+
 .revel-hero-meta {
   font-size: 1.2rem;
   font-weight: 600;
