@@ -414,6 +414,133 @@
   letter-spacing: 0.3px;
 }
 
+/* ========== THE SPACE WE CREATE ========== */
+.space-we-create {
+  background: var(--dark);
+  padding: 100px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.space-we-create h2 {
+  font-size: 2.4rem;
+  font-family: 'Laluxess Serif', serif;
+  color: var(--cream);
+  text-align: center;
+  margin: 0 0 60px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.space-qualities {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quality-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.quality-item {
+  background: rgba(245, 241, 237, 0.05);
+  border-left: 3px solid var(--rust);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.quality-item:hover {
+  background: rgba(245, 241, 237, 0.08);
+  border-left-color: rgba(168, 92, 63, 0.7);
+}
+
+.quality-label {
+  font-size: 1.4rem;
+  font-family: 'Laluxess Serif', serif;
+  color: var(--rust);
+  margin: 0 0 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.quality-description {
+  font-size: 1rem;
+  color: rgba(245, 241, 237, 0.85);
+  margin: 0;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.polarity-statement {
+  text-align: center;
+  margin-top: 80px;
+  padding: 60px 40px;
+  background: rgba(107, 68, 35, 0.1);
+  border: 1px solid rgba(168, 92, 63, 0.2);
+  border-radius: 4px;
+}
+
+.polarity-statement p {
+  font-size: 1.2rem;
+  color: var(--cream);
+  margin: 0;
+  line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.polarity-bold {
+  color: var(--rust);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .space-we-create {
+    padding: 60px 30px;
+  }
+
+  .space-we-create h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .quality-pair {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .quality-item {
+    padding: 30px;
+  }
+
+  .quality-label {
+    font-size: 1.1rem;
+  }
+
+  .quality-description {
+    font-size: 0.95rem;
+  }
+
+  .polarity-statement {
+    margin-top: 40px;
+    padding: 40px 30px;
+  }
+
+  .polarity-statement p {
+    font-size: 1.05rem;
+  }
+
+  .polarity-bold {
+    font-size: 1.15rem;
+  }
+}
+
 /* ========== FACILITATORS SHOWCASE ========== */
 .facilitators-showcase {
   background: var(--dark);

@@ -238,7 +238,49 @@ function Home() {
         </div>
       </section>
 
-      {/* 3.5 FACILITATORS SHOWCASE */}
+      {/* 3.5 THE SPACE WE CREATE */}
+      <section className="space-we-create">
+        <div className="section-container">
+          <h2>The space we're holding</h2>
+          <div className="space-qualities">
+            <div className="quality-pair">
+              <div className="quality-item">
+                <p className="quality-label">Eros</p>
+                <p className="quality-description">Desire, aliveness, pleasure—held with trauma awareness</p>
+              </div>
+              <div className="quality-item">
+                <p className="quality-label">Grief</p>
+                <p className="quality-description">A path to ecstasy, to feeling more alive</p>
+              </div>
+            </div>
+            <div className="quality-pair">
+              <div className="quality-item">
+                <p className="quality-label">Deep Intimacy</p>
+                <p className="quality-description">Real connection, vulnerability, mutual witnessing</p>
+              </div>
+              <div className="quality-item">
+                <p className="quality-label">Emergence</p>
+                <p className="quality-description">Discovery, becoming, evolution of self</p>
+              </div>
+            </div>
+            <div className="quality-pair">
+              <div className="quality-item">
+                <p className="quality-label">Rest</p>
+                <p className="quality-description">Restoration, slowing down, being held</p>
+              </div>
+              <div className="quality-item">
+                <p className="quality-label">Energy</p>
+                <p className="quality-description">Activation, movement, aliveness</p>
+              </div>
+            </div>
+            <div className="polarity-statement">
+              <p><span className="polarity-bold">We hold polarity.</span> Both sides. Not either/or, but and. This is where transformation happens.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. FACILITATORS SHOWCASE */}
       <section className="facilitators-showcase">
         <div className="section-container">
           <p className="facilitators-caption">Rub shoulders with world-class facilitators</p>
@@ -280,7 +322,7 @@ function Home() {
         </div>
       )}
 
-      {/* 4. THE VENUE */}
+      {/* 5. THE VENUE */}
       <section className="venue-section">
         <div className="venue-hero" style={{ backgroundImage: 'url("/venue/Sunrise Ranch Rainbow.jpg")' }}>
           <div className="venue-overlay"></div>
@@ -321,7 +363,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 5. THE FIELD OF PRESENCE */}
+      {/* 6. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
         <div className="section-container">
           <div className="circles-header">
@@ -407,7 +449,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 5. HOW THE SPACE HOLDS */}
+      {/* 7. HOW THE SPACE HOLDS */}
       <section className="space-holds how-space-holds">
         <div className="section-container">
           <div className="section-preview">
@@ -431,7 +473,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 6. WHAT IT FEELS LIKE */}
+      {/* 8. WHAT IT FEELS LIKE */}
       <section className="space-holds what-it-feels-like">
         <div className="section-container">
           <div className="section-preview">
@@ -453,12 +495,12 @@ function Home() {
         </div>
       </section>
 
-      {/* 8. FINAL INVITATION */}
+      {/* 9. FINAL INVITATION */}
       <section className="invitation">
         <p>{content?.finalInvitation}</p>
       </section>
 
-      {/* 9. FINAL CTA */}
+      {/* 10. FINAL CTA */}
       <section className="final-cta">
         <h2>{content?.finalCta}</h2>
         <a 
