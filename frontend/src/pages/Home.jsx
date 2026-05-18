@@ -207,10 +207,10 @@ function Home() {
     {
       id: 12,
       name: 'Cody Reinheimer',
-      role: 'Facilitator',
-      workshop: 'TBD',
+      role: 'DJ / CodeStar',
+      workshop: 'Sonic Soundscape',
       photo: '/facilitators/cody-reinheimer.jpg',
-      bio: 'Coming soon for workshop details.'
+      bio: 'CodeStar is a seasoned DJ, sprinkling the spice of life and plenty of tasty bass into the soundscape, mixing up music to move into.'
     }
   ]
 
