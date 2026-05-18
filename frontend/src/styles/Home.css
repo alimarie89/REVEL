@@ -437,17 +437,17 @@
 
 .facilitators-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
   margin-top: 40px;
 }
 
 .facilitator-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  gap: 20px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -457,12 +457,13 @@
 }
 
 .facilitator-card img {
-  width: 220px;
-  height: 280px;
+  width: 150px;
+  height: 190px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease;
+  flex-shrink: 0;
 }
 
 .facilitator-card:hover img {
