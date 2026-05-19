@@ -215,10 +215,11 @@ function Home() {
 
             <img src="/REVEL font.png" alt="REVEL" className="revel-hero-title-image" />
 
-            <div className="revel-hero-positioning">
-              {content?.heroTagline?.map((line, i) => (
-                <p key={i}>{line}</p>
-              ))}
+            <p className="revel-hero-subtitle">A 350-person dance meets tantra convergence exploring ritual, embodiment, eros, and cultural awakening.</p>
+
+            <div className="revel-hero-main-tagline">
+              <p>More intimate than a festival.</p>
+              <p>More expansive than a retreat.</p>
             </div>
 
             <div className="revel-hero-tagline">
