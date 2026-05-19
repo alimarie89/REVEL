@@ -1841,6 +1841,12 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
