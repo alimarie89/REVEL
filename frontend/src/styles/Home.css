@@ -228,6 +228,69 @@
   margin-bottom: 0;
 }
 
+/* ========== ALTERNATIVE HERO VARIANT ========== */
+.revel-hero-alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revel-hero-content-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.revel-hero-inner-alt {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.revel-hero-meta-alt {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rust);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 32px;
+  font-style: normal;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.revel-hero-title-image-alt {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  margin: 0 0 50px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+}
+
+.revel-hero-alt-tagline {
+  text-align: center;
+  margin: 0 0 60px;
+  max-width: 950px;
+}
+
+.revel-hero-alt-tagline p {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 2.0;
+  color: var(--cream);
+  letter-spacing: 0.6px;
+  margin: 0;
+  font-family: 'Laluxess Serif', serif;
+  font-style: italic;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* ========== ORIENTATION LINE SECTION ========== */
 .orientation-line {
   background: var(--dark);
@@ -1892,6 +1955,22 @@
 
   .revel-hero-tagline p {
     font-size: 1.1rem;
+  }
+
+  .revel-hero-meta-alt {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+  }
+
+  .revel-hero-title-image-alt {
+    margin: 0 0 40px;
+  }
+
+  .revel-hero-alt-tagline p {
+    font-size: 2.0rem;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
   }
 
   .page-tabs {
