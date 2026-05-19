@@ -280,7 +280,7 @@ function Home() {
         <div className="section-container">
           <div className="cinematic-content">
             <div className="cinematic-text">
-              <h2>Are you longing to come together in community and experience something deeper than another shiny peak experience?</h2>
+              <h2>Are you longing for something deeper than another peak experience?</h2>
               
               <div className="vision-statement">
                 <p className="vision-intro">REVEL began with a vision:</p>
