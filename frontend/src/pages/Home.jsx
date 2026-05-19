@@ -6,6 +6,7 @@ function Home() {
   const { content } = useHomeContent()
   const [expandedSection, setExpandedSection] = useState(null)
   const [selectedFacilitator, setSelectedFacilitator] = useState(null)
+  const [selectedTeamMember, setSelectedTeamMember] = useState(null)
   const [selectedLevel, setSelectedLevel] = useState('individual')
   const [hoveredLevel, setHoveredLevel] = useState(null)
   const [carouselScroll, setCarouselScroll] = useState(0)
@@ -344,7 +345,7 @@ function Home() {
               <p className="photo-title">Visionary</p>
             </div>
             <div className="cocreate-photo-card">
-              <img src="/team/alison-williams.jpg" alt="Ali Williams" />
+              <img src="/team/alison-williams.jpg" alt="Ali Williams" style={{ cursor: 'pointer' }} onClick={() => setSelectedTeamMember('ali')} />
               <p className="photo-name">Ali Williams</p>
               <p className="photo-title">COO</p>
             </div>
@@ -432,6 +433,32 @@ function Home() {
               <p className="modal-workshop">{selectedFacilitator.workshop}</p>
               <p className="modal-bio">{selectedFacilitator.bio}</p>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* TEAM MEMBER MODAL */}
+      {selectedTeamMember && (
+        <div className="facilitator-modal" onClick={() => setSelectedTeamMember(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="modal-close-btn"
+              onClick={() => setSelectedTeamMember(null)}
+            >
+              ✕
+            </button>
+            {selectedTeamMember === 'ali' && (
+              <>
+                <img src="/team/alison-williams.jpg" alt="Ali Williams" className="modal-photo" />
+                <div className="modal-text">
+                  <h2>Ali Williams</h2>
+                  <p className="modal-role">Co-Producer & Operational Lead</p>
+                  <p className="modal-bio">Ali Williams is the co-producer and operational lead of REVEL, helping shape the relational culture, emotional tone, and lived experience of the convergence through both embodied leadership and meticulous attention to systems, structure, and detail.</p>
+                  <p className="modal-bio">Through Dragon Academy, Hawaii Tantra Festival, and years of immersive community leadership, her work explores what becomes possible when human charge is met with presence, attunement, and responsibility rather than suppression, performance, or discharge. She has guided many through transformational group experiences that deepen connection, embodiment, intimacy, and collective coherence.</p>
+                  <p className="modal-bio">Originally trained as an Olympic synchronized swimmer, Ali learned early how power is shaped through discipline, precision, and pressure. Her work now focuses on creating spaces where intensity becomes a pathway to aliveness, truth, creativity, and real human connection.</p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}
