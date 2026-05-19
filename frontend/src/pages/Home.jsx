@@ -288,7 +288,7 @@ function Home() {
               </div>
 
               <p className="vision-description">
-                Through transformational workshops, dance journeys, rituals, relational experiences, music, movement, and emergent moments led by world-class facilitators, artists, and space holders, REVEL explores what becomes possible when human intensity is not suppressed or discharged, but metabolized into connection, creativity, responsibility, and collective awakening.
+                Through workshops, dance journeys, rituals, relational experiences, music, movement, and emergent moments led by world-class space holders, REVEL explores what becomes possible when charge is transformed into connection, creativity, responsibility, and culture.
               </p>
             </div>
 
