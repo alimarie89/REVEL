@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import '../styles/Home.css'
 import { useHomeContent } from '../hooks/useHomeContent'
 
@@ -8,6 +8,8 @@ function Home() {
   const [selectedFacilitator, setSelectedFacilitator] = useState(null)
   const [selectedLevel, setSelectedLevel] = useState('individual')
   const [hoveredLevel, setHoveredLevel] = useState(null)
+  const [carouselScroll, setCarouselScroll] = useState(0)
+  const carouselRef = useRef(null)
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
@@ -62,6 +64,42 @@ function Home() {
       context: 'What happens here shows up in how you live.'
     }
   ]
+
+  const carouselImages = [
+    { src: '/carousel/group-floor.jpg', alt: 'Group gathering on floor' },
+    { src: '/carousel/water-ritual.jpg', alt: 'Water ritual ceremony' },
+    { src: '/carousel/dance-floor-wide.jpg', alt: 'Dance floor gathering' },
+    { src: '/carousel/dj-music.jpg', alt: 'DJ performing' },
+    { src: '/carousel/circle-room.jpg', alt: 'Circle gathering' },
+    { src: '/carousel/listening-group.jpg', alt: 'Listening group' },
+    { src: '/carousel/movement-color.jpg', alt: 'Movement and color' }
+  ]
+
+  // Auto-scroll carousel
+  useEffect(() => {
+    const carousel = carouselRef.current
+    if (!carousel) return
+
+    const scrollInterval = setInterval(() => {
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth
+      setCarouselScroll((prevScroll) => {
+        const newScroll = prevScroll + 2
+        if (newScroll >= maxScroll) {
+          return 0
+        }
+        return newScroll
+      })
+    }, 50)
+
+    return () => clearInterval(scrollInterval)
+  }, [])
+
+  // Update carousel scroll position
+  useEffect(() => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = carouselScroll
+    }
+  }, [carouselScroll])
 
   const showcaseFacilitators = [
     {
@@ -204,6 +242,52 @@ function Home() {
       <section className="orientation-line">
         <div className="section-container">
           <p>{content?.orientationLine}</p>
+        </div>
+      </section>
+
+      {/* 2.5 CINEMATIC VISION */}
+      <section className="cinematic-vision">
+        <div className="section-container">
+          <div className="cinematic-content">
+            <div className="cinematic-text">
+              <h2>Are you longing to come together in community and experience something deeper than another shiny peak experience?</h2>
+              
+              <div className="vision-statement">
+                <p className="vision-intro">REVEL began with a vision:</p>
+                <p className="vision-tagline">to create spaces where people can actually feel culture changing.</p>
+              </div>
+
+              <p className="vision-description">
+                Through transformational workshops, dance journeys, rituals, relational experiences, music, movement, and emergent moments led by world-class facilitators, artists, and space holders, REVEL explores what becomes possible when human intensity is not suppressed or discharged, but metabolized into connection, creativity, responsibility, and collective awakening.
+              </p>
+            </div>
+
+            <div className="cinematic-featured">
+              <img 
+                src="/carousel/hug-close.jpg" 
+                alt="Two participants embracing during a relational workshop"
+                className="featured-image"
+              />
+            </div>
+          </div>
+
+          {/* Auto-scrolling Carousel */}
+          <div className="carousel-container">
+            <div 
+              className="carousel-scroll" 
+              ref={carouselRef}
+            >
+              {carouselImages.map((image, idx) => (
+                <div key={idx} className="carousel-item">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt}
+                    className="carousel-image"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
