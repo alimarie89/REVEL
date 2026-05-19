@@ -162,16 +162,19 @@
 
 .revel-hero-main-tagline {
   text-align: center;
-  margin: 40px 0 48px;
+  margin: 50px 0 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .revel-hero-main-tagline p {
-  font-size: 1.75rem;
+  font-size: 2.8rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.9;
   color: var(--cream);
-  letter-spacing: 0.5px;
-  margin: 0 0 12px;
+  letter-spacing: 0.8px;
+  margin: 0 0 16px;
   font-family: 'Laluxess Serif', serif;
   font-style: italic;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -203,13 +206,16 @@
 
 .revel-hero-tagline {
   text-align: center;
-  margin: 32px 0 48px;
+  margin: 60px 0 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .revel-hero-tagline p {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.8;
   color: rgba(245, 241, 237, 0.8);
   letter-spacing: 0.3px;
   margin: 0 0 8px;
@@ -1861,12 +1867,13 @@
   }
 
   .revel-hero-main-tagline {
-    margin: 28px 0 32px;
+    margin: 32px 0 40px;
   }
 
   .revel-hero-main-tagline p {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
   }
 
   .revel-hero-positioning p {
@@ -1874,11 +1881,11 @@
   }
 
   .revel-hero-tagline {
-    margin: 24px 0 32px;
+    margin: 40px 0 32px;
   }
 
   .revel-hero-tagline p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
   .page-tabs {
