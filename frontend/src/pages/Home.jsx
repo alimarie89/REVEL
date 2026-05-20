@@ -236,43 +236,6 @@ function Home() {
         </div>
       </section>
 
-      {/* 1b. HERO - ORIGINAL VARIANT (FLORAL BACKGROUND) */}
-      <section
-        className="hero revel-hero"
-        style={{ backgroundImage: 'url("/REVEL Backdrop Horizontal.jpg")' }}
-      >
-        <div className="hero-overlay"></div>
-
-        <div className="hero-content revel-hero-content">
-          <div className="revel-hero-inner">
-            <p className="revel-hero-meta">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
-
-            <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image" />
-
-            <img src="/REVEL What.png" alt="What is REVEL" className="revel-what-image" />
-
-            <div className="revel-hero-main-tagline">
-              <p>More intimate than a festival.</p>
-              <p>More expansive than a retreat.</p>
-            </div>
-
-            <div className="revel-hero-tagline">
-              <p>This isn't just about who you meet.</p>
-              <p>It's about who you keep.</p>
-            </div>
-
-            <a
-              href="https://events.humanitix.com/revel2026"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button primary"
-            >
-              Apply to Join
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* 2. ORIENTATION LINE */}
       <section className="orientation-line">
         <div className="section-container">
