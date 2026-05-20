@@ -266,7 +266,7 @@
   text-transform: uppercase;
   color: var(--rust);
   font-family: 'Montserrat', sans-serif;
-  margin: 0 0 12px;
+  margin: 0 0 28px;
   font-style: normal;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -1974,7 +1974,7 @@
   .revel-hero-meta-alt {
     font-size: 1.1rem;
     letter-spacing: 1.5px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
   .revel-hero-title-image-alt {
@@ -1984,7 +1984,7 @@
   .revel-what-image {
     max-width: 700px;
     width: 98%;
-    margin: 0 0 40px;
+    margin: 0 0 16px;
   }
 
   .revel-hero-alt-tagline p {
