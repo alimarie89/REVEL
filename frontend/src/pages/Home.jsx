@@ -221,7 +221,7 @@ function Home() {
             </div>
 
             <div className="revel-hero-main-tagline">
-              <img src="/Logos.png" alt="Partner Logos" className="revel-logos-image" />
+              <img src="/REVEL Logos.png" alt="Partner Logos" className="revel-logos-image" />
             </div>
 
             <a
