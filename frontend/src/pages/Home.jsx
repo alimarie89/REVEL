@@ -307,7 +307,7 @@ function Home() {
           </div>
           <div className="cocreate-photos">
             <div className="cocreate-photo-card">
-              <img src="/team/spencer-jacobson.jpg" alt="Spencer Jacobson" />
+              <img src="/team/Spencer Headshot Color.jpg" alt="Spencer Jacobson" />
               <p className="photo-name">Spencer Jacobson</p>
               <p className="photo-title">Visionary</p>
             </div>
