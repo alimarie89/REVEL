@@ -176,20 +176,20 @@
   margin-right: auto;
 }
 
-.revel-hero-main-tagline p {
-  font-size: 1.9rem;
-  font-weight: 300;
-  line-height: 1.9;
-  color: var(--cream);
-  letter-spacing: 0.8px;
-  margin: 0 0 16px;
-  font-family: 'Laluxess Serif', serif;
-  font-style: italic;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+.revel-logos-band {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.revel-hero-main-tagline p:last-child {
-  margin-bottom: 0;
+.revel-logos-band img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
 }
 
 .revel-hero-positioning {
@@ -1963,10 +1963,12 @@
     margin: 8px 0 40px;
   }
 
-  .revel-hero-main-tagline p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    letter-spacing: 0.5px;
+  .revel-logos-band {
+    gap: 20px;
+  }
+
+  .revel-logos-band img {
+    height: 35px;
   }
 
   .revel-hero-positioning p {
