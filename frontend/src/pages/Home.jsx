@@ -9,6 +9,8 @@ function Home() {
   const [selectedTeamMember, setSelectedTeamMember] = useState(null)
   const [selectedLevel, setSelectedLevel] = useState('individual')
   const [hoveredLevel, setHoveredLevel] = useState(null)
+  const [selectedField, setSelectedField] = useState('individual')
+  const [hoveredField, setHoveredField] = useState(null)
   const [carouselScroll, setCarouselScroll] = useState(0)
   const carouselRef = useRef(null)
 
@@ -29,7 +31,21 @@ function Home() {
     setHoveredLevel(null)
   }
 
+  const handleFieldClick = (field) => {
+    setSelectedField(field)
+    setHoveredField(null)
+  }
+
+  const handleFieldHover = (field) => {
+    setHoveredField(field)
+  }
+
+  const handleFieldLeave = () => {
+    setHoveredField(null)
+  }
+
   const displayedLevel = hoveredLevel || selectedLevel || 'individual'
+  const displayedField = hoveredField || selectedField || 'individual'
 
   const levels = [
     {
@@ -63,6 +79,41 @@ function Home() {
       subheader: '(Stewardship)',
       question: 'How do I carry what I practice here into the world?',
       context: 'What happens here shows up in how you live.'
+    }
+  ]
+
+  const fields = [
+    {
+      id: 'individual',
+      label: 'Self',
+      title: 'Internal Coherence',
+      subtitle: 'Your Nervous System',
+      question: 'Am I present with what's arising in me right now?',
+      description: 'The foundation begins with you—your capacity to notice your own internal state, to stay with sensation, emotion, and presence even when things intensify.'
+    },
+    {
+      id: 'relational',
+      label: 'Relational',
+      title: 'Mutual Attunement',
+      subtitle: 'Two People Meeting',
+      question: 'Can I truly see and be seen?',
+      description: 'Real contact happens when two people show up without performance, mirroring and responding to each other's actual presence rather than their persona.'
+    },
+    {
+      id: 'group',
+      label: 'Group',
+      title: 'Collective Coherence',
+      subtitle: 'The Group Field',
+      question: 'Can we hold integrity under charge?',
+      description: 'When individuals take responsibility for their own nervous systems and their impact on others, the field stays coherent. Intensity becomes information, not fragmentation.'
+    },
+    {
+      id: 'cultural',
+      label: 'Cultural',
+      title: 'Cultural Stewardship',
+      subtitle: 'What We Carry Forward',
+      question: 'How do I bring this back to the world?',
+      description: 'The practices at REVEL don't end when we leave. What we've learned about presence, responsibility, and connection shapes how we show up in our relationships and communities.'
     }
   ]
 
@@ -281,6 +332,119 @@ function Home() {
                     alt={image.alt}
                     className="carousel-image"
                   />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2.7 ARCHITECTURE OF CONNECTION */}
+      <section className="architecture-section">
+        <div className="section-container architecture-container">
+          <div className="architecture-header">
+            <p className="architecture-eyebrow">ARCHITECTURE OF CONNECTION</p>
+            <h2 className="architecture-title">The Architecture of Connection</h2>
+            <p className="architecture-intro-text">
+              What emerges at REVEL is not accidental. Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
+            </p>
+          </div>
+
+          <div className="architecture-divider"></div>
+
+          <div className="field-intro">
+            <p className="field-intro-eyebrow">FIELD OF PRESENCE</p>
+            <h3 className="field-intro-title">What we practice here becomes the world we live in</h3>
+          </div>
+
+          <div className="architecture-layout">
+            <div className="architecture-left">
+              <svg className="architecture-circles" viewBox="0 0 400 400">
+                <defs>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                    <feMerge>
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                
+                {/* Concentric circles */}
+                <circle cx="200" cy="200" r="180" className="architecture-ring" data-field="cultural"/>
+                <circle cx="200" cy="200" r="140" className="architecture-ring" data-field="group"/>
+                <circle cx="200" cy="200" r="100" className="architecture-ring" data-field="relational"/>
+                <circle cx="200" cy="200" r="60" className="architecture-ring" data-field="individual"/>
+                
+                {/* Interactive overlay */}
+                <circle 
+                  cx="200" 
+                  cy="200" 
+                  r="200" 
+                  fill="transparent" 
+                  pointerEvents="auto"
+                  className="architecture-interactive"
+                  onMouseMove={(e) => {
+                    const svg = e.currentTarget.closest('svg');
+                    const rect = svg.getBoundingClientRect();
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const mouseX = e.clientX - rect.left;
+                    const mouseY = e.clientY - rect.top;
+                    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+                    
+                    let field = 'cultural';
+                    if (distance <= 0.3) field = 'individual';
+                    else if (distance <= 0.525) field = 'relational';
+                    else if (distance <= 0.75) field = 'group';
+                    
+                    handleFieldHover(field);
+                  }}
+                  onMouseLeave={handleFieldLeave}
+                  onClick={(e) => {
+                    const svg = e.currentTarget.closest('svg');
+                    const rect = svg.getBoundingClientRect();
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const mouseX = e.clientX - rect.left;
+                    const mouseY = e.clientY - rect.top;
+                    const distance = Math.sqrt((mouseX - centerX) ** 2 + (mouseY - centerY) ** 2) / Math.min(centerX, centerY);
+                    
+                    let field = 'cultural';
+                    if (distance <= 0.3) field = 'individual';
+                    else if (distance <= 0.525) field = 'relational';
+                    else if (distance <= 0.75) field = 'group';
+                    
+                    handleFieldClick(field);
+                  }}
+                />
+              </svg>
+
+              <div className="architecture-field-labels">
+                {fields.map((field) => (
+                  <button
+                    key={field.id}
+                    className={`field-label-btn ${displayedField === field.id ? 'active' : ''} ${selectedField === field.id ? 'selected' : ''}`}
+                    onMouseEnter={() => handleFieldHover(field.id)}
+                    onMouseLeave={handleFieldLeave}
+                    onClick={() => handleFieldClick(field.id)}
+                  >
+                    {field.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="architecture-right">
+              {fields.map((field) => (
+                <div 
+                  key={field.id} 
+                  className={`architecture-card ${displayedField === field.id ? 'active' : ''}`}
+                >
+                  <h3 className="card-title">{field.title}</h3>
+                  <p className="card-subtitle">{field.subtitle}</p>
+                  <p className="card-question">{field.question}</p>
+                  <p className="card-description">{field.description}</p>
                 </div>
               ))}
             </div>

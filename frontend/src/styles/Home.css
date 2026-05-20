@@ -2198,3 +2198,325 @@
     font-size: 0.9rem;
   }
 }
+
+/* ===== ARCHITECTURE OF CONNECTION SECTION ===== */
+
+.architecture-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0f15 50%, #0d0d0d 100%);
+  padding: 120px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.architecture-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(168, 92, 63, 0.03) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 80%, rgba(168, 92, 63, 0.02) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.architecture-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.architecture-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.architecture-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a875;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.architecture-title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.architecture-intro-text {
+  font-size: 1.1rem;
+  color: #d4cfc7;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Divider */
+.architecture-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #c9a875 50%, transparent 100%);
+  margin: 60px 0;
+  box-shadow: 0 0 20px rgba(201, 168, 117, 0.2);
+}
+
+/* Field Intro */
+.field-intro {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.field-intro-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a875;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.field-intro-title {
+  font-size: 2rem;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+/* Main Layout */
+.architecture-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Column - Circles */
+.architecture-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.architecture-circles {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+}
+
+.architecture-ring {
+  fill: none;
+  stroke: #c9a875;
+  stroke-width: 1.5;
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}
+
+.architecture-ring[data-field="individual"] {
+  filter: url(#glow);
+}
+
+.architecture-interactive {
+  cursor: pointer;
+}
+
+.architecture-circles:hover .architecture-ring[data-field="individual"] {
+  opacity: 0.8;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(201, 168, 117, 0.6));
+}
+
+.architecture-circles:hover .architecture-ring[data-field="relational"] {
+  opacity: 0.6;
+  stroke-width: 1.8;
+}
+
+.architecture-circles:hover .architecture-ring[data-field="group"] {
+  opacity: 0.5;
+  stroke-width: 1.6;
+}
+
+.architecture-circles:hover .architecture-ring[data-field="cultural"] {
+  opacity: 0.4;
+  stroke-width: 1.5;
+}
+
+/* Field Labels */
+.architecture-field-labels {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.field-label-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #c9a875;
+  color: #c9a875;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.field-label-btn:hover {
+  background: rgba(201, 168, 117, 0.1);
+  color: #f5f1ed;
+}
+
+.field-label-btn.active,
+.field-label-btn.selected {
+  background: #c9a875;
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+/* Right Column - Cards */
+.architecture-right {
+  position: relative;
+  min-height: 400px;
+}
+
+.architecture-card {
+  padding: 40px 32px;
+  background: rgba(20, 15, 20, 0.6);
+  border: 1px solid rgba(201, 168, 117, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(201, 168, 117, 0.2);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.architecture-card.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #c9a875;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.card-question {
+  font-size: 1.1rem;
+  color: #d4cfc7;
+  font-family: 'Laluxess Serif', serif;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #d4cfc7;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+
+/* Mobile - Architecture Section */
+@media (max-width: 768px) {
+  .architecture-section {
+    padding: 80px 20px;
+  }
+
+  .architecture-header {
+    margin-bottom: 60px;
+  }
+
+  .architecture-title {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+
+  .architecture-intro-text {
+    font-size: 1rem;
+  }
+
+  .architecture-divider {
+    margin: 40px 0;
+  }
+
+  .field-intro {
+    margin-bottom: 60px;
+  }
+
+  .field-intro-title {
+    font-size: 1.6rem;
+  }
+
+  .architecture-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .architecture-circles {
+    max-width: 300px;
+  }
+
+  .architecture-field-labels {
+    gap: 10px;
+  }
+
+  .field-label-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .architecture-card {
+    padding: 30px 24px;
+    min-height: 320px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-question {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
