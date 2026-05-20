@@ -214,7 +214,7 @@ function Home() {
           <div className="revel-hero-inner-alt">
             <p className="revel-hero-meta-alt">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
 
-            <img src="/REVEL font 2.png" alt="REVEL" className="revel-hero-title-image-alt" />
+            <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image-alt" />
 
             <div className="revel-hero-alt-tagline">
               <p>A 350-person dance meets tantra convergence exploring ritual, embodiment, eros, and cultural awakening.</p>
@@ -243,7 +243,7 @@ function Home() {
           <div className="revel-hero-inner">
             <p className="revel-hero-meta">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
 
-            <img src="/REVEL font 2.png" alt="REVEL" className="revel-hero-title-image" />
+            <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image" />
 
             <p className="revel-hero-subtitle">A 350-person dance meets tantra convergence exploring ritual, embodiment, eros, and cultural awakening.</p>
 
