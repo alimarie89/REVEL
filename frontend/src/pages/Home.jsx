@@ -221,8 +221,7 @@ function Home() {
             </div>
 
             <div className="revel-hero-main-tagline">
-              <p>More intimate than a festival.</p>
-              <p>More expansive than a retreat.</p>
+              <p>More intimate than a festival. More expansive than a retreat.</p>
             </div>
 
             <a
