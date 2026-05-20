@@ -220,6 +220,11 @@ function Home() {
               <img src="/REVEL What.png" alt="What is REVEL" className="revel-what-image" />
             </div>
 
+            <div className="revel-hero-main-tagline">
+              <p>More intimate than a festival.</p>
+              <p>More expansive than a retreat.</p>
+            </div>
+
             <a
               href="https://events.humanitix.com/revel2026"
               target="_blank"
