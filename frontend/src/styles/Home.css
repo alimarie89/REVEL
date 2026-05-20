@@ -161,8 +161,8 @@
 }
 
 .revel-what-image {
-  max-width: 700px;
-  width: 95%;
+  max-width: 900px;
+  width: 98%;
   height: auto;
   margin: 0 0 48px;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
@@ -1992,8 +1992,8 @@
   }
 
   .revel-what-image {
-    max-width: 500px;
-    width: 90%;
+    max-width: 600px;
+    width: 95%;
     margin: 0 0 40px;
   }
 
