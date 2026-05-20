@@ -212,13 +212,13 @@ function Home() {
 
         <div className="hero-content revel-hero-content-alt">
           <div className="revel-hero-inner-alt">
-            <p className="revel-hero-meta-alt">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
-
             <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image-alt" />
 
             <div className="revel-hero-alt-tagline">
               <img src="/REVEL What.png" alt="What is REVEL" className="revel-what-image" />
             </div>
+
+            <p className="revel-hero-meta-alt">July 2–5, 2026 · Sunrise Ranch, Colorado</p>
 
             <div className="revel-hero-main-tagline">
               <img src="/REVEL Logos.png" alt="Partner Logos" className="revel-logos-image" />
