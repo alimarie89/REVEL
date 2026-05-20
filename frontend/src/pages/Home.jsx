@@ -217,7 +217,7 @@ function Home() {
             <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image-alt" />
 
             <div className="revel-hero-alt-tagline">
-              <p>A 350-person dance meets tantra convergence exploring ritual, embodiment, eros, and cultural awakening.</p>
+              <p>A 350 person, intimate community gathering at the intersection of ritual, dance, embodiment & collective evolution.</p>
             </div>
 
             <a
@@ -245,7 +245,7 @@ function Home() {
 
             <img src="/REVEL logo 2.png" alt="REVEL" className="revel-hero-title-image" />
 
-            <p className="revel-hero-subtitle">A 350-person dance meets tantra convergence exploring ritual, embodiment, eros, and cultural awakening.</p>
+            <p className="revel-hero-subtitle">A 350 person, intimate community gathering at the intersection of ritual, dance, embodiment & collective evolution.</p>
 
             <div className="revel-hero-main-tagline">
               <p>More intimate than a festival.</p>
