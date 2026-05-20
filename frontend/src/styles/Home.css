@@ -160,6 +160,14 @@
   padding: 0 20px;
 }
 
+.revel-what-image {
+  max-width: 500px;
+  width: 90%;
+  height: auto;
+  margin: 0 0 48px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+}
+
 .revel-hero-main-tagline {
   text-align: center;
   margin: 50px 0 60px;
@@ -1980,6 +1988,12 @@
   }
 
   .revel-hero-title-image-alt {
+    margin: 0 0 40px;
+  }
+
+  .revel-what-image {
+    max-width: 400px;
+    width: 85%;
     margin: 0 0 40px;
   }
 
