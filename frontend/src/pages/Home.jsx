@@ -239,7 +239,6 @@ function Home() {
       {/* 2. ORIENTATION LINE */}
       <section className="orientation-line">
         <div className="section-container">
-          <p>{content?.orientationLine}</p>
         </div>
       </section>
 
