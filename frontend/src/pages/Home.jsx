@@ -221,15 +221,7 @@ function Home() {
             </div>
 
             <div className="revel-hero-main-tagline">
-              <div className="revel-logos-band">
-                <img src="/logos/Unleash.png" alt="Unleash" />
-                <img src="/logos/Copy of DMT words only white (1).png" alt="Dance Tantra" />
-                <img src="/logos/White.RelationalInterplayLogo.png" alt="Relational Interplay" />
-                <img src="/logos/Attachment Alchemy.JPG" alt="Attachment Alchemy" />
-                <img src="/logos/Carniva DNGN White.JPG" alt="Carnival" />
-                <img src="/logos/the human experience white logo.png" alt="The Human Experience" />
-                <img src="/logos/Anaia Logo.jpeg" alt="Anaia" />
-              </div>
+              <img src="/Logos.png" alt="Partner Logos" className="revel-logos-image" />
             </div>
 
             <a
