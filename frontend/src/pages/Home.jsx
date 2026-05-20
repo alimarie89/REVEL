@@ -88,32 +88,32 @@ function Home() {
       label: 'Self',
       title: 'Internal Coherence',
       subtitle: 'Your Nervous System',
-      question: 'Am I present with what's arising in me right now?',
-      description: 'The foundation begins with you—your capacity to notice your own internal state, to stay with sensation, emotion, and presence even when things intensify.'
+      question: "Am I present with what's arising in me right now?",
+      description: "The foundation begins with you—your capacity to notice your own internal state, to stay with sensation, emotion, and presence even when things intensify."
     },
     {
       id: 'relational',
       label: 'Relational',
       title: 'Mutual Attunement',
       subtitle: 'Two People Meeting',
-      question: 'Can I truly see and be seen?',
-      description: 'Real contact happens when two people show up without performance, mirroring and responding to each other's actual presence rather than their persona.'
+      question: "Can I truly see and be seen?",
+      description: "Real contact happens when two people show up without performance, mirroring and responding to each other's actual presence rather than their persona."
     },
     {
       id: 'group',
       label: 'Group',
       title: 'Collective Coherence',
       subtitle: 'The Group Field',
-      question: 'Can we hold integrity under charge?',
-      description: 'When individuals take responsibility for their own nervous systems and their impact on others, the field stays coherent. Intensity becomes information, not fragmentation.'
+      question: "Can we hold integrity under charge?",
+      description: "When individuals take responsibility for their own nervous systems and their impact on others, the field stays coherent. Intensity becomes information, not fragmentation."
     },
     {
       id: 'cultural',
       label: 'Cultural',
       title: 'Cultural Stewardship',
       subtitle: 'What We Carry Forward',
-      question: 'How do I bring this back to the world?',
-      description: 'The practices at REVEL don't end when we leave. What we've learned about presence, responsibility, and connection shapes how we show up in our relationships and communities.'
+      question: "How do I bring this back to the world?",
+      description: "The practices at REVEL don't end when we leave. What we've learned about presence, responsibility, and connection shapes how we show up in our relationships and communities."
     }
   ]
 
