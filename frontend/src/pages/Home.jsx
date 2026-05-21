@@ -291,7 +291,7 @@ function Home() {
       name: 'Rachel Rickards',
       role: 'Facilitator',
       workshop: 'Coming soon',
-      photo: '/facilitators/rachel-rickards-headshot.jpg',
+      photo: '/facilitators/rachel-rickards.png',
       bio: 'Coming soon.'
     },
     {
