@@ -12,6 +12,7 @@ function Home() {
   const [selectedField, setSelectedField] = useState('individual')
   const [hoveredField, setHoveredField] = useState(null)
   const [carouselScroll, setCarouselScroll] = useState(0)
+  const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.heic')
   const carouselRef = useRef(null)
 
   const toggleSection = (id) => {
@@ -152,6 +153,13 @@ function Home() {
       carouselRef.current.scrollLeft = carouselScroll
     }
   }, [carouselScroll])
+
+  // Randomly select featured image on mount
+  useEffect(() => {
+    const images = ['/carousel/Girl smiling 1.heic', '/carousel/Girl smiling 2.heic']
+    const randomImage = images[Math.floor(Math.random() * images.length)]
+    setFeaturedImage(randomImage)
+  }, [])
 
   const showcaseFacilitators = [
     {
@@ -312,8 +320,8 @@ function Home() {
 
             <div className="cinematic-featured">
               <img 
-                src="/carousel/hug-close.jpg" 
-                alt="Two participants embracing during a relational workshop"
+                src={featuredImage}
+                alt="Featured participant moment"
                 className="featured-image"
               />
             </div>
