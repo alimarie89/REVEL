@@ -12,7 +12,7 @@ function Home() {
   const [selectedField, setSelectedField] = useState('individual')
   const [hoveredField, setHoveredField] = useState(null)
   const [carouselScroll, setCarouselScroll] = useState(0)
-  const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.heic')
+  const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.jpg')
   const carouselRef = useRef(null)
 
   const toggleSection = (id) => {
@@ -156,7 +156,7 @@ function Home() {
 
   // Randomly select featured image on mount
   useEffect(() => {
-    const images = ['/carousel/Girl smiling 1.heic', '/carousel/Girl smiling 2.heic']
+    const images = ['/carousel/Girl smiling 1.jpg', '/carousel/Girl smiling 2.jpg']
     const randomImage = images[Math.floor(Math.random() * images.length)]
     setFeaturedImage(randomImage)
   }, [])
