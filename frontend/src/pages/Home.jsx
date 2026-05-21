@@ -690,12 +690,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 9. FINAL INVITATION */}
-      <section className="invitation">
-        <p>{content?.finalInvitation}</p>
-      </section>
-
-      {/* 10. FINAL CTA */}
+      {/* 9. FINAL CTA */}
       <section className="final-cta">
         <h2>{content?.finalCta}</h2>
         <a 
