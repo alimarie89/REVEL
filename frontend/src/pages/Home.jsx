@@ -285,6 +285,22 @@ function Home() {
       workshop: 'Sonic Soundscape',
       photo: '/facilitators/cody-reinheimer.jpg',
       bio: 'CodeStar is a seasoned DJ, sprinkling the spice of life and plenty of tasty bass into the soundscape, mixing up music to move into.'
+    },
+    {
+      id: 13,
+      name: 'Rachel Rickards',
+      role: 'Facilitator',
+      workshop: 'Coming soon',
+      photo: '/facilitators/rachel-rickards-headshot.jpg',
+      bio: 'Coming soon.'
+    },
+    {
+      id: 14,
+      name: 'Lyndsey Scott',
+      role: 'Facilitator',
+      workshop: 'Song Circle',
+      photo: '/facilitators/lyndsey-scott.jpg',
+      bio: 'A communal singing experience where voice becomes a pathway into connection, presence, and emotional release. Through call-and-response, simple harmonies, and improvisational play, you\'ll be invited to drop out of your head and into the shared field of sound and belonging. Lyndsey is the song carrier behind "The Way Knows" and other songs that have impacted our lives. With roots in art, restorative justice, permaculture, and somatic work, she creates spaces where music becomes a vehicle for transformation, connection, and coming home to yourself.'
     }
   ]
 
