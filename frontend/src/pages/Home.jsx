@@ -517,10 +517,58 @@ function Home() {
                 </defs>
                 
                 {/* Concentric circles */}
-                <circle cx="200" cy="200" r="180" className="architecture-ring" data-field="cultural"/>
-                <circle cx="200" cy="200" r="140" className="architecture-ring" data-field="group"/>
-                <circle cx="200" cy="200" r="100" className="architecture-ring" data-field="relational"/>
-                <circle cx="200" cy="200" r="60" className="architecture-ring" data-field="individual"/>
+                <circle 
+                  cx="200" 
+                  cy="200" 
+                  r="180" 
+                  className="architecture-ring" 
+                  data-field="cultural"
+                  style={{
+                    opacity: selectedField === 'cultural' || hoveredField === 'cultural' ? 1 : (selectedField || hoveredField ? 0.3 : 0.6),
+                    strokeWidth: selectedField === 'cultural' || hoveredField === 'cultural' ? 2.5 : 1.5,
+                    filter: selectedField === 'cultural' || hoveredField === 'cultural' ? 'drop-shadow(0 0 60px rgba(168, 92, 63, 0.5))' : 'none',
+                    transition: 'all 0.4s ease'
+                  }}
+                />
+                <circle 
+                  cx="200" 
+                  cy="200" 
+                  r="140" 
+                  className="architecture-ring" 
+                  data-field="group"
+                  style={{
+                    opacity: selectedField === 'group' || hoveredField === 'group' ? 1 : (selectedField || hoveredField ? 0.3 : 0.6),
+                    strokeWidth: selectedField === 'group' || hoveredField === 'group' ? 2.5 : 1.5,
+                    filter: selectedField === 'group' || hoveredField === 'group' ? 'drop-shadow(0 0 60px rgba(168, 92, 63, 0.5))' : 'none',
+                    transition: 'all 0.4s ease'
+                  }}
+                />
+                <circle 
+                  cx="200" 
+                  cy="200" 
+                  r="100" 
+                  className="architecture-ring" 
+                  data-field="relational"
+                  style={{
+                    opacity: selectedField === 'relational' || hoveredField === 'relational' ? 1 : (selectedField || hoveredField ? 0.3 : 0.6),
+                    strokeWidth: selectedField === 'relational' || hoveredField === 'relational' ? 2.5 : 1.5,
+                    filter: selectedField === 'relational' || hoveredField === 'relational' ? 'drop-shadow(0 0 60px rgba(168, 92, 63, 0.5))' : 'none',
+                    transition: 'all 0.4s ease'
+                  }}
+                />
+                <circle 
+                  cx="200" 
+                  cy="200" 
+                  r="60" 
+                  className="architecture-ring" 
+                  data-field="individual"
+                  style={{
+                    opacity: selectedField === 'individual' || hoveredField === 'individual' ? 1 : (selectedField || hoveredField ? 0.3 : 0.6),
+                    strokeWidth: selectedField === 'individual' || hoveredField === 'individual' ? 2.5 : 1.5,
+                    filter: selectedField === 'individual' || hoveredField === 'individual' ? 'drop-shadow(0 0 60px rgba(168, 92, 63, 0.5))' : 'none',
+                    transition: 'all 0.4s ease'
+                  }}
+                />
                 
                 {/* Interactive overlay */}
                 <circle 
