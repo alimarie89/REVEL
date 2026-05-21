@@ -605,7 +605,7 @@ function Home() {
           <div className="venue-gallery">
             <div className="venue-photo-item">
               <img src="/venue/Sunrise Ranch Pavilion.jpg" alt="Sunrise Ranch Pavilion" />
-              <p>Gathering Space</p>
+              <p>Historical Venue</p>
             </div>
             <div className="venue-photo-item">
               <img src="/venue/Sunrise Ranch Pool.jpg" alt="Sunrise Ranch Pool" />
@@ -613,11 +613,11 @@ function Home() {
             </div>
             <div className="venue-photo-item">
               <img src="/venue/Sunrise Ranch Green Ridge.jpg" alt="Sunrise Ranch Green Ridge" />
-              <p>Natural Beauty</p>
+              <p>Workshop Space</p>
             </div>
             <div className="venue-photo-item">
               <img src="/venue/Sunrise Ranch Camping.jpg" alt="Sunrise Ranch Camping" />
-              <p>Community Spaces</p>
+              <p>Camping</p>
             </div>
             <div className="venue-photo-item">
               <img src="/venue/Sunrise Ranch Triple Room.jpg" alt="Sunrise Ranch Triple Room" />
