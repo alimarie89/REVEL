@@ -599,7 +599,6 @@ function Home() {
 
         <div className="section-container">
           <div className="venue-philosophy">
-            <p className="venue-tagline">Honoring Universal Being in all its forms</p>
             <p className="venue-description">Sunrise Ranch is more than a beautiful location—it's a sacred space stewarded for over 75 years with spiritual intention. Since 1945, this valley has been dedicated to the transformation and awakening of consciousness. The atmosphere here carries decades of positive thought, intention, and service to the evolution of humanity.</p>
           </div>
 
