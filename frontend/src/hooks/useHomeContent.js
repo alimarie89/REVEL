@@ -37,7 +37,7 @@ export const useHomeContent = () => {
       'And through it all, the people holding this space are in it with you—not teaching from the front, but co-creating what\'s alive and possible.'
     ],
     finalInvitation: 'This is not a festival. It is an investment in our cultural evolution.',
-    finalCta: 'Are you a key player in this time of great change?'
+    finalCta: 'Are you ready to help shape the culture you want to live inside of?'
   }
 
   useEffect(() => {
