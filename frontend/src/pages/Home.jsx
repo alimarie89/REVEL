@@ -427,6 +427,46 @@ function Home() {
       </div>
       </section>
 
+      {/* 5. THE VENUE */}
+      <section className="venue-section">
+        <div className="venue-hero" style={{ backgroundImage: 'url("/venue/Sunrise Ranch Rainbow.jpg")' }}>
+          <div className="venue-overlay"></div>
+          <div className="venue-hero-content">
+            <h2>Where we're gathering</h2>
+            <p>Sunrise Ranch, Loveland Colorado</p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="venue-philosophy">
+            <p className="venue-description">Sunrise Ranch is more than a beautiful location—it's a sacred space stewarded for over 75 years with spiritual intention. Since 1945, this valley has been dedicated to the transformation and awakening of consciousness. The atmosphere here carries decades of positive thought, intention, and service to the evolution of humanity.</p>
+          </div>
+
+          <div className="venue-gallery">
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Pavilion.jpg" alt="Sunrise Ranch Pavilion" />
+              <p>Historical Venue</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Pool.jpg" alt="Sunrise Ranch Pool" />
+              <p>Renewal & Play</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Green Ridge.jpg" alt="Sunrise Ranch Green Ridge" />
+              <p>Workshop Space</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Camping.jpg" alt="Sunrise Ranch Camping" />
+              <p>Camping</p>
+            </div>
+            <div className="venue-photo-item">
+              <img src="/venue/Sunrise Ranch Triple Room.jpg" alt="Sunrise Ranch Triple Room" />
+              <p>Accommodations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 2.7 ARCHITECTURE OF CONNECTION */}
       <section className="architecture-section">
         <div className="section-container architecture-container">
@@ -586,46 +626,6 @@ function Home() {
           </div>
         </div>
       )}
-
-      {/* 5. THE VENUE */}
-      <section className="venue-section">
-        <div className="venue-hero" style={{ backgroundImage: 'url("/venue/Sunrise Ranch Rainbow.jpg")' }}>
-          <div className="venue-overlay"></div>
-          <div className="venue-hero-content">
-            <h2>Where we're gathering</h2>
-            <p>Sunrise Ranch, Loveland Colorado</p>
-          </div>
-        </div>
-
-        <div className="section-container">
-          <div className="venue-philosophy">
-            <p className="venue-description">Sunrise Ranch is more than a beautiful location—it's a sacred space stewarded for over 75 years with spiritual intention. Since 1945, this valley has been dedicated to the transformation and awakening of consciousness. The atmosphere here carries decades of positive thought, intention, and service to the evolution of humanity.</p>
-          </div>
-
-          <div className="venue-gallery">
-            <div className="venue-photo-item">
-              <img src="/venue/Sunrise Ranch Pavilion.jpg" alt="Sunrise Ranch Pavilion" />
-              <p>Historical Venue</p>
-            </div>
-            <div className="venue-photo-item">
-              <img src="/venue/Sunrise Ranch Pool.jpg" alt="Sunrise Ranch Pool" />
-              <p>Renewal & Play</p>
-            </div>
-            <div className="venue-photo-item">
-              <img src="/venue/Sunrise Ranch Green Ridge.jpg" alt="Sunrise Ranch Green Ridge" />
-              <p>Workshop Space</p>
-            </div>
-            <div className="venue-photo-item">
-              <img src="/venue/Sunrise Ranch Camping.jpg" alt="Sunrise Ranch Camping" />
-              <p>Camping</p>
-            </div>
-            <div className="venue-photo-item">
-              <img src="/venue/Sunrise Ranch Triple Room.jpg" alt="Sunrise Ranch Triple Room" />
-              <p>Accommodations</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 6. THE FIELD OF PRESENCE */}
       <section className="concentric-circles-section">
