@@ -2606,54 +2606,19 @@
   font-style: italic;
 }
 
-/* Horizontal scrollable category cards */
+/* FAQ category cards with natural wrapping */
 .faq-categories-scroll {
   position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
   margin-bottom: 50px;
-  padding: 20px 0;
-  scroll-behavior: smooth;
-  
-  /* Hide scrollbar while preserving functionality */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;      /* Firefox */
-}
-
-.faq-categories-scroll::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
-}
-
-/* Gradient fades on edges */
-.faq-categories-scroll::before,
-.faq-categories-scroll::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.faq-categories-scroll::before {
-  left: 0;
-  background: linear-gradient(to right, var(--dark), transparent);
-}
-
-.faq-categories-scroll::after {
-  right: 0;
-  background: linear-gradient(to left, var(--dark), transparent);
+  padding: 20px 40px;
 }
 
 .faq-categories {
   display: flex;
   gap: 15px;
-  min-width: min-content;
-  padding: 0 40px;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .faq-category-card {
@@ -2668,8 +2633,6 @@
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border-radius: 4px;
-  white-space: nowrap;
-  flex-shrink: 0;
   position: relative;
   backdrop-filter: blur(4px);
 }
@@ -2793,49 +2756,27 @@
 
 /* Navigation arrows */
 .faq-nav-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(168, 92, 63, 0.2);
-  border: 2px solid rgba(168, 92, 63, 0.4);
-  color: var(--rust);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  z-index: 15;
-  backdrop-filter: blur(4px);
+  display: none; /* Navigation arrows removed - using wrapped layout instead */
 }
 
 .faq-nav-arrow:hover {
-  background: rgba(168, 92, 63, 0.35);
-  border-color: var(--rust);
-  box-shadow: 0 0 20px rgba(168, 92, 63, 0.3);
-  transform: translateY(-50%) scale(1.1);
+  display: none;
 }
 
 .faq-nav-arrow:disabled {
-  opacity: 0.2;
-  cursor: not-allowed;
-  border-color: rgba(168, 92, 63, 0.2);
+  display: none;
 }
 
 .faq-nav-arrow:disabled:hover {
-  background: rgba(168, 92, 63, 0.1);
-  box-shadow: none;
-  transform: translateY(-50%);
+  display: none;
 }
 
 .faq-nav-arrow.left {
-  left: 10px;
+  display: none;
 }
 
 .faq-nav-arrow.right {
-  right: 10px;
+  display: none;
 }
 
 /* ========== FAQ RESPONSIVE ========== */

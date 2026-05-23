@@ -15,10 +15,7 @@ function Home() {
   const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.jpg')
   const [openFaqCategory, setOpenFaqCategory] = useState(null)
   const [openFaqItem, setOpenFaqItem] = useState({})
-  const [faqCanScrollLeft, setFaqCanScrollLeft] = useState(false)
-  const [faqCanScrollRight, setFaqCanScrollRight] = useState(true)
   const carouselRef = useRef(null)
-  const faqScrollRef = useRef(null)
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
@@ -49,33 +46,6 @@ function Home() {
   const handleFieldLeave = () => {
     setHoveredField(null)
   }
-
-  const checkFaqScrollPosition = () => {
-    if (faqScrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = faqScrollRef.current
-      setFaqCanScrollLeft(scrollLeft > 0)
-      setFaqCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
-    }
-  }
-
-  const scrollFaqCategories = (direction) => {
-    if (faqScrollRef.current) {
-      const scrollAmount = 300
-      faqScrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      })
-      setTimeout(checkFaqScrollPosition, 400)
-    }
-  }
-
-  useEffect(() => {
-    checkFaqScrollPosition()
-    if (faqScrollRef.current) {
-      faqScrollRef.current.addEventListener('scroll', checkFaqScrollPosition)
-      return () => faqScrollRef.current?.removeEventListener('scroll', checkFaqScrollPosition)
-    }
-  }, [])
 
   const displayedLevel = hoveredLevel || selectedLevel || 'individual'
   const displayedField = hoveredField || selectedField || 'individual'
@@ -779,16 +749,8 @@ function Home() {
             <p className="faq-subtitle">Practical orientation for entering the field.</p>
           </div>
 
-          {/* Horizontal scrollable category cards */}
-          <div className="faq-categories-scroll" ref={faqScrollRef}>
-            <button
-              className={`faq-nav-arrow left ${!faqCanScrollLeft ? 'disabled' : ''}`}
-              onClick={() => scrollFaqCategories('left')}
-              disabled={!faqCanScrollLeft}
-              aria-label="Scroll FAQ categories left"
-            >
-              ←
-            </button>
+          {/* FAQ category cards with natural wrapping */}
+          <div className="faq-categories-scroll">
             <div className="faq-categories">
               {content?.faqCategories?.map((category) => (
                 <button
@@ -800,14 +762,6 @@ function Home() {
                 </button>
               ))}
             </div>
-            <button
-              className={`faq-nav-arrow right ${!faqCanScrollRight ? 'disabled' : ''}`}
-              onClick={() => scrollFaqCategories('right')}
-              disabled={!faqCanScrollRight}
-              aria-label="Scroll FAQ categories right"
-            >
-              →
-            </button>
           </div>
 
           {/* Expanded FAQ content for selected category */}
