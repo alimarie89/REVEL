@@ -170,7 +170,7 @@
 
 .revel-hero-main-tagline {
   text-align: center;
-  margin: 0 0 60px;
+  margin: 0 0 40px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -257,6 +257,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 50px 60px;
+  border: 2px solid rgba(168, 92, 63, 0.6);
+  box-shadow: 0 0 40px rgba(168, 92, 63, 0.3), inset 0 0 40px rgba(168, 92, 63, 0.05);
+  border-radius: 2px;
 }
 
 .revel-hero-meta-alt {
@@ -266,7 +270,7 @@
   text-transform: uppercase;
   color: var(--rust);
   font-family: 'Montserrat', sans-serif;
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   font-style: normal;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -275,13 +279,13 @@
   max-width: 600px;
   width: 90%;
   height: auto;
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
 }
 
 .revel-hero-alt-tagline {
   text-align: center;
-  margin: 0 0 60px;
+  margin: 0 0 35px;
   max-width: 900px;
   padding: 0 20px;
 }
@@ -514,6 +518,7 @@
   transition: all 0.4s ease;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
 }
 
 .cta-button:hover {
@@ -1990,11 +1995,23 @@
   .revel-hero-meta-alt {
     font-size: 1.1rem;
     letter-spacing: 1.5px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .revel-hero-title-image-alt {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
+  }
+
+  .revel-hero-alt-tagline {
+    margin: 0 0 25px;
+  }
+
+  .revel-hero-main-tagline {
+    margin: 0 0 30px;
+  }
+
+  .revel-hero-inner-alt {
+    padding: 40px 40px;
   }
 
   .revel-what-image {
