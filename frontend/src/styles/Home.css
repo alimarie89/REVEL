@@ -36,14 +36,18 @@
 
 /* ========== PROMO BANNER ========== */
 .promo-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: static;
   background: linear-gradient(90deg, var(--rust) 0%, rgba(168, 92, 63, 0.9) 100%);
   padding: 12px 20px;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(168, 92, 63, 0.3);
+}
+
+.promo-banner.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   animation: slideDown 0.4s ease;
 }
 
@@ -81,11 +85,6 @@
 .promo-close:hover {
   opacity: 1;
   transform: scale(1.2);
-}
-
-/* Adjust hero and other sections for banner offset */
-.hero {
-  margin-top: 0; /* Will be visually offset by fixed banner */
 }
 
 /* ========== HERO SECTION ========== */

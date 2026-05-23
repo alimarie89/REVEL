@@ -16,7 +16,9 @@ function Home() {
   const [openFaqCategory, setOpenFaqCategory] = useState(null)
   const [openFaqItem, setOpenFaqItem] = useState({})
   const [showPromoBanner, setShowPromoBanner] = useState(true)
+  const [isBannerSticky, setIsBannerSticky] = useState(false)
   const carouselRef = useRef(null)
+  const heroRef = useRef(null)
 
   const toggleSection = (id) => {
     setExpandedSection(expandedSection === id ? null : id)
@@ -192,6 +194,19 @@ function Home() {
     setFeaturedImage(randomImage)
   }, [])
 
+  // Handle banner sticky behavior on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (heroRef.current) {
+        const heroBottom = heroRef.current.getBoundingClientRect().bottom
+        setIsBannerSticky(heroBottom <= 0)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const showcaseFacilitators = [
     {
       id: 1,
@@ -311,7 +326,7 @@ function Home() {
     <div className="home">
       {/* Memorial Day Sale Banner */}
       {showPromoBanner && (
-        <div className="promo-banner">
+        <div className={`promo-banner ${isBannerSticky ? 'sticky' : ''}`}>
           <div className="promo-content">
             <span className="promo-text">🇺🇸 MEMORIAL DAY SALE: $100 OFF - LIMITED TIME</span>
             <button
@@ -327,6 +342,7 @@ function Home() {
 
       {/* 1. HERO - ALTERNATIVE VARIANT (CLEAN BACKGROUND) */}
       <section
+        ref={heroRef}
         className="hero revel-hero-alt"
         style={{ backgroundImage: 'url("/REVEL Wide Blank.png")' }}
       >
