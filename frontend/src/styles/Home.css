@@ -34,6 +34,60 @@
   z-index: 0;
 }
 
+/* ========== PROMO BANNER ========== */
+.promo-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, var(--rust) 0%, rgba(168, 92, 63, 0.9) 100%);
+  padding: 12px 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(168, 92, 63, 0.3);
+  animation: slideDown 0.4s ease;
+}
+
+.promo-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.promo-text {
+  color: var(--cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  flex: 1;
+  text-align: center;
+}
+
+.promo-close {
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.promo-close:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Adjust hero and other sections for banner offset */
+.hero {
+  margin-top: 0; /* Will be visually offset by fixed banner */
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
   height: 100vh;

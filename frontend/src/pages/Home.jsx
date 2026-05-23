@@ -15,6 +15,7 @@ function Home() {
   const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.jpg')
   const [openFaqCategory, setOpenFaqCategory] = useState(null)
   const [openFaqItem, setOpenFaqItem] = useState({})
+  const [showPromoBanner, setShowPromoBanner] = useState(true)
   const carouselRef = useRef(null)
 
   const toggleSection = (id) => {
@@ -308,6 +309,22 @@ function Home() {
 
   return (
     <div className="home">
+      {/* Memorial Day Sale Banner */}
+      {showPromoBanner && (
+        <div className="promo-banner">
+          <div className="promo-content">
+            <span className="promo-text">🇺🇸 MEMORIAL DAY SALE: $100 OFF - LIMITED TIME</span>
+            <button
+              className="promo-close"
+              onClick={() => setShowPromoBanner(false)}
+              aria-label="Close promotion banner"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* 1. HERO - ALTERNATIVE VARIANT (CLEAN BACKGROUND) */}
       <section
         className="hero revel-hero-alt"
