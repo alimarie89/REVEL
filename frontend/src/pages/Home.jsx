@@ -335,7 +335,7 @@ function Home() {
               rel="noopener noreferrer"
               className="cta-button primary"
             >
-              Apply to Join
+              Get Your Ticket
             </a>
           </div>
         </div>
