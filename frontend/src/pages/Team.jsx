@@ -36,8 +36,8 @@ function Team() {
 
   // Talent - ~20 people
   const talent = [
-    { id: 101, name: 'Featured Talent 1', role: 'Facilitator', bio: 'Bio to come', photo: '/team/placeholder.jpg' },
-    { id: 102, name: 'Featured Talent 2', role: 'Artist', bio: 'Bio to come', photo: '/team/placeholder.jpg' },
+    { id: 101, name: 'Peter Benjamin', role: 'Facilitator', bio: 'Peter Benjamin (creator of Relational Interplay) is a seasoned coach, facilitator, and teacher with over a decade of experience leading thousands of workshops and dozens of retreats across 23 countries. He makes communication, connection, and intimacy not just skills—but a living, embodied practice. Blending somatic work, shadow work, and relational dynamics, Peter guides participants through emotional intensity, power, and authentic self-expression with rigor, heart, and play. He trains coaches and community leaders while creating spaces where transformation, deep connection, and joy naturally unfold.', photo: '/facilitators/peter-benjamin-headshot.jpg' },
+    { id: 102, name: 'Violet Starkey', role: 'Facilitator', bio: 'Violet Starkey (co-founder of Relational Interplay) is a transformational group facilitator, coach, entrepreneur, artist & community builder devoted to the art of evolutionary relationships. Trained in somatic shadow work, circle work, spiritual psychology, parts work, soul connection, authentic relating, and field facilitation, she guides individuals and couples to unlock and sustain deeper levels of conscious love, wisdom, embodied power, authenticity and intimacy than ever before.', photo: '/facilitators/violet-starkey-headshot.jpg' },
     { id: 103, name: 'Featured Talent 3', role: 'Facilitator', bio: 'Bio to come', photo: '/team/placeholder.jpg' },
     { id: 104, name: 'Featured Talent 4', role: 'Musician', bio: 'Bio to come', photo: '/team/placeholder.jpg' },
     { id: 105, name: 'Featured Talent 5', role: 'Facilitator', bio: 'Bio to come', photo: '/team/placeholder.jpg' },
