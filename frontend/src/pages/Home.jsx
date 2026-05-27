@@ -362,7 +362,7 @@ function Home() {
       <section
         ref={heroRef}
         className="hero revel-hero-alt"
-        style={{ backgroundImage: 'url("/REVEL Wide Blank.png")' }}
+        style={{ backgroundImage: 'url("/REVEL Backdrop Horizontal.png")' }}
       >
         <div className="hero-overlay"></div>
 
