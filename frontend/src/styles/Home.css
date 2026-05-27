@@ -626,7 +626,7 @@
 /* ========== CTA BREAK SECTION ========== */
 .cta-break {
   background: var(--dark);
-  padding: 40px 20px;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
