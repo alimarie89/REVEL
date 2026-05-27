@@ -748,29 +748,6 @@ function Home() {
       )}
 
 
-      {/* 7. HOW THE SPACE HOLDS */}
-      <section className="space-holds how-space-holds">
-        <div className="section-container">
-          <div className="section-preview">
-            <h2>How the space holds</h2>
-          </div>
-          <div 
-            className="section-preview-cta"
-            onClick={() => toggleSection('space-holds-info')}
-          >
-            <span>{expandedSection === 'space-holds-info' ? 'CLOSE' : 'READ MORE'}</span>
-          </div>
-          {expandedSection === 'space-holds-info' && (
-            <div className="section-expanded">
-              <div className="purpose-items">
-                {content?.howTheSpaceHolds?.map((item, i) => (
-                  <div key={i} className="purpose-item">{item}</div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
 
       {/* 8. WHAT IT FEELS LIKE */}
       <section className="space-holds what-it-feels-like">
