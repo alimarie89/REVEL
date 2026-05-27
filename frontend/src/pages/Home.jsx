@@ -336,15 +336,17 @@ function Home() {
       {showPromoBanner && (
         <div className={`promo-banner ${isBannerSticky ? 'sticky' : ''}`}>
           <div className="promo-content">
-            <span className="promo-text">Tickets go up June 1</span>
-            <a
-              href="https://events.humanitix.com/revel2026"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="promo-button"
-            >
-              Buy Now
-            </a>
+            <div className="promo-text-button-group">
+              <span className="promo-text">TICKETS GO UP JUNE 1</span>
+              <a
+                href="https://events.humanitix.com/revel2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="promo-button"
+              >
+                Buy Now
+              </a>
+            </div>
             <button
               className="promo-close"
               onClick={() => setShowPromoBanner(false)}
