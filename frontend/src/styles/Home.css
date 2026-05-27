@@ -623,6 +623,16 @@
   font-size: 0.95rem;
 }
 
+/* ========== CTA BREAK SECTION ========== */
+.cta-break {
+  background: var(--dark);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
 /* ========== SECTION STYLES ========== */
 .space-holds,
 .team,

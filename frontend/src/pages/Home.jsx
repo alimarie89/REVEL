@@ -379,17 +379,20 @@ function Home() {
             <div className="revel-hero-main-tagline">
               <img src="/REVEL Logos.png" alt="Partner Logos" className="revel-logos-image" />
             </div>
-
-            <a
-              href="https://events.humanitix.com/revel2026"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button primary"
-            >
-              Get Your Ticket
-            </a>
           </div>
         </div>
+      </section>
+
+      {/* 2. CTA BREAK - Get Your Ticket Button */}
+      <section className="cta-break">
+        <a
+          href="https://events.humanitix.com/revel2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button primary"
+        >
+          Get Your Ticket
+        </a>
       </section>
 
       {/* 2. ORIENTATION LINE */}
