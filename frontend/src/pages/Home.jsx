@@ -332,11 +332,19 @@ function Home() {
 
   return (
     <div className="home">
-      {/* Memorial Day Sale Banner */}
+      {/* Tickets Announcement Banner */}
       {showPromoBanner && (
         <div className={`promo-banner ${isBannerSticky ? 'sticky' : ''}`}>
           <div className="promo-content">
-            <span className="promo-text">🇺🇸 MEMORIAL DAY SALE: $100 OFF - LIMITED TIME</span>
+            <span className="promo-text">Tickets go up June 1</span>
+            <a
+              href="https://events.humanitix.com/revel2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="promo-button"
+            >
+              Buy Now
+            </a>
             <button
               className="promo-close"
               onClick={() => setShowPromoBanner(false)}

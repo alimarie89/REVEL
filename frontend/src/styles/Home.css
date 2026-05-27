@@ -87,6 +87,28 @@
   transform: scale(1.2);
 }
 
+.promo-button {
+  background-color: var(--cream);
+  color: var(--rust);
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
+}
+
+.promo-button:hover {
+  background-color: #f5f1e8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 92, 63, 0.3);
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
   height: 100vh;
