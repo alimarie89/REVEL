@@ -587,14 +587,14 @@
 /* ========== CTA BUTTONS ========== */
 .cta-button {
   display: inline-block;
-  padding: 14px 48px;
+  padding: 18px 60px;
   background: transparent;
   color: var(--rust);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   border: 2px solid var(--rust);
   transition: all 0.4s ease;
   cursor: pointer;
