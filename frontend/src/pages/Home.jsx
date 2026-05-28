@@ -447,21 +447,45 @@ function Home() {
         </div>
       </section>
 
-      {/* 2.5 CINEMATIC VISION */}
+      {/* 2.5 CORE ETHOS - CINEMATIC VISION */}
       <section className="cinematic-vision">
         <div className="section-container">
           <div className="cinematic-content">
             <div className="cinematic-text">
-              <h2>Are you longing for something deeper than another peak experience?</h2>
+              <h2>We can be with anything.</h2>
               
               <div className="vision-statement">
-                <p className="vision-intro">REVEL began with a vision:</p>
-                <p className="vision-tagline">to create spaces where people can actually feel culture changing.</p>
+                <p className="vision-intro">REVEL is built around a simple but radical possibility:</p>
+                <p className="vision-tagline">that human beings can gather in enough presence, trust, vulnerability, and care to stay connected through almost anything.</p>
               </div>
 
-              <p className="vision-description">
-                Through workshops, dance journeys, rituals, relational experiences, music, movement, and emergent moments led by world-class space holders, REVEL explores what becomes possible when charge is transformed into connection, creativity, responsibility, and culture.
-              </p>
+              <div className="ethos-experiences">
+                <div className="experience-list">
+                  <span>Joy.</span>
+                  <span>Desire.</span>
+                  <span>Grief.</span>
+                  <span>Intensity.</span>
+                  <span>Beauty.</span>
+                  <span>Conflict.</span>
+                  <span>Eros.</span>
+                  <span>Uncertainty.</span>
+                  <span>Aliveness.</span>
+                </div>
+              </div>
+
+              <div className="vision-approach">
+                <p>Not by avoiding charge.</p>
+                <p>Not by flooding the field with it.</p>
+                <p>But by learning how to stay human together inside of it.</p>
+              </div>
+
+              <div className="vision-closing">
+                <p><strong>This is not just a festival.</strong></p>
+                <p><strong>Not just a retreat.</strong></p>
+                <p><strong>Not just a party.</strong></p>
+                <p style={{ marginTop: '20px' }}>It is a living experiment in co-creation, relational courage, embodied expression, and collective presence.</p>
+                <p style={{ marginTop: '16px' }}>A space where people can actually drop their guard. Where truth matters. Where impact matters. And where the ways we learn to relate together continue long after the music ends.</p>
+              </div>
             </div>
 
             <div className="cinematic-featured">
