@@ -30,6 +30,13 @@ What we practice here becomes the world we live in
 
 ---
 
+## Facilitators Section
+
+### Caption
+Our world-class facilitation team
+
+---
+
 ## How The Space Holds Section
 *(Currently removed from the site, but kept here for reference)*
 
