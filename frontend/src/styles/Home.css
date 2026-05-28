@@ -633,6 +633,215 @@
   z-index: 50;
 }
 
+/* ========== CORE ETHOS SECTION ========== */
+.core-ethos {
+  background: var(--dark);
+  padding: 80px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.core-ethos .section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ethos-headline {
+  font-size: 3rem;
+  font-family: 'Laluxess Serif', serif;
+  color: var(--cream);
+  text-align: center;
+  margin: 0 0 60px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.ethos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.ethos-intro {
+  font-size: 1.05rem;
+  color: rgba(245, 241, 237, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+.ethos-proposition {
+  font-size: 1.35rem;
+  color: var(--cream);
+  font-family: 'Laluxess Serif', serif;
+  margin: 0;
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ethos-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin: 20px 0;
+  padding: 40px 0;
+  border-top: 1px solid rgba(168, 92, 63, 0.3);
+  border-bottom: 1px solid rgba(168, 92, 63, 0.3);
+}
+
+.list-item {
+  font-size: 1.3rem;
+  color: var(--rust);
+  font-family: 'Laluxess Serif', serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.ethos-approach {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.ethos-approach p {
+  font-size: 1.1rem;
+  color: rgba(245, 241, 237, 0.85);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.ethos-closing {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 30px;
+  background: rgba(168, 92, 63, 0.08);
+  border-left: 3px solid var(--rust);
+}
+
+.ethos-closing p {
+  font-size: 1.05rem;
+  color: rgba(245, 241, 237, 0.85);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+
+.ethos-closing-bold {
+  font-size: 1.2rem !important;
+  color: var(--rust) !important;
+  font-weight: 500 !important;
+  font-family: 'Laluxess Serif', serif !important;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .core-ethos {
+    padding: 60px 30px;
+  }
+
+  .ethos-headline {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .ethos-content {
+    gap: 30px;
+  }
+
+  .ethos-proposition {
+    font-size: 1.2rem;
+  }
+
+  .ethos-list {
+    gap: 14px;
+    padding: 30px 0;
+  }
+
+  .list-item {
+    font-size: 1.15rem;
+  }
+
+  .ethos-approach p {
+    font-size: 1rem;
+  }
+
+  .ethos-closing {
+    padding: 30px 20px;
+    gap: 12px;
+  }
+
+  .ethos-closing p {
+    font-size: 1rem;
+  }
+
+  .ethos-closing-bold {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .core-ethos {
+    padding: 50px 20px;
+  }
+
+  .ethos-headline {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  .ethos-intro {
+    font-size: 1rem;
+  }
+
+  .ethos-proposition {
+    font-size: 1.1rem;
+  }
+
+  .ethos-list {
+    gap: 12px;
+    padding: 25px 0;
+  }
+
+  .list-item {
+    font-size: 1.05rem;
+  }
+
+  .ethos-approach {
+    gap: 10px;
+  }
+
+  .ethos-approach p {
+    font-size: 0.95rem;
+  }
+
+  .ethos-closing {
+    padding: 20px 15px;
+    gap: 10px;
+  }
+
+  .ethos-closing p {
+    font-size: 0.95rem;
+  }
+
+  .ethos-closing-bold {
+    font-size: 1rem !important;
+  }
+}
+
 /* ========== SECTION STYLES ========== */
 .space-holds,
 .team,

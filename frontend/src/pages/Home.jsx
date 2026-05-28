@@ -395,6 +395,52 @@ function Home() {
         </a>
       </section>
 
+      {/* 2.1 CORE ETHOS - DEVELOPMENTAL PROPOSITION */}
+      <section className="core-ethos">
+        <div className="section-container">
+          <h2 className="ethos-headline">We can be with anything.</h2>
+          
+          <div className="ethos-content">
+            <p className="ethos-intro">REVEL is built around a simple but radical possibility:</p>
+            
+            <p className="ethos-proposition">
+              That human beings can gather in enough presence, trust, vulnerability, and care to stay connected through almost anything.
+            </p>
+
+            <div className="ethos-list">
+              <span className="list-item">Joy.</span>
+              <span className="list-item">Desire.</span>
+              <span className="list-item">Grief.</span>
+              <span className="list-item">Intensity.</span>
+              <span className="list-item">Beauty.</span>
+              <span className="list-item">Conflict.</span>
+              <span className="list-item">Eros.</span>
+              <span className="list-item">Uncertainty.</span>
+              <span className="list-item">Aliveness.</span>
+            </div>
+
+            <div className="ethos-approach">
+              <p>Not by avoiding charge.</p>
+              <p>Not by flooding the field with it.</p>
+              <p>But by learning how to stay human together inside of it.</p>
+            </div>
+
+            <div className="ethos-closing">
+              <p>This is not just a festival.</p>
+              <p>Not just a retreat.</p>
+              <p>Not just a party.</p>
+              
+              <p className="ethos-closing-bold">It is a living experiment in co-creation, relational courage, embodied expression, and collective presence.</p>
+              
+              <p>A space where people can actually drop their guard.</p>
+              <p>Where truth matters.</p>
+              <p>Where impact matters.</p>
+              <p>And where the ways we learn to relate together continue long after the music ends.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 2. ORIENTATION LINE */}
       <section className="orientation-line">
         <div className="section-container">
