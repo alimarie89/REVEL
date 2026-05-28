@@ -23,17 +23,17 @@ Cocreate the field with us (instead of just consuming it)
 
 ---
 
-## Architecture of Connection Section
-
-### Field of Presence Tagline
-What we practice here becomes the world we live in
-
----
-
 ## Facilitators Section
 
 ### Caption
 Our world-class facilitation team
+
+---
+
+## Architecture of Connection Section
+
+### Field of Presence Tagline
+What we practice here becomes the world we live in
 
 ---
 
