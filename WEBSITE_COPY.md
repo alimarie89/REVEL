@@ -7,7 +7,7 @@
 - More expansive than a retreat.
 
 ### Orientation Line
-A 350-person convergence where ritual, dance, embodiment, eros, and cultural awakening meet.
+A 350 person, intimate community gathering at the intersection of ritual, dance, embodiment & collective evolution
 
 ---
 
