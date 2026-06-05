@@ -3684,3 +3684,422 @@
     font-size: 0.9rem;
   }
 }
+
+/* ========== LIVING MANDALA / TEAM CIRCLE SECTION (EXPERIMENTAL) ========== */
+
+.living-mandala-section {
+  background: var(--dark);
+  background-image: 
+    radial-gradient(ellipse at center, rgba(168, 92, 63, 0.15) 0%, rgba(15, 10, 10, 0.95) 65%),
+    url('/REVEL%20Backdrop%20Horizontal.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-light);
+  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.living-mandala-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mandala-container {
+  position: relative;
+  z-index: 2;
+}
+
+.mandala-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mandala-eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--rust);
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.mandala-title {
+  font-size: 3.2rem;
+  font-family: 'Laluxess Serif', serif;
+  font-weight: 300;
+  color: var(--cream);
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.mandala-subtitle {
+  font-size: 1.15rem;
+  color: rgba(232, 201, 168, 0.8);
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.mandala-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  aspect-ratio: 1;
+}
+
+.mandala-orbit-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.orbit-ring {
+  fill: none;
+  stroke: rgba(168, 92, 63, 0.2);
+  stroke-width: 1.5;
+}
+
+.mandala-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(212, 165, 116, 0.2), transparent);
+  border: 2px solid rgba(168, 92, 63, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 0 40px rgba(168, 92, 63, 0.3),
+    inset 0 0 40px rgba(168, 92, 63, 0.1);
+}
+
+.mandala-center-content {
+  text-align: center;
+}
+
+.mandala-center-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(212, 165, 116, 0.6);
+  margin: 0 0 2px 0;
+  font-weight: 500;
+}
+
+.mandala-center-word {
+  font-size: 1.8rem;
+  font-family: 'Laluxess Serif', serif;
+  font-weight: 300;
+  color: var(--rust);
+  margin: 0;
+  text-shadow: 0 0 15px rgba(168, 92, 63, 0.3);
+}
+
+.mandala-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.mandala-portrait {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0.8;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.mandala-portrait:hover {
+  opacity: 1;
+  z-index: 10;
+}
+
+.mandala-portrait-inner {
+  width: 100px;
+  height: 100px;
+  --orbit-radius: 180px;
+}
+
+.mandala-portrait-outer {
+  width: 90px;
+  height: 90px;
+  --orbit-radius: 320px;
+}
+
+/* Position inner ring portraits */
+.mandala-ring-inner .mandala-portrait {
+  transform: 
+    rotate(var(--angle))
+    translateY(calc(-1 * var(--orbit-radius)))
+    rotate(calc(-1 * var(--angle)))
+    translate(-50%, -50%);
+}
+
+/* Position outer ring portraits */
+.mandala-ring-outer .mandala-portrait {
+  transform: 
+    rotate(var(--angle))
+    translateY(calc(-1 * var(--orbit-radius)))
+    rotate(calc(-1 * var(--angle)))
+    translate(-50%, -50%);
+}
+
+.mandala-portrait img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(168, 92, 63, 0.5);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0 20px rgba(15, 10, 10, 0.5);
+}
+
+.mandala-portrait:hover img {
+  border-color: var(--rust);
+  box-shadow: 
+    0 0 30px rgba(168, 92, 63, 0.6),
+    0 0 60px rgba(168, 92, 63, 0.3),
+    inset 0 0 20px rgba(212, 165, 116, 0.1);
+  transform: scale(1.15);
+}
+
+.mandala-info {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.mandala-portrait:hover .mandala-info {
+  opacity: 1;
+}
+
+.mandala-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin: 0 0 3px 0;
+}
+
+.mandala-role {
+  font-size: 0.75rem;
+  color: var(--rust);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.mandala-note {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(168, 92, 63, 0.1);
+  border: 1px solid rgba(168, 92, 63, 0.2);
+  border-radius: 8px;
+}
+
+.mandala-note p {
+  font-size: 0.9rem;
+  color: rgba(232, 201, 168, 0.7);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Tablet - Adjustments */
+@media (max-width: 1024px) {
+  .living-mandala-section {
+    padding: 90px 30px;
+  }
+
+  .mandala-title {
+    font-size: 2.6rem;
+  }
+
+  .mandala-subtitle {
+    font-size: 1rem;
+  }
+
+  .mandala-wrapper {
+    max-width: 600px;
+  }
+
+  .mandala-portrait-inner {
+    width: 85px;
+    height: 85px;
+    --orbit-radius: 140px;
+  }
+
+  .mandala-portrait-outer {
+    width: 75px;
+    height: 75px;
+    --orbit-radius: 250px;
+  }
+
+  .mandala-center {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mandala-center-word {
+    font-size: 1.4rem;
+  }
+
+  .mandala-info {
+    bottom: -50px;
+  }
+}
+
+/* Mobile - Switch to Grid */
+@media (max-width: 768px) {
+  .living-mandala-section {
+    padding: 70px 20px;
+  }
+
+  .mandala-header {
+    margin-bottom: 50px;
+  }
+
+  .mandala-title {
+    font-size: 2rem;
+  }
+
+  .mandala-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .mandala-wrapper {
+    max-width: 100%;
+    aspect-ratio: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .mandala-orbit-svg {
+    display: none;
+  }
+
+  .mandala-center {
+    grid-column: 1 / -1;
+    position: relative;
+    transform: translate(0, 0);
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .mandala-ring {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: contents;
+  }
+
+  .mandala-portrait {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0) !important;
+    opacity: 1;
+  }
+
+  .mandala-portrait-inner {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mandala-portrait-outer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mandala-info {
+    bottom: -50px;
+    font-size: 0.85rem;
+  }
+
+  .mandala-note {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .living-mandala-section {
+    padding: 50px 15px;
+  }
+
+  .mandala-title {
+    font-size: 1.6rem;
+  }
+
+  .mandala-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .mandala-wrapper {
+    gap: 30px;
+  }
+
+  .mandala-center {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mandala-center-word {
+    font-size: 1.2rem;
+  }
+
+  .mandala-portrait-inner,
+  .mandala-portrait-outer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mandala-info {
+    bottom: -45px;
+  }
+
+  .mandala-name {
+    font-size: 0.8rem;
+  }
+
+  .mandala-role {
+    font-size: 0.65rem;
+  }
+}
