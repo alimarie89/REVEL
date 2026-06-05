@@ -616,7 +616,6 @@ function Home() {
       <section className="architecture-section">
         <div className="section-container architecture-container">
           <div className="architecture-header">
-            <h2 className="architecture-thesis">What emerges at REVEL is not accidental.</h2>
             <p className="architecture-supporting-text">
               Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
             </p>
