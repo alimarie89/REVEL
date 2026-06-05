@@ -522,6 +522,40 @@ function Home() {
 
             {/* Single ceremonial ring with all team members */}
             <div className="mandala-ring-circle">
+              {/* Spencer & Ali at top */}
+              <div 
+                className="mandala-portrait-circle"
+                style={{ 
+                  '--angle': '240deg',
+                  '--radius': '340px'
+                }}
+                onMouseEnter={() => setHoveredLevel('spencer')}
+                onMouseLeave={() => setHoveredLevel(null)}
+              >
+                <img src="/team/Spencer Headshot Color.jpg" alt="Spencer Jacobson" />
+                <div className="mandala-info-circle">
+                  <p className="mandala-name">Spencer Jacobson</p>
+                  <p className="mandala-role">Visionary</p>
+                </div>
+              </div>
+
+              <div 
+                className="mandala-portrait-circle"
+                style={{ 
+                  '--angle': '300deg',
+                  '--radius': '340px'
+                }}
+                onMouseEnter={() => setHoveredLevel('ali')}
+                onMouseLeave={() => setHoveredLevel(null)}
+              >
+                <img src="/team/alison-williams.jpg" alt="Ali Williams" />
+                <div className="mandala-info-circle">
+                  <p className="mandala-name">Ali Williams</p>
+                  <p className="mandala-role">COO</p>
+                </div>
+              </div>
+
+              {/* All facilitators distributed around circle */}
               {showcaseFacilitators.map((person, index) => {
                 const totalPeople = showcaseFacilitators.length;
                 const angleIncrement = 360 / totalPeople;
