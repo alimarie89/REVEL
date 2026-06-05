@@ -370,7 +370,7 @@ function Home() {
         <div className={`promo-banner ${isBannerSticky ? 'sticky' : ''}`}>
           <div className="promo-content">
             <div className="promo-text-button-group">
-              <span className="promo-text">TICKETS GO UP JUNE 1</span>
+              <span className="promo-text">FINAL WAVE OF TICKETS</span>
               <a
                 href="https://events.humanitix.com/revel2026"
                 target="_blank"
