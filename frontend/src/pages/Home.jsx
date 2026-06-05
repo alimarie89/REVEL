@@ -616,9 +616,7 @@ function Home() {
       <section className="architecture-section">
         <div className="section-container architecture-container">
           <div className="architecture-header">
-            <p className="architecture-eyebrow">ARCHITECTURE OF CONNECTION</p>
             <h2 className="field-intro-eyebrow">Field of Presence</h2>
-            <h3 className="field-intro-title">What we practice here becomes the world we live in</h3>
             <p className="architecture-intro-text">
               What emerges at REVEL is not accidental. Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
             </p>
