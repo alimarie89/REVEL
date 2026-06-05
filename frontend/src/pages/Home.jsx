@@ -453,10 +453,8 @@ function Home() {
           </div>
         </div>
       </section>
-            <p>Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
-          </div>
-        </div>
-      </section>
+
+      {/* CAROUSEL SECTION */}
 
       {/* CAROUSEL SECTION */}
       <section className="carousel-section">
