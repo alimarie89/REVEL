@@ -2691,6 +2691,7 @@
 .what-it-feels-like {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(26, 26, 26, 0.98);
+  padding-top: 120px;
 }
 
 .what-it-feels-like .section-preview h2 {
