@@ -406,10 +406,18 @@ function Home() {
       {/* 2.0 WELCOME SECTION - EDITORIAL REDESIGN */}
       <section className="welcome-section">
         <div className="section-container welcome-full">
-          {/* Top Row: Heading Left, Image Right */}
+          {/* Top Row: Heading & Invitation Left, Image Right */}
           <div className="welcome-header-row">
             <div className="welcome-header-text">
-              <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
+              <div className="welcome-header-content">
+                <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
+                
+                <div className="welcome-invitation-intro">
+                  <p>We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
+                  
+                  <p>Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
+                </div>
+              </div>
             </div>
             
             <div className="welcome-header-image">
@@ -443,11 +451,8 @@ function Home() {
               <p>REVEL is about leaning in together.</p>
             </div>
           </div>
-
-          {/* Invitation Section */}
-          <div className="welcome-invitation">
-            <p>We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
-            
+        </div>
+      </section>
             <p>Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
           </div>
         </div>
