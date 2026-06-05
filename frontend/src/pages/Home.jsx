@@ -413,9 +413,9 @@ function Home() {
                 <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
                 
                 <div className="welcome-invitation-intro">
-                  <p>We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
-                  
                   <p>Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
+                  
+                  <p>We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
                 </div>
               </div>
             </div>
