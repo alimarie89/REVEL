@@ -520,8 +520,8 @@ function Home() {
           <div className="mandala-wrapper">
             <svg className="mandala-orbit-svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
               {/* Subtle orbit rings */}
-              <circle cx="400" cy="400" r="200" className="orbit-ring orbit-ring-1" />
-              <circle cx="400" cy="400" r="320" className="orbit-ring orbit-ring-2" />
+              <circle cx="400" cy="400" r="180" className="orbit-ring orbit-ring-1" />
+              <circle cx="400" cy="400" r="300" className="orbit-ring orbit-ring-2" />
             </svg>
 
             <div className="mandala-center">
@@ -531,14 +531,14 @@ function Home() {
               </div>
             </div>
 
-            {/* Inner Ring: Key Organizers */}
+            {/* Inner Ring: Key Organizers - 2 people positioned opposite */}
             <div className="mandala-ring mandala-ring-inner">
-              {/* Spencer Jacobson - Top Left */}
+              {/* Spencer Jacobson - Left (270°) */}
               <div 
                 className="mandala-portrait mandala-portrait-inner"
                 style={{ 
-                  '--position': 'calc(50% - 180px)',
-                  '--angle': '-90deg'
+                  '--angle': '270deg',
+                  '--radius': '180px'
                 }}
                 onMouseEnter={() => setHoveredLevel('spencer')}
                 onMouseLeave={() => setHoveredLevel(null)}
@@ -550,12 +550,12 @@ function Home() {
                 </div>
               </div>
 
-              {/* Ali Williams - Top Right */}
+              {/* Ali Williams - Right (90°) */}
               <div 
                 className="mandala-portrait mandala-portrait-inner"
                 style={{ 
-                  '--position': 'calc(50% + 180px)',
-                  '--angle': '-90deg'
+                  '--angle': '90deg',
+                  '--radius': '180px'
                 }}
                 onMouseEnter={() => setHoveredLevel('ali')}
                 onMouseLeave={() => setHoveredLevel(null)}
@@ -568,7 +568,7 @@ function Home() {
               </div>
             </div>
 
-            {/* Outer Ring: Facilitators */}
+            {/* Outer Ring: Facilitators - 8 people evenly spaced (45° apart) */}
             <div className="mandala-ring mandala-ring-outer">
               {[
                 { id: 1, name: 'David Block', role: 'Artist', photo: '/facilitators/david-block.jpg', angle: 0 },
@@ -579,11 +579,14 @@ function Home() {
                 { id: 6, name: 'Victor Warring', role: 'Somatic Educator', photo: '/facilitators/victor-warring.jpg', angle: 225 },
                 { id: 7, name: 'Peter Benjamin', role: 'Facilitator', photo: '/facilitators/peter-benjamin.jpg', angle: 270 },
                 { id: 12, name: 'Cody Reinheimer', role: 'DJ / CodeStar', photo: '/facilitators/cody-reinheimer.jpg', angle: 315 }
-              ].map((person, idx) => (
+              ].map((person) => (
                 <div 
                   key={person.id}
                   className="mandala-portrait mandala-portrait-outer"
-                  style={{ '--angle': `${person.angle}deg` }}
+                  style={{ 
+                    '--angle': `${person.angle}deg`,
+                    '--radius': '300px'
+                  }}
                   onMouseEnter={() => setHoveredLevel(person.name)}
                   onMouseLeave={() => setHoveredLevel(null)}
                 >
