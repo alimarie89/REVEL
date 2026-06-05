@@ -504,15 +504,16 @@ function Home() {
       {/* EXPERIMENTAL: LIVING MANDALA / CEREMONIAL CIRCLE SECTION */}
       <section className="living-mandala-section">
         <div className="section-container mandala-container">
-          <div className="mandala-header">
-            <h2 className="mandala-title">Meet the Humans Weaving REVEL</h2>
-            <p className="mandala-subtitle">A convergence of facilitators, musicians, ritualists, artists, healers, and organizers.</p>
-          </div>
-
           {/* Circular Mandala Layout - All team members in a ceremonial circle */}
           <div className="mandala-wrapper">
             {/* Subtle center glow - intentionally empty */}
             <div className="mandala-center-glow"></div>
+
+            {/* Center title and subtitle */}
+            <div className="mandala-header mandala-center-header">
+              <h2 className="mandala-title">Meet the Humans Weaving REVEL</h2>
+              <p className="mandala-subtitle">A convergence of facilitators, musicians, ritualists, artists, healers, and organizers.</p>
+            </div>
 
             {/* Single ceremonial ring with all team members */}
             <div className="mandala-ring-circle">
