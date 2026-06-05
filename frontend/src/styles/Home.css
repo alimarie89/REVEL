@@ -3141,12 +3141,12 @@
 }
 
 .architecture-framework-name {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 3px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(201, 168, 117, 0.85);
-  font-family: 'Montserrat', sans-serif;
+  color: #f5f1ed;
+  font-family: 'Laluxess Serif', serif;
   margin-bottom: 12px;
   display: block;
 }
@@ -3407,6 +3407,10 @@
 
   .architecture-framework {
     margin-bottom: 60px;
+  }
+
+  .architecture-framework-name {
+    font-size: 1.3rem;
   }
 
   .architecture-framework-definition {
