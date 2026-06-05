@@ -3111,17 +3111,17 @@
 /* Header */
 .architecture-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .architecture-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: #c9a875;
+  color: rgba(201, 168, 117, 0.8);
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   display: block;
 }
 
@@ -3136,22 +3136,19 @@
 }
 
 .architecture-intro-text {
-  font-size: 1.1rem;
-  color: #d4cfc7;
+  font-size: 1.05rem;
+  color: rgba(245, 241, 237, 0.85);
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.8;
-  max-width: 750px;
-  margin: 0 auto;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+  line-height: 2;
+  max-width: 800px;
+  margin: 24px auto 0;
+  font-weight: 300;
+  letter-spacing: 0.2px;
 }
 
-/* Divider */
+/* Divider - hidden */
 .architecture-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, #c9a875 50%, transparent 100%);
-  margin: 60px 0;
-  box-shadow: 0 0 20px rgba(201, 168, 117, 0.2);
+  display: none;
 }
 
 /* Field Intro */
@@ -3167,7 +3164,8 @@
   text-transform: uppercase;
   color: var(--cream);
   font-family: 'Laluxess Serif', serif;
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 16px;
   display: block;
   line-height: 1.2;
 }
@@ -3176,7 +3174,7 @@
   font-size: 2rem;
   font-family: 'Laluxess Serif', serif;
   color: #f5f1ed;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   letter-spacing: -0.3px;
 }
@@ -3346,24 +3344,15 @@
   }
 
   .architecture-header {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .architecture-title {
-    font-size: 2.2rem;
-    margin-bottom: 24px;
+    display: none;
   }
 
   .architecture-intro-text {
-    font-size: 1rem;
-  }
-
-  .architecture-divider {
-    margin: 40px 0;
-  }
-
-  .field-intro {
-    margin-bottom: 60px;
+    font-size: 0.95rem;
   }
 
   .field-intro-title {
