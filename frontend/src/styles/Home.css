@@ -547,6 +547,14 @@
   line-height: 1.7;
 }
 
+/* ========== CAROUSEL SECTION ========== */
+.carousel-section {
+  background: var(--dark);
+  padding: 80px 40px;
+  position: relative;
+  z-index: 1;
+}
+
 /* ========== CINEMATIC VISION ========== */
 .cinematic-vision {
   background: var(--dark);
@@ -765,6 +773,19 @@
     font-size: 1.15rem;
   }
 
+  .carousel-section {
+    padding: 60px 30px;
+  }
+
+  .carousel-container {
+    padding: 30px 0;
+  }
+
+  .carousel-item {
+    flex: 0 0 320px;
+    height: 250px;
+  }
+
   .cinematic-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -845,6 +866,24 @@
 
   .impact-card p {
     font-size: 1.1rem;
+  }
+
+  .carousel-section {
+    padding: 60px 30px;
+  }
+
+  .carousel-container {
+    padding: 30px 0;
+  }
+
+  .carousel-scroll {
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .carousel-item {
+    flex: 0 0 280px;
+    height: 220px;
   }
 
   .cinematic-vision {
@@ -1182,6 +1221,24 @@
 
   .impact-card p {
     font-size: 1rem;
+  }
+
+  .carousel-section {
+    padding: 50px 20px;
+  }
+
+  .carousel-container {
+    padding: 20px 0;
+  }
+
+  .carousel-scroll {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .carousel-item {
+    flex: 0 0 220px;
+    height: 180px;
   }
 
   .core-ethos {

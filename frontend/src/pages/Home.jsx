@@ -447,124 +447,22 @@ function Home() {
         </div>
       </section>
 
-      {/* 2.1 CORE ETHOS - DEVELOPMENTAL PROPOSITION */}
-      <section className="core-ethos">
-        <div className="section-container">
-          <h2 className="ethos-headline">We can be with anything.</h2>
-          
-          <div className="ethos-content">
-            <p className="ethos-intro">REVEL is built around a simple but radical possibility:</p>
-            
-            <p className="ethos-proposition">
-              That human beings can gather in enough presence, trust, vulnerability, and care to stay connected through almost anything.
-            </p>
-
-            <div className="ethos-list">
-              <span className="list-item">Joy.</span>
-              <span className="list-item">Desire.</span>
-              <span className="list-item">Grief.</span>
-              <span className="list-item">Intensity.</span>
-              <span className="list-item">Beauty.</span>
-              <span className="list-item">Conflict.</span>
-              <span className="list-item">Eros.</span>
-              <span className="list-item">Uncertainty.</span>
-              <span className="list-item">Aliveness.</span>
-            </div>
-
-            <div className="ethos-approach">
-              <p>Not by avoiding charge.</p>
-              <p>Not by flooding the field with it.</p>
-              <p>But by learning how to stay human together inside of it.</p>
-            </div>
-
-            <div className="ethos-closing">
-              <p>This is not just a festival.</p>
-              <p>Not just a retreat.</p>
-              <p>Not just a party.</p>
-              
-              <p className="ethos-closing-bold">It is a living experiment in co-creation, relational courage, embodied expression, and collective presence.</p>
-              
-              <p>A space where people can actually drop their guard.</p>
-              <p>Where truth matters.</p>
-              <p>Where impact matters.</p>
-              <p>And where the ways we learn to relate together continue long after the music ends.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. ORIENTATION LINE */}
-      <section className="orientation-line">
-        <div className="section-container">
-        </div>
-      </section>
-
-      {/* 2.5 CORE ETHOS - CINEMATIC VISION */}
-      <section className="cinematic-vision">
-        <div className="section-container">
-          <div className="cinematic-content">
-            <div className="cinematic-text">
-              <h2>We can be with anything.</h2>
-              
-              <div className="vision-statement">
-                <p className="vision-intro">REVEL is built around a simple but radical possibility:</p>
-                <p className="vision-tagline">that human beings can gather in enough presence, trust, vulnerability, and care to stay connected through almost anything.</p>
+      {/* CAROUSEL SECTION */}
+      <section className="carousel-section">
+        <div className="carousel-container">
+          <div 
+            className="carousel-scroll" 
+            ref={carouselRef}
+          >
+            {carouselImages.map((image, idx) => (
+              <div key={idx} className="carousel-item">
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="carousel-image"
+                />
               </div>
-
-              <div className="ethos-experiences">
-                <div className="experience-list">
-                  <span>Joy.</span>
-                  <span>Desire.</span>
-                  <span>Grief.</span>
-                  <span>Intensity.</span>
-                  <span>Beauty.</span>
-                  <span>Conflict.</span>
-                  <span>Eros.</span>
-                  <span>Uncertainty.</span>
-                  <span>Aliveness.</span>
-                </div>
-              </div>
-
-              <div className="vision-approach">
-                <p>Not by avoiding charge.</p>
-                <p>Not by flooding the field with it.</p>
-                <p>But by learning how to stay human together inside of it.</p>
-              </div>
-
-              <div className="vision-closing">
-                <p><strong>This is not just a festival.</strong></p>
-                <p><strong>Not just a retreat.</strong></p>
-                <p><strong>Not just a party.</strong></p>
-                <p style={{ marginTop: '20px' }}>It is a living experiment in co-creation, relational courage, embodied expression, and collective presence.</p>
-                <p style={{ marginTop: '16px' }}>A space where people can actually drop their guard. Where truth matters. Where impact matters. And where the ways we learn to relate together continue long after the music ends.</p>
-              </div>
-            </div>
-
-            <div className="cinematic-featured">
-              <img 
-                src={featuredImage}
-                alt="Featured participant moment"
-                className="featured-image"
-              />
-            </div>
-          </div>
-
-          {/* Auto-scrolling Carousel */}
-          <div className="carousel-container">
-            <div 
-              className="carousel-scroll" 
-              ref={carouselRef}
-            >
-              {carouselImages.map((image, idx) => (
-                <div key={idx} className="carousel-item">
-                  <img 
-                    src={image.src} 
-                    alt={image.alt}
-                    className="carousel-image"
-                  />
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </section>
