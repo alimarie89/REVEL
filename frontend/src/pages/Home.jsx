@@ -406,25 +406,24 @@ function Home() {
       {/* 2.0 WELCOME SECTION - EDITORIAL REDESIGN */}
       <section className="welcome-section">
         <div className="section-container welcome-full">
-          {/* Editorial Two-Column Layout */}
-          <div className="welcome-editorial">
-            <div className="welcome-text-column">
+          {/* Top Row: Heading Left, Image Right */}
+          <div className="welcome-header-row">
+            <div className="welcome-header-text">
               <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
-              
-              <p className="welcome-intro">REVEL is built around a simple but radical possibility:</p>
-              
-              <p className="welcome-invitation-text">We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
-              
-              <p className="welcome-vision-text">Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
             </div>
             
-            <div className="welcome-image-column">
+            <div className="welcome-header-image">
               <img 
                 src="/carousel/Girl smiling 1.jpg" 
                 alt="REVEL community gathering"
                 className="welcome-feature-image"
               />
             </div>
+          </div>
+
+          {/* Eyebrow Label */}
+          <div className="welcome-eyebrow">
+            <p>REVEL is built around a simple but radical possibility:</p>
           </div>
 
           {/* Pull Quote Section */}
@@ -443,6 +442,13 @@ function Home() {
             <div className="impact-card">
               <p>REVEL is about leaning in together.</p>
             </div>
+          </div>
+
+          {/* Invitation Section */}
+          <div className="welcome-invitation">
+            <p>We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
+            
+            <p>Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
           </div>
         </div>
       </section>
