@@ -507,101 +507,55 @@ function Home() {
         </div>
       </section>
 
-      {/* EXPERIMENTAL: LIVING MANDALA / TEAM CIRCLE SECTION */}
+      {/* EXPERIMENTAL: LIVING MANDALA / CEREMONIAL CIRCLE SECTION */}
       <section className="living-mandala-section">
         <div className="section-container mandala-container">
           <div className="mandala-header">
-            <p className="mandala-eyebrow">The Field</p>
             <h2 className="mandala-title">Meet the Humans Weaving REVEL</h2>
             <p className="mandala-subtitle">A convergence of facilitators, musicians, ritualists, artists, healers, and organizers.</p>
           </div>
 
-          {/* Circular Mandala Layout */}
+          {/* Circular Mandala Layout - All team members in a ceremonial circle */}
           <div className="mandala-wrapper">
-            <svg className="mandala-orbit-svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
-              {/* Subtle orbit rings */}
-              <circle cx="400" cy="400" r="180" className="orbit-ring orbit-ring-1" />
-              <circle cx="400" cy="400" r="300" className="orbit-ring orbit-ring-2" />
-            </svg>
+            {/* Subtle center glow - intentionally empty */}
+            <div className="mandala-center-glow"></div>
 
-            <div className="mandala-center">
-              <div className="mandala-center-content">
-                <p className="mandala-center-text">THE</p>
-                <p className="mandala-center-word">FIELD</p>
-              </div>
-            </div>
-
-            {/* Inner Ring: Key Organizers - 2 people positioned opposite */}
-            <div className="mandala-ring mandala-ring-inner">
-              {/* Spencer Jacobson - Left (270°) */}
-              <div 
-                className="mandala-portrait mandala-portrait-inner"
-                style={{ 
-                  '--angle': '270deg',
-                  '--radius': '180px'
-                }}
-                onMouseEnter={() => setHoveredLevel('spencer')}
-                onMouseLeave={() => setHoveredLevel(null)}
-              >
-                <img src="/team/Spencer Headshot Color.jpg" alt="Spencer Jacobson" />
-                <div className="mandala-info">
-                  <p className="mandala-name">Spencer Jacobson</p>
-                  <p className="mandala-role">Visionary</p>
-                </div>
-              </div>
-
-              {/* Ali Williams - Right (90°) */}
-              <div 
-                className="mandala-portrait mandala-portrait-inner"
-                style={{ 
-                  '--angle': '90deg',
-                  '--radius': '180px'
-                }}
-                onMouseEnter={() => setHoveredLevel('ali')}
-                onMouseLeave={() => setHoveredLevel(null)}
-              >
-                <img src="/team/alison-williams.jpg" alt="Ali Williams" />
-                <div className="mandala-info">
-                  <p className="mandala-name">Ali Williams</p>
-                  <p className="mandala-role">COO</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Outer Ring: Facilitators - 8 people evenly spaced (45° apart) */}
-            <div className="mandala-ring mandala-ring-outer">
-              {[
-                { id: 1, name: 'David Block', role: 'Artist', photo: '/facilitators/david-block.jpg', angle: 0 },
-                { id: 2, name: 'Michaela Winters', role: 'Transformational Coach', photo: '/facilitators/michaela-winters.jpg', angle: 45 },
-                { id: 3, name: 'Atilla Cidam', role: 'Facilitator', photo: '/facilitators/atilla-cidam.jpg', angle: 90 },
-                { id: 4, name: 'Yarixa Ferrao', role: 'Facilitator', photo: '/facilitators/yarixa-ferrao.jpg', angle: 135 },
-                { id: 5, name: 'Chloe Good', role: 'Somatic Coach', photo: '/facilitators/chloe-good.jpg', angle: 180 },
-                { id: 6, name: 'Victor Warring', role: 'Somatic Educator', photo: '/facilitators/victor-warring.jpg', angle: 225 },
-                { id: 7, name: 'Peter Benjamin', role: 'Facilitator', photo: '/facilitators/peter-benjamin.jpg', angle: 270 },
-                { id: 12, name: 'Cody Reinheimer', role: 'DJ / CodeStar', photo: '/facilitators/cody-reinheimer.jpg', angle: 315 }
-              ].map((person) => (
-                <div 
-                  key={person.id}
-                  className="mandala-portrait mandala-portrait-outer"
-                  style={{ 
-                    '--angle': `${person.angle}deg`,
-                    '--radius': '300px'
-                  }}
-                  onMouseEnter={() => setHoveredLevel(person.name)}
-                  onMouseLeave={() => setHoveredLevel(null)}
-                >
-                  <img src={person.photo} alt={person.name} />
-                  <div className="mandala-info">
-                    <p className="mandala-name">{person.name}</p>
-                    <p className="mandala-role">{person.role}</p>
+            {/* Single ceremonial ring with all team members */}
+            <div className="mandala-ring-circle">
+              {showcaseFacilitators.map((person, index) => {
+                const totalPeople = showcaseFacilitators.length;
+                const angleIncrement = 360 / totalPeople;
+                const angle = angleIncrement * index;
+                
+                return (
+                  <div 
+                    key={person.id}
+                    className="mandala-portrait-circle"
+                    style={{ 
+                      '--angle': `${angle}deg`,
+                      '--radius': '340px'
+                    }}
+                    onMouseEnter={() => setHoveredLevel(person.name)}
+                    onMouseLeave={() => setHoveredLevel(null)}
+                  >
+                    <img src={person.photo} alt={person.name} />
+                    <div className="mandala-info-circle">
+                      <p className="mandala-name">{person.name}</p>
+                      <p className="mandala-role">{person.role}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
+
+            {/* Single elegant ceremonial ring SVG */}
+            <svg className="mandala-ring-svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
+              <circle cx="400" cy="400" r="340" className="ceremonial-ring" />
+            </svg>
           </div>
 
           <div className="mandala-note">
-            <p>This is an experimental Living Mandala layout. The traditional grid showcase appears below.</p>
+            <p>An experimental ceremonial circle of all humans weaving REVEL together.</p>
           </div>
         </div>
       </section>
