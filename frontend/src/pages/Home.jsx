@@ -551,7 +551,7 @@ function Home() {
         <div className="section-container">
           <p className="facilitators-caption">Our world-class facilitation team</p>
           <div className="facilitators-grid">
-            {showcaseFacilitators.map((facilitator) => (
+            {allCircleMembers.map((facilitator) => (
               <div 
                 key={facilitator.id}
                 className="facilitator-card"
@@ -560,7 +560,7 @@ function Home() {
               >
                 <img src={facilitator.photo} alt={facilitator.name} />
                 <p className="facilitator-name">{facilitator.name}</p>
-                <p className="facilitator-workshop">{facilitator.workshop}</p>
+                <p className="facilitator-workshop">{facilitator.workshop || facilitator.role}</p>
               </div>
             ))}
         </div>
