@@ -554,7 +554,7 @@ function Home() {
       {/* 4. FACILITATORS SHOWCASE */}
       <section className="facilitators-showcase">
         <div className="section-container">
-          <p className="facilitators-caption">Our world-class facilitation team</p>
+          <p className="facilitators-caption">Our world-class team</p>
           <div className="facilitators-grid">
             {allCircleMembers.map((facilitator) => (
               <div 
