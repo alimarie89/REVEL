@@ -616,13 +616,12 @@ function Home() {
       <section className="architecture-section">
         <div className="section-container architecture-container">
           <div className="architecture-header">
+            <div className="architecture-framework">
+              <p className="architecture-framework-name">FIELD OF PRESENCE</p>
+            </div>
             <p className="architecture-supporting-text">
               The convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence.
             </p>
-            <div className="architecture-framework">
-              <p className="architecture-framework-name">FIELD OF PRESENCE</p>
-              <p className="architecture-framework-definition">The water we are swimming in together.</p>
-            </div>
           </div>
 
           <div className="architecture-layout">

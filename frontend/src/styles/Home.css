@@ -3131,7 +3131,7 @@
 
 .architecture-framework {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .architecture-framework-name {
@@ -3141,18 +3141,12 @@
   text-transform: uppercase;
   color: #f5f1ed;
   font-family: 'Laluxess Serif', serif;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   display: block;
 }
 
 .architecture-framework-definition {
-  font-size: 2rem;
-  font-family: 'Laluxess Serif', serif;
-  color: #f5f1ed;
-  font-weight: 300;
-  line-height: 1.4;
-  letter-spacing: -0.2px;
-  margin: 0;
+  display: none;
 }
 
 .architecture-eyebrow {
@@ -3395,15 +3389,11 @@
   }
 
   .architecture-framework {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .architecture-framework-name {
     font-size: 1.3rem;
-  }
-
-  .architecture-framework-definition {
-    font-size: 1.5rem;
   }
 
   .field-intro-title {
