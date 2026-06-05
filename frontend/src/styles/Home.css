@@ -552,7 +552,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .impact-card {
@@ -608,7 +608,7 @@
 /* ========== CAROUSEL SECTION ========== */
 .carousel-section {
   background: var(--dark);
-  padding: 80px 40px;
+  padding: 50px 40px 80px 40px;
   position: relative;
   z-index: 1;
 }
