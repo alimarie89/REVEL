@@ -617,7 +617,7 @@ function Home() {
         <div className="section-container architecture-container">
           <div className="architecture-header">
             <p className="architecture-supporting-text">
-              Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
+              The convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence.
             </p>
             <div className="architecture-framework">
               <p className="architecture-framework-name">FIELD OF PRESENCE</p>
