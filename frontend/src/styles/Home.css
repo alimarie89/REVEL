@@ -3115,14 +3115,13 @@
 }
 
 .architecture-thesis {
-  font-size: 3.2rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 300;
   font-family: 'Laluxess Serif', serif;
   color: #f5f1ed;
   margin-bottom: 40px;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0px;
 }
 
 .architecture-supporting-text {
@@ -3396,7 +3395,7 @@
   }
 
   .architecture-thesis {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 32px;
   }
 
