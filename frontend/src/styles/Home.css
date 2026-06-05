@@ -551,34 +551,38 @@
 .welcome-impact-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 60px 80px;
   margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .impact-card {
-  padding: 50px 40px;
+  padding: 0;
+  padding-top: 24px;
   background: transparent;
-  border-left: 2px solid rgba(168, 92, 63, 0.5);
-  border-top: none;
+  border-top: 2px solid var(--rust);
+  border-left: none;
   border-bottom: none;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .impact-card:hover {
   background: transparent;
   transform: none;
-  border-left: 2px solid var(--rust);
+  border-top: 2px solid rgba(232, 201, 168, 0.9);
 }
 
 .impact-card p {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   color: var(--cream);
   font-family: 'Laluxess Serif', serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
-  letter-spacing: 0.2px;
-  line-height: 1.7;
+  letter-spacing: 0.3px;
+  line-height: 1.9;
 }
 
 /* Invitation Section */
@@ -876,8 +880,9 @@
   }
 
   .impact-card {
-    padding: 40px 30px;
-    border-left: 2px solid rgba(168, 92, 63, 0.5);
+    padding: 24px 0;
+    padding-top: 20px;
+    border-top: 2px solid var(--rust);
   }
 
   .impact-card p {
@@ -1253,8 +1258,9 @@
   }
 
   .impact-card {
-    padding: 35px 25px;
-    border-left: 2px solid rgba(168, 92, 63, 0.5);
+    padding: 20px 0;
+    padding-top: 18px;
+    border-top: 2px solid var(--rust);
   }
 
   .impact-card p {
