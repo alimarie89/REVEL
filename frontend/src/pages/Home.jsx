@@ -548,10 +548,6 @@ function Home() {
               <circle cx="400" cy="400" r="340" className="ceremonial-ring" />
             </svg>
           </div>
-
-          <div className="mandala-note">
-            <p>An experimental ceremonial circle of all humans weaving REVEL together.</p>
-          </div>
         </div>
       </section>
 
