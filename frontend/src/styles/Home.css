@@ -411,70 +411,83 @@
 
 /* ========== WELCOME SECTION - EDITORIAL REDESIGN ========== */
 .welcome-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(168, 92, 63, 0.05) 50%, rgba(255, 255, 255, 0.01) 100%);
+  background: var(--dark);
   padding: 120px 40px;
   position: relative;
   z-index: 1;
 }
 
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center bottom, rgba(168, 92, 63, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .welcome-full {
-  max-width: 1600px;
+  max-width: 1650px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Header Row: Heading Left, Image Right */
 .welcome-header-row {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 100px;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 90px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .welcome-header-text {
   display: flex;
   align-items: center;
-  min-height: 600px;
 }
 
 .welcome-headline {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-family: 'Laluxess Serif', serif;
   color: var(--cream);
   margin: 0;
   font-weight: 300;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   line-height: 1.25;
 }
 
 .welcome-header-image {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .welcome-feature-image {
   width: 100%;
-  max-width: 580px;
-  height: 650px;
+  max-width: 550px;
+  height: 620px;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8),
-              0 0 80px rgba(168, 92, 63, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6),
+              0 0 40px rgba(168, 92, 63, 0.15);
   display: block;
 }
 
 /* Eyebrow Label */
 .welcome-eyebrow {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .welcome-eyebrow p {
-  font-size: 1rem;
-  color: rgba(168, 92, 63, 0.85);
+  font-size: 0.9rem;
+  color: rgba(168, 92, 63, 0.7);
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.3px;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   font-weight: 500;
@@ -483,49 +496,81 @@
 /* Pull Quote Section */
 .welcome-pull-quote {
   text-align: center;
-  padding: 80px 60px;
-  margin-bottom: 70px;
-  background: rgba(168, 92, 63, 0.06);
-  border-top: 1px solid rgba(168, 92, 63, 0.25);
-  border-bottom: 1px solid rgba(168, 92, 63, 0.25);
-  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 80px;
+  background: transparent;
+  border: none;
 }
 
 .welcome-pull-quote p {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: var(--rust);
   font-family: 'Laluxess Serif', serif;
   margin: 0;
-  line-height: 2;
+  line-height: 1.95;
   font-weight: 400;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
 
 /* Impact Cards - Three in a Row */
 .welcome-impact-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 70px;
+  gap: 60px;
+  margin-bottom: 100px;
 }
 
 .impact-card {
-  padding: 55px 40px;
-  background: rgba(168, 92, 63, 0.08);
-  border-left: 4px solid var(--rust);
-  border-top: 1px solid rgba(168, 92, 63, 0.15);
-  border-bottom: 1px solid rgba(168, 92, 63, 0.15);
+  padding: 50px 40px;
+  background: transparent;
+  border-left: 2px solid rgba(168, 92, 63, 0.5);
+  border-top: none;
+  border-bottom: none;
   text-align: center;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .impact-card:hover {
-  background: rgba(168, 92, 63, 0.15);
-  transform: translateY(-6px);
-  border-left: 4px solid rgba(168, 92, 63, 1);
+  background: transparent;
+  transform: none;
+  border-left: 2px solid var(--rust);
+}
+
+.impact-card p {
+  font-size: 1.3rem;
+  color: var(--cream);
+  font-family: 'Laluxess Serif', serif;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.2px;
+  line-height: 1.7;
+}
+
+/* Invitation Section */
+.welcome-invitation {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.welcome-invitation p {
+  font-size: 1.2rem;
+  color: var(--cream);
+  font-family: 'Laluxess Serif', serif;
+  margin: 0;
+  line-height: 1.95;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .impact-card p {
@@ -820,7 +865,7 @@
 @media (max-width: 768px) {
   .welcome-section {
     padding: 80px 30px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(168, 92, 63, 0.04) 50%, rgba(255, 255, 255, 0.01) 100%);
+    background: var(--dark);
   }
 
   .welcome-full {
@@ -830,68 +875,71 @@
   .welcome-header-row {
     grid-template-columns: 1fr;
     gap: 40px;
-    margin-bottom: 0;
+    margin-bottom: 60px;
     align-items: flex-start;
   }
 
   .welcome-header-text {
-    min-height: auto;
+    align-items: flex-start;
   }
 
   .welcome-headline {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     margin: 0;
     line-height: 1.25;
+  }
+
+  .welcome-header-image {
+    justify-content: center;
   }
 
   .welcome-feature-image {
     max-width: 100%;
     height: auto;
     aspect-ratio: 4/5;
-    border-radius: 16px;
+    border-radius: 12px;
   }
 
   .welcome-eyebrow {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .welcome-eyebrow p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 1.2px;
   }
 
   .welcome-pull-quote {
-    padding: 50px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .welcome-pull-quote p {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     line-height: 1.8;
   }
 
   .welcome-impact-cards {
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-bottom: 50px;
+    gap: 40px;
+    margin-bottom: 70px;
   }
 
   .impact-card {
     padding: 40px 30px;
-    border-left: 3px solid var(--rust);
+    border-left: 2px solid rgba(168, 92, 63, 0.5);
   }
 
   .impact-card p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .welcome-invitation {
-    padding: 40px 30px;
+    gap: 30px;
   }
 
   .welcome-invitation p {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.85;
   }
 
   .carousel-section {
@@ -1181,7 +1229,7 @@
 @media (max-width: 480px) {
   .welcome-section {
     padding: 60px 20px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(168, 92, 63, 0.04) 50%, rgba(255, 255, 255, 0.01) 100%);
+    background: var(--dark);
   }
 
   .welcome-full {
@@ -1191,28 +1239,32 @@
   .welcome-header-row {
     grid-template-columns: 1fr;
     gap: 30px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .welcome-header-text {
-    min-height: auto;
+    align-items: flex-start;
   }
 
   .welcome-headline {
-    font-size: 2rem;
+    font-size: 1.95rem;
     margin: 0;
     line-height: 1.25;
+  }
+
+  .welcome-header-image {
+    justify-content: center;
   }
 
   .welcome-feature-image {
     max-width: 100%;
     height: auto;
     aspect-ratio: 4/5;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .welcome-eyebrow {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   .welcome-eyebrow p {
@@ -1221,32 +1273,31 @@
   }
 
   .welcome-pull-quote {
-    padding: 40px 20px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
   }
 
   .welcome-pull-quote p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.75;
   }
 
   .welcome-impact-cards {
     grid-template-columns: 1fr;
-    gap: 25px;
-    margin-bottom: 40px;
+    gap: 30px;
+    margin-bottom: 55px;
   }
 
   .impact-card {
     padding: 35px 25px;
-    border-left: 3px solid var(--rust);
+    border-left: 2px solid rgba(168, 92, 63, 0.5);
   }
 
   .impact-card p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .welcome-invitation {
-    padding: 35px 20px;
+    gap: 25px;
   }
 
   .welcome-invitation p {
