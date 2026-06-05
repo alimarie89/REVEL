@@ -290,14 +290,22 @@ function Home() {
     },
     {
       id: 10,
-      name: 'Ayce Kyptyn & Ephraim Mallery',
-      role: 'Facilitators',
+      name: 'Ayce Kyptyn',
+      role: 'Facilitator',
       workshop: 'Erotic Blueprints: Rewiring Your Relationship to Life',
       photo: '/facilitators/ayce-kyptyn.jpg',
       bio: 'Discover a map of five distinct erotic types—Energetic, Sensual, Sexual, Kinky, and Shapeshifter—each describing a unique language of turn-on, desire, and embodied pleasure. Knowing your Blueprint reveals not just what lights you up, but how you\'re wired for connection and aliveness. Ayce Kyptyn is a transmasc spiritual outlaw known for igniting sacred fire and dismantling the installed systems that sabotage the fullness of ourselves. Ephraim Mallery is an evolutionary trickster, playfully guiding you into the surprise of literally, deeply Making Love with Your Life.'
     },
     {
       id: 11,
+      name: 'Ephraim Mallery',
+      role: 'Facilitator',
+      workshop: 'Erotic Blueprints: Rewiring Your Relationship to Life',
+      photo: '/facilitators/ephraim-mallery.jpg',
+      bio: 'Discover a map of five distinct erotic types—Energetic, Sensual, Sexual, Kinky, and Shapeshifter—each describing a unique language of turn-on, desire, and embodied pleasure. Knowing your Blueprint reveals not just what lights you up, but how you\'re wired for connection and aliveness. Ayce Kyptyn is a transmasc spiritual outlaw known for igniting sacred fire and dismantling the installed systems that sabotage the fullness of ourselves. Ephraim Mallery is an evolutionary trickster, playfully guiding you into the surprise of literally, deeply Making Love with Your Life.'
+    },
+    {
+      id: 12,
       name: 'Anaia Sundara',
       role: 'Facilitator',
       workshop: 'DJ Set',
@@ -305,7 +313,7 @@ function Home() {
       bio: 'Coming soon for workshop details.'
     },
     {
-      id: 12,
+      id: 13,
       name: 'Cody Reinheimer',
       role: 'DJ / CodeStar',
       workshop: 'Sonic Soundscape',
@@ -313,7 +321,7 @@ function Home() {
       bio: 'CodeStar is a seasoned DJ, sprinkling the spice of life and plenty of tasty bass into the soundscape, mixing up music to move into.'
     },
     {
-      id: 13,
+      id: 14,
       name: 'Rachel Rickards',
       role: 'Facilitator',
       workshop: 'Coming soon',
@@ -321,7 +329,7 @@ function Home() {
       bio: 'Coming soon.'
     },
     {
-      id: 14,
+      id: 15,
       name: 'Lyndsey Scott',
       role: 'Facilitator',
       workshop: 'Song Circle',
@@ -329,7 +337,7 @@ function Home() {
       bio: 'A communal singing experience where voice becomes a pathway into connection, presence, and emotional release. Through call-and-response, simple harmonies, and improvisational play, you\'ll be invited to drop out of your head and into the shared field of sound and belonging. Lyndsey is the song carrier behind "The Way Knows" and other songs that have impacted our lives. With roots in art, restorative justice, permaculture, and somatic work, she creates spaces where music becomes a vehicle for transformation, connection, and coming home to yourself.'
     },
     {
-      id: 15,
+      id: 16,
       name: 'Cari Caldwell',
       role: 'Facilitator',
       workshop: 'REVEL Grief & Eros Ritual - Saturday Morning (3 hours)',
