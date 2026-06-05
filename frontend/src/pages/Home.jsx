@@ -346,19 +346,19 @@ function Home() {
     }
   ]
 
-  // All members for the ceremonial circle (Ali, Spencer + all facilitators)
+  // All members for the ceremonial circle (Spencer, Ali + all facilitators)
   const allCircleMembers = [
-    {
-      id: 'ali',
-      name: 'Ali Williams',
-      role: 'COO',
-      photo: '/team/alison-williams.jpg'
-    },
     {
       id: 'spencer',
       name: 'Spencer Jacobson',
       role: 'Visionary',
       photo: '/team/Spencer Headshot Color.jpg'
+    },
+    {
+      id: 'ali',
+      name: 'Ali Williams',
+      role: 'COO',
+      photo: '/team/alison-williams.jpg'
     },
     ...showcaseFacilitators
   ]
