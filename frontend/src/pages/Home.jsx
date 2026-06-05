@@ -403,33 +403,45 @@ function Home() {
         </a>
       </section>
 
-      {/* 2.0 WELCOME SECTION */}
+      {/* 2.0 WELCOME SECTION - EDITORIAL REDESIGN */}
       <section className="welcome-section">
-        <div className="section-container">
-          <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
-          
-          <div className="welcome-content">
-            <div className="welcome-proposition-box">
-              <p className="welcome-intro">REVEL is built around a simple but radical possibility:</p>
-              <p className="welcome-statement">When human beings gather with the intention of presence, play, vulnerability, and courage - magic is truly possible.</p>
-            </div>
-
-            <div className="welcome-impact">
-              <div className="impact-statement">
-                <p>Lives are changed.</p>
-              </div>
-              <div className="impact-statement">
-                <p>True community and friendship is created.</p>
-              </div>
-              <div className="impact-statement">
-                <p>REVEL is about leaning in together.</p>
-              </div>
-            </div>
-
-            <div className="welcome-invitation">
-              <p className="welcome-intro-text">We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
+        <div className="section-container welcome-full">
+          {/* Editorial Two-Column Layout */}
+          <div className="welcome-editorial">
+            <div className="welcome-text-column">
+              <h2 className="welcome-headline">Welcome to REVEL Convergence 2026</h2>
               
-              <p className="welcome-vision">Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
+              <p className="welcome-intro">REVEL is built around a simple but radical possibility:</p>
+              
+              <p className="welcome-invitation-text">We invite you to a summer convergence of the music, modalities and facilitators that inspire Dance Meets Tantra to the core.</p>
+              
+              <p className="welcome-vision-text">Picture yourself on beautiful land with a masterful group of space holders and 300 loving, playful, embodied humans, all gathering together in shared intention to go deep, unwind, and revel together in the beauty of being human.</p>
+            </div>
+            
+            <div className="welcome-image-column">
+              <img 
+                src="/carousel/listening-group.jpg" 
+                alt="REVEL community gathering"
+                className="welcome-feature-image"
+              />
+            </div>
+          </div>
+
+          {/* Pull Quote Section */}
+          <div className="welcome-pull-quote">
+            <p>When human beings gather with the intention of presence, play, vulnerability, and courage - magic is truly possible.</p>
+          </div>
+
+          {/* Three Impact Cards */}
+          <div className="welcome-impact-cards">
+            <div className="impact-card">
+              <p>Lives are changed.</p>
+            </div>
+            <div className="impact-card">
+              <p>True community and friendship is created.</p>
+            </div>
+            <div className="impact-card">
+              <p>REVEL is about leaning in together.</p>
             </div>
           </div>
         </div>
