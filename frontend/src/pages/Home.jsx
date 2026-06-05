@@ -493,37 +493,6 @@ function Home() {
         </div>
       </section>
 
-      {/* 3. CO-CREATION INVITATION */}
-      <section className="space-holds cocreate-section">
-        <div className="section-container cocreate-with-team">
-          <div className="cocreate-text">
-            <div className="section-preview">
-              <h2>Cocreate the field with us</h2>
-              <p>instead of just consuming it.</p>
-            </div>
-            <div className="section-expanded">
-              <div className="cocreate-invitations">
-                {content?.cocreateInvitations?.map((invitation, i) => (
-                  <p key={i} className="cocreate-line">{invitation}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="cocreate-photos">
-            <div className="cocreate-photo-card">
-              <img src="/team/Spencer Headshot Color.jpg" alt="Spencer Jacobson" />
-              <p className="photo-name">Spencer Jacobson</p>
-              <p className="photo-title">Visionary</p>
-            </div>
-            <div className="cocreate-photo-card">
-              <img src="/team/alison-williams.jpg" alt="Ali Williams" style={{ cursor: 'pointer' }} onClick={() => setSelectedTeamMember('ali')} />
-              <p className="photo-name">Ali Williams</p>
-              <p className="photo-title">COO</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* EXPERIMENTAL: LIVING MANDALA / CEREMONIAL CIRCLE SECTION */}
       <section className="living-mandala-section">
         <div className="section-container mandala-container">
