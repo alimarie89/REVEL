@@ -420,7 +420,7 @@ function Home() {
             
             <div className="welcome-image-column">
               <img 
-                src="/carousel/listening-group.jpg" 
+                src="/carousel/Girl smiling 1.jpg" 
                 alt="REVEL community gathering"
                 className="welcome-feature-image"
               />
