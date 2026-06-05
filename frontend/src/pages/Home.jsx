@@ -616,10 +616,14 @@ function Home() {
       <section className="architecture-section">
         <div className="section-container architecture-container">
           <div className="architecture-header">
-            <h2 className="field-intro-eyebrow">Field of Presence</h2>
-            <p className="architecture-intro-text">
-              What emerges at REVEL is not accidental. Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
+            <h2 className="architecture-thesis">What emerges at REVEL is not accidental.</h2>
+            <p className="architecture-supporting-text">
+              Beyond workshops, music, and gatherings, the convergence is intentionally shaped by relational principles that support presence, attunement, responsibility, and collective coherence when human experience becomes charged.
             </p>
+            <div className="architecture-framework">
+              <p className="architecture-framework-name">FIELD OF PRESENCE</p>
+              <p className="architecture-framework-definition">The water we are swimming in together.</p>
+            </div>
           </div>
 
           <div className="architecture-layout">

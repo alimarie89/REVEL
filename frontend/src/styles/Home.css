@@ -3111,7 +3111,55 @@
 /* Header */
 .architecture-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.architecture-thesis {
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.architecture-supporting-text {
+  font-size: 1.05rem;
+  color: rgba(245, 241, 237, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.architecture-framework {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.architecture-framework-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(201, 168, 117, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.architecture-framework-definition {
+  font-size: 2rem;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+  margin: 0;
 }
 
 .architecture-eyebrow {
@@ -3347,12 +3395,23 @@
     margin-bottom: 50px;
   }
 
-  .architecture-title {
-    display: none;
+  .architecture-thesis {
+    font-size: 2rem;
+    margin-bottom: 32px;
   }
 
-  .architecture-intro-text {
+  .architecture-supporting-text {
     font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto 48px;
+  }
+
+  .architecture-framework {
+    margin-bottom: 60px;
+  }
+
+  .architecture-framework-definition {
+    font-size: 1.5rem;
   }
 
   .field-intro-title {
