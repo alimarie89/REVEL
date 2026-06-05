@@ -454,7 +454,7 @@
 .welcome-header-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
 }
 
 .welcome-headline {
@@ -470,18 +470,24 @@
 .welcome-invitation-intro {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
 }
 
 .welcome-invitation-intro p {
-  font-size: 1.2rem;
-  color: var(--cream);
+  font-size: 1.35rem;
+  color: rgba(244, 241, 237, 0.96);
   font-family: 'Laluxess Serif', serif;
   margin: 0;
-  line-height: 1.95;
+  line-height: 2;
   font-weight: 300;
-  letter-spacing: 0.1px;
-  max-width: 450px;
+  letter-spacing: 0.05px;
+  max-width: 520px;
+}
+
+.welcome-invitation-intro p:first-child {
+  font-size: 1.45rem;
+  color: var(--cream);
+  font-weight: 300;
 }
 
 .welcome-header-image {
@@ -504,7 +510,8 @@
 
 /* Eyebrow Label */
 .welcome-eyebrow {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  margin-top: 40px;
   text-align: center;
 }
 
