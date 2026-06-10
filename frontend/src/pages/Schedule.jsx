@@ -4,15 +4,15 @@ import { facilitatorData } from '../data/facilitatorData';
 import '../styles/Schedule.css';
 
 export default function Schedule() {
-  const [selectedSpace, setSelectedSpace] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(null);
   const [expandedEvent, setExpandedEvent] = useState(null);
 
-  const filteredEvents = selectedSpace
-    ? scheduleData.events.filter(event => event.space === selectedSpace)
+  const displayedEvents = selectedDay
+    ? scheduleData.events.filter(event => event.day === selectedDay)
     : scheduleData.events;
 
   const eventsByDay = scheduleData.eventDates.reduce((acc, day) => {
-    acc[day] = filteredEvents.filter(event => event.day === day);
+    acc[day] = displayedEvents.filter(event => event.day === day);
     return acc;
   }, {});
 
@@ -45,177 +45,193 @@ export default function Schedule() {
     );
   };
 
+  // Infer event type tags from title keywords
+  const getEventType = (title) => {
+    const lowerTitle = title.toLowerCase();
+    if (lowerTitle.includes('ceremony') || lowerTitle.includes('ritual')) return 'Ceremony';
+    if (lowerTitle.includes('dance') || lowerTitle.includes('dance church') || lowerTitle.includes('embodying')) return 'Dance';
+    if (lowerTitle.includes('meditation') || lowerTitle.includes('yoga') || lowerTitle.includes('kundalini')) return 'Meditation';
+    if (lowerTitle.includes('song') || lowerTitle.includes('music')) return 'Music';
+    if (lowerTitle.includes('temple')) return 'Temple';
+    if (lowerTitle.includes('circle') || lowerTitle.includes('council') || lowerTitle.includes('lounge')) return 'Community';
+    if (lowerTitle.includes('breakfast') || lowerTitle.includes('lunch') || lowerTitle.includes('dinner') || lowerTitle.includes('nourishment')) return 'Nourishment';
+    if (lowerTitle.includes('logistics') || lowerTitle.includes('orientation')) return 'Logistics';
+    return 'Workshop';
+  };
+
   return (
     <div className="schedule-page">
       {/* Hero Section */}
       <section className="schedule-hero">
-        <div className="section-container">
-          <h1 className="schedule-title">REVEL 2026 Schedule</h1>
-          <p className="schedule-subtitle">July 2-5 | Sunrise Ranch, Loveland CO</p>
-        </div>
+        <h1 className="schedule-title">Schedule</h1>
+        <p className="schedule-subtitle">A living map of the weekend.</p>
+        <p className="schedule-subtext">Workshops, rituals, meals, music, connection spaces, and places to land.</p>
       </section>
 
-      {/* Filter Section */}
-      <section className="schedule-filters">
-        <div className="section-container">
-          <div className="filters-wrapper">
-            <p className="filter-label">Filter by Space:</p>
-            <div className="space-filters">
-              <button
-                className={`space-filter-btn ${selectedSpace === null ? 'active' : ''}`}
-                onClick={() => setSelectedSpace(null)}
-              >
-                All Spaces
-              </button>
-              {scheduleData.spaces.map(space => (
-                <button
-                  key={space}
-                  className={`space-filter-btn ${selectedSpace === space ? 'active' : ''}`}
-                  onClick={() => setSelectedSpace(space)}
-                >
-                  {space}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Day Navigation Tabs */}
+      <div className="day-tabs">
+        <button
+          className={`day-tab ${selectedDay === null ? 'active' : ''}`}
+          onClick={() => setSelectedDay(null)}
+        >
+          All Days
+        </button>
+        {scheduleData.eventDates.map(day => (
+          <button
+            key={day}
+            className={`day-tab ${selectedDay === day ? 'active' : ''}`}
+            onClick={() => setSelectedDay(day)}
+          >
+            {day}
+          </button>
+        ))}
+      </div>
 
       {/* Schedule Grid */}
       <section className="schedule-content">
-        <div className="section-container">
-          {scheduleData.eventDates.map(day => (
-            <div key={day} className="day-section">
-              <h2 className="day-title">{day}</h2>
-              <div className="events-list">
-                {eventsByDay[day]?.length > 0 ? (
-                  eventsByDay[day].map((event, index) => {
-                    const eventId = getEventId(event, index);
-                    const isExpanded = expandedEvent === eventId;
-                    const facilitators = getFacilitatorList(event.facilitators);
+        {scheduleData.eventDates.map(day => (
+          <div key={day} className="day-section">
+            {/* Only show day header if viewing all days or this day is selected */}
+            {(selectedDay === null || selectedDay === day) && eventsByDay[day]?.length > 0 && (
+              <div className="day-header">
+                <h2 className="day-name">
+                  {day.split(' ')[0]}
+                  <span className="day-date" style={{ marginLeft: '12px' }}>
+                    {day.split(' ').slice(1).join(' ')}
+                  </span>
+                </h2>
+              </div>
+            )}
+            <div className="events-list">
+              {eventsByDay[day]?.length > 0 ? (
+                eventsByDay[day].map((event, index) => {
+                  const eventId = getEventId(event, index);
+                  const isExpanded = expandedEvent === eventId;
+                  const facilitators = getFacilitatorList(event.facilitators);
+                  const eventType = getEventType(event.title);
 
-                    return (
-                      <div
-                        key={eventId}
-                        className={`event-card ${isExpanded ? 'expanded' : ''} ${event.isMandatory ? 'mandatory' : ''}`}
-                        onClick={() => toggleEventExpand(eventId)}
-                      >
-                        <div className="event-card-main">
-                          {/* Left: Time */}
-                          <div className="event-time-col">
-                            <span className="event-time">{event.time}</span>
+                  return (
+                    <div
+                      key={eventId}
+                      className={`event-card ${isExpanded ? 'expanded' : ''} ${event.isMandatory ? 'mandatory' : ''}`}
+                      onClick={() => toggleEventExpand(eventId)}
+                    >
+                      <div className="event-card-main">
+                        {/* Left: Time */}
+                        <div className="event-time-col">
+                          <span className="event-time">{event.time}</span>
+                        </div>
+
+                        {/* Middle: Title, Tags & Facilitators */}
+                        <div className="event-info-col">
+                          <div className="event-header-inner">
+                            <h3 className="event-title">{event.title}</h3>
+                            {event.isMandatory && <span className="event-tag">Mandatory</span>}
                           </div>
-
-                          {/* Middle: Title & Facilitators */}
-                          <div className="event-info-col">
-                            <div className="event-header-inner">
-                              <h3 className="event-title">{event.title}</h3>
-                              {event.isMandatory && <span className="mandatory-badge">MANDATORY</span>}
-                            </div>
-                            <span className="event-space">{event.space}</span>
-                            {facilitators.length > 0 && (
-                              <div className="event-facilitators-names">
-                                {facilitators.slice(0, 2).map((fac, idx) => (
-                                  <span key={idx} className="facilitator-name">
-                                    {fac.name}
-                                  </span>
-                                ))}
-                                {facilitators.length > 2 && (
-                                  <span className="facilitator-name more">+{facilitators.length - 2} more</span>
-                                )}
-                              </div>
-                            )}
+                          <div className="event-tags">
+                            <span className="event-tag">{eventType}</span>
                           </div>
-
-                          {/* Right: Facilitator Images */}
-                          <div className="event-images-col">
-                            {facilitators.length > 0 ? (
-                              <div className="facilitator-images">
-                                {facilitators.slice(0, 3).map((fac, idx) => (
-                                  <div
-                                    key={idx}
-                                    className={`facilitator-image-wrapper ${facilitators.length > 1 ? 'overlapped' : ''}`}
-                                    style={{
-                                      zIndex: 3 - idx,
-                                      marginLeft: idx > 0 ? `-14px` : '0'
-                                    }}
-                                    title={fac.name}
-                                  >
-                                    {fac.photo ? (
-                                      <img src={fac.photo} alt={fac.name} className="facilitator-image" />
-                                    ) : (
-                                      createMonogram(fac.name)
-                                    )}
-                                  </div>
-                                ))}
-                              </div>
-                            ) : (
-                              <div className="facilitator-images empty" />
-                            )}
-                          </div>
-
-                          {/* Expand Icon */}
-                          {event.description && (
-                            <div className="event-expand-indicator">
-                              <span className="expand-icon">{isExpanded ? '−' : '+'}</span>
+                          <span className="event-space">{event.space}</span>
+                          {facilitators.length > 0 && (
+                            <div className="event-facilitators-names">
+                              {facilitators.slice(0, 2).map((fac, idx) => (
+                                <span key={idx} className="facilitator-name">
+                                  {fac.name}
+                                </span>
+                              ))}
+                              {facilitators.length > 2 && (
+                                <span className="facilitator-name more">+{facilitators.length - 2} more</span>
+                              )}
                             </div>
                           )}
                         </div>
 
-                        {/* Expanded Content */}
-                        {isExpanded && (
-                          <div className="event-card-expanded">
-                            {event.description && (
-                              <div className="event-description-section">
-                                <div className="description-divider"></div>
-                                <div className="event-description">
-                                  {event.description.split('\n').map((para, idx) => (
-                                    <p key={idx}>{para}</p>
-                                  ))}
+                        {/* Right: Facilitator Images */}
+                        <div className="event-images-col">
+                          {facilitators.length > 0 ? (
+                            <div className="facilitator-images">
+                              {facilitators.slice(0, 3).map((fac, idx) => (
+                                <div
+                                  key={idx}
+                                  className={`facilitator-image-wrapper ${facilitators.length > 1 ? 'overlapped' : ''}`}
+                                  style={{
+                                    zIndex: 3 - idx,
+                                    marginLeft: idx > 0 ? `-14px` : '0'
+                                  }}
+                                  title={fac.name}
+                                >
+                                  {fac.photo ? (
+                                    <img src={fac.photo} alt={fac.name} className="facilitator-image" />
+                                  ) : (
+                                    createMonogram(fac.name)
+                                  )}
                                 </div>
-                              </div>
-                            )}
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="facilitator-images empty" />
+                          )}
+                        </div>
 
-                            {facilitators.length > 0 && (
-                              <div className="facilitators-section">
-                                <div className="facilitators-divider"></div>
-                                <h4 className="facilitators-heading">
-                                  Facilitator{facilitators.length > 1 ? 's' : ''}
-                                </h4>
-                                <div className="facilitators-bios">
-                                  {facilitators.map((fac, idx) => (
-                                    <div key={idx} className="facilitator-bio">
-                                      <div className="facilitator-bio-header">
-                                        <div className="facilitator-bio-image">
-                                          {fac.photo ? (
-                                            <img src={fac.photo} alt={fac.name} />
-                                          ) : (
-                                            createMonogram(fac.name)
-                                          )}
-                                        </div>
-                                        <div className="facilitator-bio-info">
-                                          <h5 className="facilitator-bio-name">{fac.name}</h5>
-                                          <p className="facilitator-bio-role">{fac.role}</p>
-                                        </div>
-                                      </div>
-                                      <p className="facilitator-bio-text">{fac.bio}</p>
-                                    </div>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
+                        {/* Expand Icon */}
+                        {event.description && (
+                          <div className="event-expand-indicator">
+                            <span className="expand-icon">{isExpanded ? '−' : '+'}</span>
                           </div>
                         )}
                       </div>
-                    );
-                  })
-                ) : (
-                  <p className="no-events">No events scheduled for this space on this day.</p>
-                )}
-              </div>
+
+                      {/* Expanded Content */}
+                      {isExpanded && (
+                        <div className="event-card-expanded">
+                          {event.description && (
+                            <div className="event-description-section">
+                              <div className="description-divider"></div>
+                              <div className="event-description">
+                                {event.description.split('\n').map((para, idx) => (
+                                  <p key={idx}>{para}</p>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {facilitators.length > 0 && (
+                            <div className="facilitators-section">
+                              <div className="facilitators-divider"></div>
+                              <h4 className="facilitators-heading">
+                                Facilitator{facilitators.length > 1 ? 's' : ''}
+                              </h4>
+                              <div className="facilitators-bios">
+                                {facilitators.map((fac, idx) => (
+                                  <div key={idx} className="facilitator-bio">
+                                    <div className="facilitator-bio-header">
+                                      <div className="facilitator-bio-image">
+                                        {fac.photo ? (
+                                          <img src={fac.photo} alt={fac.name} />
+                                        ) : (
+                                          createMonogram(fac.name)
+                                        )}
+                                      </div>
+                                      <div className="facilitator-bio-info">
+                                        <h5 className="facilitator-bio-name">{fac.name}</h5>
+                                        <p className="facilitator-bio-role">{fac.role}</p>
+                                      </div>
+                                    </div>
+                                    <p className="facilitator-bio-text">{fac.bio}</p>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })
+              ) : null}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </section>
 
       {/* Legend / Info */}
@@ -224,7 +240,7 @@ export default function Schedule() {
           <div className="info-content">
             <h3>How to Use This Schedule</h3>
             <ul>
-              <li>Click "Filter by Space" at the top to explore workshops and experiences in each location</li>
+              <li>Use the day tabs at the top to explore the schedule by day</li>
               <li>Click any event card to see the full description and facilitator bios</li>
               <li>All times are in Mountain Time (MT)</li>
               <li>Some workshops run simultaneously in different spaces—choose which calls to you</li>
