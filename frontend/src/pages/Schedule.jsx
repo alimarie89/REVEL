@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { scheduleData } from '../data/scheduleData';
+import { facilitatorData } from '../data/facilitatorData';
 import '../styles/Schedule.css';
 
 export default function Schedule() {
@@ -20,6 +21,29 @@ export default function Schedule() {
   };
 
   const getEventId = (event, index) => `${event.day}-${event.time}-${index}`;
+
+  const getFacilitatorList = (facilitatorNames) => {
+    if (!facilitatorNames || facilitatorNames.length === 0) return [];
+    return facilitatorData.getFacilitators(facilitatorNames);
+  };
+
+  const initials = (name) => {
+    return name
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  const createMonogram = (name) => {
+    const init = initials(name);
+    return (
+      <div className="facilitator-monogram" title={name}>
+        {init}
+      </div>
+    );
+  };
 
   return (
     <div className="schedule-page">
@@ -68,42 +92,118 @@ export default function Schedule() {
                   eventsByDay[day].map((event, index) => {
                     const eventId = getEventId(event, index);
                     const isExpanded = expandedEvent === eventId;
+                    const facilitators = getFacilitatorList(event.facilitators);
+
                     return (
                       <div
                         key={eventId}
                         className={`event-card ${isExpanded ? 'expanded' : ''} ${event.isMandatory ? 'mandatory' : ''}`}
                         onClick={() => toggleEventExpand(eventId)}
                       >
-                        <div className="event-header">
-                          <div className="event-time-and-title">
+                        <div className="event-card-main">
+                          {/* Left: Time */}
+                          <div className="event-time-col">
                             <span className="event-time">{event.time}</span>
-                            <h3 className="event-title">{event.title}</h3>
-                            {event.isMandatory && <span className="mandatory-badge">MANDATORY</span>}
                           </div>
-                          <span className="event-space">{event.space}</span>
+
+                          {/* Middle: Title & Facilitators */}
+                          <div className="event-info-col">
+                            <div className="event-header-inner">
+                              <h3 className="event-title">{event.title}</h3>
+                              {event.isMandatory && <span className="mandatory-badge">MANDATORY</span>}
+                            </div>
+                            <span className="event-space">{event.space}</span>
+                            {facilitators.length > 0 && (
+                              <div className="event-facilitators-names">
+                                {facilitators.slice(0, 2).map((fac, idx) => (
+                                  <span key={idx} className="facilitator-name">
+                                    {fac.name}
+                                  </span>
+                                ))}
+                                {facilitators.length > 2 && (
+                                  <span className="facilitator-name more">+{facilitators.length - 2} more</span>
+                                )}
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Right: Facilitator Images */}
+                          <div className="event-images-col">
+                            {facilitators.length > 0 ? (
+                              <div className="facilitator-images">
+                                {facilitators.slice(0, 3).map((fac, idx) => (
+                                  <div
+                                    key={idx}
+                                    className={`facilitator-image-wrapper ${facilitators.length > 1 ? 'overlapped' : ''}`}
+                                    style={{
+                                      zIndex: 3 - idx,
+                                      marginLeft: idx > 0 ? `-14px` : '0'
+                                    }}
+                                    title={fac.name}
+                                  >
+                                    {fac.photo ? (
+                                      <img src={fac.photo} alt={fac.name} className="facilitator-image" />
+                                    ) : (
+                                      createMonogram(fac.name)
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="facilitator-images empty" />
+                            )}
+                          </div>
+
+                          {/* Expand Icon */}
+                          {event.description && (
+                            <div className="event-expand-indicator">
+                              <span className="expand-icon">{isExpanded ? '−' : '+'}</span>
+                            </div>
+                          )}
                         </div>
 
-                        {event.facilitators.length > 0 && (
-                          <div className="event-facilitators">
-                            {event.facilitators.map((facilitator, idx) => (
-                              <span key={idx} className="facilitator-name">
-                                {facilitator}
-                              </span>
-                            ))}
-                          </div>
-                        )}
+                        {/* Expanded Content */}
+                        {isExpanded && (
+                          <div className="event-card-expanded">
+                            {event.description && (
+                              <div className="event-description-section">
+                                <div className="description-divider"></div>
+                                <div className="event-description">
+                                  {event.description.split('\n').map((para, idx) => (
+                                    <p key={idx}>{para}</p>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
 
-                        {isExpanded && event.description && (
-                          <div className="event-description">
-                            {event.description.split('\n').map((para, idx) => (
-                              <p key={idx}>{para}</p>
-                            ))}
-                          </div>
-                        )}
-
-                        {event.description && (
-                          <div className="event-expand-indicator">
-                            {isExpanded ? '−' : '+'}
+                            {facilitators.length > 0 && (
+                              <div className="facilitators-section">
+                                <div className="facilitators-divider"></div>
+                                <h4 className="facilitators-heading">
+                                  Facilitator{facilitators.length > 1 ? 's' : ''}
+                                </h4>
+                                <div className="facilitators-bios">
+                                  {facilitators.map((fac, idx) => (
+                                    <div key={idx} className="facilitator-bio">
+                                      <div className="facilitator-bio-header">
+                                        <div className="facilitator-bio-image">
+                                          {fac.photo ? (
+                                            <img src={fac.photo} alt={fac.name} />
+                                          ) : (
+                                            createMonogram(fac.name)
+                                          )}
+                                        </div>
+                                        <div className="facilitator-bio-info">
+                                          <h5 className="facilitator-bio-name">{fac.name}</h5>
+                                          <p className="facilitator-bio-role">{fac.role}</p>
+                                        </div>
+                                      </div>
+                                      <p className="facilitator-bio-text">{fac.bio}</p>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
@@ -125,7 +225,7 @@ export default function Schedule() {
             <h3>How to Use This Schedule</h3>
             <ul>
               <li>Click "Filter by Space" at the top to explore workshops and experiences in each location</li>
-              <li>Click any event card to see the full description</li>
+              <li>Click any event card to see the full description and facilitator bios</li>
               <li>All times are in Mountain Time (MT)</li>
               <li>Some workshops run simultaneously in different spaces—choose which calls to you</li>
             </ul>
