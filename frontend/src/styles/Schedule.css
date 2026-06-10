@@ -1,0 +1,447 @@
+/* Schedule Page Styles */
+
+.schedule-page {
+  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
+              url('/carousel/0.jpg') center/cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.schedule-hero {
+  padding: 120px 40px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(168, 92, 63, 0.1) 0%, rgba(168, 92, 63, 0.05) 100%);
+  border-bottom: 1px solid rgba(201, 168, 117, 0.2);
+}
+
+.schedule-title {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.schedule-subtitle {
+  font-size: 1.2rem;
+  color: rgba(201, 168, 117, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Filter Section */
+.schedule-filters {
+  padding: 60px 40px;
+  background: rgba(10, 10, 10, 0.5);
+  border-bottom: 1px solid rgba(201, 168, 117, 0.15);
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(201, 168, 117, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.space-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.space-filter-btn {
+  padding: 12px 24px;
+  border: 1px solid rgba(201, 168, 117, 0.4);
+  background: transparent;
+  color: #f5f1ed;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.space-filter-btn:hover {
+  border-color: #c9a875;
+  color: #c9a875;
+  background: rgba(201, 168, 117, 0.08);
+}
+
+.space-filter-btn.active {
+  background: #c9a875;
+  border-color: #c9a875;
+  color: #0f0a0a;
+  font-weight: 600;
+}
+
+/* Schedule Content */
+.schedule-content {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.day-section {
+  margin-bottom: 100px;
+}
+
+.day-title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(201, 168, 117, 0.25);
+}
+
+.events-list {
+  display: grid;
+  gap: 20px;
+}
+
+.event-card {
+  background: linear-gradient(135deg, rgba(40, 35, 32, 0.6) 0%, rgba(35, 30, 28, 0.5) 100%);
+  border: 1px solid rgba(201, 168, 117, 0.2);
+  border-left: 3px solid rgba(168, 92, 63, 0.5);
+  padding: 28px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.event-card:hover {
+  border-left-color: #c9a875;
+  background: linear-gradient(135deg, rgba(50, 45, 42, 0.7) 0%, rgba(45, 40, 38, 0.6) 100%);
+  box-shadow: 0 8px 32px rgba(168, 92, 63, 0.15), inset 0 1px 0 rgba(201, 168, 117, 0.1);
+  transform: translateX(8px);
+}
+
+.event-card.mandatory {
+  border-left-color: #d4915d;
+  background: linear-gradient(135deg, rgba(60, 50, 42, 0.6) 0%, rgba(55, 45, 38, 0.5) 100%);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 16px;
+}
+
+.event-time-and-title {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.event-time {
+  font-size: 0.9rem;
+  color: rgba(201, 168, 117, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  padding-top: 3px;
+  min-width: 100px;
+}
+
+.event-title {
+  font-size: 1.35rem;
+  font-weight: 400;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.mandatory-badge {
+  font-size: 0.7rem;
+  background: rgba(212, 145, 93, 0.3);
+  color: #d4915d;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.event-space {
+  font-size: 0.9rem;
+  color: rgba(201, 168, 117, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+}
+
+.event-facilitators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.facilitator-name {
+  font-size: 0.9rem;
+  color: rgba(245, 241, 237, 0.75);
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.event-description {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(201, 168, 117, 0.15);
+}
+
+.event-description p {
+  font-size: 0.95rem;
+  color: rgba(245, 241, 237, 0.8);
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.event-description p:last-child {
+  margin-bottom: 0;
+}
+
+.event-expand-indicator {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 1.5rem;
+  color: rgba(201, 168, 117, 0.6);
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.event-card:hover .event-expand-indicator {
+  color: #c9a875;
+}
+
+.event-card.expanded .event-expand-indicator {
+  color: #c9a875;
+}
+
+.event-card {
+  position: relative;
+}
+
+.no-events {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(201, 168, 117, 0.6);
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+/* Info Section */
+.schedule-info {
+  background: rgba(10, 10, 10, 0.6);
+  padding: 80px 40px;
+  border-top: 1px solid rgba(201, 168, 117, 0.15);
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-content h3 {
+  font-size: 1.6rem;
+  font-family: 'Laluxess Serif', serif;
+  color: #f5f1ed;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.info-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.info-content li {
+  font-size: 1rem;
+  color: rgba(245, 241, 237, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  padding-left: 24px;
+  position: relative;
+}
+
+.info-content li:before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: #c9a875;
+  font-size: 0.6rem;
+  top: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .schedule-title {
+    font-size: 3rem;
+  }
+
+  .event-header {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .event-time-and-title {
+    width: 100%;
+  }
+
+  .event-space {
+    order: -1;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-hero {
+    padding: 80px 20px 60px;
+  }
+
+  .schedule-title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .schedule-subtitle {
+    font-size: 1rem;
+  }
+
+  .schedule-filters {
+    padding: 40px 20px;
+  }
+
+  .space-filters {
+    gap: 10px;
+  }
+
+  .space-filter-btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .schedule-content {
+    padding: 60px 20px;
+  }
+
+  .day-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .event-card {
+    padding: 20px;
+  }
+
+  .event-time {
+    min-width: 90px;
+    font-size: 0.85rem;
+  }
+
+  .event-title {
+    font-size: 1.15rem;
+  }
+
+  .event-header {
+    flex-direction: column;
+  }
+
+  .event-time-and-title {
+    gap: 12px;
+  }
+
+  .event-space {
+    font-size: 0.85rem;
+  }
+
+  .event-expand-indicator {
+    top: 16px;
+    right: 16px;
+    font-size: 1.2rem;
+  }
+
+  .mandatory-badge {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+    margin-left: 8px;
+  }
+
+  .schedule-info {
+    padding: 60px 20px;
+  }
+
+  .info-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-title {
+    font-size: 1.6rem;
+  }
+
+  .schedule-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .space-filters {
+    flex-direction: column;
+  }
+
+  .space-filter-btn {
+    width: 100%;
+  }
+
+  .event-card {
+    padding: 16px;
+  }
+
+  .event-title {
+    font-size: 1rem;
+  }
+
+  .event-time {
+    font-size: 0.8rem;
+    min-width: 80px;
+  }
+
+  .day-title {
+    font-size: 1.3rem;
+  }
+}
