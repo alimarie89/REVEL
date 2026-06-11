@@ -21,7 +21,7 @@
   position: relative;
 }
 
-/* Deep atmospheric overlay - feel the flowers, don't see them */
+/* Deep atmospheric overlay - feel the flowers, warmth + depth */
 .schedule-page::before {
   content: '';
   position: fixed;
@@ -29,8 +29,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(15, 12, 10, 0.75) 0%, rgba(25, 18, 15, 0.75) 30%, rgba(18, 14, 12, 0.75) 60%, rgba(15, 12, 10, 0.75) 100%);
-  backdrop-filter: blur(8px) saturate(0.6) contrast(0.9);
+  background: linear-gradient(135deg, rgba(20, 16, 14, 0.55) 0%, rgba(30, 22, 18, 0.55) 30%, rgba(22, 17, 15, 0.55) 60%, rgba(20, 16, 14, 0.55) 100%);
+  backdrop-filter: blur(6px) saturate(0.75) contrast(0.95);
   pointer-events: none;
   z-index: 0;
 }
@@ -100,8 +100,8 @@
 /* ========== DAY NAVIGATION TABS ========== */
 .day-tabs {
   padding: 40px 40px;
-  background: linear-gradient(135deg, rgba(15, 12, 10, 0.5) 0%, rgba(20, 15, 12, 0.5) 100%);
-  border-bottom: 1px solid rgba(201, 168, 117, 0.15);
+  background: transparent;
+  border-bottom: 1px solid rgba(201, 168, 117, 0.08);
   position: relative;
   z-index: 2;
   display: flex;
@@ -146,7 +146,6 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  background: linear-gradient(135deg, rgba(15, 12, 10, 0.5) 0%, rgba(20, 15, 12, 0.5) 100%);
 }
 
 .day-section {
@@ -194,58 +193,43 @@
 }
 
 
-/* ========== EVENT CARD - DARK GLASS AESTHETIC ========== */
+/* ========== EVENT CARD - MINIMAL GLASS AESTHETIC ========== */
 .event-card {
-  background: linear-gradient(135deg, rgba(30, 25, 22, 0.4) 0%, rgba(25, 20, 18, 0.3) 100%);
-  border: 1px solid rgba(201, 168, 117, 0.25);
-  border-top: 1px solid rgba(201, 168, 117, 0.15);
-  border-left: 1px solid rgba(201, 168, 117, 0.2);
+  background: linear-gradient(135deg, rgba(35, 30, 28, 0.3) 0%, rgba(30, 25, 23, 0.25) 100%);
+  border: 1px solid rgba(201, 168, 117, 0.2);
   padding: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   overflow: hidden;
   position: relative;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(201, 168, 117, 0.08);
-}
-
-.event-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at top-left, rgba(201, 168, 117, 0.05) 0%, transparent 70%);
-  pointer-events: none;
+    0 0 20px rgba(201, 168, 117, 0.08),
+    inset 0 0 1px rgba(201, 168, 117, 0.1);
 }
 
 .event-card:hover {
-  border-color: rgba(212, 165, 116, 0.45);
-  background: linear-gradient(135deg, rgba(40, 35, 32, 0.5) 0%, rgba(35, 30, 28, 0.4) 100%);
+  border-color: rgba(212, 165, 116, 0.4);
+  background: linear-gradient(135deg, rgba(40, 35, 32, 0.4) 0%, rgba(35, 30, 28, 0.35) 100%);
   box-shadow: 
-    0 16px 48px rgba(168, 92, 63, 0.2),
-    inset 0 1px 0 rgba(201, 168, 117, 0.12),
-    0 0 30px rgba(201, 168, 117, 0.12);
-  transform: translateY(-4px);
+    0 0 30px rgba(201, 168, 117, 0.1),
+    inset 0 0 1px rgba(201, 168, 117, 0.15);
+  transform: translateY(-2px);
 }
 
 .event-card.mandatory {
-  border-color: rgba(212, 145, 93, 0.35);
+  border-color: rgba(212, 145, 93, 0.25);
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(212, 145, 93, 0.1);
+    0 0 20px rgba(201, 168, 117, 0.08),
+    inset 0 0 1px rgba(212, 145, 93, 0.1);
 }
 
 .event-card.mandatory:hover {
   box-shadow: 
-    0 16px 48px rgba(212, 145, 93, 0.25),
-    inset 0 1px 0 rgba(212, 145, 93, 0.15),
-    0 0 30px rgba(212, 145, 93, 0.15);
-  border-color: rgba(212, 145, 93, 0.55);
+    0 0 30px rgba(212, 145, 93, 0.12),
+    inset 0 0 1px rgba(212, 145, 93, 0.2);
+  border-color: rgba(212, 145, 93, 0.4);
 }
 
 /* ========== EVENT CARD MAIN CONTENT (COLLAPSED) ========== */
@@ -304,13 +288,13 @@
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: var(--copper);
+  color: rgba(201, 168, 117, 0.8);
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  background: rgba(201, 168, 117, 0.08);
-  padding: 4px 10px;
-  border: 1px solid rgba(201, 168, 117, 0.2);
-  border-radius: 2px;
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   display: inline-block;
   white-space: nowrap;
 }
