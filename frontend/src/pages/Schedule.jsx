@@ -327,6 +327,33 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
+              {/* 9:45 PM–1:00 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:45 PM–1:00 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Embodying Intimacy Temple</div>
+                    <div className="glance-facilitators">Rachel Rickards</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Touch as Prayer</div>
+                    <div className="glance-facilitators">Signa O. Cheney</div>
+                    <div className="glance-actual-time">9:45–11 PM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block glance-other">
+                    <div className="glance-title">Tea Lounge</div>
+                    <div className="glance-facilitators">Elowan</div>
+                    <div className="glance-location">The Living Room</div>
+                  </div>
+                </td>
+              </tr>
+
               {/* 11:00 PM–1:00 AM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">11:00 PM–1:00 AM</td>
