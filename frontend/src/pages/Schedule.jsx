@@ -170,7 +170,10 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">8:15–9:30 AM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Initiation - Movement by Design</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Initiation</div>
+                    <div className="glance-facilitators">Movement by Design</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
@@ -402,6 +405,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Embodying Authenticity & Integrity</div>
+                    <div className="glance-facilitators">Movement by Design</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
