@@ -13,13 +13,14 @@
 }
 
 .schedule-page {
-  background: linear-gradient(135deg, #1a1614 0%, #2d1f1a 30%, #1f1a1a 60%, #1a1614 100%);
+  background: linear-gradient(135deg, rgba(26, 22, 20, 0.85) 0%, rgba(45, 31, 26, 0.85) 30%, rgba(31, 26, 26, 0.85) 60%, rgba(26, 22, 20, 0.85) 100%),
+    url('/REVEL%20Backdrop%20Horizontal.jpg') fixed center/cover;
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
 }
 
-/* Subtle floral texture overlay at very low opacity */
+/* Prominent floral texture backdrop */
 .schedule-page::before {
   content: '';
   position: fixed;
@@ -31,7 +32,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.04;
+  opacity: 0.22;
   pointer-events: none;
   z-index: 0;
 }
