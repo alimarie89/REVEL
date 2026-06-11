@@ -499,7 +499,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">The Human Experience</div>
-                    <div className="glance-facilitators">David Starfire</div>
+                    <div className="glance-facilitators">David Block</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
