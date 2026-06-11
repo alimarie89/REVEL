@@ -784,6 +784,26 @@
   table-layout: fixed;
 }
 
+.saturday-glance-grid thead {
+  border-bottom: 1px solid rgba(201, 168, 117, 0.2);
+  background: transparent;
+}
+
+.saturday-glance-grid th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #d4a574;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-right: 1px solid rgba(201, 168, 117, 0.1);
+}
+
+.saturday-glance-grid th:last-child {
+  border-right: none;
+}
+
 /* Old grid styles (kept for reference, can remove later) */
 
 /* Responsive Design */
