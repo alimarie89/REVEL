@@ -342,6 +342,174 @@ export default function Schedule() {
         </div>
       </div>
 
+      {/* Saturday At a Glance Grid */}
+      <div className="saturday-glance-container">
+        <h2 className="saturday-glance-title">Saturday At a Glance</h2>
+        <div className="saturday-glance-wrapper">
+          <table className="saturday-glance-grid">
+            <thead>
+              <tr>
+                <th className="glance-time-header">Time</th>
+                <th className="glance-space-header">The Marquee</th>
+                <th className="glance-space-header">The Hearth</th>
+                <th className="glance-space-header">The Threshold</th>
+                <th className="glance-space-header">The Grove</th>
+                <th className="glance-space-header">Other Locations</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* 8:15–9:30 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">8:15–9:30 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">5Rhythms</div>
+                    <div className="glance-facilitators">Nima Yazdandar</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Meditation</div>
+                    <div className="glance-facilitators">Maxwell Wilson</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 8:30–11:30 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">8:30–11:30 AM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">REVEL Grief & Eros Ritual</div>
+                    <div className="glance-facilitators">John Wolfstone, Cari Caldwell & Yana</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Heart Connection Circle</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 10:00 AM–12:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">10:00 AM–12:00 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Dance Church</div>
+                    <div className="glance-facilitators">Tribal DreamZ</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Embodying Authenticity & Integrity</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Embodying Mantra, Yantra & Deity</div>
+                    <div className="glance-facilitators">Naughty Monkey</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 1:30–3:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">1:30–3:30 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Dancing with Death</div>
+                    <div className="glance-facilitators">Atilla Cidam</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Belly2Belly</div>
+                    <div className="glance-facilitators">Rachel Rickards</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Transmuting Anger Into Bliss</div>
+                    <div className="glance-facilitators">Ethan Henson</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 4:00–6:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">4:00–6:00 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">The Art of REPAIR</div>
+                    <div className="glance-facilitators">Dr. Hazel-Grace Yates</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Spicy Interplay: Flirting</div>
+                    <div className="glance-facilitators">Peter Benjamin & Violet Starkey</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Elder Panel</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 7:15–9:15 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">7:15–9:15 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">The Human Experience</div>
+                    <div className="glance-facilitators">David Starfire</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 9:45 PM–1:00 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:45 PM–1:00 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Temple of Desire: Death & Re-birth</div>
+                    <div className="glance-facilitators">Spencer Jacobson</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block glance-other">
+                    <div className="glance-title">Tea Lounge</div>
+                    <div className="glance-facilitators">Elowan</div>
+                    <div className="glance-location">The Living Room</div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       {/* Schedule Grid */}
       <section className="schedule-content">
         {scheduleData.eventDates.map(day => (

@@ -643,7 +643,7 @@
   border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
   background: transparent;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 .friday-glance-grid thead {
@@ -749,6 +749,39 @@
   text-transform: uppercase;
   letter-spacing: 0.3px;
   margin-top: 3px;
+}
+
+/* Saturday At a Glance Grid - Same as Friday */
+.saturday-glance-container {
+  padding: 60px 40px;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.saturday-glance-title {
+  font-family: 'Laluxess', serif;
+  font-size: 1.8rem;
+  color: #f5f1ed;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.saturday-glance-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.saturday-glance-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  table-layout: fixed;
 }
 
 /* Old grid styles (kept for reference, can remove later) */
