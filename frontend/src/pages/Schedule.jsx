@@ -27,6 +27,17 @@ export default function Schedule() {
     return facilitatorData.getFacilitators(facilitatorNames);
   };
 
+  const formatFacilitatorNames = (facilitators) => {
+    if (facilitators.length === 0) return '';
+    if (facilitators.length === 1) return facilitators[0].name;
+    if (facilitators.length === 2) return `${facilitators[0].name} & ${facilitators[1].name}`;
+    return facilitators.slice(0, -1).map(f => f.name).join(', ') + ` & ${facilitators[facilitators.length - 1].name}`;
+  };
+
+  const facilitatorImagesWithPhotos = (facilitators) => {
+    return facilitators.filter(fac => fac.photo);
+  };
+
   const initials = (name) => {
     return name
       .split(' ')
@@ -126,50 +137,37 @@ export default function Schedule() {
                         <div className="event-info-col">
                           <div className="event-header-inner">
                             <h3 className="event-title">{event.title}</h3>
-                            {event.isMandatory && <span className="event-tag">Mandatory</span>}
+                            {event.isMandatory && <span className="event-tag event-tag-mandatory">Mandatory</span>}
                           </div>
-                          <div className="event-tags">
-                            <span className="event-tag">{eventType}</span>
+                          <div className="event-location-row">
+                            <span className="event-space">{event.space}</span>
+                            <span className="event-tag event-tag-type">{eventType}</span>
                           </div>
-                          <span className="event-space">{event.space}</span>
                           {facilitators.length > 0 && (
                             <div className="event-facilitators-names">
-                              {facilitators.slice(0, 2).map((fac, idx) => (
-                                <span key={idx} className="facilitator-name">
-                                  {fac.name}
-                                </span>
-                              ))}
-                              {facilitators.length > 2 && (
-                                <span className="facilitator-name more">+{facilitators.length - 2} more</span>
-                              )}
+                              {formatFacilitatorNames(facilitators)}
                             </div>
                           )}
                         </div>
 
                         {/* Right: Facilitator Images */}
                         <div className="event-images-col">
-                          {facilitators.length > 0 ? (
+                          {facilitatorImagesWithPhotos(facilitators).length > 0 && (
                             <div className="facilitator-images">
-                              {facilitators.slice(0, 3).map((fac, idx) => (
+                              {facilitatorImagesWithPhotos(facilitators).slice(0, 3).map((fac, idx) => (
                                 <div
                                   key={idx}
-                                  className={`facilitator-image-wrapper ${facilitators.length > 1 ? 'overlapped' : ''}`}
+                                  className={`facilitator-image-wrapper ${facilitatorImagesWithPhotos(facilitators).length > 1 ? 'overlapped' : ''}`}
                                   style={{
                                     zIndex: 3 - idx,
                                     marginLeft: idx > 0 ? `-14px` : '0'
                                   }}
                                   title={fac.name}
                                 >
-                                  {fac.photo ? (
-                                    <img src={fac.photo} alt={fac.name} className="facilitator-image" />
-                                  ) : (
-                                    createMonogram(fac.name)
-                                  )}
+                                  <img src={fac.photo} alt={fac.name} className="facilitator-image" />
                                 </div>
                               ))}
                             </div>
-                          ) : (
-                            <div className="facilitator-images empty" />
                           )}
                         </div>
 
@@ -205,13 +203,11 @@ export default function Schedule() {
                                 {facilitators.map((fac, idx) => (
                                   <div key={idx} className="facilitator-bio">
                                     <div className="facilitator-bio-header">
-                                      <div className="facilitator-bio-image">
-                                        {fac.photo ? (
+                                      {fac.photo && (
+                                        <div className="facilitator-bio-image">
                                           <img src={fac.photo} alt={fac.name} />
-                                        ) : (
-                                          createMonogram(fac.name)
-                                        )}
-                                      </div>
+                                        </div>
+                                      )}
                                       <div className="facilitator-bio-info">
                                         <h5 className="facilitator-bio-name">{fac.name}</h5>
                                         <p className="facilitator-bio-role">{fac.role}</p>
