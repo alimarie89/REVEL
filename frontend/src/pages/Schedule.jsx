@@ -245,7 +245,7 @@ export default function Schedule() {
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
-                    <div className="glance-title">Desire and Boundaries</div>
+                    <div className="glance-title">Sovereignty & Synergy: The Dance of Desire and Boundaries</div>
                     <div className="glance-facilitators">Briana Cribeyer</div>
                   </div>
                 </td>
