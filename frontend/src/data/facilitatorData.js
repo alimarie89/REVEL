@@ -185,7 +185,7 @@ export const facilitatorData = {
     },
     'soraya': {
       name: 'Soraya',
-      role: 'Dakina Council Facilitator',
+      role: 'Dakini Council Facilitator',
       bio: 'Soraya facilitates honest, enlivening conversations about sexuality, pleasure, and the lived experience of sex workers and intimate professionals.',
       photo: '/facilitators/soraya.jpg',
       slug: 'soraya'

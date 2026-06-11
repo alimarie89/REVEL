@@ -282,7 +282,7 @@ export default function Schedule() {
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
-                    <div className="glance-title">Dakina Council</div>
+                    <div className="glance-title">Dakini Council</div>
                     <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana</div>
                   </div>
                 </td>
