@@ -615,7 +615,7 @@
 /* ========== SCHEDULE GRID - AT A GLANCE VIEW ========== */
 /* Friday At a Glance Grid */
 .friday-glance-container {
-  padding: 60px 40px;
+  padding: 8px 40px;
   background: transparent;
   position: relative;
   z-index: 2;
@@ -625,7 +625,7 @@
   font-family: 'Laluxess', serif;
   font-size: 1.8rem;
   color: #f5f1ed;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -763,7 +763,7 @@
 
 /* Saturday At a Glance Grid - Same as Friday */
 .saturday-glance-container {
-  padding: 60px 40px;
+  padding: 8px 40px;
   background: transparent;
   position: relative;
   z-index: 2;
@@ -773,7 +773,7 @@
   font-family: 'Laluxess', serif;
   font-size: 1.8rem;
   color: #f5f1ed;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.5px;
