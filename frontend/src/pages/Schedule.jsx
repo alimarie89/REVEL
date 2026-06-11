@@ -150,6 +150,76 @@ export default function Schedule() {
         ))}
       </div>
 
+      {/* Thursday At a Glance Grid */}
+      <div className="friday-glance-container">
+        <h2 className="friday-glance-title">Thursday At a Glance</h2>
+        <div className="friday-glance-wrapper">
+          <table className="friday-glance-grid">
+            <thead>
+              <tr>
+                <th className="glance-time-header">Time</th>
+                <th className="glance-space-header">The Marquee</th>
+                <th className="glance-space-header">The Hearth</th>
+                <th className="glance-space-header">The Threshold</th>
+                <th className="glance-space-header">The Grove</th>
+                <th className="glance-space-header">Other Locations</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* 4:30–5:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">4:30–5:30 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Land Orientation and Logistics</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 7:15–8:45 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">7:15–8:45 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Opening Ceremony</div>
+                    <div className="glance-actual-time">7:15–8:30 PM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 9:00–11:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:00–11:00 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Vibey Dance</div>
+                    <div className="glance-facilitators">Anaia & Spencer Jacobson</div>
+                    <div className="glance-actual-time">9:00–11:15 PM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Building the Relational Field</div>
+                    <div className="glance-facilitators">Ali Williams & Dragon Academy Team</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       {/* Friday At a Glance Grid */}
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Friday At a Glance</h2>
