@@ -613,162 +613,134 @@
 }
 
 /* ========== SCHEDULE GRID - AT A GLANCE VIEW ========== */
-.schedule-grid-container {
+/* Friday At a Glance Grid */
+.friday-glance-container {
   padding: 60px 40px;
   background: transparent;
   position: relative;
   z-index: 2;
 }
 
-.schedule-grid-wrapper {
+.friday-glance-title {
+  font-family: 'Laluxess', serif;
+  font-size: 1.8rem;
+  color: #f5f1ed;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.friday-glance-wrapper {
   max-width: 1400px;
   margin: 0 auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.schedule-grid {
+.friday-glance-grid {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
   background: transparent;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
-.schedule-grid thead {
-  border-bottom: 2px solid rgba(201, 168, 117, 0.3);
-  position: sticky;
-  top: 0;
-  background: linear-gradient(180deg, rgba(20, 16, 14, 0.7) 0%, rgba(20, 16, 14, 0.5) 100%);
-  backdrop-filter: blur(10px);
-  z-index: 10;
+.friday-glance-grid thead {
+  border-bottom: 1px solid rgba(201, 168, 117, 0.2);
+  background: transparent;
 }
 
-.schedule-grid th {
+.friday-glance-grid th {
   padding: 16px 12px;
   text-align: left;
   font-weight: 600;
   color: #d4a574;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   border-right: 1px solid rgba(201, 168, 117, 0.1);
 }
 
-.schedule-grid th:last-child {
+.friday-glance-grid th:last-child {
   border-right: none;
 }
 
-.grid-time-header {
-  width: 80px;
-  min-width: 80px;
+.glance-time-header {
+  width: 100px;
+  min-width: 100px;
   color: var(--copper);
 }
 
-.grid-space-header {
-  min-width: 160px;
-  width: 160px;
+.glance-space-header {
+  width: 140px;
+  min-width: 140px;
 }
 
-.grid-other-space {
-  min-width: 120px;
-  width: 120px;
-}
-
-.schedule-grid tbody tr {
+.glance-time-row {
   border-bottom: 1px solid rgba(201, 168, 117, 0.08);
 }
 
-.schedule-grid tbody tr:hover {
-  background: rgba(201, 168, 117, 0.03);
+.glance-time-row:hover {
+  background: rgba(201, 168, 117, 0.02);
 }
 
-.grid-time-row {
-  height: 140px;
-}
-
-.schedule-grid td {
-  padding: 12px;
+.glance-time-cell {
+  width: 100px;
+  min-width: 100px;
+  font-weight: 600;
+  color: var(--copper);
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
   vertical-align: top;
+  padding: 16px 12px;
   border-right: 1px solid rgba(201, 168, 117, 0.05);
 }
 
-.schedule-grid td:last-child {
+.glance-event-cell {
+  width: 140px;
+  min-width: 140px;
+  padding: 12px;
+  vertical-align: top;
+  border-right: 1px solid rgba(201, 168, 117, 0.05);
+  height: 100px;
+}
+
+.glance-event-cell:last-child {
   border-right: none;
 }
 
-.grid-time-cell {
-  width: 80px;
-  min-width: 80px;
-  font-weight: 600;
-  color: var(--copper);
-  font-size: 0.8rem;
-  letter-spacing: 0.3px;
-  vertical-align: middle;
-  position: sticky;
-  left: 0;
-  background: rgba(20, 16, 14, 0.3);
-  z-index: 5;
-}
-
-.grid-event-cell {
-  min-width: 160px;
-  width: 160px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  overflow: hidden;
-}
-
-.grid-other-space-cell {
-  min-width: 120px;
-  width: 120px;
-}
-
-.grid-event-item {
-  background: linear-gradient(135deg, rgba(35, 30, 28, 0.25) 0%, rgba(30, 25, 23, 0.15) 100%);
-  border: 1px solid rgba(201, 168, 117, 0.2);
+.glance-event-block {
+  background: linear-gradient(135deg, rgba(35, 30, 28, 0.2) 0%, rgba(30, 25, 23, 0.1) 100%);
+  border: 1px solid rgba(201, 168, 117, 0.15);
   border-radius: 2px;
   padding: 8px 10px;
-  backdrop-filter: blur(6px);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(201, 168, 117, 0.06);
-}
-
-.grid-event-item:hover {
-  border-color: rgba(212, 165, 116, 0.4);
-  background: linear-gradient(135deg, rgba(40, 35, 32, 0.35) 0%, rgba(35, 30, 28, 0.25) 100%);
-  box-shadow: 0 0 15px rgba(201, 168, 117, 0.1);
-  transform: translateY(-1px);
-}
-
-.grid-event-title {
   font-size: 0.7rem;
-  font-weight: 600;
   color: #f5f1ed;
   line-height: 1.3;
-  letter-spacing: 0.2px;
+  word-break: break-word;
+  text-align: left;
 }
 
-.grid-event-space {
-  font-size: 0.65rem;
+.glance-event-block.glance-other {
+  padding: 6px 8px;
+}
+
+.glance-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.glance-location {
+  font-size: 0.6rem;
   color: rgba(201, 168, 117, 0.7);
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+  margin-top: 3px;
 }
 
-.grid-event-facilitators {
-  font-size: 0.65rem;
-  color: rgba(245, 241, 237, 0.65);
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.2;
-  margin-top: 2px;
-  opacity: 0.9;
-}
+/* Old grid styles (kept for reference, can remove later) */
 
 /* Responsive Design */
 @media (max-width: 1024px) {

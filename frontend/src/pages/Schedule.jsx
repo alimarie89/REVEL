@@ -150,52 +150,120 @@ export default function Schedule() {
         ))}
       </div>
 
-      {/* Schedule Grid - At a Glance View */}
-      <div className="schedule-grid-container">
-        <div className="schedule-grid-wrapper">
-          <table className="schedule-grid">
+      {/* Friday At a Glance Grid */}
+      <div className="friday-glance-container">
+        <h2 className="friday-glance-title">Friday At a Glance</h2>
+        <div className="friday-glance-wrapper">
+          <table className="friday-glance-grid">
             <thead>
               <tr>
-                <th className="grid-time-header">Time</th>
-                {mainSpaces.map(space => (
-                  <th key={space} className="grid-space-header">{space}</th>
-                ))}
-                <th className="grid-space-header grid-other-space">Other Locations</th>
+                <th className="glance-time-header">Time</th>
+                <th className="glance-space-header">The Marquee</th>
+                <th className="glance-space-header">The Hearth</th>
+                <th className="glance-space-header">The Threshold</th>
+                <th className="glance-space-header">The Grove</th>
+                <th className="glance-space-header">Other Locations</th>
               </tr>
             </thead>
             <tbody>
-              {getUniqueTimes().map(time => (
-                <tr key={time} className="grid-time-row">
-                  <td className="grid-time-cell">{time}</td>
-                  {mainSpaces.map(space => (
-                    <td key={`${time}-${space}`} className="grid-event-cell">
-                      {getEventsForTimeAndSpace(time, space).map((event, idx) => (
-                        <div key={idx} className="grid-event-item">
-                          <div className="grid-event-title">{event.title}</div>
-                          {event.facilitators.length > 0 && (
-                            <div className="grid-event-facilitators">
-                              {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </td>
-                  ))}
-                  <td className="grid-event-cell grid-other-space-cell">
-                    {getEventsForTimeInOtherSpaces(time).map((event, idx) => (
-                      <div key={idx} className="grid-event-item">
-                        <div className="grid-event-space">{event.space}</div>
-                        <div className="grid-event-title">{event.title}</div>
-                        {event.facilitators.length > 0 && (
-                          <div className="grid-event-facilitators">
-                            {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </td>
-                </tr>
-              ))}
+              {/* 8:15–9:30 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">8:15–9:30 AM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Initiation - Movement by Design</div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Soul Motion</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Meditation</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block glance-other">
+                    <div className="glance-title">Kundalini Yoga</div>
+                    <div className="glance-location">Lawn by The Threshold</div>
+                  </div>
+                </td>
+              </tr>
+
+              {/* 10:00 AM–12:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">10:00 AM–12:00 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Song Circle</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Primal Mischief & Medicine</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Attachment Alchemy</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Erotic Blueprints</div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 1:30–3:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">1:30–3:30 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Masculine / Feminine Reconciliation</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Tantric Contact</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Sovereignty & Synergy: The Dance of Desire and Boundaries</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">The Future of our Field</div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 4:00–6:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">4:00–6:00 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Integration Space</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Dance of Devotion</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Michaela Winters</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Dakina Council</div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 7:15–9:15 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">7:15–9:15 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Unleash</div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">Interplay</div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 9:45 PM–1:00 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:45 PM–1:00 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
             </tbody>
           </table>
         </div>
