@@ -140,7 +140,8 @@ export default function Schedule() {
   };
 
   return (
-    <div className="schedule-page">
+    <>
+      <div className="schedule-page">
       {/* Hero Section */}
       <section className="schedule-hero">
         <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />
@@ -900,5 +901,6 @@ export default function Schedule() {
         </div>
       </div>
     )}
-  </div>
+    </>
+  );
 }
