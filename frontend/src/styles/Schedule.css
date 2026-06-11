@@ -632,6 +632,7 @@
   border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
   background: transparent;
+  table-layout: fixed;
 }
 
 .schedule-grid thead {
