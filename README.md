@@ -23,3 +23,4 @@ No more manual HTML editing! Update once in the dashboard, changes appear everyw
 ## Getting Started
 
 See the README files in `frontend/` and `backend/` folders for setup instructions.
+# Trigger rebuild
