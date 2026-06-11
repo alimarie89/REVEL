@@ -43,6 +43,9 @@ function Team() {
     { id: 105, name: 'Yana', role: 'Ritual Facilitator', bio: 'Yana facilitates transformative ritual experiences, bringing depth and presence to collective ceremonies.', photo: '/facilitators/yana.jpeg' },
     { id: 106, name: 'Sequoia Kidwell', role: 'Shamanic & Bondage Facilitator', bio: 'Sequoia facilitates shamanic practices and bondage rituals as containers for healing, self-discovery, and transformational inner inquiry.', photo: '/facilitators/sequoia-kidwell.jpeg' },
     { id: 107, name: 'MxD', role: 'Movement & Embodiment Facilitator', bio: 'MxD offers a path to self-inquiry rooted in the principles of nature, restoring the mechanics of human movement and authentic expression.', photo: '/facilitators/mxd.jpg' },
+    { id: 108, name: 'John Wolfstone', role: 'Ritual & Ceremony Facilitator', bio: 'John facilitates deep ritual work and ceremony, creating sacred containers for collective grief, transformation, and the integration of the full spectrum of human experience.', photo: '/facilitators/john-wolfstone.jpg' },
+    { id: 109, name: 'Ethan Henson', role: 'Tantric Alchemist', bio: 'Ethan teaches tantric practices for transmuting emotional energy into bliss, connection, and profound union with the Soul.', photo: '/facilitators/ethan-henson.jpg' },
+    { id: 110, name: 'Tribal DreamZ', role: 'DJ & Dance Facilitator', bio: 'Tribal DreamZ creates ecstatic dance church experiences through music, rhythm, and embodied community celebration.', photo: '/facilitators/tribal-dreamz.png' },
     // Add more as needed - up to ~20
   ]
 

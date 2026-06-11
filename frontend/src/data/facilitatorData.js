@@ -215,7 +215,7 @@ export const facilitatorData = {
       name: 'Tribal DreamZ',
       role: 'DJ & Dance Facilitator',
       bio: 'Tribal DreamZ creates ecstatic dance church experiences through music, rhythm, and embodied community celebration.',
-      photo: '/facilitators/tribal-dreamz.jpg',
+      photo: '/facilitators/tribal-dreamz.png',
       slug: 'tribal-dreamz'
     },
     'codestar': {
