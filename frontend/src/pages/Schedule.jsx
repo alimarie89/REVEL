@@ -56,7 +56,39 @@ export default function Schedule() {
     );
   };
 
-  // Infer event type tags from title keywords
+  const mainSpaces = ['The Marquee', 'The Hearth', 'The Threshold', 'The Grove'];
+
+  // Get unique times in chronological order
+  const getUniqueTimes = () => {
+    const times = new Set();
+    displayedEvents.forEach(event => {
+      times.add(event.time);
+    });
+    return Array.from(times).sort((a, b) => {
+      const getMinutes = (timeStr) => {
+        const [startTime] = timeStr.split(' - ');
+        const [hours, mins] = startTime.split(':').map(Number);
+        const isPM = startTime.includes('pm');
+        return (isPM && hours !== 12 ? hours + 12 : hours === 12 && !isPM ? 0 : hours) * 60 + (mins || 0);
+      };
+      return getMinutes(a) - getMinutes(b);
+    });
+  };
+
+  // Get events for a specific time and space
+  const getEventsForTimeAndSpace = (time, space) => {
+    return displayedEvents.filter(
+      event => event.time === time && event.space === space
+    );
+  };
+
+  // Get events for a specific time in non-main spaces
+  const getEventsForTimeInOtherSpaces = (time) => {
+    return displayedEvents.filter(
+      event => event.time === time && !mainSpaces.includes(event.space)
+    );
+  };
+
   const getEventType = (title) => {
     const lowerTitle = title.toLowerCase();
     if (lowerTitle.includes('ceremony') || lowerTitle.includes('ritual')) return 'Ceremony';
@@ -96,6 +128,61 @@ export default function Schedule() {
             {day}
           </button>
         ))}
+      </div>
+
+      {/* Schedule Grid - At a Glance View */}
+      <div className="schedule-grid-container">
+        <div className="schedule-grid-wrapper">
+          <table className="schedule-grid">
+            <thead>
+              <tr>
+                <th className="grid-time-header">Time</th>
+                {mainSpaces.map(space => (
+                  <th key={space} className="grid-space-header">{space}</th>
+                ))}
+                {displayedEvents.some(e => !mainSpaces.includes(e.space)) && (
+                  <th className="grid-space-header grid-other-space">Other Spaces</th>
+                )}
+              </tr>
+            </thead>
+            <tbody>
+              {getUniqueTimes().map(time => (
+                <tr key={time} className="grid-time-row">
+                  <td className="grid-time-cell">{time}</td>
+                  {mainSpaces.map(space => (
+                    <td key={`${time}-${space}`} className="grid-event-cell">
+                      {getEventsForTimeAndSpace(time, space).map((event, idx) => (
+                        <div key={idx} className="grid-event-item">
+                          <div className="grid-event-title">{event.title}</div>
+                          {event.facilitators.length > 0 && (
+                            <div className="grid-event-facilitators">
+                              {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </td>
+                  ))}
+                  {displayedEvents.some(e => !mainSpaces.includes(e.space)) && (
+                    <td className="grid-event-cell grid-other-space-cell">
+                      {getEventsForTimeInOtherSpaces(time).map((event, idx) => (
+                        <div key={idx} className="grid-event-item">
+                          <div className="grid-event-space">{event.space}</div>
+                          <div className="grid-event-title">{event.title}</div>
+                          {event.facilitators.length > 0 && (
+                            <div className="grid-event-facilitators">
+                              {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </td>
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* Schedule Grid */}
