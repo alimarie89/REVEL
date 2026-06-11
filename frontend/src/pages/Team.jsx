@@ -46,6 +46,7 @@ function Team() {
     { id: 108, name: 'John Wolfstone', role: 'Ritual & Ceremony Facilitator', bio: 'John facilitates deep ritual work and ceremony, creating sacred containers for collective grief, transformation, and the integration of the full spectrum of human experience.', photo: '/facilitators/john-wolfstone.jpg' },
     { id: 109, name: 'Ethan Henson', role: 'Tantric Alchemist', bio: 'Ethan teaches tantric practices for transmuting emotional energy into bliss, connection, and profound union with the Soul.', photo: '/facilitators/ethan-henson.jpg' },
     { id: 110, name: 'Tribal DreamZ', role: 'DJ & Dance Facilitator', bio: 'Tribal DreamZ creates ecstatic dance church experiences through music, rhythm, and embodied community celebration.', photo: '/facilitators/tribal-dreamz.png' },
+    { id: 111, name: 'Maxwell Wilson', role: 'Meditation Guide', bio: 'Maxwell facilitates meditation practices designed to cultivate inner peace, clarity, and connection. His teaching style is gentle, accessible, and deeply rooted in contemplative traditions.', photo: '/facilitators/maxwell-wilson.jpeg' },
     // Add more as needed - up to ~20
   ]
 

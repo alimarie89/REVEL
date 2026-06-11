@@ -33,7 +33,7 @@ export const facilitatorData = {
       name: 'Maxwell Wilson',
       role: 'Meditation Guide',
       bio: 'Maxwell facilitates meditation practices designed to cultivate inner peace, clarity, and connection. His teaching style is gentle, accessible, and deeply rooted in contemplative traditions.',
-      photo: '/facilitators/maxwell-wilson.jpg',
+      photo: '/facilitators/maxwell-wilson.jpeg',
       slug: 'maxwell-wilson'
     },
     'lyndsey-scott': {
