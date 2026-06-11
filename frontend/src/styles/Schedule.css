@@ -1160,8 +1160,11 @@
 
 .facilitator-modal-card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 14px;
-  padding: 12px;
+  padding: 20px;
   background: rgba(201, 168, 117, 0.08);
   border-radius: 6px;
   transition: background 0.2s ease;
@@ -1172,8 +1175,8 @@
 }
 
 .modal-fac-image {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -1192,17 +1195,17 @@
 }
 
 .modal-fac-name {
-  margin: 0 0 4px 0;
+  margin: 0 0 6px 0;
   font-family: 'Laluxess', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #f5f1ed;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
 
 .modal-fac-role {
-  margin: 0 0 6px 0;
-  font-size: 0.85rem;
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
   color: #c9a875;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -1212,8 +1215,8 @@
 .modal-fac-bio {
   margin: 0;
   font-size: 0.9rem;
-  line-height: 1.5;
-  color: rgba(245, 241, 237, 0.7);
+  line-height: 1.6;
+  color: rgba(245, 241, 237, 0.75);
 }
 
 /* Modal scrollbar styling */
@@ -1261,12 +1264,6 @@
     top: 12px;
     right: 12px;
     font-size: 1.5rem;
-  }
-
-  .facilitator-modal-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   .modal-fac-image {
