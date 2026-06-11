@@ -280,6 +280,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Integration Space</div>
+                    <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
