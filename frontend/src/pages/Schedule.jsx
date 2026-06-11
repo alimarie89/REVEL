@@ -363,7 +363,7 @@ export default function Schedule() {
                   const eventId = getEventId(event, index);
                   const isExpanded = expandedEvent === eventId;
                   const facilitators = getFacilitatorList(event.facilitators);
-                  const eventType = getEventType(event.title);
+                  const eventType = event.type || getEventType(event.title);
 
                   return (
                     <div
