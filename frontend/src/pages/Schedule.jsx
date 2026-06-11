@@ -362,7 +362,11 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">8:15–9:30 AM</td>
                 <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Heart Connection Circle</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">5Rhythms</div>
@@ -378,29 +382,15 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 8:30–11:30 AM */}
+              {/* 10:00 AM–12:00 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">8:30–11:30 AM</td>
+                <td className="glance-time-cell">10:00 AM–12:00 PM</td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">REVEL Grief & Eros Ritual</div>
                     <div className="glance-facilitators">John Wolfstone, Cari Caldwell & Yana</div>
                   </div>
                 </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block">
-                    <div className="glance-title">Heart Connection Circle</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-              </tr>
-
-              {/* 10:00 AM–12:00 PM */}
-              <tr className="glance-time-row">
-                <td className="glance-time-cell">10:00 AM–12:00 PM</td>
-                <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Dance Church</div>
