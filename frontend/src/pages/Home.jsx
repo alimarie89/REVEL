@@ -343,6 +343,78 @@ function Home() {
       workshop: 'REVEL Grief & Eros Ritual - Saturday Morning (3 hours)',
       photo: '/team/cari-caldwell.jpg',
       bio: 'Aliveness - and our deepest erotic intelligence - come from us feeling everything, welcoming and including all.\n\nHowever, in these troubled times, when there is so much to feel - so many darker currents of pain, agony, grief - there is little public space to be together with this spectrum of our humanity.\n\nThe old paradigm is collapsing, the meta-systems that were born into are delaminating, and there is a well of grief so deep underneath all the wildness in these times, that we would all drown if we tried to feel this alone.\n\nIndigineous peoples knew that grief was communal, collective, ancestral, transpersonal and could be only carried by the village.\n\nThey also knew that grief was the regenerative power of life functioning in the human body.. the salty tears that purify us and bring us once again into our full, humble power.\n\nGrief and Eros dance together, and we must go down deep if we want the ecstasy the world so badly needs of us right now.\n\nWe will come together in grief and eros ritual for 3 hours on Saturday morning to weep and wail, to howl and flail, to sit at the altar of our shared pain and let it ripple us until our pain cries are indistinguishable from our pleasure moans.\n\nCome and offer yourself to these rites of grief.. deep intimacy awaits on the otherside.'
+    },
+    {
+      id: 17,
+      name: 'Devorah Bry',
+      role: 'Movement Facilitator',
+      workshop: 'Soul Motion & Dance of Devotion',
+      photo: '/facilitators/devorah-bry.jpeg',
+      bio: 'Devorah is a movement artist and facilitator specializing in soul motion and embodied presence. Her work invites participants into authentic movement and somatic awareness, creating spaces where the body becomes a portal for expression and healing.'
+    },
+    {
+      id: 18,
+      name: 'Signa O. Cheney',
+      role: 'Yoga & Touch Facilitator',
+      workshop: 'Kundalini Yoga & Touch as Prayer',
+      photo: '/facilitators/signa.jpg',
+      bio: 'Signa is a kundalini yoga instructor and embodiment facilitator offering practices that deepen awareness, pleasure, and connection. Her classes are known for creating safe, heart-opening experiences where participants can release stress and awaken their capacity for aliveness.'
+    },
+    {
+      id: 19,
+      name: 'Yana',
+      role: 'Ritual Facilitator',
+      workshop: 'REVEL Grief & Eros Ritual',
+      photo: '/facilitators/yana.jpeg',
+      bio: 'Yana facilitates transformative ritual experiences, bringing depth and presence to collective ceremonies. Her work creates sacred containers where the full spectrum of human emotion—grief, eros, joy, and transformation—can be held and celebrated.'
+    },
+    {
+      id: 20,
+      name: 'Sequoia Kidwell',
+      role: 'Shamanic & Bondage Facilitator',
+      workshop: 'Shamanic Bondage',
+      photo: '/facilitators/sequoia-kidwell.jpeg',
+      bio: 'Sequoia facilitates shamanic practices and bondage rituals as containers for healing, self-discovery, and transformational inner inquiry. Her work weaves together ancient traditions with modern consciousness to create powerful gateways for exploration.'
+    },
+    {
+      id: 21,
+      name: 'MxD',
+      role: 'Movement & Embodiment Facilitator',
+      workshop: 'Embodying Authenticity & Integrity',
+      photo: '/facilitators/mxd.jpg',
+      bio: 'MxD offers a path to self-inquiry rooted in the principles of nature, restoring the mechanics of human movement and authentic expression. Through precise embodiment practices, participants discover how their bodies communicate truth and integrity in every moment.'
+    },
+    {
+      id: 22,
+      name: 'John Wolfstone',
+      role: 'Ritual & Ceremony Facilitator',
+      workshop: 'REVEL Grief & Eros Ritual',
+      photo: '/facilitators/john-wolfstone.jpg',
+      bio: 'John facilitates deep ritual work and ceremony, creating sacred containers for collective grief, transformation, and the integration of the full spectrum of human experience. His work honors ancestral wisdom and contemporary consciousness.'
+    },
+    {
+      id: 23,
+      name: 'Ethan Henson',
+      role: 'Tantric Alchemist',
+      workshop: 'Transmuting Anger Into Bliss',
+      photo: '/facilitators/ethan-henson.jpg',
+      bio: 'Ethan teaches tantric practices for transmuting emotional energy into bliss, connection, and profound union with the Soul. His work offers powerful doorways into intimacy, power, and spiritual awakening through embodied practice.'
+    },
+    {
+      id: 24,
+      name: 'Tribal DreamZ',
+      role: 'DJ & Dance Facilitator',
+      workshop: 'Dance Church',
+      photo: '/facilitators/tribal-dreamz.png',
+      bio: 'Tribal DreamZ creates ecstatic dance church experiences through music, rhythm, and embodied community celebration. Their sonic landscapes invite participants into states of flow, presence, and collective aliveness.'
+    },
+    {
+      id: 25,
+      name: 'Maxwell Wilson',
+      role: 'Meditation Guide',
+      workshop: 'Meditation',
+      photo: '/facilitators/maxwell-wilson.jpeg',
+      bio: 'Maxwell facilitates meditation practices designed to cultivate inner peace, clarity, and connection. His teaching style is gentle, accessible, and deeply rooted in contemplative traditions that open the door to profound stillness.'
     }
   ]
 
