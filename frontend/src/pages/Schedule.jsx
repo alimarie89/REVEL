@@ -126,9 +126,7 @@ export default function Schedule() {
     <div className="schedule-page">
       {/* Hero Section */}
       <section className="schedule-hero">
-        <h1 className="schedule-title">Schedule</h1>
-        <p className="schedule-subtitle">A living map of the weekend.</p>
-        <p className="schedule-subtext">Workshops, rituals, meals, music, connection spaces, and places to land.</p>
+        <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />
       </section>
 
       {/* Day Navigation Tabs */}
