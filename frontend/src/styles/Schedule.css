@@ -1135,6 +1135,7 @@
 .modal-facilitators {
   margin-top: 24px;
   width: 100%;
+  grid-column: 1 / -1;
 }
 
 .facilitators-divider {
