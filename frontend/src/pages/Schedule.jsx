@@ -58,6 +58,24 @@ export default function Schedule() {
 
   const mainSpaces = ['The Marquee', 'The Hearth', 'The Threshold', 'The Grove'];
 
+  // Normalize venue name for consistent matching
+  const normalizeVenue = (venue) => {
+    if (!venue) return '';
+    return venue.trim().toLowerCase();
+  };
+
+  // Get normalized main space name (e.g., "hearth" -> "The Hearth")
+  const getNormalizedMainSpace = (venue) => {
+    const normalized = normalizeVenue(venue);
+    
+    if (normalized.includes('marquee')) return 'The Marquee';
+    if (normalized.includes('hearth')) return 'The Hearth';
+    if (normalized.includes('threshold')) return 'The Threshold';
+    if (normalized.includes('grove')) return 'The Grove';
+    
+    return null; // Not a main space
+  };
+
   // Get unique times in chronological order
   const getUniqueTimes = () => {
     const times = new Set();
@@ -75,18 +93,20 @@ export default function Schedule() {
     });
   };
 
-  // Get events for a specific time and space
+  // Get events for a specific time and normalized space
   const getEventsForTimeAndSpace = (time, space) => {
-    return displayedEvents.filter(
-      event => event.time === time && event.space === space
-    );
+    return displayedEvents.filter(event => {
+      if (event.time !== time) return false;
+      return getNormalizedMainSpace(event.space) === space;
+    });
   };
 
-  // Get events for a specific time in non-main spaces
+  // Get events for a specific time in non-main spaces (Other Locations)
   const getEventsForTimeInOtherSpaces = (time) => {
-    return displayedEvents.filter(
-      event => event.time === time && !mainSpaces.includes(event.space)
-    );
+    return displayedEvents.filter(event => {
+      if (event.time !== time) return false;
+      return getNormalizedMainSpace(event.space) === null;
+    });
   };
 
   const getEventType = (title) => {
@@ -140,9 +160,7 @@ export default function Schedule() {
                 {mainSpaces.map(space => (
                   <th key={space} className="grid-space-header">{space}</th>
                 ))}
-                {displayedEvents.some(e => !mainSpaces.includes(e.space)) && (
-                  <th className="grid-space-header grid-other-space">Other Spaces</th>
-                )}
+                <th className="grid-space-header grid-other-space">Other Locations</th>
               </tr>
             </thead>
             <tbody>
@@ -163,21 +181,19 @@ export default function Schedule() {
                       ))}
                     </td>
                   ))}
-                  {displayedEvents.some(e => !mainSpaces.includes(e.space)) && (
-                    <td className="grid-event-cell grid-other-space-cell">
-                      {getEventsForTimeInOtherSpaces(time).map((event, idx) => (
-                        <div key={idx} className="grid-event-item">
-                          <div className="grid-event-space">{event.space}</div>
-                          <div className="grid-event-title">{event.title}</div>
-                          {event.facilitators.length > 0 && (
-                            <div className="grid-event-facilitators">
-                              {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </td>
-                  )}
+                  <td className="grid-event-cell grid-other-space-cell">
+                    {getEventsForTimeInOtherSpaces(time).map((event, idx) => (
+                      <div key={idx} className="grid-event-item">
+                        <div className="grid-event-space">{event.space}</div>
+                        <div className="grid-event-title">{event.title}</div>
+                        {event.facilitators.length > 0 && (
+                          <div className="grid-event-facilitators">
+                            {formatFacilitatorNames(getFacilitatorList(event.facilitators))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </td>
                 </tr>
               ))}
             </tbody>
