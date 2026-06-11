@@ -261,7 +261,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block glance-other">
                     <div className="glance-title">Kundalini Yoga</div>
-                    <div className="glance-facilitators">Signa O. Cheney</div>
+                    <div className="glance-facilitators">Signa</div>
                     <div className="glance-location">Lawn by The Threshold</div>
                   </div>
                 </td>
@@ -397,7 +397,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Touch as Prayer</div>
-                    <div className="glance-facilitators">Signa O. Cheney</div>
+                    <div className="glance-facilitators">Signa</div>
                     <div className="glance-actual-time">9:45–11 PM</div>
                   </div>
                 </td>
@@ -625,7 +625,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Shamanic Bondage</div>
-                    <div className="glance-facilitators">Sequoia & Signa O. Cheney</div>
+                    <div className="glance-facilitators">Sequoia & Signa</div>
                     <div className="glance-actual-time">9:00–10:00 AM</div>
                   </div>
                 </td>

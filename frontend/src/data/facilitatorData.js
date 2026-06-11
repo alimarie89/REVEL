@@ -23,7 +23,7 @@ export const facilitatorData = {
       slug: 'devorah-bry'
     },
     'signa-cheney': {
-      name: 'Signa O. Cheney',
+      name: 'Signa',
       role: 'Yoga & Touch Facilitator',
       bio: 'Signa is a kundalini yoga instructor and embodiment facilitator offering practices that deepen awareness, pleasure, and connection. Her classes are known for creating safe, heart-opening experiences.',
       photo: '/facilitators/signa.jpg',

@@ -354,7 +354,7 @@ function Home() {
     },
     {
       id: 18,
-      name: 'Signa O. Cheney',
+      name: 'Signa',
       role: 'Yoga & Touch Facilitator',
       workshop: 'Kundalini Yoga & Touch as Prayer',
       photo: '/facilitators/signa.jpg',
