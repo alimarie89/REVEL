@@ -224,12 +224,12 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 1:30–3:30 PM */}
+              {/* 1:30–4:30 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">1:30–3:30 PM</td>
+                <td className="glance-time-cell">1:30–4:30 PM</td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
-                    <div className="glance-title">Masculine / Feminine Reconciliation</div>
+                    <div className="glance-title">REPAIR the Divide Ritual</div>
                     <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
                   </div>
                 </td>
@@ -254,11 +254,33 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
+              {/* 1:30–3:30 PM (DanceEros) */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">1:30–3:30 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">DanceEros: DeColonizing Erotic Movement</div>
+                    <div className="glance-facilitators">Victor Warring</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Belly2Belly</div>
+                    <div className="glance-facilitators">Rachel Rickards</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
               {/* 4:00–6:00 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">4:00–6:00 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Integration Space</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Integration Space</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
@@ -268,14 +290,14 @@ export default function Schedule() {
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
-                    <div className="glance-title">Michaela Winters</div>
+                    <div className="glance-title">Walking The Edge: The Art of Dom/Sub Relating</div>
                     <div className="glance-facilitators">Michaela Winters</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">Dakina Council</div>
-                    <div className="glance-facilitators">Soraya</div>
+                    <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -301,12 +323,16 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 9:45 PM–1:00 AM */}
+              {/* 11:00 PM–1:00 AM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">9:45 PM–1:00 AM</td>
+                <td className="glance-time-cell">11:00 PM–1:00 AM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Connection Temple: Vulnerability as Power</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
               </tr>
