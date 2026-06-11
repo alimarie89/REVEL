@@ -590,6 +590,94 @@ export default function Schedule() {
         </div>
       </div>
 
+      {/* Sunday At a Glance Grid */}
+      <div className="friday-glance-container">
+        <h2 className="friday-glance-title">Sunday At a Glance</h2>
+        <div className="friday-glance-wrapper">
+          <table className="friday-glance-grid">
+            <thead>
+              <tr>
+                <th className="glance-time-header">Time</th>
+                <th className="glance-space-header">The Marquee</th>
+                <th className="glance-space-header">The Hearth</th>
+                <th className="glance-space-header">The Threshold</th>
+                <th className="glance-space-header">The Grove</th>
+                <th className="glance-space-header">Other Locations</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* 8:30–9:45 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">8:30–9:45 AM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Initiation</div>
+                    <div className="glance-facilitators">Movement by Design</div>
+                    <div className="glance-actual-time">8:15–9:30 AM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Tea & Coffee Vibes</div>
+                    <div className="glance-actual-time">9:00–10:00 AM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Shamanic Bondage</div>
+                    <div className="glance-facilitators">Sequoia & Signa O. Cheney</div>
+                    <div className="glance-actual-time">9:00–10:00 AM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 10:00–11:45 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">10:00–11:45 AM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Dance Church</div>
+                    <div className="glance-facilitators">Codestar</div>
+                    <div className="glance-actual-time">10:00–11:30 AM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 11:30 AM–12:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">11:30 AM–12:30 PM</td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">Closing Ceremony</div>
+                    <div className="glance-facilitators">Spencer Jacobson & Lyndsey Scott</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 2:00–3:00 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">2:00–3:00 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       {/* Schedule Grid */}
       <section className="schedule-content">
         {scheduleData.eventDates.map(day => (
