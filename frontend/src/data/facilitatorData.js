@@ -19,14 +19,14 @@ export const facilitatorData = {
       name: 'Devorah Bry',
       role: 'Movement Facilitator',
       bio: 'Devorah is a movement artist and facilitator specializing in soul motion and embodied presence. Her work invites participants into authentic movement and somatic awareness.',
-      photo: '/facilitators/devorah-bry.jpg',
+      photo: '/facilitators/devorah-bry.jpeg',
       slug: 'devorah-bry'
     },
     'signa-cheney': {
       name: 'Signa O. Cheney',
       role: 'Yoga & Touch Facilitator',
       bio: 'Signa is a kundalini yoga instructor and embodiment facilitator offering practices that deepen awareness, pleasure, and connection. Her classes are known for creating safe, heart-opening experiences.',
-      photo: '/facilitators/signa-cheney.jpg',
+      photo: '/facilitators/signa.jpg',
       slug: 'signa-cheney'
     },
     'maxwell-wilson': {
@@ -145,7 +145,7 @@ export const facilitatorData = {
       name: 'Yana',
       role: 'Ritual Facilitator',
       bio: 'Yana facilitates transformative ritual experiences, bringing depth and presence to collective ceremonies.',
-      photo: '/facilitators/yana.jpg',
+      photo: '/facilitators/yana.jpeg',
       slug: 'yana'
     },
     'nima-yazdandar': {
@@ -204,12 +204,12 @@ export const facilitatorData = {
       photo: '/facilitators/michaela-winters.jpg',
       slug: 'michaela-winters'
     },
-    'sequoia': {
-      name: 'Sequoia',
+    'sequoia-kidwell': {
+      name: 'Sequoia Kidwell',
       role: 'Shamanic & Bondage Facilitator',
       bio: 'Sequoia facilitates shamanic practices and bondage rituals as containers for healing, self-discovery, and transformational inner inquiry.',
-      photo: '/facilitators/sequoia.jpg',
-      slug: 'sequoia'
+      photo: '/facilitators/sequoia-kidwell.jpeg',
+      slug: 'sequoia-kidwell'
     },
     'tribal-dreamz': {
       name: 'Tribal DreamZ',
@@ -238,6 +238,13 @@ export const facilitatorData = {
       bio: 'Movement by Design offers transformational somatic practices grounded in natural principles, restoring the mechanics of human movement and authentic expression.',
       photo: '/facilitators/movement-by-design.jpg',
       slug: 'movement-by-design'
+    },
+    'mxd': {
+      name: 'MxD',
+      role: 'Movement & Embodiment Facilitator',
+      bio: 'MxD offers a path to self-inquiry rooted in the principles of nature, restoring the mechanics that allow us to exist in a sustainable relationship with ourselves and the world. Through precise application of breath, form, and movement, MxD facilitates authentic expression and embodied presence.',
+      photo: '/facilitators/mxd.jpg',
+      slug: 'mxd'
     },
     'dragon-academy': {
       name: 'Dragon Academy Team',
