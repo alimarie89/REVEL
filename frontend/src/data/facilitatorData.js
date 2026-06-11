@@ -229,7 +229,7 @@ export const facilitatorData = {
       name: 'Anaia',
       role: 'Dance Facilitator',
       bio: 'Anaia co-creates vibey dance experiences that invite full-bodied presence, pleasure, and authentic human expression.',
-      photo: '/facilitators/anaia.jpg',
+      photo: '/facilitators/anaia-sundara.jpg',
       slug: 'anaia'
     },
     'movement-by-design': {
