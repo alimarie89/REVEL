@@ -13,7 +13,7 @@
 }
 
 .schedule-page {
-  background: url('/REVEL%20Backdrop%20Horizontal.jpg') fixed center/cover;
+  background: url('/REVEL%20Backdrop%20Horizontal.jpg') fixed center/cover !important;
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
