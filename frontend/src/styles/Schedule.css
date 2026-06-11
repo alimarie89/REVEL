@@ -703,7 +703,7 @@
   padding: 12px;
   vertical-align: top;
   border-right: 1px solid rgba(201, 168, 117, 0.05);
-  height: 100px;
+  height: 140px;
 }
 
 .glance-event-cell:last-child {
@@ -729,6 +729,17 @@
 .glance-title {
   font-weight: 600;
   margin-bottom: 3px;
+}
+
+.glance-facilitators {
+  font-size: 0.6rem;
+  color: rgba(201, 168, 117, 0.75);
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 2px;
+  line-height: 1.2;
 }
 
 .glance-location {

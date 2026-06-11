@@ -174,14 +174,21 @@ export default function Schedule() {
                 </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Soul Motion</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Soul Motion</div>
+                    <div className="glance-facilitators">Devorah Bry</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Meditation</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Meditation</div>
+                    <div className="glance-facilitators">Maxwell Wilson</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block glance-other">
                     <div className="glance-title">Kundalini Yoga</div>
+                    <div className="glance-facilitators">Signa O. Cheney</div>
                     <div className="glance-location">Lawn by The Threshold</div>
                   </div>
                 </td>
@@ -191,16 +198,28 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">10:00 AM–12:00 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Song Circle</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Song Circle</div>
+                    <div className="glance-facilitators">Lyndsey Scott</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Primal Mischief & Medicine</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Primal Mischief & Medicine</div>
+                    <div className="glance-facilitators">Zahava Griss</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Attachment Alchemy</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Attachment Alchemy</div>
+                    <div className="glance-facilitators">Chloe Good</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Erotic Blueprints</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Erotic Blueprints</div>
+                    <div className="glance-facilitators">Ayce Kyptyn & Ephraim Mallery</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell"></td>
               </tr>
@@ -209,16 +228,28 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">1:30–3:30 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Masculine / Feminine Reconciliation</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Masculine / Feminine Reconciliation</div>
+                    <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Tantric Contact</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Tantric Contact</div>
+                    <div className="glance-facilitators">Atilla Cidam</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Sovereignty & Synergy: The Dance of Desire and Boundaries</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Sovereignty & Synergy: The Dance of Desire and Boundaries</div>
+                    <div className="glance-facilitators">Briana Cribeyer</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">The Future of our Field</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">The Future of our Field</div>
+                    <div className="glance-facilitators">Zahava Griss</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell"></td>
               </tr>
@@ -230,13 +261,22 @@ export default function Schedule() {
                   <div className="glance-event-block">Integration Space</div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Dance of Devotion</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Dance of Devotion</div>
+                    <div className="glance-facilitators">Rachel Rickards & Devorah Bry</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Michaela Winters</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Michaela Winters</div>
+                    <div className="glance-facilitators">Michaela Winters</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Dakina Council</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Dakina Council</div>
+                    <div className="glance-facilitators">Soraya</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell"></td>
               </tr>
@@ -245,10 +285,16 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">7:15–9:15 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Unleash</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Unleash</div>
+                    <div className="glance-facilitators">Yarixa Ferrao</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block">Interplay</div>
+                  <div className="glance-event-block">
+                    <div className="glance-title">Interplay</div>
+                    <div className="glance-facilitators">Peter Benjamin & Violet Starkey</div>
+                  </div>
                 </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
