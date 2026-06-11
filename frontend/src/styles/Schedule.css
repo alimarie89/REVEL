@@ -11,6 +11,7 @@
   --glow-copper: rgba(201, 168, 117, 0.25);
   --glass-bg: rgba(30, 25, 22, 0.35);
   --glass-border: rgba(201, 168, 117, 0.3);
+  --version-force-rebuild: 3;
 }
 
 .schedule-page {
