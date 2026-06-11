@@ -19,15 +19,10 @@
   position: relative;
 }
 
-/* Hero section - cinematic entrance */
+/* Hero section - transparent */
 .schedule-hero {
   position: relative;
-  background-image: 
-    linear-gradient(135deg, transparent 0%, transparent 100%),
-    url('/REVEL%20Backdrop%20Horizontal.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: transparent;
   padding: 140px 40px 100px;
   text-align: center;
   overflow: hidden;
@@ -130,6 +125,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  background: transparent;
 }
 
 .day-section {
