@@ -227,13 +227,14 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 1:30–4:30 PM */}
+              {/* 1:30–3:30 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">1:30–4:30 PM</td>
+                <td className="glance-time-cell">1:30–3:30 PM</td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
                     <div className="glance-title">REPAIR the Divide Ritual</div>
                     <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
+                    <div className="glance-actual-time">1:30–4:30 PM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -244,7 +245,7 @@ export default function Schedule() {
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block">
-                    <div className="glance-title">Sovereignty & Synergy: The Dance of Desire and Boundaries</div>
+                    <div className="glance-title">Desire and Boundaries</div>
                     <div className="glance-facilitators">Briana Cribeyer</div>
                   </div>
                 </td>
@@ -252,26 +253,7 @@ export default function Schedule() {
                   <div className="glance-event-block">
                     <div className="glance-title">The Future of our Field</div>
                     <div className="glance-facilitators">Zahava Griss</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell"></td>
-              </tr>
-
-              {/* 1:30–3:30 PM (DanceEros) */}
-              <tr className="glance-time-row">
-                <td className="glance-time-cell">1:30–3:30 PM</td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block">
-                    <div className="glance-title">DanceEros: DeColonizing Erotic Movement</div>
-                    <div className="glance-facilitators">Victor Warring</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block">
-                    <div className="glance-title">Belly2Belly</div>
-                    <div className="glance-facilitators">Rachel Rickards</div>
+                    <div className="glance-actual-time">1:30–2:45 PM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -322,7 +304,12 @@ export default function Schedule() {
                     <div className="glance-facilitators">Peter Benjamin & Violet Starkey</div>
                   </div>
                 </td>
-                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block">
+                    <div className="glance-title">DanceEros: DeColonizing Erotic Movement</div>
+                    <div className="glance-facilitators">Victor Warring</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
               </tr>
