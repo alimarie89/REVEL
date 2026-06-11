@@ -1072,6 +1072,7 @@
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  padding-right: 160px;
 }
 
 .modal-title {
@@ -1178,22 +1179,29 @@
   text-align: center;
   gap: 14px;
   padding: 20px;
-  background: rgba(201, 168, 117, 0.08);
+  background: transparent;
   border-radius: 6px;
   transition: background 0.2s ease;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: auto;
+  background: none;
+  padding: 0;
 }
 
 .facilitator-modal-card:hover {
-  background: rgba(201, 168, 117, 0.12);
+  background: none;
 }
 
 .modal-fac-image {
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid rgba(201, 168, 117, 0.3);
+  border: 3px solid rgba(201, 168, 117, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .modal-fac-image img {
@@ -1203,7 +1211,7 @@
 }
 
 .modal-fac-info {
-  width: 100%;
+  width: 140px;
   min-width: 0;
   display: flex;
   flex-direction: column;
