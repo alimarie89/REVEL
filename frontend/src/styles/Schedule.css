@@ -846,7 +846,8 @@
     background-image: url('/REVEL%20Backdrop%20Vertical.jpg');
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .swipe-hint {
