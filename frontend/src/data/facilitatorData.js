@@ -250,7 +250,7 @@ export const facilitatorData = {
       name: 'Dragon Academy Team',
       role: 'Facilitators',
       bio: 'Dragon Academy brings expertise in relational field-building, connection practices, and embodied community leadership.',
-      photo: '/facilitators/dragon-academy.jpg',
+      photo: '/facilitators/dragon-academy.png',
       slug: 'dragon-academy'
     },
     'david-block': {
