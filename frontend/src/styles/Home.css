@@ -9,6 +9,35 @@
   --rust: #a85c3f;
 }
 
+/* ========== PAGE NAVIGATION ========== */
+.page-nav {
+  position: relative;
+  z-index: 100;
+  padding: 16px 20px;
+  background: transparent;
+  border-bottom: 1px solid rgba(168, 92, 63, 0.2);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--rust);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--rust);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.nav-link:hover {
+  background: var(--rust);
+  color: var(--cream);
+}
+
 /* ========== HOME CONTAINER ========== */
 .home {
   background: var(--dark);

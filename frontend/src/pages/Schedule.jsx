@@ -155,6 +155,10 @@ export default function Schedule() {
   return (
     <>
       <div className="schedule-page">
+      {/* Navigation Links */}
+      <div className="page-nav">
+        <a href="/" className="nav-link">← Back to Home</a>
+      </div>
       {/* Hero Section */}
       <section className="schedule-hero">
         <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />

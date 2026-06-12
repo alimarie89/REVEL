@@ -438,6 +438,10 @@ function Home() {
 
   return (
     <div className="home">
+      {/* Navigation Links */}
+      <div className="page-nav">
+        <a href="/schedule" className="nav-link">View Schedule →</a>
+      </div>
       {/* Tickets Announcement Banner */}
       {showPromoBanner && (
         <div className={`promo-banner ${isBannerSticky ? 'sticky' : ''}`}>
