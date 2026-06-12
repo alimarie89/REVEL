@@ -4,6 +4,7 @@ export const scheduleData = {
   
   events: [
     // Thursday 7/2
+    { day: 'Thursday 7/2', time: '1:00 - 4:00pm', title: 'Arrival', facilitators: [], space: 'Parking / Camping', description: 'Arrive, park, find your camping area if you are camping, and begin landing into the weekend.', type: 'Logistics' },
     { day: 'Thursday 7/2', time: '4:30 - 5:30pm', title: 'Land Orientation and Logistics', facilitators: [], space: 'The Marquee', description: '', type: 'Orientation' },
     { day: 'Thursday 7/2', time: '7:15 - 8:30pm', title: 'Opening Ceremony', facilitators: [], space: 'The Marquee', description: '(Mandatory)', isMandatory: true, type: 'Ceremony' },
     { day: 'Thursday 7/2', time: '9:00 - 11:15pm', title: 'Opening Dance Journey', facilitators: ['Anaia', 'Spencer Jacobson'], space: 'The Marquee', description: '', type: 'Ritual/Dance' },

@@ -204,6 +204,19 @@ export default function Schedule() {
               </tr>
             </thead>
             <tbody>
+              {/* Logistics Banner - Arrival */}
+              <tr className="logistics-banner-row">
+                <td colSpan="6" className="logistics-banner-cell">
+                  <div className="logistics-banner-content">
+                    <span className="logistics-badge">Logistics</span>
+                    <span className="logistics-title">Arrival</span>
+                    <span className="logistics-divider">•</span>
+                    <span className="logistics-time">1:00 PM–4:00 PM</span>
+                    <span className="logistics-divider">•</span>
+                    <span className="logistics-location">Parking / Camping</span>
+                  </div>
+                </td>
+              </tr>
               {/* 4:30–5:30 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">4:30–5:30 PM</td>

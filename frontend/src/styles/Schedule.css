@@ -818,6 +818,65 @@
   line-height: 1.1;
 }
 
+/* ========== LOGISTICS BANNER ========== */
+.logistics-banner-row {
+  border-bottom: 2px solid rgba(201, 168, 117, 0.4);
+  border-top: 1px solid rgba(201, 168, 117, 0.3);
+  background: linear-gradient(135deg, rgba(201, 168, 117, 0.08) 0%, rgba(212, 165, 116, 0.04) 100%);
+}
+
+.logistics-banner-cell {
+  padding: 18px 16px !important;
+  vertical-align: middle;
+}
+
+.logistics-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logistics-badge {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: rgba(201, 168, 117, 0.9);
+  background: rgba(201, 168, 117, 0.15);
+  padding: 4px 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(201, 168, 117, 0.3);
+  flex-shrink: 0;
+}
+
+.logistics-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f5f1ed;
+  letter-spacing: 0.4px;
+}
+
+.logistics-divider {
+  color: rgba(201, 168, 117, 0.5);
+  font-size: 0.9rem;
+}
+
+.logistics-time {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(201, 168, 117, 0.85);
+  letter-spacing: 0.3px;
+}
+
+.logistics-location {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(201, 168, 117, 0.85);
+  letter-spacing: 0.3px;
+}
+
 /* Saturday At a Glance Grid - Same as Friday */
 .saturday-glance-container {
   padding: 8px 40px;
