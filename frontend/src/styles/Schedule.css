@@ -609,6 +609,7 @@
   margin: 0 auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 .friday-glance-grid {
@@ -757,6 +758,7 @@
   margin: 0 auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 .saturday-glance-grid {
@@ -788,6 +790,106 @@
 }
 
 /* Old grid styles (kept for reference, can remove later) */
+
+/* ========== MOBILE SCROLLING IMPROVEMENTS ========== */
+
+.swipe-hint {
+  display: none;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(201, 168, 117, 0.7);
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
+  animation: fadeInOut 0.5s ease-out;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade gradient on right edge of grid */
+.friday-glance-wrapper::after,
+.saturday-glance-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(26, 22, 20, 0.8) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.friday-glance-wrapper,
+.saturday-glance-wrapper {
+  position: relative;
+}
+
+/* Sticky headers during horizontal scroll */
+.friday-glance-grid thead th,
+.saturday-glance-grid thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Scroll shadow on right edge */
+.friday-glance-wrapper.has-right-scroll::after,
+.saturday-glance-wrapper.has-right-scroll::after {
+  box-shadow: inset -10px 0 15px -8px rgba(201, 168, 117, 0.15);
+}
+
+/* Scroll shadow on left edge */
+.friday-glance-wrapper.has-left-scroll::before,
+.saturday-glance-wrapper.has-left-scroll::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(201, 168, 117, 0.1) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .swipe-hint {
+    display: block;
+  }
+
+  /* Show partial next column on mobile */
+  .friday-glance-wrapper,
+  .saturday-glance-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+
+  .friday-glance-grid,
+  .saturday-glance-grid {
+    width: calc(100% + 60px);
+    scroll-snap-align: start;
+  }
+
+  /* Adjust columns for mobile peek visibility */
+  .glance-space-header,
+  .glance-event-cell {
+    width: 120px;
+    min-width: 120px;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
