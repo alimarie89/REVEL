@@ -842,6 +842,10 @@
 }
 
 @media (max-width: 768px) {
+  .schedule-page {
+    background-attachment: scroll;
+  }
+
   .swipe-hint {
     display: block;
   }
