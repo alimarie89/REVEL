@@ -1072,7 +1072,7 @@
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  padding-right: 160px;
+  padding-right: 180px;
 }
 
 .modal-title {
@@ -1122,7 +1122,7 @@
 
 .modal-description {
   margin-bottom: 24px;
-  padding-right: 160px;
+  padding-right: 180px;
 }
 
 .description-divider {
@@ -1229,19 +1229,23 @@
 }
 
 .modal-fac-role {
-  margin: 0 0 10px 0;
-  font-size: 0.8rem;
-  color: #c9a875;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  font-weight: 500;
+  display: none;
 }
 
 .modal-fac-bio {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(245, 241, 237, 0.75);
+  display: none;
+}
+
+.modal-fac-bio-section {
+  margin: 0 0 16px 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(245, 241, 237, 0.85);
+  padding: 0;
+}
+
+.modal-fac-bio-section:last-child {
+  margin-bottom: 0;
 }
 
 /* Modal scrollbar styling */
