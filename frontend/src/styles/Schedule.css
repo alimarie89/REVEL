@@ -843,7 +843,10 @@
 
 @media (max-width: 768px) {
   .schedule-page {
-    background-attachment: scroll;
+    background-image: url('/REVEL%20Backdrop%20Vertical.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
   }
 
   .swipe-hint {
