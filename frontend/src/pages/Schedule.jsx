@@ -448,8 +448,8 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Connection Temple: Vulnerability as Power')}>
-                    <div className="glance-title">Connection Temple: Vulnerability as Power</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Connection, Decompression, & Integration Temple')}>
+                    <div className="glance-title">Connection, Decompression, & Integration Temple</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
