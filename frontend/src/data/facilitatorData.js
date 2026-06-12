@@ -249,7 +249,7 @@ export const facilitatorData = {
     'dragon-academy': {
       name: 'Dragon Academy Team',
       role: 'Facilitators',
-      bio: 'Dragon Academy brings expertise in relational field-building, connection practices, and embodied community leadership.',
+      bio: 'Most people lose access to themselves when these forces appear. They perform, suppress, control, adapt, withdraw, or act from old conditioning.\n\nThrough experiential training in power dynamics, primal instincts, and relational pressure, Dragon Academy helps people expand their capacity to remain present, connected, and choiceful in the moments that matter most.\n\nWe believe vulnerability is not the opposite of power. Vulnerability is what power looks like when it is integrated. The ability to tell the truth, stay connected, and remain responsive under pressure is one of the highest forms of human development.\n\nOur work is not about becoming someone new. It is about reclaiming the parts of yourself that have been hidden beneath performance, protection, and conditioning, so that you can become the conscious author of your own aliveness and impact.\n\nLink to DA Website: https://www.dragonacademy.love/',
       photo: '/facilitators/dragon-academy.png',
       slug: 'dragon-academy'
     },
