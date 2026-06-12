@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../styles/Home.css'
 import { useHomeContent } from '../hooks/useHomeContent'
+import { facilitatorData } from '../data/facilitatorData'
 
 function Home() {
   const { content } = useHomeContent()
@@ -230,7 +231,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Dancing with Death',
       photo: '/facilitators/atilla-cidam.jpg',
-      bio: 'A ritual-based workshop exploring death as a doorway to deeper aliveness, where you\'ll engage grief, identity, and transformation through embodied practices and connection. Atilla is a co-founder of Dance Meets Tantra and a seasoned facilitator weaving eros, shadow work, and ritual into powerful transformational spaces.'
+      slug: 'atilla-cidam'
     },
     {
       id: 4,
@@ -246,7 +247,7 @@ function Home() {
       role: 'Somatic Coach',
       workshop: 'Attachment Alchemy',
       photo: '/facilitators/chloe-good.jpg',
-      bio: 'A relational body of work where you explore and re-wire your attachment patterns in real time through guided partner exercises, building capacity for connection without losing yourself. Chloe is a somatic coach whose work focuses on embodied healing, emotional processing, and creating safety within the body.'
+      slug: 'chloe-good'
     },
     {
       id: 6,
@@ -254,7 +255,7 @@ function Home() {
       role: 'Somatic Educator',
       workshop: 'DeColonizing Erotic Movement',
       photo: '/facilitators/victor-warring.jpg',
-      bio: 'An embodied movement journey exploring how shame and conditioning live in the body, using dance, touch, and consent-based practices to reclaim pleasure and erotic sovereignty. Victor is a pioneer in somatic sexuality education, integrating decades of work in embodiment, intimacy, and cultural awareness.'
+      slug: 'victor-warring'
     },
     {
       id: 7,
@@ -262,7 +263,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Relational Interplay',
       photo: '/facilitators/peter-benjamin.jpg',
-      bio: 'Peter Benjamin (creator of Relational Interplay) is a seasoned coach, facilitator, and teacher with over a decade of experience leading thousands of workshops and dozens of retreats across 23 countries. He makes communication, connection, and intimacy not just skills—but a living, embodied practice. Blending somatic work, shadow work, and relational dynamics, Peter guides participants through emotional intensity, power, and authentic self-expression with rigor, heart, and play. He trains coaches and community leaders while creating spaces where transformation, deep connection, and joy naturally unfold.'
+      slug: 'peter-benjamin'
     },
     {
       id: 7.5,
@@ -270,7 +271,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Relational Interplay',
       photo: '/facilitators/violet-starkey.jpg',
-      bio: 'Violet Starkey (co-founder of Relational Interplay) is a transformational group facilitator, coach, entrepreneur, artist & community builder devoted to the art of evolutionary relationships. Trained in somatic shadow work, circle work, spiritual psychology, parts work, soul connection, authentic relating, and field facilitation, she guides individuals and couples to unlock and sustain deeper levels of conscious love, wisdom, embodied power, authenticity and intimacy than ever before.'
+      slug: 'violet-starkey'
     },
     {
       id: 8,
@@ -278,7 +279,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Dance of D&S / Primal Play',
       photo: '/facilitators/zahava-griss.jpg',
-      bio: 'A playful, edgy exploration of power, instinct, and connection through movement, kink-informed dynamics, and relational exercises. Z is the founder of Embody More Love and has been guiding dance rituals for over two decades that blend intimacy, shadow, and liberation.'
+      slug: 'zahava-griss'
     },
     {
       id: 9,
@@ -286,7 +287,7 @@ function Home() {
       role: 'Relationship Coach',
       workshop: 'The Art of REPAIR / Reconciliation Between Men & Women',
       photo: '/facilitators/hazel-grace-yates.jpg',
-      bio: 'A skill-based workshop teaching how to navigate conflict, repair rupture, and restore connection using clear, embodied communication tools. Hazel-Grace is a relationship coach and creator of The Art of REPAIR, with over 15 years of experience in relational healing work.'
+      slug: 'dr-hazel-grace-yates'
     },
     {
       id: 10,
@@ -294,7 +295,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Erotic Blueprints: Rewiring Your Relationship to Life',
       photo: '/facilitators/ayce-kyptyn.jpg',
-      bio: 'Discover a map of five distinct erotic types—Energetic, Sensual, Sexual, Kinky, and Shapeshifter—each describing a unique language of turn-on, desire, and embodied pleasure. Knowing your Blueprint reveals not just what lights you up, but how you\'re wired for connection and aliveness. Ayce Kyptyn is a transmasc spiritual outlaw known for igniting sacred fire and dismantling the installed systems that sabotage the fullness of ourselves. Ephraim Mallery is an evolutionary trickster, playfully guiding you into the surprise of literally, deeply Making Love with Your Life.'
+      slug: 'ayce-kyptyn'
     },
     {
       id: 11,
@@ -302,7 +303,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Erotic Blueprints: Rewiring Your Relationship to Life',
       photo: '/facilitators/ephraim-mallery.jpg',
-      bio: 'Discover a map of five distinct erotic types—Energetic, Sensual, Sexual, Kinky, and Shapeshifter—each describing a unique language of turn-on, desire, and embodied pleasure. Knowing your Blueprint reveals not just what lights you up, but how you\'re wired for connection and aliveness. Ayce Kyptyn is a transmasc spiritual outlaw known for igniting sacred fire and dismantling the installed systems that sabotage the fullness of ourselves. Ephraim Mallery is an evolutionary trickster, playfully guiding you into the surprise of literally, deeply Making Love with Your Life.'
+      slug: 'ephraim-mallery'
     },
     {
       id: 12,
@@ -326,7 +327,7 @@ function Home() {
       role: 'Facilitator',
       workshop: 'Coming soon',
       photo: '/facilitators/rachel-rickards.png',
-      bio: 'Coming soon.'
+      slug: 'rachel-rickards'
     },
     {
       id: 15,
@@ -632,7 +633,7 @@ function Home() {
               <div 
                 key={facilitator.id}
                 className="facilitator-card"
-                onClick={() => setSelectedFacilitator(facilitator)}
+                onClick={() => setSelectedTeamMember(facilitator.name)}
                 style={{ cursor: 'pointer' }}
               >
                 <img src={facilitator.photo} alt={facilitator.name} />
@@ -870,18 +871,37 @@ function Home() {
             >
               ✕
             </button>
-            {selectedTeamMember === 'ali' && (
-              <>
-                <img src="/team/alison-williams.jpg" alt="Ali Williams" className="modal-photo" />
-                <div className="modal-text">
-                  <h2>Ali Williams</h2>
-                  <p className="modal-role">Co-Producer & Operational Lead</p>
-                  <p className="modal-bio">Ali Williams is the co-producer and operational lead of REVEL, helping shape the relational culture, emotional tone, and lived experience of the convergence through both embodied leadership and meticulous attention to systems, structure, and detail.</p>
-                  <p className="modal-bio">Through Dragon Academy, Hawaii Tantra Festival, and years of immersive community leadership, her work explores what becomes possible when human charge is met with presence, attunement, and responsibility rather than suppression, performance, or discharge. She has guided many through transformational group experiences that deepen connection, embodiment, intimacy, and collective coherence.</p>
-                  <p className="modal-bio">Originally trained as an Olympic synchronized swimmer, Ali learned early how power is shaped through discipline, precision, and pressure. Her work now focuses on creating spaces where intensity becomes a pathway to aliveness, truth, creativity, and real human connection.</p>
-                </div>
-              </>
-            )}
+            {(() => {
+              // Get facilitator data from showcaseFacilitators
+              let facilitatorInfo = null
+              if (selectedTeamMember === 'ali') {
+                facilitatorInfo = facilitatorData.facilitators['ali-williams']
+              } else if (selectedTeamMember === 'spencer') {
+                facilitatorInfo = facilitatorData.facilitators['spencer-jacobson']
+              } else {
+                // Find in showcaseFacilitators
+                const facilitator = showcaseFacilitators.find(f => f.name === selectedTeamMember)
+                if (facilitator && facilitator.slug) {
+                  facilitatorInfo = facilitatorData.facilitators[facilitator.slug]
+                }
+              }
+              
+              if (facilitatorInfo) {
+                return (
+                  <>
+                    <img src={facilitatorInfo.photo} alt={facilitatorInfo.name} className="modal-photo" />
+                    <div className="modal-text">
+                      <h2>{facilitatorInfo.name}</h2>
+                      <p className="modal-role">{facilitatorInfo.role}</p>
+                      {facilitatorInfo.bio.split('\n').map((paragraph, i) => (
+                        <p key={i} className="modal-bio">{paragraph}</p>
+                      ))}
+                    </div>
+                  </>
+                )
+              }
+              return null
+            })()}
           </div>
         </div>
       )}
