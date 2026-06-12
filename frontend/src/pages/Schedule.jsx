@@ -162,6 +162,9 @@ export default function Schedule() {
       {/* Hero Section */}
       <section className="schedule-hero">
         <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />
+        <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="buy-tickets-btn">
+          Buy Tickets
+        </a>
       </section>
 
       {/* Day Navigation Tabs */}
@@ -845,6 +848,16 @@ export default function Schedule() {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* CTA Section */}
+      <section className="schedule-cta">
+        <div className="cta-container">
+          <h3 className="cta-heading">Ready to experience REVEL?</h3>
+          <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="buy-tickets-btn buy-tickets-btn-large">
+            Get Your Tickets Now
+          </a>
+        </div>
       </section>
 
       {/* Legend / Info */}

@@ -98,6 +98,61 @@
   display: none;
 }
 
+/* ========== BUY TICKETS BUTTONS ========== */
+.buy-tickets-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: var(--copper);
+  color: var(--dark-wine);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  border-radius: 3px;
+  border: 2px solid var(--copper);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buy-tickets-btn:hover {
+  background: transparent;
+  color: var(--copper);
+  box-shadow: 0 0 20px rgba(201, 168, 117, 0.5);
+}
+
+.buy-tickets-btn-large {
+  padding: 16px 48px;
+  font-size: 1.1rem;
+}
+
+/* CTA Section */
+.schedule-cta {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px;
+  background: rgba(30, 25, 22, 0.3);
+  border-top: 1px solid rgba(201, 168, 117, 0.15);
+  border-bottom: 1px solid rgba(201, 168, 117, 0.15);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2rem;
+  color: var(--cream);
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 
 /* ========== DAY NAVIGATION TABS ========== */
 .day-tabs {
@@ -880,6 +935,27 @@
 
   .swipe-hint {
     display: block;
+  }
+
+  .buy-tickets-btn {
+    margin-top: 16px;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+  }
+
+  .buy-tickets-btn-large {
+    padding: 12px 32px;
+    font-size: 0.95rem;
+  }
+
+  .schedule-cta {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+
+  .cta-heading {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
 
   /* Show partial next column on mobile */
