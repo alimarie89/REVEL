@@ -187,6 +187,7 @@ export default function Schedule() {
       </div>
 
       {/* Thursday At a Glance Grid */}
+      {(selectedDay === null || selectedDay === 'Thursday 7/2') && (
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Thursday At a Glance</h2>
         {showSwipeHint && <div className="swipe-hint">← Swipe to see all venues →</div>}
@@ -256,8 +257,10 @@ export default function Schedule() {
           </table>
         </div>
       </div>
+      )}
 
       {/* Friday At a Glance Grid */}
+      {(selectedDay === null || selectedDay === 'Friday 7/3') && (
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Friday At a Glance</h2>
         {showSwipeHint && <div className="swipe-hint">← Swipe to see all venues →</div>}
@@ -466,8 +469,10 @@ export default function Schedule() {
           </table>
         </div>
       </div>
+      )}
 
       {/* Saturday At a Glance Grid */}
+      {(selectedDay === null || selectedDay === 'Saturday 7/4') && (
       <div className="saturday-glance-container">
         <h2 className="saturday-glance-title">Saturday At a Glance</h2>
         {showSwipeHint && <div className="swipe-hint">← Swipe to see all venues →</div>}
@@ -628,8 +633,10 @@ export default function Schedule() {
           </table>
         </div>
       </div>
+      )}
 
       {/* Sunday At a Glance Grid */}
+      {(selectedDay === null || selectedDay === 'Sunday 7/5') && (
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Sunday At a Glance</h2>
         {showSwipeHint && <div className="swipe-hint">← Swipe to see all venues →</div>}
@@ -717,6 +724,8 @@ export default function Schedule() {
           </table>
         </div>
       </div>
+
+      )}
 
       {/* Schedule Grid */}
       <section className="schedule-content">
