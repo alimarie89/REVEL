@@ -794,7 +794,6 @@
 /* ========== MOBILE SCROLLING IMPROVEMENTS ========== */
 
 .swipe-hint {
-  display: none;
   text-align: center;
   font-size: 0.85rem;
   color: rgba(201, 168, 117, 0.7);
@@ -802,6 +801,7 @@
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
   animation: fadeInOut 0.5s ease-out;
+  display: none;
 }
 
 @keyframes fadeInOut {
