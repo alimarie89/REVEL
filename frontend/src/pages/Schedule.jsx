@@ -673,7 +673,7 @@ export default function Schedule() {
                   <div className="glance-event-block" onClick={() => openEventModal('Shamanic Bondage')}>
                     <div className="glance-title">Shamanic Bondage</div>
                     <div className="glance-facilitators">Sequoia & Signa</div>
-                    <div className="glance-actual-time">9:00–10:00 AM</div>
+                    <div className="glance-actual-time">8:30–9:45 AM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
