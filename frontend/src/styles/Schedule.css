@@ -633,7 +633,6 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  border-right: 1px solid rgba(201, 168, 117, 0.1);
 }
 
 .friday-glance-grid th:last-child {
@@ -668,7 +667,6 @@
   letter-spacing: 0.3px;
   vertical-align: top;
   padding: 16px 12px;
-  border-right: 1px solid rgba(201, 168, 117, 0.05);
 }
 
 .glance-event-cell {
@@ -676,7 +674,6 @@
   min-width: 140px;
   padding: 12px;
   vertical-align: top;
-  border-right: 1px solid rgba(201, 168, 117, 0.05);
   height: 140px;
 }
 
