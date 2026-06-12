@@ -849,6 +849,30 @@ export default function Schedule() {
           <button className="modal-close-btn" onClick={closeModal}>&times;</button>
           
           <div className="modal-content">
+            {/* Facilitator Photo and Name - Full Width at Top */}
+            {modalEvent.facilitators && modalEvent.facilitators.length > 0 && (
+              <>
+                <div className="facilitator-modal-card-header">
+                  {modalEvent.facilitators.map((facName, idx) => {
+                    const fac = facilitatorData.getFacilitators([facName])?.[0];
+                    if (!fac) return null;
+                    
+                    return (
+                      <div key={idx} className="facilitator-top-section">
+                        {fac.photo && (
+                          <div className="modal-fac-image">
+                            <img src={fac.photo} alt={fac.name} />
+                          </div>
+                        )}
+                        <h4 className="modal-fac-name">{fac.name}</h4>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="facilitator-top-divider"></div>
+              </>
+            )}
+
             <div className="modal-header">
               <h2 className="modal-title">{modalEvent.title}</h2>
               {modalEvent.isMandatory && <span className="modal-tag">Mandatory</span>}
@@ -869,44 +893,22 @@ export default function Schedule() {
             )}
 
             {modalEvent.facilitators && modalEvent.facilitators.length > 0 && (
-              <>
-                {/* Facilitator Photo and Name on Right Side */}
-                {modalEvent.facilitators.map((facName, idx) => {
-                  const fac = facilitatorData.getFacilitators([facName])?.[0];
-                  if (!fac) return null;
-                  
-                  return (
-                    <div key={idx} className="facilitator-modal-card">
-                      {fac.photo && (
-                        <div className="modal-fac-image">
-                          <img src={fac.photo} alt={fac.name} />
-                        </div>
-                      )}
-                      <div className="modal-fac-info">
-                        <h4 className="modal-fac-name">{fac.name}</h4>
-                      </div>
-                    </div>
-                  );
-                })}
-
-                {/* Facilitator Bio Below Description */}
-                <div className="modal-facilitators">
-                  <div className="facilitators-divider"></div>
-                  <h3 className="facilitators-heading">
-                    Facilitator{modalEvent.facilitators.length > 1 ? 's' : ''}
-                  </h3>
-                  <div className="facilitators-list">
-                    {modalEvent.facilitators.map((facName, idx) => {
-                      const fac = facilitatorData.getFacilitators([facName])?.[0];
-                      if (!fac || !fac.bio) return null;
-                      
-                      return (
-                        <p key={idx} className="modal-fac-bio-section">{fac.bio}</p>
-                      );
-                    })}
-                  </div>
+              <div className="modal-facilitators">
+                <div className="facilitators-divider"></div>
+                <h3 className="facilitators-heading">
+                  Facilitator{modalEvent.facilitators.length > 1 ? 's' : ''}
+                </h3>
+                <div className="facilitators-list">
+                  {modalEvent.facilitators.map((facName, idx) => {
+                    const fac = facilitatorData.getFacilitators([facName])?.[0];
+                    if (!fac || !fac.bio) return null;
+                    
+                    return (
+                      <p key={idx} className="modal-fac-bio-section">{fac.bio}</p>
+                    );
+                  })}
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>
