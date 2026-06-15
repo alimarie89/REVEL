@@ -259,7 +259,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Building the Relational Field')}>
                     <div className="glance-title">Building the Relational Field</div>
-                    <div className="glance-facilitators">Ali Williams & Dragon Academy Team</div>
+                    <div className="glance-facilitators">Ali & Courtney & Dragon Academy Team</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>

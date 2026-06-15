@@ -273,6 +273,13 @@ export const facilitatorData = {
       bio: 'David\'s visionary music has been a soundtrack for transformation over the last decade+, reaching millions globally. A collaborative genius behind projects like Gone Gone Beyond.',
       photo: '/facilitators/david-human-experience.jpg',
       slug: 'david-human-experience'
+    },
+    'courtney-babbidge': {
+      name: 'Courtney Babbidge',
+      role: 'Relational Forge Facilitator',
+      bio: 'Courtney builds spaces where the masks come off—not gently asked, but invited to fall. Through Gambo Dojo\'s belt-progression framework, forged alongside Dragon Academy, she doesn\'t guide from a pedestal; she\'s in the unfolding with you, two decades of retreat and ministry work behind every move. This isn\'t a workshop. It\'s a forge. Gambo Dojo\'s online dojo meets monthly for facilitators, artists, and collaborators hungry to be changed by what they build together. If that\'s you—come find out.',
+      photo: '/facilitators/courtney-babbidge.jpg',
+      slug: 'courtney-babbidge'
     }
   },
 

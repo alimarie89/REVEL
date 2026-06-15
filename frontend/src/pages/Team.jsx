@@ -47,6 +47,7 @@ function Team() {
     { id: 109, name: 'Ethan Henson', role: 'Tantric Alchemist', bio: 'Ethan teaches tantric practices for transmuting emotional energy into bliss, connection, and profound union with the Soul.', photo: '/facilitators/ethan-henson.jpg' },
     { id: 110, name: 'Tribal DreamZ', role: 'DJ & Dance Facilitator', bio: 'Tribal DreamZ creates ecstatic dance church experiences through music, rhythm, and embodied community celebration.', photo: '/facilitators/tribal-dreamz.png' },
     { id: 111, name: 'Maxwell Wilson', role: 'Meditation Guide', bio: 'Maxwell facilitates meditation practices designed to cultivate inner peace, clarity, and connection. His teaching style is gentle, accessible, and deeply rooted in contemplative traditions.', photo: '/facilitators/maxwell-wilson.jpeg' },
+    { id: 112, name: 'Courtney Babbidge', role: 'Relational Forge Facilitator', bio: 'Courtney builds spaces where the masks come off—not gently asked, but invited to fall. Through Gambo Dojo\'s belt-progression framework, forged alongside Dragon Academy, she doesn\'t guide from a pedestal; she\'s in the unfolding with you, two decades of retreat and ministry work behind every move. This isn\'t a workshop. It\'s a forge. Gambo Dojo\'s online dojo meets monthly for facilitators, artists, and collaborators hungry to be changed by what they build together. If that\'s you—come find out.', photo: '/facilitators/courtney-babbidge.jpg' },
     // Add more as needed - up to ~20
   ]
 
