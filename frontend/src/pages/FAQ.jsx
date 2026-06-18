@@ -255,19 +255,12 @@ function FAQ() {
 
   return (
     <div className="faq-page">
-      {/* HERO SECTION */}
-      <section className="faq-hero">
-        <div className="hero-content">
-          <p>Everything you need to know before arriving at REVEL.</p>
-        </div>
-      </section>
-
       {/* ORBITAL NAVIGATION */}
       <section className="orbital-nav-section">
         <div className="orbital-container">
           <div className="center-circle">
             <div className="center-content">
-              <p>Everything you need to know before arriving.</p>
+              <h2>REVEL FAQ</h2>
             </div>
           </div>
 
