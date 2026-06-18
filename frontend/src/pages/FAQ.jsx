@@ -259,9 +259,7 @@ function FAQ() {
       <section className="orbital-nav-section">
         <div className="orbital-container">
           <div className="center-circle">
-            <div className="center-content">
-              <h2>REVEL FAQ</h2>
-            </div>
+            <img src="/REVEL FAQ.png" alt="REVEL FAQ" className="center-image" />
           </div>
 
           <div className="orbital-ring">
