@@ -408,7 +408,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Dakini Council')}>
                     <div className="glance-title">Dakini Council</div>
-                    <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana</div>
+                    <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana, Hannah Heart</div>
                     <div className="glance-actual-time">4–5:30 PM</div>
                   </div>
                 </td>
@@ -464,13 +464,7 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block glance-other" onClick={() => openEventModal('Tea Lounge')}>
-                    <div className="glance-title">Tea Lounge</div>
-                    <div className="glance-facilitators">Elowan</div>
-                    <div className="glance-location">The Living Room</div>
-                  </div>
-                </td>
+                <td className="glance-event-cell"></td>
               </tr>
 
               {/* 11:00 PM–1:00 AM */}
