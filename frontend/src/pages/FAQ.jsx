@@ -258,7 +258,6 @@ function FAQ() {
       {/* HERO SECTION */}
       <section className="faq-hero">
         <div className="hero-content">
-          <h1>FAQ</h1>
           <p>Everything you need to know before arriving at REVEL.</p>
         </div>
       </section>
@@ -268,7 +267,6 @@ function FAQ() {
         <div className="orbital-container">
           <div className="center-circle">
             <div className="center-content">
-              <h2>FAQ</h2>
               <p>Everything you need to know before arriving.</p>
             </div>
           </div>
