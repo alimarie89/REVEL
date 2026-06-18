@@ -255,34 +255,31 @@ function FAQ() {
 
   return (
     <div className="faq-page">
-      {/* ORBITAL NAVIGATION */}
-      <section className="orbital-nav-section">
-        <div className="orbital-container">
-          <div className="center-circle">
-            <img src="/REVEL FAQ.png" alt="REVEL FAQ" className="center-image" />
-          </div>
+      {/* HERO SECTION */}
+      <section className="faq-hero">
+        <div className="hero-image-wrapper">
+          <img src="/REVEL FAQ.png" alt="REVEL FAQ" className="hero-image" />
+        </div>
+      </section>
 
-          <div className="orbital-ring">
-            {categories.map((cat, index) => (
-              <motion.div
-                key={cat.id}
-                className={`orbit-item orbit-item-${index}`}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.08 }}
-              >
-                <motion.button
-                  className={`orbit-circle ${activeCategory === cat.id ? 'active' : ''}`}
-                  onClick={() => scrollToCategory(cat.id)}
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <div className="orbit-icon">{cat.icon}</div>
-                  <div className="orbit-label">{cat.name}</div>
-                </motion.button>
-              </motion.div>
-            ))}
-          </div>
+      {/* NAVIGATION CARDS */}
+      <section className="faq-nav-cards">
+        <div className="nav-grid">
+          {categories.map((cat, index) => (
+            <motion.button
+              key={cat.id}
+              className={`nav-card ${activeCategory === cat.id ? 'active' : ''}`}
+              onClick={() => scrollToCategory(cat.id)}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+              whileHover={{ y: -8 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="nav-card-icon">{cat.icon}</div>
+              <div className="nav-card-label">{cat.name}</div>
+            </motion.button>
+          ))}
         </div>
       </section>
 
