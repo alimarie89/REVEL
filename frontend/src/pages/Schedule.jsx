@@ -127,12 +127,16 @@ export default function Schedule() {
   };
 
   // Find event data by title to open in modal
-  const findEventByTitle = (title) => {
+  const findEventByTitle = (title, day) => {
+    if (day) {
+      // If day is provided, filter by day first, then find by title
+      return scheduleData.events.find(event => event.day === day && event.title === title);
+    }
     return scheduleData.events.find(event => event.title === title);
   };
 
-  const openEventModal = (title) => {
-    const event = findEventByTitle(title);
+  const openEventModal = (title, day) => {
+    const event = findEventByTitle(title, day);
     if (event) {
       setModalEvent(event);
     }
@@ -294,7 +298,7 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">8:15–9:30 AM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Initiation')}>
+                  <div className="glance-event-block" onClick={() => openEventModal('Initiation', 'Friday 7/3')}>
                     <div className="glance-title">Initiation</div>
                     <div className="glance-facilitators">Movement by Design</div>
                   </div>
@@ -325,7 +329,7 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">10:00 AM–12:00 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle')}>
+                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle', 'Friday 7/3')}>
                     <div className="glance-title">Song Circle</div>
                     <div className="glance-facilitators">Lyndsey Scott</div>
                   </div>
@@ -680,22 +684,17 @@ export default function Schedule() {
               </tr>
             </thead>
             <tbody>
-              {/* 8:30–9:45 AM */}
+              {/* 8:15–9:45 AM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">8:30–9:45 AM</td>
+                <td className="glance-time-cell">8:15–9:45 AM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Initiation')}>
-                    <div className="glance-title">Initiation</div>
-                    <div className="glance-facilitators">Movement by Design</div>
-                    <div className="glance-actual-time">8:15–9:30 AM</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle', 'Sunday 7/5')}>
+                    <div className="glance-title">Song Circle</div>
+                    <div className="glance-facilitators">Lyndsey Scott</div>
+                    <div className="glance-actual-time">8:30–9:45 AM</div>
                   </div>
                 </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Tea & Coffee Vibes')}>
-                    <div className="glance-title">Tea & Coffee Vibes</div>
-                    <div className="glance-actual-time">9:00–10:00 AM</div>
-                  </div>
-                </td>
+                <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Shamanic Bondage')}>
                     <div className="glance-title">Shamanic Bondage</div>
@@ -703,6 +702,28 @@ export default function Schedule() {
                     <div className="glance-actual-time">8:30–9:45 AM</div>
                   </div>
                 </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block glance-other" onClick={() => openEventModal('Initiation', 'Sunday 7/5')}>
+                    <div className="glance-title">Initiation</div>
+                    <div className="glance-facilitators">Movement by Design</div>
+                    <div className="glance-actual-time">8:15–9:30 AM</div>
+                    <div className="glance-location">Lawn by The Threshold</div>
+                  </div>
+                </td>
+              </tr>
+
+              {/* 9:00–10:00 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:00–10:00 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Tea & Coffee Vibes')}>
+                    <div className="glance-title">Tea & Coffee Vibes</div>
+                    <div className="glance-actual-time">9:00–10:00 AM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
               </tr>
