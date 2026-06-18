@@ -277,7 +277,7 @@ export const facilitatorData = {
     'courtney-babbidge': {
       name: 'Courtney Babbidge',
       role: 'Relational Forge Facilitator',
-      bio: 'Courtney builds spaces where the masks come off—not gently asked, but invited to fall. Through Gambo Dojo\'s belt-progression framework, forged alongside Dragon Academy, she doesn\'t guide from a pedestal; she\'s in the unfolding with you, two decades of retreat and ministry work behind every move. This isn\'t a workshop. It\'s a forge. Gambo Dojo\'s online dojo meets monthly for facilitators, artists, and collaborators hungry to be changed by what they build together. If that\'s you—come find out.',
+      bio: 'Courtney is a facilitator who holds a provocative pole in relational edgework.\n\nShe guides people into the body\'s unspoken truths, helping them dismantle social masks and encounter the deeper forces shaping their relationships, choices, and sense of self.\n\nHer work opens doorways into the underworld of instinct, desire, fear, grief, and power, creating opportunities for profound honesty and transformation.\n\nNearly two decades of ministry, leadership, and retreat facilitation have shaped her capacity to sit with intensity without flinching and meet whatever rises with grounded presence and unwavering attention.',
       photo: '/facilitators/courtney-babbidge.jpg',
       slug: 'courtney-babbidge'
     }
