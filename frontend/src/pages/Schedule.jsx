@@ -159,16 +159,22 @@ export default function Schedule() {
   return (
     <>
       <div className="schedule-page">
-      {/* Navigation Links */}
-      <div className="page-nav">
-        <a href="/" className="nav-link">← Back to Home</a>
-      </div>
-      {/* Hero Section */}
+      {/* Hero Section with Navigation */}
       <section className="schedule-hero">
-        <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />
-        <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="buy-tickets-btn">
-          Buy Tickets
-        </a>
+        <div className="hero-content">
+          <img src="/schedule-hero.png" alt="REVEL Schedule" className="schedule-hero-image" />
+          <div className="hero-button-group">
+            <a href="/" className="hero-nav-btn home-btn">
+              Home Page
+            </a>
+            <a href="https://events.humanitix.com/revel2026" target="_blank" rel="noopener noreferrer" className="buy-tickets-btn">
+              Buy Tickets
+            </a>
+            <a href="/faq" className="hero-nav-btn faq-btn">
+              FAQ
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Day Navigation Tabs */}
