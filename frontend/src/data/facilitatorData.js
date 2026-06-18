@@ -184,10 +184,10 @@ export const facilitatorData = {
       slug: 'ali-katz'
     },
     'soraya': {
-      name: 'Soraya',
+      name: 'Soraya Masi',
       role: 'Dakini Council Facilitator',
-      bio: 'Soraya facilitates honest, enlivening conversations about sexuality, pleasure, and the lived experience of sex workers and intimate professionals.',
-      photo: '/facilitators/soraya.jpg',
+      bio: 'Soraya is a somatic & erotic intimacy guide, writer, & teacher supporting individuals & couples in soul initiation and connection with themselves, others, & life.',
+      photo: '/facilitators/soraya-masi.jpg',
       slug: 'soraya'
     },
     'yarixa-ferrao': {
