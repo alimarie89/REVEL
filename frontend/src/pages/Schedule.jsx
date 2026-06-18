@@ -765,26 +765,6 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 12:00 AM–1:00 AM */}
-              <tr className="glance-time-row">
-                <td className="glance-time-cell">12:00–1:00 AM</td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Live set by Will Sage')}>
-                    <div className="glance-title">Live set by Will Sage</div>
-                    <div className="glance-facilitators">Will Sage</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Downtempo Cuddle, Improvisational Music, Tea Lounge')}>
-                    <div className="glance-title">Downtempo Cuddle</div>
-                    <div className="glance-facilitators">Erica Shapiro & Elowan</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-              </tr>
-
               {/* 2:00–3:00 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">2:00–3:00 PM</td>
