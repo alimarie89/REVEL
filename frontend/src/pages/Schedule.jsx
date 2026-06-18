@@ -694,7 +694,12 @@ export default function Schedule() {
                     <div className="glance-actual-time">8:30–9:45 AM</div>
                   </div>
                 </td>
-                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Tea & Coffee Vibes')}>
+                    <div className="glance-title">Tea & Coffee Vibes</div>
+                    <div className="glance-actual-time">9:00–10:00 AM</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Shamanic Bondage')}>
                     <div className="glance-title">Shamanic Bondage</div>
@@ -711,21 +716,6 @@ export default function Schedule() {
                     <div className="glance-location">Lawn by The Threshold</div>
                   </div>
                 </td>
-              </tr>
-
-              {/* 9:00–10:00 AM */}
-              <tr className="glance-time-row">
-                <td className="glance-time-cell">9:00–10:00 AM</td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Tea & Coffee Vibes')}>
-                    <div className="glance-title">Tea & Coffee Vibes</div>
-                    <div className="glance-actual-time">9:00–10:00 AM</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
               </tr>
 
               {/* 10:00–11:45 AM */}
