@@ -548,9 +548,9 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Embodying Authenticity & Integrity')}>
-                    <div className="glance-title">Embodying Authenticity & Integrity</div>
-                    <div className="glance-facilitators">Movement by Design</div>
+                  <div className="glance-event-block" onClick={() => openEventModal("Men's Support Circle")}>
+                    <div className="glance-title">Men's Support Circle</div>
+                    <div className="glance-facilitators">Ben Raya</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -566,9 +566,9 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">1:30–3:30 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle')}>
-                    <div className="glance-title">Song Circle</div>
-                    <div className="glance-facilitators">Lyndsey Scott</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Embodying Authenticity & Integrity')}>
+                    <div className="glance-title">Embodying Authenticity & Integrity</div>
+                    <div className="glance-facilitators">Movement by Design</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
