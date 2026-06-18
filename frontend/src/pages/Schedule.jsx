@@ -975,6 +975,12 @@ export default function Schedule() {
               {modalEvent.isMandatory && <span className="modal-tag">Mandatory</span>}
             </div>
 
+            {(modalEvent.title.includes('Temple') && (modalEvent.title.includes('Intimacy') || modalEvent.title.includes('Desire'))) && (
+              <div className="modal-door-policy">
+                ⏰ DOORS OPEN 9:30 PM | DOORS CLOSE 9:55 PM | No exceptions
+              </div>
+            )}
+
             <div className="modal-meta">
               <p className="modal-time">{modalEvent.time}</p>
               <p className="modal-space">{modalEvent.space}</p>

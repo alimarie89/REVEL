@@ -1349,6 +1349,20 @@
   font-weight: 500;
 }
 
+.modal-door-policy {
+  background: rgba(201, 168, 117, 0.15);
+  border: 2px solid #c9a875;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #c9a875;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 1.5;
+}
+
 .modal-meta {
   background: rgba(201, 168, 117, 0.1);
   padding: 16px;
