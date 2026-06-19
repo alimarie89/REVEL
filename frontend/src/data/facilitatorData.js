@@ -85,6 +85,13 @@ export const facilitatorData = {
       photo: '/facilitators/atilla-cidam.jpg',
       slug: 'atilla-cidam'
     },
+    'ben-raya': {
+      name: 'Ben Raya',
+      role: 'Men\'s Work & Sacred Masculine Facilitator',
+      bio: 'Ben Raya has spent 15 years living at the intersection of men\'s work, tantric practice, somatic healing, and sacred masculine embodiment.\n\nHis path didn\'t begin in a training room. It began in the fire of real life — raising two daughters who refused to let him hide from his shadows, three years working as a lumberjack in the mountains where the land and the labor stripped him down to something essential, meeting ego death at the base camp of Everest, and rebuilding himself after a debilitating back injury stripped away everything he\'d been using to define himself. Each descent became a doorway. Each loss became a teaching.\n\nWhat emerged from those initiations is a practice that refuses to choose between devotion and fierceness, between depth and accountability. Ben carries both — because he\'s had to live both.\n\nHe has guided men through breathwork journeys, relationship crises, grief, rage, and purpose reckonings. He knows the particular loneliness of the capable man who has built everything and still senses something essential is missing — because he has been that man.\n\nBen does not lead from a stage. He leads from inside the circle.',
+      photo: '/facilitators/ben-raya.jpg',
+      slug: 'ben-raya'
+    },
     'briana-cribeyer': {
       name: 'Briana Cribeyer',
       role: 'Relational & Embodiment Coach',
