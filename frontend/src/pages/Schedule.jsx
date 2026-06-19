@@ -341,8 +341,8 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">10:00 AM–12:00 PM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle', 'Friday 7/3')}>
-                    <div className="glance-title">Song Circle</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Bandwidth, Baby! A song circle to expand your heartspace', 'Friday 7/3')}>
+                    <div className="glance-title">Bandwidth, Baby! A song circle to expand your heartspace</div>
                     <div className="glance-facilitators">Lyndsey Scott</div>
                   </div>
                 </td>
@@ -798,8 +798,8 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">8:15–9:45 AM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Song Circle', 'Sunday 7/5')}>
-                    <div className="glance-title">Song Circle</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Sounds like…mmmmmammals! :: singing for pleasure, resource, and co-regulation - Lyndsey Scott', 'Sunday 7/5')}>
+                    <div className="glance-title">Sounds like…mmmmmammals! :: singing for pleasure, resource, and co-regulation - Lyndsey Scott</div>
                     <div className="glance-facilitators">Lyndsey Scott</div>
                     <div className="glance-actual-time">8:30–9:45 AM</div>
                   </div>
