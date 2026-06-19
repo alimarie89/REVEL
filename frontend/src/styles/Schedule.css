@@ -74,8 +74,11 @@
 }
 
 .hero-nav-btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 28px;
+  height: 48px;
   background: transparent;
   color: var(--copper);
   text-decoration: none;
@@ -88,6 +91,7 @@
   transition: all 0.3s ease;
   cursor: pointer;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .hero-nav-btn:hover {
@@ -98,11 +102,14 @@
 
 /* ========== BUY TICKETS BUTTONS ========== */
 .buy-tickets-btn {
-  display: inline-block;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 32px;
+  height: 48px;
   background: var(--copper);
   color: var(--dark-wine);
+  line-height: 1;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
