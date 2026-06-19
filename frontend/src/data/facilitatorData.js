@@ -18,7 +18,7 @@ export const facilitatorData = {
     'devorah-bry': {
       name: 'Devorah Bry',
       role: 'Movement Facilitator',
-      bio: 'Devorah is a movement artist and facilitator specializing in soul motion and embodied presence. Her work invites participants into authentic movement and somatic awareness.',
+      bio: 'dev has been working therapeutically and facilitating groups and rites of passages for 20+ years. she received an ordination from the IM School of Healing Arts in 2004 and a masters degree in Somatic Psychology in 2007. she is a Certified Hakomi Therapist and has years of study and practice in a variety of body-oriented healing modalities, including Somatic Experiencing and Biodynamic Cranio-Sacral Therapy.\n\ndev enjoys the potency that lives in the center and the views that can be accessed at the edges.\n\na mama, a death doula, a sex therapist, a forever student…\n\nassisting couples+ in the dance of relationship is one of dev\'s true gifts and deepest passions.\n\ndev is the founder and director of HoneyRoot.org -- a somatic education organization in service of inclusive embodiment, relational attunement, body wisdom, social justice and intergenerational ways of being.\n\nat essence, dev is a dancer, a bridger, a ceremonialist. she is a certified Soul Motion™️ teacher and offers movement ministry (at times, with her kiddo) wherever she goes.',
       photo: '/facilitators/devorah-bry.jpeg',
       slug: 'devorah-bry'
     },
