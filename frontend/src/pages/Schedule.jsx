@@ -681,7 +681,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Feel Your Gravity (Women Only)')}>
                     <div className="glance-title">Feel Your Gravity</div>
-                    <div className="glance-facilitators">Ali, Courtney & Jehaan</div>
+                    <div className="glance-facilitators">Ali, Courtney & Jehaan Rehman</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">

@@ -113,6 +113,13 @@ export const facilitatorData = {
       photo: '/facilitators/elowan.jpg',
       slug: 'elowan'
     },
+    'jehaan-rehman': {
+      name: 'Jehaan Rehman',
+      role: 'Intimacy & Relationship Coach',
+      bio: 'Jehaan is an intimacy and relationship coach who brings 10 years of experience in strategy consulting, leadership, and facilitation. Through a blend of somatic practices and experiential facilitation, she guides participants beyond insight and into lasting, embodied transformation. Her work explores desire, boundaries, communication, intimacy, and relational mastery for those who want more from life, love, sex, and connection.',
+      photo: '/facilitators/jehaan-rehman.jpg',
+      slug: 'jehaan-rehman'
+    },
     'peter-benjamin': {
       name: 'Peter Benjamin',
       role: 'Relational Interplay Facilitator',
