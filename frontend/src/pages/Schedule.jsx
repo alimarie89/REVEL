@@ -404,8 +404,8 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('The Future of our Field')}>
-                    <div className="glance-title">The Future of our Field</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss & Victor Warring')}>
+                    <div className="glance-title">The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss & Victor Warring</div>
                     <div className="glance-facilitators">Zahava Griss & Victor Warring</div>
                     <div className="glance-actual-time">1:30–2:45 PM</div>
                   </div>
