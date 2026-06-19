@@ -39,7 +39,7 @@ export const facilitatorData = {
     'lyndsey-scott': {
       name: 'Lyndsey Scott',
       role: 'Music & Song Circle Facilitator',
-      bio: 'Lyndsey creates transformational song circles and musical experiences that weave together community, vulnerability, and joy. Her work celebrates the healing power of collective voice.',
+      bio: 'Lyndsey Scott is a multimedia artist, songleader, and ritualist committed to exploring community singing as a technology of belonging. As the co-leader of Earthkeeper Wisdom School, she serves the revitalization of soul-nourishing culture through A Year in Ceremony, an intensive 10-month apprenticeship in sacred spacing holding. As a songcatcher, she records singalong earworms that spark collective liberation. Over/Under, her collaboration with incarcerated musician Tony Rhodd, transmits the path of grief-as-activism to dream a world beyond prison. Lyndsey weaves village and tends her garden in Iowa City, USA. Find her music & more at',
       photo: '/facilitators/lyndsey-scott.jpg',
       slug: 'lyndsey-scott'
     },
