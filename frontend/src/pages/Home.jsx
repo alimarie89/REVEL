@@ -493,16 +493,30 @@ function Home() {
         </div>
       </section>
 
-      {/* 2. CTA BREAK - Get Your Ticket Button */}
+      {/* 2. CTA BREAK - Navigation and Ticket Button */}
       <section className="cta-break">
-        <a
-          href="https://events.humanitix.com/revel2026"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cta-button primary"
-        >
-          Get Your Ticket
-        </a>
+        <div className="cta-button-group">
+          <a
+            href="/schedule"
+            className="cta-nav-btn"
+          >
+            Schedule
+          </a>
+          <a
+            href="https://events.humanitix.com/revel2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button primary"
+          >
+            Get Your Ticket
+          </a>
+          <a
+            href="/faq"
+            className="cta-nav-btn"
+          >
+            FAQ
+          </a>
+        </div>
       </section>
 
       {/* 2.0 WELCOME SECTION - EDITORIAL REDESIGN */}

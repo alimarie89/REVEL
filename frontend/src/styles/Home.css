@@ -1051,6 +1051,38 @@
   z-index: 50;
 }
 
+.cta-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 12px 28px;
+  border: 2px solid var(--copper);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--copper);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.cta-nav-btn:hover {
+  background: var(--copper);
+  color: var(--dark);
+}
+
 /* ========== CORE ETHOS SECTION ========== */
 .core-ethos {
   background: var(--dark);
