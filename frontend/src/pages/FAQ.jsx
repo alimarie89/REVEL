@@ -200,7 +200,7 @@ function FAQ() {
       },
       {
         q: 'Can I leave and come back?',
-        a: 'A small number of in & out passes are available for $50. Email revel@dancemeetstantra.com to get an access code.'
+        a: 'A small number of in & out passes are available, please note when you buy your ticket if you are camping or commuting.'
       },
       {
         q: 'Can I extend my stay?',

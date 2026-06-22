@@ -61,7 +61,7 @@ A: Registration & Check-In Hours: July 2 from 1pm – 5pm. If you arrive outside
 A: Indoor lodging guests must leave rooms by 11am on Sunday, July 5. All attendees who have not booked extra nights must depart the property by 3pm on Sunday, July 5.
 
 **Q: Can I leave and come back?**
-A: A small number of in & out passes are available for $50. Email revel@dancemeetstantra.com to get an access code.
+A: A small number of in & out passes are available, please note when you buy your ticket if you are camping or commuting.
 
 **Q: Can I extend my stay?**
 A: Yes. You can arrange additional nights directly with Sunrise Ranch through their front desk by calling 970-679-4200.
