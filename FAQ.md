@@ -77,7 +77,7 @@ A: Some areas have natural shade, though not all sites are fully covered. If you
 A: Port-a-let style restrooms will be available on site.
 
 **Q: Are there shower facilities?**
-A: There are no built-in shower facilities. Many participants bring solar showers or other simple rinse setups.
+A: There are very limited built-in shower facilities. You may want to shower at an off peak time if you don't want to wait in line.
 
 **Q: Can I bring an RV or do car camping?**
 A: RV setups, hookups, and car camping are not supported at REVEL. All participants should plan for a tent-based camping setup.
