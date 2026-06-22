@@ -823,6 +823,24 @@
   line-height: 1.1;
 }
 
+/* ========== STACKED EVENT CELLS ========== */
+.glance-event-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 !important;
+}
+
+.glance-event-stack .glance-event-block {
+  padding: 8px 10px;
+  margin: 0;
+}
+
+.glance-event-stack .glance-actual-time {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
 /* ========== LOGISTICS BANNER ========== */
 .logistics-banner-row {
   border-bottom: 2px solid rgba(201, 168, 117, 0.4);
