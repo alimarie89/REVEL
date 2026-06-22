@@ -689,7 +689,27 @@ export default function Schedule() {
                     <div className="glance-facilitators">Rachel Rickards</div>
                   </div>
                 </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Transmuting Anger Into Bliss')}>
+                    <div className="glance-title">Transmuting Anger Into Bliss</div>
+                    <div className="glance-facilitators">Ethan Henson</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* 2:30–3:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">2:30–3:30 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Inheritance Talks')}>
+                    <div className="glance-title">Inheritance Talks</div>
+                    <div className="glance-facilitators">Ali Katz</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell"></td>
               </tr>
 
