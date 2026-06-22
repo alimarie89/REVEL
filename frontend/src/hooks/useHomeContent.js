@@ -147,7 +147,7 @@ export const useHomeContent = () => {
           },
           {
             q: 'Are there shower facilities?',
-            a: 'There are very limited built-in shower facilities. You may want to shower at an off peak time if you don't want to wait in line.'
+            a: 'There are very limited built-in shower facilities. You may want to shower at an off peak time if you don\'t want to wait in line.'
           },
           {
             q: 'Can I bring an RV or do car camping?',
