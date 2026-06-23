@@ -234,6 +234,20 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
+              {/* Dinner Meal Row */}
+              <tr className="meal-banner-row">
+                <td colSpan="6" className="meal-banner-cell">
+                  <div className="meal-banner-content">
+                    <span className="meal-badge">Meal</span>
+                    <span className="meal-title">Dinner</span>
+                    <span className="meal-divider">•</span>
+                    <span className="meal-time">5:30 PM–7:00 PM</span>
+                    <span className="meal-divider">•</span>
+                    <span className="meal-location">Dining Hall</span>
+                  </div>
+                </td>
+              </tr>
+
               {/* 7:15–8:45 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">7:15–8:45 PM</td>
