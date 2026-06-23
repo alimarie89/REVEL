@@ -637,6 +637,7 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates')}>
                     <div className="glance-title">The Future of our Field</div>
+                    <div className="glance-subtitle">Facilitating intimacy, dance, and erotic communities</div>
                     <div className="glance-facilitators">Zahava Griss, Victor Warring & Dr. Hazel-Grace Yates</div>
                     <div className="glance-actual-time">10:00–11:30 AM</div>
                   </div>

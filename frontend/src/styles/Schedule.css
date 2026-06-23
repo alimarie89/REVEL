@@ -797,6 +797,14 @@
   margin-bottom: 3px;
 }
 
+.glance-subtitle {
+  font-size: 0.65rem;
+  color: rgba(201, 168, 117, 0.65);
+  font-weight: 400;
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
 .glance-facilitators {
   font-size: 0.6rem;
   color: rgba(201, 168, 117, 0.75);
