@@ -748,6 +748,10 @@
   background: rgba(201, 168, 117, 0.02);
 }
 
+.glance-time-row-tall {
+  height: 240px;
+}
+
 .glance-time-cell {
   width: 100px;
   min-width: 100px;
