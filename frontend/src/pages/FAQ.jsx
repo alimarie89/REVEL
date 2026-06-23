@@ -187,6 +187,14 @@ function FAQ() {
     ],
     arrival: [
       {
+        q: 'Where is REVEL located?',
+        a: 'REVEL takes place at Sunrise Ranch in Loveland, Colorado, approximately one hour from Denver International Airport (DEN).'
+      },
+      {
+        q: 'How can I get to the venue?',
+        a: 'We encourage attendees to carpool whenever possible to support sustainability and help minimize parking demand on the property. Whether you\'re flying in or driving from nearby, our community rideshare board is the best place to coordinate carpools, airport pickups, and shared rental cars: https://groupcarpool.com/t/m7nt2k\n\nShuttle service from DEN to Loveland is also available:\n• Landline: https://landline.com/denver\n• Groome Transportation: https://groometransportation.com/fort-collins-loveland/\n\nFor driving directions to Sunrise Ranch, visit: https://sunriseranch.org/getting-here/'
+      },
+      {
         q: 'When does camping open?',
         a: 'Camping opens Thursday, July 2 at 1pm.'
       },
