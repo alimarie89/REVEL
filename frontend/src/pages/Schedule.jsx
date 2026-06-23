@@ -619,7 +619,7 @@ export default function Schedule() {
               </tr>
 
               {/* 10:00 AM–12:00 PM */}
-              <tr className="glance-time-row">
+              <tr className="glance-time-row glance-time-row-tall">
                 <td className="glance-time-cell">10:00 AM–12:00 PM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
@@ -634,20 +634,20 @@ export default function Schedule() {
                     <div className="glance-facilitators">Ben Raya</div>
                   </div>
                 </td>
-                <td className="glance-event-cell">
+                <td className="glance-event-cell glance-event-stack">
                   <div className="glance-event-block" onClick={() => openEventModal('The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates')}>
+                    <div className="glance-actual-time">10:00–11:30 AM</div>
                     <div className="glance-title">The Future of our Field</div>
                     <div className="glance-subtitle">Facilitating intimacy, dance, and erotic communities</div>
                     <div className="glance-facilitators">Zahava Griss, Victor Warring & Dr. Hazel-Grace Yates</div>
-                    <div className="glance-actual-time">10:00–11:30 AM</div>
                   </div>
-                </td>
-                <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Steph Shinaberry')}>
+                    <div className="glance-actual-time">11:30 AM–12:00 PM</div>
                     <div className="glance-title">Steph Shinaberry</div>
                     <div className="glance-facilitators">Steph Shinaberry</div>
                   </div>
                 </td>
+                <td className="glance-event-cell"></td>
               </tr>
 
               {/* Lunch Meal Row */}
