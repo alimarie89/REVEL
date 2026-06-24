@@ -707,9 +707,41 @@ function Home() {
         <div className="section-container healing-container">
           <div className="healing-header">
             <h2 className="healing-title">Healing Space</h2>
-            <p className="healing-intro">
-              Beyond workshops, REVEL offers intimate one-on-one healing sessions with our skilled practitioners. These private sessions create a safe, judgment-free container for deep personal work, somatic exploration, and transformation.
+          </div>
+
+          {/* Intro Section */}
+          <div className="healing-intro-section">
+            <p className="healing-intro-text">
+              REVEL can be exhilarating.
             </p>
+            <p className="healing-intro-text">
+              Three days of dance, connection, workshops, rituals, conversations, vulnerability, laughter, and late nights can open a lot inside us.
+            </p>
+            <p className="healing-intro-text healing-intro-emphasis">
+              The Healing Space exists so you have somewhere to land.
+            </p>
+            <p className="healing-intro-text">
+              Whether your body needs support after hours of dancing, your nervous system wants help settling after an emotional experience, or you simply want dedicated time to receive care, these sessions offer a place to slow down, reconnect, and be supported.
+            </p>
+          </div>
+
+          {/* What We Offer */}
+          <div className="healing-offerings">
+            <h3 className="healing-offerings-title">What We Offer</h3>
+            <div className="healing-offerings-grid">
+              <div className="healing-offering-card">
+                <h4 className="healing-offering-heading">Nervous System Regulation</h4>
+                <p>Support for settling, restoring, and reconnecting when life, relationships, workshops, or the weekend itself have opened a lot.</p>
+              </div>
+              <div className="healing-offering-card">
+                <h4 className="healing-offering-heading">Bodywork & Recovery</h4>
+                <p>Therapeutic bodywork designed to release tension, support recovery, and help your body feel resourced after a full day of dancing and participation.</p>
+              </div>
+              <div className="healing-offering-card">
+                <h4 className="healing-offering-heading">Integration Support</h4>
+                <p>Space to slow down, process experiences, reconnect with yourself, and return to the weekend with greater clarity and presence.</p>
+              </div>
+            </div>
           </div>
 
           {/* Practitioners */}
@@ -720,16 +752,11 @@ function Home() {
               </div>
               <div className="healing-practitioner-content">
                 <h3 className="healing-practitioner-name">Rachel Zurer</h3>
-                <p className="healing-practitioner-title">Somatic Therapist & Body Worker</p>
+                <p className="healing-practitioner-primary-title">Biodynamic Craniosacral Therapist</p>
+                <p className="healing-practitioner-secondary-title">Love-Your-Life Coach for High Achievers</p>
                 <p className="healing-practitioner-preview">
-                  Specializing in trauma-informed somatic therapy, embodied healing, and conscious touch.
+                  Rachel combines decades of hands-on healing work with coaching that helps high-performing individuals slow down, listen to their bodies, and reclaim ease.
                 </p>
-                <ul className="healing-specialties">
-                  <li>Trauma Release Work</li>
-                  <li>Somatic Therapy</li>
-                  <li>Energy Healing</li>
-                  <li>Conscious Touch</li>
-                </ul>
                 <p className="healing-learn-more">Learn More →</p>
               </div>
             </div>
@@ -740,39 +767,12 @@ function Home() {
               </div>
               <div className="healing-practitioner-content">
                 <h3 className="healing-practitioner-name">Gemma Wilcox</h3>
-                <p className="healing-practitioner-title">Intimacy Coach & Relationship Guide</p>
+                <p className="healing-practitioner-primary-title">Integrative Bodyworker</p>
+                <p className="healing-practitioner-secondary-title">Biodynamic Craniosacral Practitioner</p>
                 <p className="healing-practitioner-preview">
-                  Empowering clients to deepen intimacy, heal relational patterns, and embody their authentic desires.
+                  Gemma specializes in therapeutic bodywork and craniosacral practice, creating sessions that are deeply grounding, restorative, and profoundly supportive.
                 </p>
-                <ul className="healing-specialties">
-                  <li>Intimacy Coaching</li>
-                  <li>Relationship Healing</li>
-                  <li>Desire Exploration</li>
-                  <li>Communication Skills</li>
-                </ul>
                 <p className="healing-learn-more">Learn More →</p>
-              </div>
-            </div>
-          </div>
-
-          {/* What We Offer */}
-          <div className="healing-offerings">
-            <h3 className="healing-offerings-title">What We Offer</h3>
-            <div className="healing-offerings-grid">
-              <div className="healing-offering-card">
-                <div className="healing-offering-icon">◆</div>
-                <h4>Somatic Healing</h4>
-                <p>Trauma-informed, embodied work to release stored tension and reconnect with your body's wisdom.</p>
-              </div>
-              <div className="healing-offering-card">
-                <div className="healing-offering-icon">◆</div>
-                <h4>Intimacy Exploration</h4>
-                <p>Safe, guided sessions to deepen your capacity for intimacy, pleasure, and authentic connection.</p>
-              </div>
-              <div className="healing-offering-card">
-                <div className="healing-offering-icon">◆</div>
-                <h4>Relational Coaching</h4>
-                <p>Personalized guidance for navigating relationships with presence, authenticity, and embodied awareness.</p>
               </div>
             </div>
           </div>
@@ -782,40 +782,25 @@ function Home() {
             <h3 className="healing-pricing-title">Session Pricing</h3>
             <div className="healing-pricing-grid">
               <div className="healing-pricing-card">
-                <div className="healing-pricing-duration">30 Minutes</div>
-                <div className="healing-pricing-price">$75</div>
-                <p className="healing-pricing-description">Introductory session</p>
+                <div className="healing-pricing-price">$100</div>
+                <div className="healing-pricing-description">60 min Craniosacral Session</div>
               </div>
               <div className="healing-pricing-card">
-                <div className="healing-pricing-duration">60 Minutes</div>
+                <div className="healing-pricing-price">$120</div>
+                <div className="healing-pricing-description">60 min Massage / Bodywork Blend</div>
+              </div>
+              <div className="healing-pricing-card">
                 <div className="healing-pricing-price">$150</div>
-                <p className="healing-pricing-description">Standard session</p>
+                <div className="healing-pricing-description">90 min Craniosacral Session</div>
               </div>
               <div className="healing-pricing-card">
-                <div className="healing-pricing-duration">90 Minutes</div>
-                <div className="healing-pricing-price">$210</div>
-                <p className="healing-pricing-description">Extended journey</p>
-              </div>
-              <div className="healing-pricing-card">
-                <div className="healing-pricing-duration">3-Session Package</div>
-                <div className="healing-pricing-price">$400</div>
-                <p className="healing-pricing-description">Save $50</p>
+                <div className="healing-pricing-price">$165</div>
+                <div className="healing-pricing-description">90 min Massage / Bodywork Blend</div>
               </div>
             </div>
-          </div>
-
-          {/* Featured Quote */}
-          <div className="healing-quote-section">
-            <blockquote className="healing-quote">
-              "Healing is not about fixing what is broken. It is about remembering what is whole."
-            </blockquote>
-          </div>
-
-          {/* CTA */}
-          <div className="healing-cta">
-            <button className="healing-cta-button">Reserve Your Session</button>
-            <p className="healing-cta-supporting">
-              Sessions available before and after the convergence. Limited availability—secure your spot today.
+            <p className="healing-pricing-note">
+              Not sure which session is right for you?<br />
+              Gemma and Rachel can help guide you toward the best fit for your needs.
             </p>
           </div>
         </div>
@@ -833,16 +818,17 @@ function Home() {
                 </div>
                 <div className="healing-modal-text">
                   <h3>Rachel Zurer</h3>
-                  <p className="healing-modal-title">Somatic Therapist & Body Worker</p>
+                  <p className="healing-modal-title">Biodynamic Craniosacral Therapist</p>
+                  <p className="healing-modal-title">Love-Your-Life Coach for High Achievers</p>
                   <div className="healing-modal-bio">
                     <p>
-                      Rachel brings over a decade of experience in somatic therapy, trauma-informed healing practices, and embodied work. Her approach integrates somatic psychology, energy healing, and conscious touch to facilitate deep transformation.
+                      Rachel combines two decades of hands-on healing practice with strategic life coaching. As a certified Biodynamic Craniosacral Therapist, she specializes in releasing deep patterns of tension and supporting nervous system restoration.
                     </p>
                     <p>
-                      Specializing in trauma release, Rachel creates a safe container for clients to reconnect with their bodies, process held tension, and awaken their innate healing capacity. Her work honors the body's wisdom and supports clients in moving from dysregulation into embodied presence.
+                      For high-performing individuals, Rachel offers a unique blend: the somatic intelligence of craniosacral work paired with practical coaching to slow down, listen to your body's needs, and reclaim ease in your life. Her sessions are deeply grounding, restorative, and designed to help you feel resourced and present.
                     </p>
                     <p className="healing-modal-practice">
-                      <strong>Practice Areas:</strong> Trauma-informed somatic work, energy healing, conscious touch, nervous system regulation, embodied awareness
+                      <strong>Session Types Offered:</strong> Biodynamic Craniosacral sessions, integrated coaching + bodywork sessions
                     </p>
                   </div>
                 </div>
@@ -855,16 +841,17 @@ function Home() {
                 </div>
                 <div className="healing-modal-text">
                   <h3>Gemma Wilcox</h3>
-                  <p className="healing-modal-title">Intimacy Coach & Relationship Guide</p>
+                  <p className="healing-modal-title">Integrative Bodyworker</p>
+                  <p className="healing-modal-title">Biodynamic Craniosacral Practitioner</p>
                   <div className="healing-modal-bio">
                     <p>
-                      Gemma is a seasoned intimacy coach and relationship guide who specializes in helping clients deepen their capacity for authentic connection, pleasure, and embodied desire. Her work honors the sacred nature of intimacy while providing practical tools for relational growth.
+                      Gemma is a skilled Integrative Bodyworker and Biodynamic Craniosacral Practitioner with over fifteen years of experience in therapeutic touch. She specializes in creating deeply restorative sessions that release tension, support recovery, and help your entire system feel resourced.
                     </p>
                     <p>
-                      Through compassionate coaching, Gemma helps clients heal relational patterns, clarify their desires, and develop communication skills that foster genuine intimacy. She creates a judgment-free space for clients to explore their authentic selves and cultivate relationships that feel alive.
+                      Whether you're recovering from hours of dancing, processing emotions from the weekend, or simply needing grounded support, Gemma's sessions are thoughtfully designed to meet you where you are. Her practice combines the precision of craniosacral work with broader therapeutic bodywork techniques for profound, whole-system restoration.
                     </p>
                     <p className="healing-modal-practice">
-                      <strong>Practice Areas:</strong> Intimacy coaching, relationship healing, desire exploration, communication, embodied sexuality, partnership guidance
+                      <strong>Session Types Offered:</strong> Biodynamic Craniosacral sessions, therapeutic massage & bodywork, integrated blend sessions
                     </p>
                   </div>
                 </div>
