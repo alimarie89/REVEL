@@ -707,22 +707,7 @@ function Home() {
         <div className="section-container healing-container">
           <div className="healing-header">
             <h2 className="healing-title">Healing Space</h2>
-          </div>
-
-          {/* Intro Section */}
-          <div className="healing-intro-section">
-            <p className="healing-intro-text">
-              REVEL can be exhilarating.
-            </p>
-            <p className="healing-intro-text">
-              Three days of dance, connection, workshops, rituals, conversations, vulnerability, laughter, and late nights can open a lot inside us.
-            </p>
-            <p className="healing-intro-text healing-intro-emphasis">
-              The Healing Space exists so you have somewhere to land.
-            </p>
-            <p className="healing-intro-text">
-              Whether your body needs support after hours of dancing, your nervous system wants help settling after an emotional experience, or you simply want dedicated time to receive care, these sessions offer a place to slow down, reconnect, and be supported.
-            </p>
+            <p className="healing-tagline">so you have somewhere to land</p>
           </div>
 
           {/* What We Offer */}

@@ -4556,6 +4556,15 @@
   font-weight: 400;
   color: var(--cream);
   letter-spacing: -0.5px;
+  margin: 0 0 15px 0;
+}
+
+.healing-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(201, 168, 117, 0.85);
+  font-weight: 300;
+  letter-spacing: 0.3px;
   margin: 0;
 }
 
@@ -5003,6 +5012,10 @@
     font-size: 2.5rem;
   }
 
+  .healing-tagline {
+    font-size: 1rem;
+  }
+
   .healing-intro-section {
     margin-bottom: 50px;
   }
@@ -5137,6 +5150,10 @@
 
   .healing-title {
     font-size: 2rem;
+  }
+
+  .healing-tagline {
+    font-size: 0.95rem;
   }
 
   .healing-intro-text {
