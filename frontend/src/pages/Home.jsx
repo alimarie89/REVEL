@@ -340,7 +340,7 @@ function Home() {
       id: 16,
       name: 'Cari Caldwell',
       role: 'Facilitator',
-      workshop: 'REVEL Grief & Eros Ritual - Saturday Morning (3 hours)',
+      workshop: 'REVEL Grief, Eros and Dance Ritual - Saturday Morning (3 hours)',
       photo: '/team/cari-caldwell.jpg',
       bio: 'Aliveness - and our deepest erotic intelligence - come from us feeling everything, welcoming and including all.\n\nHowever, in these troubled times, when there is so much to feel - so many darker currents of pain, agony, grief - there is little public space to be together with this spectrum of our humanity.\n\nThe old paradigm is collapsing, the meta-systems that were born into are delaminating, and there is a well of grief so deep underneath all the wildness in these times, that we would all drown if we tried to feel this alone.\n\nIndigineous peoples knew that grief was communal, collective, ancestral, transpersonal and could be only carried by the village.\n\nThey also knew that grief was the regenerative power of life functioning in the human body.. the salty tears that purify us and bring us once again into our full, humble power.\n\nGrief and Eros dance together, and we must go down deep if we want the ecstasy the world so badly needs of us right now.\n\nWe will come together in grief and eros ritual for 3 hours on Saturday morning to weep and wail, to howl and flail, to sit at the altar of our shared pain and let it ripple us until our pain cries are indistinguishable from our pleasure moans.\n\nCome and offer yourself to these rites of grief.. deep intimacy awaits on the otherside.'
     },
@@ -364,7 +364,7 @@ function Home() {
       id: 19,
       name: 'Yana',
       role: 'Ritual Facilitator',
-      workshop: 'REVEL Grief & Eros Ritual',
+      workshop: 'REVEL Grief, Eros and Dance Ritual',
       photo: '/facilitators/yana.jpeg',
       bio: 'Yana facilitates transformative ritual experiences, bringing depth and presence to collective ceremonies. Her work creates sacred containers where the full spectrum of human emotion—grief, eros, joy, and transformation—can be held and celebrated.'
     },
@@ -388,7 +388,7 @@ function Home() {
       id: 22,
       name: 'John Wolfstone',
       role: 'Ritual & Ceremony Facilitator',
-      workshop: 'REVEL Grief & Eros Ritual',
+      workshop: 'REVEL Grief, Eros and Dance Ritual',
       photo: '/facilitators/john-wolfstone.jpg',
       bio: 'John facilitates deep ritual work and ceremony, creating sacred containers for collective grief, transformation, and the integration of the full spectrum of human experience. His work honors ancestral wisdom and contemporary consciousness.'
     },

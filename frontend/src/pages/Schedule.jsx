@@ -597,8 +597,8 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('REVEL Grief & Eros Ritual')}>
-                    <div className="glance-title">REVEL Grief & Eros Ritual</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('REVEL Grief, Eros and Dance Ritual')}>
+                    <div className="glance-title">REVEL Grief, Eros and Dance Ritual</div>
                     <div className="glance-facilitators">John Wolfstone, Cari Caldwell & Yana</div>
                     <div className="glance-actual-time">8:30–11:30 AM</div>
                   </div>
