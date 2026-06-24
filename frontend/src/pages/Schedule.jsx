@@ -641,9 +641,9 @@ export default function Schedule() {
                     <div className="glance-subtitle">Facilitating intimacy, dance, and erotic communities</div>
                     <div className="glance-facilitators">Zahava Griss, Victor Warring & Dr. Hazel-Grace Yates</div>
                   </div>
-                  <div className="glance-event-block" onClick={() => openEventModal('Steph Shinaberry')}>
+                  <div className="glance-event-block" onClick={() => openEventModal('Lean In Closer: Building the Village You Wish Existed')}>
                     <div className="glance-actual-time">11:30 AM–12:00 PM</div>
-                    <div className="glance-title">Steph Shinaberry</div>
+                    <div className="glance-title">Lean In Closer: Building the Village You Wish Existed</div>
                     <div className="glance-facilitators">Steph Shinaberry</div>
                   </div>
                 </td>
