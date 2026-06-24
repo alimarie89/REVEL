@@ -712,7 +712,6 @@ function Home() {
 
           {/* What We Offer */}
           <div className="healing-offerings">
-            <h3 className="healing-offerings-title">For When You Need It</h3>
             <div className="healing-offerings-grid">
               <div className="healing-offering-card">
                 <h4 className="healing-offering-heading">Nervous System Regulation</h4>

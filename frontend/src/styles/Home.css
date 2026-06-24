@@ -4561,11 +4561,12 @@
 
 .healing-tagline {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: rgba(201, 168, 117, 0.85);
   font-weight: 300;
   letter-spacing: 0.3px;
   margin: 0;
+  line-height: 1.6;
 }
 
 /* Intro Section */
@@ -5021,7 +5022,7 @@
   }
 
   .healing-tagline {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .healing-intro-section {
@@ -5042,14 +5043,10 @@
     margin-bottom: 50px;
   }
 
-  .healing-offerings-title {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-  }
-
   .healing-offerings-grid {
     grid-template-columns: 1fr;
     gap: 25px;
+    margin-bottom: 50px;
   }
 
   .healing-offering-card {
@@ -5165,7 +5162,7 @@
   }
 
   .healing-tagline {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .healing-intro-text {
