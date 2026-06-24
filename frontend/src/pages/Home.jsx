@@ -16,6 +16,7 @@ function Home() {
   const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.jpg')
   const [showPromoBanner, setShowPromoBanner] = useState(true)
   const [isBannerSticky, setIsBannerSticky] = useState(false)
+  const [selectedPractitioner, setSelectedPractitioner] = useState(null)
   const carouselRef = useRef(null)
   const heroRef = useRef(null)
 
@@ -700,6 +701,178 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* 2.6a HEALING SPACE */}
+      <section className="healing-section">
+        <div className="section-container healing-container">
+          <div className="healing-header">
+            <h2 className="healing-title">Healing Space</h2>
+            <p className="healing-intro">
+              Beyond workshops, REVEL offers intimate one-on-one healing sessions with our skilled practitioners. These private sessions create a safe, judgment-free container for deep personal work, somatic exploration, and transformation.
+            </p>
+          </div>
+
+          {/* Practitioners */}
+          <div className="healing-practitioners">
+            <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('rachel')}>
+              <div className="healing-practitioner-image">
+                <img src="/facilitators/gemma-wilcox.jpg" alt="Rachel Zurer" />
+              </div>
+              <div className="healing-practitioner-content">
+                <h3 className="healing-practitioner-name">Rachel Zurer</h3>
+                <p className="healing-practitioner-title">Somatic Therapist & Body Worker</p>
+                <p className="healing-practitioner-preview">
+                  Specializing in trauma-informed somatic therapy, embodied healing, and conscious touch.
+                </p>
+                <ul className="healing-specialties">
+                  <li>Trauma Release Work</li>
+                  <li>Somatic Therapy</li>
+                  <li>Energy Healing</li>
+                  <li>Conscious Touch</li>
+                </ul>
+                <p className="healing-learn-more">Learn More →</p>
+              </div>
+            </div>
+
+            <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('gemma')}>
+              <div className="healing-practitioner-image">
+                <img src="/facilitators/gemma-wilcox.jpg" alt="Gemma Wilcox" />
+              </div>
+              <div className="healing-practitioner-content">
+                <h3 className="healing-practitioner-name">Gemma Wilcox</h3>
+                <p className="healing-practitioner-title">Intimacy Coach & Relationship Guide</p>
+                <p className="healing-practitioner-preview">
+                  Empowering clients to deepen intimacy, heal relational patterns, and embody their authentic desires.
+                </p>
+                <ul className="healing-specialties">
+                  <li>Intimacy Coaching</li>
+                  <li>Relationship Healing</li>
+                  <li>Desire Exploration</li>
+                  <li>Communication Skills</li>
+                </ul>
+                <p className="healing-learn-more">Learn More →</p>
+              </div>
+            </div>
+          </div>
+
+          {/* What We Offer */}
+          <div className="healing-offerings">
+            <h3 className="healing-offerings-title">What We Offer</h3>
+            <div className="healing-offerings-grid">
+              <div className="healing-offering-card">
+                <div className="healing-offering-icon">◆</div>
+                <h4>Somatic Healing</h4>
+                <p>Trauma-informed, embodied work to release stored tension and reconnect with your body's wisdom.</p>
+              </div>
+              <div className="healing-offering-card">
+                <div className="healing-offering-icon">◆</div>
+                <h4>Intimacy Exploration</h4>
+                <p>Safe, guided sessions to deepen your capacity for intimacy, pleasure, and authentic connection.</p>
+              </div>
+              <div className="healing-offering-card">
+                <div className="healing-offering-icon">◆</div>
+                <h4>Relational Coaching</h4>
+                <p>Personalized guidance for navigating relationships with presence, authenticity, and embodied awareness.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Session Pricing */}
+          <div className="healing-pricing">
+            <h3 className="healing-pricing-title">Session Pricing</h3>
+            <div className="healing-pricing-grid">
+              <div className="healing-pricing-card">
+                <div className="healing-pricing-duration">30 Minutes</div>
+                <div className="healing-pricing-price">$75</div>
+                <p className="healing-pricing-description">Introductory session</p>
+              </div>
+              <div className="healing-pricing-card">
+                <div className="healing-pricing-duration">60 Minutes</div>
+                <div className="healing-pricing-price">$150</div>
+                <p className="healing-pricing-description">Standard session</p>
+              </div>
+              <div className="healing-pricing-card">
+                <div className="healing-pricing-duration">90 Minutes</div>
+                <div className="healing-pricing-price">$210</div>
+                <p className="healing-pricing-description">Extended journey</p>
+              </div>
+              <div className="healing-pricing-card">
+                <div className="healing-pricing-duration">3-Session Package</div>
+                <div className="healing-pricing-price">$400</div>
+                <p className="healing-pricing-description">Save $50</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Featured Quote */}
+          <div className="healing-quote-section">
+            <blockquote className="healing-quote">
+              "Healing is not about fixing what is broken. It is about remembering what is whole."
+            </blockquote>
+          </div>
+
+          {/* CTA */}
+          <div className="healing-cta">
+            <button className="healing-cta-button">Reserve Your Session</button>
+            <p className="healing-cta-supporting">
+              Sessions available before and after the convergence. Limited availability—secure your spot today.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Healing Space Modal */}
+      {selectedPractitioner && (
+        <div className="healing-modal-overlay" onClick={() => setSelectedPractitioner(null)}>
+          <div className="healing-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="healing-modal-close" onClick={() => setSelectedPractitioner(null)}>×</button>
+            {selectedPractitioner === 'rachel' && (
+              <div className="healing-modal-content">
+                <div className="healing-modal-image">
+                  <img src="/facilitators/gemma-wilcox.jpg" alt="Rachel Zurer" />
+                </div>
+                <div className="healing-modal-text">
+                  <h3>Rachel Zurer</h3>
+                  <p className="healing-modal-title">Somatic Therapist & Body Worker</p>
+                  <div className="healing-modal-bio">
+                    <p>
+                      Rachel brings over a decade of experience in somatic therapy, trauma-informed healing practices, and embodied work. Her approach integrates somatic psychology, energy healing, and conscious touch to facilitate deep transformation.
+                    </p>
+                    <p>
+                      Specializing in trauma release, Rachel creates a safe container for clients to reconnect with their bodies, process held tension, and awaken their innate healing capacity. Her work honors the body's wisdom and supports clients in moving from dysregulation into embodied presence.
+                    </p>
+                    <p className="healing-modal-practice">
+                      <strong>Practice Areas:</strong> Trauma-informed somatic work, energy healing, conscious touch, nervous system regulation, embodied awareness
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+            {selectedPractitioner === 'gemma' && (
+              <div className="healing-modal-content">
+                <div className="healing-modal-image">
+                  <img src="/facilitators/gemma-wilcox.jpg" alt="Gemma Wilcox" />
+                </div>
+                <div className="healing-modal-text">
+                  <h3>Gemma Wilcox</h3>
+                  <p className="healing-modal-title">Intimacy Coach & Relationship Guide</p>
+                  <div className="healing-modal-bio">
+                    <p>
+                      Gemma is a seasoned intimacy coach and relationship guide who specializes in helping clients deepen their capacity for authentic connection, pleasure, and embodied desire. Her work honors the sacred nature of intimacy while providing practical tools for relational growth.
+                    </p>
+                    <p>
+                      Through compassionate coaching, Gemma helps clients heal relational patterns, clarify their desires, and develop communication skills that foster genuine intimacy. She creates a judgment-free space for clients to explore their authentic selves and cultivate relationships that feel alive.
+                    </p>
+                    <p className="healing-modal-practice">
+                      <strong>Practice Areas:</strong> Intimacy coaching, relationship healing, desire exploration, communication, embodied sexuality, partnership guidance
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* 2.7 ARCHITECTURE OF CONNECTION */}
       <section className="architecture-section">

@@ -4530,3 +4530,569 @@
     font-size: 0.8rem;
   }
 }
+
+/* ========== HEALING SPACE SECTION ========== */
+.healing-section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(50, 35, 35, 0.95) 100%);
+  padding: 100px 20px;
+  border-top: 1px solid rgba(201, 168, 117, 0.15);
+  border-bottom: 1px solid rgba(201, 168, 117, 0.15);
+}
+
+.healing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.healing-header {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.healing-title {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.healing-intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(245, 241, 237, 0.8);
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Practitioners */
+.healing-practitioners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.healing-practitioner-card {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.healing-practitioner-card:hover {
+  transform: translateY(-4px);
+}
+
+.healing-practitioner-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 3/4;
+}
+
+.healing-practitioner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.healing-practitioner-card:hover .healing-practitioner-image img {
+  transform: scale(1.05);
+}
+
+.healing-practitioner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.healing-practitioner-name {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.healing-practitioner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(201, 168, 117, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.healing-practitioner-preview {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: rgba(245, 241, 237, 0.75);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.healing-specialties {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.healing-specialties li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(245, 241, 237, 0.65);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 300;
+}
+
+.healing-specialties li:before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: rgba(201, 168, 117, 0.6);
+}
+
+.healing-learn-more {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(201, 168, 117, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease;
+}
+
+.healing-practitioner-card:hover .healing-learn-more {
+  color: var(--cream);
+}
+
+/* What We Offer */
+.healing-offerings {
+  margin-bottom: 100px;
+  padding: 60px 40px;
+  background: rgba(107, 47, 63, 0.2);
+  border-radius: 8px;
+}
+
+.healing-offerings-title {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.healing-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.healing-offering-card {
+  text-align: center;
+  padding: 30px;
+}
+
+.healing-offering-icon {
+  font-size: 2.5rem;
+  color: rgba(201, 168, 117, 0.8);
+  margin-bottom: 20px;
+}
+
+.healing-offering-card h4 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 15px;
+}
+
+.healing-offering-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(245, 241, 237, 0.75);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Session Pricing */
+.healing-pricing {
+  margin-bottom: 100px;
+}
+
+.healing-pricing-title {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.healing-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.healing-pricing-card {
+  background: rgba(107, 47, 63, 0.3);
+  border: 1px solid rgba(201, 168, 117, 0.2);
+  border-radius: 8px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.healing-pricing-card:hover {
+  background: rgba(107, 47, 63, 0.5);
+  border-color: rgba(201, 168, 117, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.healing-pricing-duration {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(201, 168, 117, 0.8);
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.healing-pricing-price {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+
+.healing-pricing-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(245, 241, 237, 0.65);
+  font-weight: 300;
+}
+
+/* Quote Section */
+.healing-quote-section {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 60px 40px;
+}
+
+.healing-quote {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(201, 168, 117, 0.9);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+  border-left: 3px solid rgba(201, 168, 117, 0.4);
+  padding-left: 40px;
+  text-align: left;
+}
+
+/* CTA */
+.healing-cta {
+  text-align: center;
+  padding: 40px;
+  background: rgba(107, 47, 63, 0.25);
+  border-radius: 8px;
+}
+
+.healing-cta-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--dark);
+  background: var(--cream);
+  border: 2px solid var(--cream);
+  padding: 16px 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.healing-cta-button:hover {
+  background: transparent;
+  color: var(--cream);
+  transform: scale(1.05);
+}
+
+.healing-cta-supporting {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(245, 241, 237, 0.7);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Healing Modal */
+.healing-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.healing-modal {
+  background: var(--dark);
+  border: 1px solid rgba(201, 168, 117, 0.2);
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 50px;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.healing-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: rgba(245, 241, 237, 0.6);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1001;
+}
+
+.healing-modal-close:hover {
+  color: var(--cream);
+}
+
+.healing-modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.healing-modal-image {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.healing-modal-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.healing-modal-text h3 {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.healing-modal-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(201, 168, 117, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.healing-modal-bio {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(245, 241, 237, 0.8);
+  line-height: 1.8;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.healing-modal-bio p {
+  margin-bottom: 15px;
+}
+
+.healing-modal-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.healing-modal-practice {
+  margin-top: 20px !important;
+  padding-top: 20px;
+  border-top: 1px solid rgba(201, 168, 117, 0.2);
+}
+
+.healing-modal-practice strong {
+  color: rgba(201, 168, 117, 0.9);
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ========== RESPONSIVE HEALING SPACE ========== */
+@media (max-width: 1024px) {
+  .healing-container {
+    padding: 0 20px;
+  }
+
+  .healing-practitioners {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .healing-practitioner-card {
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+  }
+
+  .healing-offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .healing-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .healing-modal-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .healing-section {
+    padding: 60px 20px;
+  }
+
+  .healing-container {
+    padding: 0;
+  }
+
+  .healing-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .healing-intro {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .healing-practitioners {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .healing-practitioner-card {
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .healing-practitioner-name {
+    font-size: 1.5rem;
+  }
+
+  .healing-practitioner-title {
+    font-size: 0.85rem;
+  }
+
+  .healing-practitioner-preview {
+    font-size: 0.9rem;
+  }
+
+  .healing-offerings {
+    margin-bottom: 60px;
+    padding: 40px 20px;
+  }
+
+  .healing-offerings-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .healing-offerings-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .healing-pricing {
+    margin-bottom: 60px;
+  }
+
+  .healing-pricing-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .healing-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .healing-quote {
+    font-size: 1.5rem;
+    padding-left: 30px;
+  }
+
+  .healing-cta {
+    padding: 30px;
+  }
+
+  .healing-modal {
+    padding: 30px;
+    max-height: 90vh;
+  }
+
+  .healing-modal-content {
+    gap: 20px;
+  }
+}
