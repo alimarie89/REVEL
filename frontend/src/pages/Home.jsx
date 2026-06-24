@@ -14,8 +14,6 @@ function Home() {
   const [hoveredField, setHoveredField] = useState(null)
   const [carouselScroll, setCarouselScroll] = useState(0)
   const [featuredImage, setFeaturedImage] = useState('/carousel/Girl smiling 1.jpg')
-  const [openFaqCategory, setOpenFaqCategory] = useState(null)
-  const [openFaqItem, setOpenFaqItem] = useState({})
   const [showPromoBanner, setShowPromoBanner] = useState(true)
   const [isBannerSticky, setIsBannerSticky] = useState(false)
   const carouselRef = useRef(null)
@@ -942,71 +940,6 @@ function Home() {
             <div className="section-expanded">
               {content?.whatItFeelsLike?.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* 8. FAQ SECTION */}
-      <section className="faq-section">
-        <div className="section-container">
-          <div className="faq-header">
-            <p className="faq-eyebrow">YOUR QUESTIONS ANSWERED</p>
-            <h2>Questions About REVEL</h2>
-            <p className="faq-subtitle">Practical orientation for entering the field.</p>
-          </div>
-
-          {/* FAQ category cards with natural wrapping */}
-          <div className="faq-categories-scroll">
-            <div className="faq-categories">
-              {content?.faqCategories?.map((category) => (
-                <button
-                  key={category.id}
-                  className={`faq-category-card ${openFaqCategory === category.id ? 'active' : ''}`}
-                  onClick={() => setOpenFaqCategory(openFaqCategory === category.id ? null : category.id)}
-                >
-                  <span>{category.title}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Expanded FAQ content for selected category */}
-          {openFaqCategory && (
-            <div className="faq-expanded">
-              {content?.faqCategories?.map((category) => (
-                category.id === openFaqCategory && (
-                  <div key={category.id} className="faq-content">
-                    <h3>{category.title}</h3>
-                    <div className="faq-items">
-                      {category.faqs?.map((faqItem, idx) => (
-                        <div key={idx} className="faq-item">
-                          <button
-                            className={`faq-question ${openFaqItem[`${category.id}-${idx}`] ? 'open' : ''}`}
-                            onClick={() => {
-                              const key = `${category.id}-${idx}`
-                              setOpenFaqItem({
-                                ...openFaqItem,
-                                [key]: !openFaqItem[key]
-                              })
-                            }}
-                          >
-                            <span>{faqItem.q}</span>
-                            <svg className="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                              <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                          </button>
-                          {openFaqItem[`${category.id}-${idx}`] && (
-                            <div className="faq-answer">
-                              <p>{faqItem.a}</p>
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )
               ))}
             </div>
           )}
