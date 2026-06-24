@@ -716,7 +716,7 @@ function Home() {
           <div className="healing-practitioners">
             <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('rachel')}>
               <div className="healing-practitioner-image">
-                <img src="/facilitators/gemma-wilcox.jpg" alt="Rachel Zurer" />
+                <img src="/facilitators/rachel-zurer.jpg" alt="Rachel Zurer" />
               </div>
               <div className="healing-practitioner-content">
                 <h3 className="healing-practitioner-name">Rachel Zurer</h3>
@@ -829,7 +829,7 @@ function Home() {
             {selectedPractitioner === 'rachel' && (
               <div className="healing-modal-content">
                 <div className="healing-modal-image">
-                  <img src="/facilitators/gemma-wilcox.jpg" alt="Rachel Zurer" />
+                  <img src="/facilitators/rachel-zurer.jpg" alt="Rachel Zurer" />
                 </div>
                 <div className="healing-modal-text">
                   <h3>Rachel Zurer</h3>
