@@ -712,52 +712,55 @@ function Home() {
 
           {/* What We Offer */}
           <div className="healing-offerings">
-            <h3 className="healing-offerings-title">What We Offer</h3>
+            <h3 className="healing-offerings-title">For When You Need It</h3>
             <div className="healing-offerings-grid">
               <div className="healing-offering-card">
                 <h4 className="healing-offering-heading">Nervous System Regulation</h4>
-                <p>Support for settling, restoring, and reconnecting when life, relationships, workshops, or the weekend itself have opened a lot.</p>
+                <p>Settle, restore, and reconnect when the weekend has opened a lot.</p>
               </div>
               <div className="healing-offering-card">
                 <h4 className="healing-offering-heading">Bodywork & Recovery</h4>
-                <p>Therapeutic bodywork designed to release tension, support recovery, and help your body feel resourced after a full day of dancing and participation.</p>
+                <p>Release tension and return to the weekend feeling resourced.</p>
               </div>
               <div className="healing-offering-card">
                 <h4 className="healing-offering-heading">Integration Support</h4>
-                <p>Space to slow down, process experiences, reconnect with yourself, and return to the weekend with greater clarity and presence.</p>
+                <p>Slow down, process your experience, and reconnect with yourself.</p>
               </div>
             </div>
           </div>
 
           {/* Practitioners */}
-          <div className="healing-practitioners">
-            <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('rachel')}>
-              <div className="healing-practitioner-image">
-                <img src="/facilitators/rachel-zurer.jpg" alt="Rachel Zurer" />
+          <div className="healing-practitioners-section">
+            <h3 className="healing-practitioners-title">Meet the Practitioners</h3>
+            <div className="healing-practitioners">
+              <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('rachel')}>
+                <div className="healing-practitioner-image">
+                  <img src="/facilitators/rachel-zurer.jpg" alt="Rachel Zurer" />
+                </div>
+                <div className="healing-practitioner-content">
+                  <h3 className="healing-practitioner-name">Rachel Zurer</h3>
+                  <p className="healing-practitioner-primary-title">Biodynamic Craniosacral Therapist</p>
+                  <p className="healing-practitioner-secondary-title">Love-Your-Life Coach for High Achievers</p>
+                  <p className="healing-practitioner-preview">
+                    Rachel's sessions offer something increasingly rare: a genuine pause. Through gentle, light-touch therapy, she supports the nervous system to settle, integrate, and land.
+                  </p>
+                  <p className="healing-learn-more">Learn More →</p>
+                </div>
               </div>
-              <div className="healing-practitioner-content">
-                <h3 className="healing-practitioner-name">Rachel Zurer</h3>
-                <p className="healing-practitioner-primary-title">Biodynamic Craniosacral Therapist</p>
-                <p className="healing-practitioner-secondary-title">Love-Your-Life Coach for High Achievers</p>
-                <p className="healing-practitioner-preview">
-                  Rachel combines decades of hands-on healing work with coaching that helps high-performing individuals slow down, listen to their bodies, and reclaim ease.
-                </p>
-                <p className="healing-learn-more">Learn More →</p>
-              </div>
-            </div>
 
-            <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('gemma')}>
-              <div className="healing-practitioner-image">
-                <img src="/facilitators/gemma-wilcox.jpg" alt="Gemma Wilcox" />
-              </div>
-              <div className="healing-practitioner-content">
-                <h3 className="healing-practitioner-name">Gemma Wilcox</h3>
-                <p className="healing-practitioner-primary-title">Integrative Bodyworker</p>
-                <p className="healing-practitioner-secondary-title">Biodynamic Craniosacral Practitioner</p>
-                <p className="healing-practitioner-preview">
-                  Gemma specializes in therapeutic bodywork and craniosacral practice, creating sessions that are deeply grounding, restorative, and profoundly supportive.
-                </p>
-                <p className="healing-learn-more">Learn More →</p>
+              <div className="healing-practitioner-card" onClick={() => setSelectedPractitioner('gemma')}>
+                <div className="healing-practitioner-image">
+                  <img src="/facilitators/gemma-wilcox.jpg" alt="Gemma Wilcox" />
+                </div>
+                <div className="healing-practitioner-content">
+                  <h3 className="healing-practitioner-name">Gemma Wilcox</h3>
+                  <p className="healing-practitioner-primary-title">Integrative Bodyworker</p>
+                  <p className="healing-practitioner-secondary-title">Biodynamic Craniosacral Practitioner</p>
+                  <p className="healing-practitioner-preview">
+                    Gemma offers deeply attuned, grounding, nourishing, and intuitive sessions that support restoration, presence, and reconnection with the body's innate intelligence and aliveness.
+                  </p>
+                  <p className="healing-learn-more">Learn More →</p>
+                </div>
               </div>
             </div>
           </div>
@@ -784,8 +787,15 @@ function Home() {
               </div>
             </div>
             <p className="healing-pricing-note">
-              Not sure which session is right for you?<br />
-              Gemma and Rachel can help guide you toward the best fit for your needs.
+              Not sure which session is right for you? Gemma and Rachel can help guide you toward the best fit for your needs.
+            </p>
+          </div>
+
+          {/* CTA */}
+          <div className="healing-cta">
+            <button className="healing-cta-button">Reserve Your Session</button>
+            <p className="healing-cta-supporting">
+              Availability is limited. We encourage you to reserve your session before arriving at REVEL.
             </p>
           </div>
         </div>

@@ -4647,20 +4647,31 @@
 }
 
 /* Practitioners */
+.healing-practitioners-section {
+  margin-bottom: 80px;
+}
+
+.healing-practitioners-title {
+  font-family: 'Laluxess Serif', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .healing-practitioners {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-bottom: 80px;
+  gap: 50px;
 }
 
 .healing-practitioner-card {
   cursor: pointer;
   transition: all 0.4s ease;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 40px;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .healing-practitioner-card:hover {
@@ -4671,6 +4682,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  width: 100%;
+  margin-bottom: 30px;
   aspect-ratio: 3/4;
 }
 
@@ -4973,12 +4986,7 @@
 
   .healing-practitioners {
     grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .healing-practitioner-card {
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
+    gap: 40px;
   }
 
   .healing-offerings-grid {
@@ -5056,15 +5064,19 @@
     font-size: 0.9rem;
   }
 
+  .healing-practitioners-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
   .healing-practitioners {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 50px;
   }
 
-  .healing-practitioner-card {
-    grid-template-columns: 180px 1fr;
-    gap: 20px;
+  .healing-practitioner-image {
+    margin-bottom: 20px;
   }
 
   .healing-practitioner-name {
@@ -5185,9 +5197,12 @@
     font-size: 0.85rem;
   }
 
-  .healing-practitioner-card {
-    grid-template-columns: 140px 1fr;
-    gap: 15px;
+  .healing-practitioners-title {
+    font-size: 1.5rem;
+  }
+
+  .healing-practitioner-image {
+    margin-bottom: 15px;
   }
 
   .healing-practitioner-name {
