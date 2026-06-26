@@ -8,6 +8,8 @@ export default function Schedule() {
   const [expandedEvent, setExpandedEvent] = useState(null);
   const [modalEvent, setModalEvent] = useState(null);
   const [scrollPosition, setScrollPosition] = useState({ thursday: 0, friday: 0, saturday: 0, sunday: 0 });
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   const displayedEvents = selectedDay
     ? scheduleData.events.filter(event => event.day === selectedDay)
@@ -145,6 +147,14 @@ export default function Schedule() {
     setScrollPosition(prev => ({ ...prev, [day]: scrollLeft }));
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    setTouchEnd(e.changedTouches[0].clientX);
+  };
+
   const closeModal = () => {
     setModalEvent(null);
   };
@@ -194,7 +204,7 @@ export default function Schedule() {
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Thursday At a Glance</h2>
         <div className="swipe-hint">← Swipe to see all venues →</div>
-        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'thursday')}>
+        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'thursday')} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           <table className="friday-glance-grid">
             <thead>
               <tr>
@@ -299,7 +309,7 @@ export default function Schedule() {
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Friday At a Glance</h2>
         <div className="swipe-hint">← Swipe to see all venues →</div>
-        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'friday')}>
+        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'friday')} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           <table className="friday-glance-grid">
             <thead>
               <tr>
@@ -565,7 +575,7 @@ export default function Schedule() {
       <div className="saturday-glance-container">
         <h2 className="saturday-glance-title">Saturday At a Glance</h2>
         <div className="swipe-hint">← Swipe to see all venues →</div>
-        <div className="saturday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'saturday')}>
+        <div className="saturday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'saturday')} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           <table className="saturday-glance-grid">
             <thead>
               <tr>
@@ -819,7 +829,7 @@ export default function Schedule() {
       <div className="friday-glance-container">
         <h2 className="friday-glance-title">Sunday At a Glance</h2>
         <div className="swipe-hint">← Swipe to see all venues →</div>
-        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'sunday')}>
+        <div className="friday-glance-wrapper" onScroll={(e) => handleGridScroll(e, 'sunday')} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           <table className="friday-glance-grid">
             <thead>
               <tr>
