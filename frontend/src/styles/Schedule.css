@@ -949,7 +949,7 @@
 .meal-title {
   font-size: 0.9rem;
   font-weight: 600;
-  color: rgba(245, 241, 237, 0.95);
+  color: var(--cream) !important;
   letter-spacing: 0.4px;
 }
 
