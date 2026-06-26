@@ -294,6 +294,13 @@ export const facilitatorData = {
       bio: 'Courtney is a facilitator who holds a provocative pole in relational edgework.\n\nShe guides people into the body\'s unspoken truths, helping them dismantle social masks and encounter the deeper forces shaping their relationships, choices, and sense of self.\n\nHer work opens doorways into the underworld of instinct, desire, fear, grief, and power, creating opportunities for profound honesty and transformation.\n\nNearly two decades of ministry, leadership, and retreat facilitation have shaped her capacity to sit with intensity without flinching and meet whatever rises with grounded presence and unwavering attention.',
       photo: '/facilitators/courtney-babbidge.jpg',
       slug: 'courtney-babbidge'
+    },
+    'steph-shinaberry': {
+      name: 'Steph Shinaberry',
+      role: 'Pleasure & Embodiment Guide',
+      bio: 'Steph is a pleasure and embodiment guide creating immersive, consent-forward experiences that invite people into deeper connection with themselves and others.\n\nThrough offerings like her monthly Lean In…Closer event and Temple Experiences, she curates intentional spaces where curiosity leads, boundaries are honored, and everything is always optional. These are living laboratories for exploring intimacy, communication, and embodied connection.\n\nShe works with individuals, couples, and groups. Her work blends grounded presence with playful exploration, supporting people to reconnect with their bodies, express their desires, and experience connection beyond the habitual and the familiar.',
+      photo: '/facilitators/steph-shinaberry.jpg',
+      slug: 'steph-shinaberry'
     }
   },
 
