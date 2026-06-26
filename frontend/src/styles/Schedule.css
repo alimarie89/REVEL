@@ -753,8 +753,8 @@
 }
 
 .glance-time-cell {
-  width: 100px;
-  min-width: 100px;
+  width: 140px;
+  min-width: 140px;
   font-weight: 600;
   color: var(--copper);
   font-size: 0.75rem;
@@ -795,7 +795,7 @@
 .glance-title {
   font-weight: 600;
   margin-bottom: 3px;
-  color: var(--cream);
+  color: rgba(245, 241, 237, 0.95);
 }
 
 .glance-subtitle {
