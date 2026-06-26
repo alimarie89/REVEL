@@ -735,8 +735,8 @@
 }
 
 .glance-space-header {
-  width: 100px !important;
-  min-width: 100px !important;
+  width: 120px !important;
+  min-width: 120px !important;
 }
 
 .glance-time-row {
@@ -765,8 +765,8 @@
 }
 
 .glance-event-cell {
-  width: 100px !important;
-  min-width: 100px !important;
+  width: 120px !important;
+  min-width: 120px !important;
   padding: 12px;
   vertical-align: top;
   height: 140px;
