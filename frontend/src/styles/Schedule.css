@@ -729,8 +729,8 @@
 }
 
 .glance-time-header {
-  width: 130px !important;
-  min-width: 130px !important;
+  width: 110px !important;
+  min-width: 110px !important;
   color: var(--copper);
 }
 
@@ -752,8 +752,8 @@
 }
 
 .glance-time-cell {
-  width: 130px !important;
-  min-width: 130px !important;
+  width: 110px !important;
+  min-width: 110px !important;
   font-weight: 600;
   color: var(--copper);
   font-size: 0.75rem;
