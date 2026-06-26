@@ -795,6 +795,7 @@
 .glance-title {
   font-weight: 600;
   margin-bottom: 3px;
+  color: var(--cream);
 }
 
 .glance-subtitle {
