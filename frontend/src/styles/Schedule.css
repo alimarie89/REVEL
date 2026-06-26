@@ -753,8 +753,8 @@
 }
 
 .glance-time-cell {
-  width: 140px;
-  min-width: 140px;
+  width: 180px;
+  min-width: 180px;
   font-weight: 600;
   color: var(--copper);
   font-size: 0.75rem;
@@ -762,6 +762,7 @@
   vertical-align: top;
   padding: 16px 12px;
   border-right: none;
+  white-space: nowrap;
 }
 
 .glance-event-cell {
