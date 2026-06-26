@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Team from './pages/Team'
 import TeamVision from './pages/TeamVision'
 import Schedule from './pages/Schedule'
+import SchedulePoster from './pages/SchedulePoster'
 import FAQ from './pages/FAQ'
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/team-vision" element={<TeamVision />} />
         <Route path="/schedule" element={<Schedule />} />
+        {/* Print-optimized schedule poster routes */}
+        <Route path="/schedule-poster" element={<SchedulePoster />} />
+        <Route path="/schedule-poster/:day" element={<SchedulePoster />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
     </BrowserRouter>

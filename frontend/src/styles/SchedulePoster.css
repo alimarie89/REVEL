@@ -1,0 +1,371 @@
+/* ========== SCHEDULE POSTER - PRINT OPTIMIZED ========== */
+/* Uses Schedule.css base styles with print-specific overrides for 24"x36" poster */
+
+:root {
+  --poster-margin: 0.5in;
+}
+
+@page {
+  size: 24in 36in portrait;
+  margin: var(--poster-margin);
+  padding: 0;
+}
+
+/* Screen container */
+.schedule-poster {
+  background: #f5f1ed;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.print-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background: #f5f1ed;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(201, 168, 117, 0.15);
+}
+
+.print-button {
+  padding: 10px 20px;
+  background: #c9a875;
+  color: #1a1614;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.print-button:hover {
+  background: #d4a574;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Poster At a Glance Grid - Compact and print-optimized */
+.friday-glance-container {
+  padding: 0.2in 0.3in;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.friday-glance-title {
+  font-family: 'Laluxess', serif;
+  font-size: 1.4rem;
+  color: #1a1614;
+  margin: 0 0 0.08in 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.poster-date-subtitle {
+  font-size: 0.7rem;
+  color: #a89a87;
+  text-align: center;
+  margin: 0 0 0.15in 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* No horizontal scrolling on poster */
+.friday-glance-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+}
+
+/* Grid table - compact for poster */
+.friday-glance-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  table-layout: fixed;
+  font-size: 0.85rem;
+}
+
+.friday-glance-grid thead {
+  border-bottom: 1px solid rgba(26, 22, 20, 0.2);
+  background: transparent;
+}
+
+.friday-glance-grid th {
+  padding: 0.1in 0.08in;
+  text-align: left;
+  font-weight: 600;
+  color: #c9a875;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.friday-glance-grid th:last-child {
+  border-right: none;
+}
+
+/* Compact cell sizing */
+.glance-time-header {
+  width: 0.75in;
+  min-width: 0.75in;
+  color: #c9a875;
+}
+
+.glance-space-header {
+  width: 2.95in;
+  min-width: 2.95in;
+}
+
+/* Time rows */
+.glance-time-row {
+  border-bottom: 1px solid rgba(26, 22, 20, 0.08);
+}
+
+.glance-time-row:hover {
+  background: rgba(201, 168, 117, 0.01);
+}
+
+.glance-time-cell {
+  width: 0.75in;
+  min-width: 0.75in;
+  font-weight: 600;
+  color: #c9a875;
+  font-size: 0.65rem;
+  letter-spacing: 0.3px;
+  vertical-align: top;
+  padding: 0.1in 0.08in;
+  border-right: none;
+}
+
+.glance-event-cell {
+  width: 2.95in;
+  min-width: 2.95in;
+  padding: 0.08in;
+  vertical-align: top;
+  height: auto;
+  border-right: none;
+  word-wrap: break-word;
+}
+
+.glance-event-cell:last-child {
+  border-right: none;
+}
+
+/* Compact event blocks */
+.glance-event-block {
+  background: linear-gradient(135deg, rgba(35, 30, 28, 0.1) 0%, rgba(30, 25, 23, 0.05) 100%);
+  border-radius: 1px;
+  padding: 0.05in 0.07in;
+  font-size: 0.65rem;
+  color: #1a1614;
+  line-height: 1.25;
+  word-break: break-word;
+  text-align: left;
+  border: 1px solid rgba(26, 22, 20, 0.06);
+  margin-bottom: 0.04in;
+}
+
+.glance-event-block:last-child {
+  margin-bottom: 0;
+}
+
+.glance-event-block.glance-other {
+  padding: 0.04in 0.06in;
+}
+
+.glance-title {
+  font-weight: 600;
+  margin-bottom: 0.02in;
+  line-height: 1.2;
+  font-size: 0.65rem;
+}
+
+.glance-subtitle {
+  font-size: 0.55rem;
+  color: #a85c3f;
+  font-weight: 400;
+  margin-bottom: 0.01in;
+  line-height: 1;
+}
+
+.glance-facilitators {
+  font-size: 0.55rem;
+  color: #a89a87;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 0.01in;
+  line-height: 1.1;
+}
+
+.glance-location {
+  font-size: 0.55rem;
+  color: #a89a87;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-top: 0.02in;
+}
+
+.glance-actual-time {
+  font-size: 0.5rem;
+  color: #a89a87;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-top: 0.01in;
+  line-height: 1;
+}
+
+/* Meal banners - compact */
+.meal-banner-row {
+  border-bottom: 1px solid rgba(201, 168, 117, 0.3);
+  border-top: 1px solid rgba(26, 22, 20, 0.1);
+  background: linear-gradient(135deg, rgba(201, 168, 117, 0.06) 0%, rgba(212, 165, 116, 0.03) 100%);
+}
+
+.meal-banner-cell {
+  padding: 0.1in 0.08in !important;
+  vertical-align: middle;
+}
+
+.meal-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 0.06in;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.meal-badge {
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  color: #c9a875;
+  background: rgba(201, 168, 117, 0.15);
+  padding: 0.03in 0.07in;
+  border-radius: 1px;
+  border: 1px solid rgba(201, 168, 117, 0.25);
+  flex-shrink: 0;
+}
+
+.meal-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1a1614;
+  letter-spacing: 0.3px;
+}
+
+.meal-time {
+  font-size: 0.65rem;
+  color: #a89a87;
+}
+
+.meal-location {
+  font-size: 0.65rem;
+  color: #a89a87;
+}
+
+.meal-divider {
+  color: rgba(201, 168, 117, 0.5);
+  font-size: 0.7rem;
+}
+
+/* Footer */
+.poster-footer {
+  padding: 0.15in 0.3in;
+  text-align: center;
+  border-top: 1px solid rgba(26, 22, 20, 0.1);
+  background: transparent;
+  font-size: 0.7rem;
+  color: #a89a87;
+  margin-top: auto;
+}
+
+.footer-text {
+  margin-bottom: 0.08in;
+  font-size: 0.65rem;
+  color: #a89a87;
+}
+
+.qr-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.04in;
+}
+
+.qr-box {
+  width: 0.75in;
+  height: 0.75in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(26, 22, 20, 0.15);
+  background: #fff;
+  font-size: 0.55rem;
+  color: #a89a87;
+  font-weight: 500;
+}
+
+.qr-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #c9a875;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f1ed;
+  }
+
+  .schedule-poster {
+    background: #f5f1ed;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .print-button-container {
+    display: none !important;
+  }
+
+  .friday-glance-wrapper {
+    overflow: visible !important;
+    page-break-inside: avoid;
+  }
+
+  .glance-event-cell {
+    page-break-inside: avoid;
+  }
+
+  .meal-banner-row {
+    page-break-inside: avoid;
+  }
+
+  .glance-time-row {
+    page-break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
