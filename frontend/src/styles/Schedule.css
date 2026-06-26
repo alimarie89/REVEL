@@ -730,14 +730,14 @@
 }
 
 .glance-time-header {
-  width: 100px;
-  min-width: 100px;
+  width: 180px;
+  min-width: 180px;
   color: var(--copper);
 }
 
 .glance-space-header {
-  width: 140px;
-  min-width: 140px;
+  width: 100px;
+  min-width: 100px;
 }
 
 .glance-time-row {
@@ -766,8 +766,8 @@
 }
 
 .glance-event-cell {
-  width: 140px;
-  min-width: 140px;
+  width: 100px;
+  min-width: 100px;
   padding: 12px;
   vertical-align: top;
   height: 140px;
