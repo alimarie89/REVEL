@@ -687,7 +687,7 @@
 .friday-glance-title {
   font-family: 'Laluxess', serif;
   font-size: 1.8rem;
-  color: #f5f1ed;
+  color: var(--cream) !important;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
@@ -983,7 +983,7 @@
 .saturday-glance-title {
   font-family: 'Laluxess', serif;
   font-size: 1.8rem;
-  color: #f5f1ed;
+  color: var(--cream) !important;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
