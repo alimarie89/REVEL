@@ -273,9 +273,9 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 9:00 PM–12:00 AM */}
+              {/* 9:00 PM–11:00 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">9:00 PM–12:00 AM</td>
+                <td className="glance-time-cell">9:00 PM–11:00 PM</td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Opening Dance Journey')}>
                     <div className="glance-title">Opening Dance Journey</div>
