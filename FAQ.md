@@ -111,6 +111,9 @@ A: Yes. Potable water stations will be available. Please bring a reusable water 
 **Q: What about meals?**
 A: We have an optional meal-plan and comfortable eating situation so everyone can eat together if they wish. Incredible farm-to-table meals are available for purchase.
 
+**Q: Are there refrigerators available?**
+A: There is one full size refrigerator in Rimrock Cafe on the second floor of the accommodations building. No specific refrigerator use is guaranteed.
+
 ---
 
 ## Agreements & Safety
