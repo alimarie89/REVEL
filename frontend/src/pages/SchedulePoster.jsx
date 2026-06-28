@@ -344,46 +344,14 @@ function DayScheduleGrid({ day }) {
 }
 
 /**
- * FullScheduleList - Shows all 4 days as a continuous list on one page
+ * FullScheduleList - Shows all 4 days in grid format stacked on one page
  */
 function FullScheduleList() {
   const handlePrint = () => {
     window.print();
   };
 
-  // Helper function to parse time for sorting
-  const parseTimeValue = (timeStr) => {
-    const match = timeStr.match(/(\d+):?(\d*)\s*([ap]m)?/i);
-    if (!match) return 0;
-    let hours = parseInt(match[1]);
-    const mins = parseInt(match[2]) || 0;
-    const period = match[3] ? match[3].toLowerCase() : '';
-    
-    if (period === 'pm' && hours !== 12) hours += 12;
-    if (period === 'am' && hours === 12) hours = 0;
-    
-    return hours * 60 + mins;
-  };
-
-  // Sort all events chronologically by day then time
   const allDays = ['Thursday 7/2', 'Friday 7/3', 'Saturday 7/4', 'Sunday 7/5'];
-  const allEvents = [...scheduleData.events].sort((a, b) => {
-    const dayOrder = allDays.indexOf(a.day) - allDays.indexOf(b.day);
-    if (dayOrder !== 0) return dayOrder;
-    return parseTimeValue(a.time) - parseTimeValue(b.time);
-  });
-
-  const formatFacilitatorNames = (facilitatorNames) => {
-    if (!facilitatorNames || facilitatorNames.length === 0) return '';
-    const facilitators = facilitatorData.getFacilitators(facilitatorNames);
-    if (facilitators.length === 0) return '';
-    if (facilitators.length === 1) return facilitators[0].name;
-    if (facilitators.length === 2) return `${facilitators[0].name} & ${facilitators[1].name}`;
-    const names = facilitators.slice(0, -1).map(f => f.name).join(', ');
-    return names + ` & ${facilitators[facilitators.length - 1].name}`;
-  };
-
-  let currentDay = '';
 
   return (
     <div className="schedule-poster full-schedule-list">
@@ -398,38 +366,10 @@ function FullScheduleList() {
         <h1 className="full-schedule-title">REVEL 2026 Schedule</h1>
         <p className="full-schedule-subtitle">July 2–5, 2026 • Sunrise Ranch</p>
 
-        <div className="full-schedule-list-wrapper">
-          {allEvents.map((event, idx) => {
-            const isDayChange = currentDay !== event.day;
-            if (isDayChange) currentDay = event.day;
-
-            const dayDate = event.day === 'Thursday 7/2' ? 'Thursday, July 2' :
-                           event.day === 'Friday 7/3' ? 'Friday, July 3' :
-                           event.day === 'Saturday 7/4' ? 'Saturday, July 4' : 'Sunday, July 5';
-
-            return (
-              <div key={idx}>
-                {isDayChange && (
-                  <div className="schedule-day-header">
-                    <h2>{dayDate}</h2>
-                  </div>
-                )}
-                <div className="schedule-list-item">
-                  <div className="schedule-item-time">{event.time}</div>
-                  <div className="schedule-item-content">
-                    <div className="schedule-item-title">{event.title}</div>
-                    {formatFacilitatorNames(event.facilitators) && (
-                      <div className="schedule-item-facilitators">
-                        {formatFacilitatorNames(event.facilitators)}
-                      </div>
-                    )}
-                    <div className="schedule-item-location">{event.space}</div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {/* Render each day's grid */}
+        {allDays.map((day) => (
+          <DayGrid key={day} day={day} />
+        ))}
       </div>
 
       {/* Footer */}
@@ -438,6 +378,225 @@ function FullScheduleList() {
           Schedule subject to change. Visit REVEL website for live updates.
         </div>
       </footer>
+    </div>
+  );
+}
+
+/**
+ * DayGrid - Renders a single day's schedule in grid format
+ */
+function DayGrid({ day }) {
+  // Filter events and meals for the day
+  const dayEvents = scheduleData.events.filter(event => event.day === day);
+  const dayMeals = scheduleData.meals[day] || [];
+
+  const mainSpaces = ['The Marquee', 'The Hearth', 'The Threshold', 'The Grove'];
+
+  const normalizeVenue = (venue) => {
+    if (!venue) return '';
+    const normalized = venue.trim().toLowerCase();
+    if (normalized === 'the marquee' || normalized === 'marquee') return 'The Marquee';
+    if (normalized === 'the hearth' || normalized === 'hearth') return 'The Hearth';
+    if (normalized === 'the threshold' || normalized === 'threshold') return 'The Threshold';
+    if (normalized === 'the grove' || normalized === 'grove') return 'The Grove';
+    return null;
+  };
+
+  const parseTimeForSort = (timeStr) => {
+    const parts = timeStr.split(' - ');
+    if (parts.length < 2) {
+      const cleanPart = parts[0].toLowerCase().replace(/[ap]m/gi, '').trim();
+      const [hours, mins] = cleanPart.split(':').map(Number);
+      const isPM = parts[0].toLowerCase().includes('pm');
+      return (isPM && hours !== 12 ? hours + 12 : hours === 12 && !isPM ? 0 : hours) * 60 + (mins || 0);
+    }
+    
+    const startPart = parts[0].trim();
+    const endPart = parts[1].trim();
+    const startClean = startPart.toLowerCase().replace(/[ap]m/gi, '').trim();
+    const [startHours, startMins] = startClean.split(':').map(Number);
+    const endClean = endPart.replace(/[ap]m/gi, '').trim();
+    const [endHours] = endClean.split(':').map(Number);
+    
+    let isPM = startPart.toLowerCase().includes('pm');
+    
+    if (!startPart.toLowerCase().includes('am') && !startPart.toLowerCase().includes('pm')) {
+      if (endPart.toLowerCase().includes('pm')) {
+        isPM = endHours !== 12;
+      } else if (endPart.toLowerCase().includes('am')) {
+        isPM = startHours >= 9 && endHours <= 4;
+      }
+    }
+    
+    return (isPM && startHours !== 12 ? startHours + 12 : startHours === 12 && !isPM ? 0 : startHours) * 60 + (startMins || 0);
+  };
+
+  parseTimeForSort.extractPeriod = (timeStr) => {
+    const match = timeStr.match(/[ap]m/i);
+    return match ? match[0] : '';
+  };
+
+  const getCuratedTimes = () => {
+    if (day === 'Thursday 7/2') {
+      return ['4:30–5:30 PM', '7:15–8:45 PM', '9:00 PM–11:00 PM'];
+    } else if (day === 'Friday 7/3') {
+      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM', '11:00 PM–1:00 AM'];
+    } else if (day === 'Saturday 7/4') {
+      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '2:30–3:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM', '12:00–1:00 AM'];
+    } else if (day === 'Sunday 7/5') {
+      return ['8:15–9:45 AM', '10:00–11:45 AM', '11:30 AM–12:30 PM'];
+    }
+    return [];
+  };
+
+  const eventFallsInTimeBucket = (eventTime, bucketTime) => {
+    const bucketParts = bucketTime.split('–');
+    if (bucketParts.length < 2) return false;
+    
+    let bucketStart = bucketParts[0].trim();
+    const bucketEnd = bucketParts[1].trim();
+    const eventParts = eventTime.split(' - ');
+    if (eventParts.length < 2) return false;
+    
+    const eventStart = eventParts[0].trim();
+    const eventEnd = eventParts[1].trim();
+    
+    if (!bucketStart.match(/[ap]m/i)) {
+      const periodMatch = bucketEnd.match(/[ap]m/i);
+      if (periodMatch) {
+        bucketStart = bucketStart + ' ' + periodMatch[0];
+      }
+    }
+    
+    const bucketStartMin = parseTimeForSort(bucketStart);
+    const bucketEndMin = parseTimeForSort(bucketEnd);
+    const eventStartMin = parseTimeForSort(eventStart + ' ' + parseTimeForSort.extractPeriod(eventEnd));
+    
+    if (bucketEndMin < bucketStartMin) {
+      return eventStartMin >= bucketStartMin || eventStartMin < bucketEndMin;
+    } else {
+      return eventStartMin >= bucketStartMin && eventStartMin < bucketEndMin;
+    }
+  };
+
+  const getTimesToDisplay = () => {
+    const curated = getCuratedTimes();
+    return curated.filter(time => {
+      const hasEvent = dayEvents.some(e => eventFallsInTimeBucket(e.time, time));
+      const hasMeal = dayMeals.some(m => m.time === time);
+      return hasEvent || hasMeal;
+    });
+  };
+
+  const getEventsForTimeAndSpace = (timeBucket, space) => {
+    return dayEvents.filter(event => 
+      eventFallsInTimeBucket(event.time, timeBucket) && normalizeVenue(event.space) === space
+    );
+  };
+
+  const getEventsForTimeInOtherSpaces = (timeBucket) => {
+    return dayEvents.filter(event =>
+      eventFallsInTimeBucket(event.time, timeBucket) && normalizeVenue(event.space) === null
+    );
+  };
+
+  const formatFacilitatorNames = (facilitatorNames) => {
+    if (!facilitatorNames || facilitatorNames.length === 0) return '';
+    const facilitators = facilitatorData.getFacilitators(facilitatorNames);
+    if (facilitators.length === 0) return '';
+    if (facilitators.length === 1) return facilitators[0].name;
+    if (facilitators.length === 2) return `${facilitators[0].name} & ${facilitators[1].name}`;
+    const names = facilitators.slice(0, -1).map(f => f.name).join(', ');
+    return names + ` & ${facilitators[facilitators.length - 1].name}`;
+  };
+
+  const dayDate = day === 'Thursday 7/2' ? 'July 2' : day === 'Friday 7/3' ? 'July 3' : day === 'Saturday 7/4' ? 'July 4' : 'July 5';
+  const dayName = day.split(' ')[0];
+  const timesToDisplay = getTimesToDisplay();
+
+  return (
+    <div className="day-grid-section">
+      <div className="day-grid-header">
+        <h2>{dayName} • {dayDate}</h2>
+      </div>
+      
+      <div className="day-grid-wrapper">
+        <table className="day-grid-table">
+          <thead>
+            <tr>
+              <th className="glance-time-header">Time</th>
+              <th className="glance-space-header">The Marquee</th>
+              <th className="glance-space-header">The Hearth</th>
+              <th className="glance-space-header">The Threshold</th>
+              <th className="glance-space-header">The Grove</th>
+              <th className="glance-space-header">Other</th>
+            </tr>
+          </thead>
+          <tbody>
+            {timesToDisplay.map((time, idx) => {
+              const meal = dayMeals.find(m => m.time === time);
+
+              if (meal) {
+                return (
+                  <tr key={`meal-${idx}`} className="meal-banner-row">
+                    <td colSpan="6" className="meal-banner-cell">
+                      <div className="meal-banner-content">
+                        <span className="meal-badge">Meal</span>
+                        <span className="meal-title">{meal.title}</span>
+                        <span className="meal-divider">•</span>
+                        <span className="meal-time">{meal.time}</span>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              }
+
+              const eventsForTime = dayEvents.filter(event => eventFallsInTimeBucket(event.time, time));
+              if (eventsForTime.length === 0) return null;
+
+              return (
+                <tr key={`time-${idx}`} className="glance-time-row">
+                  <td className="glance-time-cell">{time}</td>
+                  
+                  {mainSpaces.map(space => {
+                    const events = getEventsForTimeAndSpace(time, space);
+                    return (
+                      <td key={space} className="glance-event-cell">
+                        {events.map((event, eventIdx) => (
+                          <div key={eventIdx} className="glance-event-block">
+                            <div className="glance-title">{event.title}</div>
+                            {formatFacilitatorNames(event.facilitators) && (
+                              <div className="glance-facilitators">
+                                {formatFacilitatorNames(event.facilitators)}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </td>
+                    );
+                  })}
+
+                  <td className="glance-event-cell">
+                    {getEventsForTimeInOtherSpaces(time).map((event, eventIdx) => (
+                      <div key={eventIdx} className="glance-event-block glance-other">
+                        <div className="glance-title">{event.title}</div>
+                        {event.space && (
+                          <div className="glance-location">{event.space}</div>
+                        )}
+                        {formatFacilitatorNames(event.facilitators) && (
+                          <div className="glance-facilitators">
+                            {formatFacilitatorNames(event.facilitators)}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

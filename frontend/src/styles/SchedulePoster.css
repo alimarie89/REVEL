@@ -335,103 +335,91 @@
 
 .full-schedule-container {
   max-width: 100%;
-  padding: 0.5in;
+  padding: 0.3in 0.5in;
   background: #f5f1ed;
 }
 
 .full-schedule-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
   text-align: center;
   color: #1a1614;
-  margin: 0.3in 0 0.1in 0;
+  margin: 0.1in 0 0.05in 0;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.02em;
 }
 
 .full-schedule-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   text-align: center;
   color: #6b2e24;
-  margin: 0 0 0.3in 0;
+  margin: 0 0 0.15in 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
 
-.full-schedule-list-wrapper {
-  background: white;
-  border: 1px solid rgba(201, 168, 117, 0.2);
-  padding: 0;
+/* Day Grid Sections */
+.day-grid-section {
+  margin-bottom: 0.2in;
+  page-break-inside: avoid;
 }
 
-.schedule-day-header {
+.day-grid-header {
   background: #6b2e24;
   color: #f5f1ed;
-  padding: 0.15in 0.25in;
-  margin-top: 0;
-  border-bottom: 3px solid #c9a875;
+  padding: 0.08in 0.12in;
+  border-bottom: 2px solid #c9a875;
 }
 
-.schedule-day-header h2 {
-  font-size: 1.2rem;
+.day-grid-header h2 {
+  font-size: 0.9rem;
   font-weight: 700;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.01em;
 }
 
-.schedule-list-item {
-  display: grid;
-  grid-template-columns: 0.8in 1fr;
-  gap: 0.15in;
-  padding: 0.12in 0.15in;
-  border-bottom: 1px solid rgba(201, 168, 117, 0.1);
-  align-items: flex-start;
+.day-grid-wrapper {
+  overflow-x: auto;
+  background: white;
 }
 
-.schedule-list-item:last-child {
-  border-bottom: none;
-}
-
-.schedule-item-time {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #6b2e24;
+.day-grid-table {
+  width: 100%;
+  border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.3;
-}
-
-.schedule-item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.04in;
-}
-
-.schedule-item-title {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #1a1614;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
-  margin: 0;
-}
-
-.schedule-item-facilitators {
-  font-size: 0.7rem;
-  color: #6b2e24;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
-  margin: 0;
-  font-style: italic;
-}
-
-.schedule-item-location {
   font-size: 0.65rem;
-  color: #999;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
-  margin: 0;
+}
+
+.day-grid-table thead th {
+  background: #f5f1ed;
+  border: 1px solid rgba(201, 168, 117, 0.2);
+  padding: 0.06in 0.05in;
+  font-weight: 700;
+  color: #6b2e24;
+  text-align: left;
+  vertical-align: top;
+}
+
+.day-grid-table tbody td {
+  border: 1px solid rgba(201, 168, 117, 0.2);
+  padding: 0.05in;
+  vertical-align: top;
+}
+
+.day-grid-table .glance-time-cell {
+  background: #6b2e24;
+  color: #f5f1ed;
+  font-weight: 700;
+  width: 0.6in;
+  min-width: 0.6in;
+  padding: 0.05in;
+}
+
+.day-grid-table .glance-event-cell {
+  background: white;
 }
 
 /* ========== PRINT STYLES ========== */
@@ -470,17 +458,16 @@
     page-break-inside: avoid;
   }
 
-  .full-schedule-list-wrapper {
-    background: white;
-    border: none;
-  }
-
-  .schedule-list-item {
+  .day-grid-section {
     page-break-inside: avoid;
   }
 
-  .schedule-day-header {
-    page-break-after: avoid;
+  .day-grid-wrapper {
+    page-break-inside: avoid;
+  }
+
+  .day-grid-table {
+    page-break-inside: avoid;
   }
 
   * {
