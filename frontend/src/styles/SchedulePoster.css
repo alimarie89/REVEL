@@ -367,18 +367,18 @@
 
 .day-grid-header {
   background: linear-gradient(135deg, #6b2e24 0%, #5a241b 100%);
-  color: #f5f1ed;
-  padding: 0.12in 0.16in;
+  color: white;
+  padding: 0.18in 0.16in;
   border-bottom: 3px solid #c9a875;
-  margin-bottom: 0.08in;
+  margin-bottom: 0.1in;
 }
 
 .day-grid-header h2 {
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-size: 1.4rem;
+  font-weight: 900;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
