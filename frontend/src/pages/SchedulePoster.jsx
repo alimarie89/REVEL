@@ -8,18 +8,30 @@ import '../styles/SchedulePoster.css';
  * SchedulePoster Component
  * 
  * Print-optimized schedule poster (24x36" portrait).
- * Uses the same "At a Glance" table grid as the web schedule, optimized for print.
  * 
  * Routes:
- * - /schedule-poster              → Friday (default)
- * - /schedule-poster/friday       → Friday 7/3
- * - /schedule-poster/saturday     → Saturday 7/4
- * - /schedule-poster/sunday       → Sunday 7/5
+ * - /schedule-poster              → Friday grid (default)
+ * - /schedule-poster/friday       → Friday 7/3 grid
+ * - /schedule-poster/saturday     → Saturday 7/4 grid
+ * - /schedule-poster/sunday       → Sunday 7/5 grid
+ * - /schedule-poster/list         → Full schedule list view
  */
 export default function SchedulePoster() {
   const { day } = useParams();
 
-  // Map URL day parameter to full day name with date
+  // Show list view for full schedule
+  if (day === 'list' || day === 'full') {
+    return <FullScheduleList />;
+  }
+
+  // Original grid view
+  return <DayScheduleGrid day={day} />;
+}
+
+/**
+ * DayScheduleGrid - Shows one day in grid format (original behavior)
+ */
+function DayScheduleGrid({ day }) {
   const selectedDay = day ? `${day.charAt(0).toUpperCase() + day.slice(1)} 7/${day === 'thursday' ? '2' : day === 'friday' ? '3' : day === 'saturday' ? '4' : '5'}` : 'Friday 7/3';
   
   const dayDate = selectedDay === 'Thursday 7/2' ? 'July 2' : selectedDay === 'Friday 7/3' ? 'July 3' : selectedDay === 'Saturday 7/4' ? 'July 4' : 'July 5';
@@ -325,6 +337,105 @@ export default function SchedulePoster() {
         <div className="qr-placeholder">
           <div className="qr-box">[QR Code]</div>
           <div className="qr-label">Live Schedule</div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+/**
+ * FullScheduleList - Shows all 4 days as a continuous list on one page
+ */
+function FullScheduleList() {
+  const handlePrint = () => {
+    window.print();
+  };
+
+  // Helper function to parse time for sorting
+  const parseTimeValue = (timeStr) => {
+    const match = timeStr.match(/(\d+):?(\d*)\s*([ap]m)?/i);
+    if (!match) return 0;
+    let hours = parseInt(match[1]);
+    const mins = parseInt(match[2]) || 0;
+    const period = match[3] ? match[3].toLowerCase() : '';
+    
+    if (period === 'pm' && hours !== 12) hours += 12;
+    if (period === 'am' && hours === 12) hours = 0;
+    
+    return hours * 60 + mins;
+  };
+
+  // Sort all events chronologically by day then time
+  const allDays = ['Thursday 7/2', 'Friday 7/3', 'Saturday 7/4', 'Sunday 7/5'];
+  const allEvents = [...scheduleData.events].sort((a, b) => {
+    const dayOrder = allDays.indexOf(a.day) - allDays.indexOf(b.day);
+    if (dayOrder !== 0) return dayOrder;
+    return parseTimeValue(a.time) - parseTimeValue(b.time);
+  });
+
+  const formatFacilitatorNames = (facilitatorNames) => {
+    if (!facilitatorNames || facilitatorNames.length === 0) return '';
+    const facilitators = facilitatorData.getFacilitators(facilitatorNames);
+    if (facilitators.length === 0) return '';
+    if (facilitators.length === 1) return facilitators[0].name;
+    if (facilitators.length === 2) return `${facilitators[0].name} & ${facilitators[1].name}`;
+    const names = facilitators.slice(0, -1).map(f => f.name).join(', ');
+    return names + ` & ${facilitators[facilitators.length - 1].name}`;
+  };
+
+  let currentDay = '';
+
+  return (
+    <div className="schedule-poster full-schedule-list">
+      {/* Screen-only print button */}
+      <div className="print-button-container">
+        <button type="button" className="print-button" onClick={handlePrint}>
+          🖨️ Print Schedule
+        </button>
+      </div>
+
+      <div className="full-schedule-container">
+        <h1 className="full-schedule-title">REVEL 2026 Schedule</h1>
+        <p className="full-schedule-subtitle">July 2–5, 2026 • Sunrise Ranch</p>
+
+        <div className="full-schedule-list-wrapper">
+          {allEvents.map((event, idx) => {
+            const isDayChange = currentDay !== event.day;
+            if (isDayChange) currentDay = event.day;
+
+            const dayDate = event.day === 'Thursday 7/2' ? 'Thursday, July 2' :
+                           event.day === 'Friday 7/3' ? 'Friday, July 3' :
+                           event.day === 'Saturday 7/4' ? 'Saturday, July 4' : 'Sunday, July 5';
+
+            return (
+              <div key={idx}>
+                {isDayChange && (
+                  <div className="schedule-day-header">
+                    <h2>{dayDate}</h2>
+                  </div>
+                )}
+                <div className="schedule-list-item">
+                  <div className="schedule-item-time">{event.time}</div>
+                  <div className="schedule-item-content">
+                    <div className="schedule-item-title">{event.title}</div>
+                    {formatFacilitatorNames(event.facilitators) && (
+                      <div className="schedule-item-facilitators">
+                        {formatFacilitatorNames(event.facilitators)}
+                      </div>
+                    )}
+                    <div className="schedule-item-location">{event.space}</div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="poster-footer">
+        <div className="footer-text">
+          Schedule subject to change. Visit REVEL website for live updates.
         </div>
       </footer>
     </div>
