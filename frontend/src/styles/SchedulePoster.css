@@ -380,6 +380,7 @@
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  color: white !important;
 }
 
 .day-grid-wrapper {
