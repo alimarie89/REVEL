@@ -2,7 +2,7 @@
 /* Uses Schedule.css base styles with print-specific overrides for 24"x36" poster */
 
 :root {
-  --poster-margin: 0.5in;
+  --poster-margin: 0.25in;
 }
 
 @page {
