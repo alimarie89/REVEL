@@ -328,98 +328,184 @@
   letter-spacing: 0.3px;
 }
 
-/* ========== FULL SCHEDULE LIST STYLES ========== */
+/* FULL SCHEDULE LIST STYLES */
 .full-schedule-list {
-  background: #f5f1ed;
+  background: white;
 }
 
 .full-schedule-container {
   max-width: 100%;
-  padding: 0.3in 0.5in;
-  background: #f5f1ed;
+  padding: 0.4in 0.6in;
+  background: white;
 }
 
 .full-schedule-title {
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 2.2rem;
+  font-weight: 900;
   text-align: center;
   color: #1a1614;
-  margin: 0.1in 0 0.05in 0;
+  margin: 0.15in 0 0.05in 0;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .full-schedule-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-align: center;
   color: #6b2e24;
-  margin: 0 0 0.15in 0;
+  margin: 0 0 0.2in 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 /* Day Grid Sections */
 .day-grid-section {
-  margin-bottom: 0.2in;
+  margin-bottom: 0.25in;
   page-break-inside: avoid;
 }
 
 .day-grid-header {
-  background: #6b2e24;
+  background: linear-gradient(135deg, #6b2e24 0%, #5a241b 100%);
   color: #f5f1ed;
-  padding: 0.08in 0.12in;
-  border-bottom: 2px solid #c9a875;
+  padding: 0.12in 0.16in;
+  border-bottom: 3px solid #c9a875;
+  margin-bottom: 0.08in;
 }
 
 .day-grid-header h2 {
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .day-grid-wrapper {
-  overflow-x: auto;
   background: white;
+  border: 2px solid #c9a875;
+  page-break-inside: avoid;
 }
 
 .day-grid-table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.65rem;
-  line-height: 1.2;
+}
+
+.day-grid-table thead {
+  background: #f5f1ed;
 }
 
 .day-grid-table thead th {
-  background: #f5f1ed;
-  border: 1px solid rgba(201, 168, 117, 0.2);
-  padding: 0.06in 0.05in;
-  font-weight: 700;
+  border: 1px solid #c9a875;
+  padding: 0.1in 0.08in;
+  font-weight: 800;
   color: #6b2e24;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
+  font-size: 0.8rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .day-grid-table tbody td {
-  border: 1px solid rgba(201, 168, 117, 0.2);
-  padding: 0.05in;
+  border: 1px solid rgba(201, 168, 117, 0.3);
+  padding: 0.08in 0.08in;
   vertical-align: top;
 }
 
 .day-grid-table .glance-time-cell {
   background: #6b2e24;
   color: #f5f1ed;
-  font-weight: 700;
-  width: 0.6in;
-  min-width: 0.6in;
-  padding: 0.05in;
+  font-weight: 800;
+  width: 0.75in;
+  min-width: 0.75in;
+  padding: 0.08in 0.06in;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .day-grid-table .glance-event-cell {
   background: white;
+  padding: 0.07in;
+}
+
+.glance-event-block {
+  background: #f9f8f5;
+  border-left: 3px solid #c9a875;
+  padding: 0.06in 0.06in;
+  margin-bottom: 0.04in;
+}
+
+.glance-event-block:last-child {
+  margin-bottom: 0;
+}
+
+.glance-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1a1614;
+  margin: 0 0 0.02in 0;
+  line-height: 1.3;
+}
+
+.glance-facilitators {
+  font-size: 0.68rem;
+  color: #6b2e24;
+  margin: 0.01in 0 0 0;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.glance-location {
+  font-size: 0.62rem;
+  color: #888;
+  margin: 0.01in 0 0 0;
+  line-height: 1.2;
+}
+
+/* Meal row styling */
+.meal-banner-row td {
+  background: #6b2e24 !important;
+  border: 1px solid #c9a875 !important;
+  padding: 0.08in !important;
+}
+
+.meal-banner-content {
+  color: #f5f1ed;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.08in;
+  flex-wrap: wrap;
+}
+
+.meal-badge {
+  background: #c9a875;
+  color: #6b2e24;
+  padding: 0.02in 0.05in;
+  font-size: 0.65rem;
+  font-weight: 800;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.meal-title {
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+.meal-time {
+  font-size: 0.7rem;
+}
+
+.meal-divider {
+  color: #c9a875;
 }
 
 /* ========== PRINT STYLES ========== */
@@ -427,11 +513,11 @@
   body {
     margin: 0;
     padding: 0;
-    background: #f5f1ed;
+    background: white;
   }
 
   .schedule-poster {
-    background: #f5f1ed;
+    background: white;
     margin: 0;
     padding: 0;
     box-shadow: none;
@@ -439,6 +525,40 @@
 
   .print-button-container {
     display: none !important;
+  }
+
+  .full-schedule-container {
+    background: white;
+  }
+
+  .full-schedule-list {
+    background: white;
+  }
+
+  .day-grid-section {
+    page-break-inside: avoid;
+    margin-bottom: 0.3in;
+  }
+
+  .day-grid-wrapper {
+    page-break-inside: avoid;
+    overflow: visible;
+  }
+
+  .day-grid-table {
+    page-break-inside: avoid;
+  }
+
+  .glance-time-row {
+    page-break-inside: avoid;
+  }
+
+  .meal-banner-row {
+    page-break-inside: avoid;
+  }
+
+  .glance-event-cell {
+    page-break-inside: avoid;
   }
 
   .friday-glance-wrapper {
@@ -455,18 +575,6 @@
   }
 
   .glance-time-row {
-    page-break-inside: avoid;
-  }
-
-  .day-grid-section {
-    page-break-inside: avoid;
-  }
-
-  .day-grid-wrapper {
-    page-break-inside: avoid;
-  }
-
-  .day-grid-table {
     page-break-inside: avoid;
   }
 
