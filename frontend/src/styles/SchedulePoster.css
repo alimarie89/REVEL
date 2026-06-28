@@ -362,7 +362,11 @@
 /* Day Grid Sections */
 .day-grid-section {
   margin-bottom: 0.25in;
-  page-break-inside: avoid;
+}
+
+.day-grid-section:nth-child(1),
+.day-grid-section:nth-child(4) {
+  page-break-after: avoid;
 }
 
 .day-grid-header {
