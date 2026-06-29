@@ -688,15 +688,15 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Dancing with Death')}>
-                    <div className="glance-title">Dancing with Death</div>
-                    <div className="glance-facilitators">Atilla Cidam</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Belly2Belly')}>
                     <div className="glance-title">Belly2Belly</div>
                     <div className="glance-facilitators">Rachel Rickards</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Dancing with Death')}>
+                    <div className="glance-title">Dancing with Death</div>
+                    <div className="glance-facilitators">Atilla Cidam</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
