@@ -502,15 +502,31 @@ function DayGrid({ day }) {
     }
     
     // Determine the period for eventStart
-    let eventStartPeriod = parseTimeForSort.extractPeriod(eventEnd);
+    let eventStartPeriod = '';
     
-    // Smart logic: if event end is AM and event start hour > event end hour, 
-    // then event start is PM (e.g., "11:00 - 1:00am" = 11:00 PM - 1:00 AM)
-    if (eventEnd.toLowerCase().includes('am')) {
-      const eventEndHour = parseInt(eventEnd.split(':')[0], 10);
+    // If eventStart has an explicit period, use it
+    if (eventStart.toLowerCase().includes('am') || eventStart.toLowerCase().includes('pm')) {
+      eventStartPeriod = parseTimeForSort.extractPeriod(eventStart);
+    } else {
+      // eventStart doesn't have explicit period - infer from eventEnd and context
+      eventStartPeriod = parseTimeForSort.extractPeriod(eventEnd);
+      
       const eventStartHour = parseInt(eventStart.split(':')[0], 10);
-      if (eventStartHour > eventEndHour) {
-        eventStartPeriod = 'pm';
+      const eventEndHour = parseInt(eventEnd.split(':')[0], 10);
+      
+      // Smart logic for period inference
+      if (eventEnd.toLowerCase().includes('pm')) {
+        // If event ends in PM and start hour is early morning (8-11) and end hour is 12, assume AM start
+        // (e.g., "10 - 12pm" = 10am-12pm, not 10pm-12am which doesn't make sense)
+        if ((eventStartHour === 8 || eventStartHour === 9 || eventStartHour === 10 || eventStartHour === 11) && eventEndHour === 12) {
+          eventStartPeriod = 'am';
+        }
+      } else if (eventEnd.toLowerCase().includes('am')) {
+        // If event ends in AM and event start hour > event end hour, 
+        // then event start is PM (e.g., "11:00 - 1:00am" = 11:00 PM - 1:00 AM)
+        if (eventStartHour > eventEndHour) {
+          eventStartPeriod = 'pm';
+        }
       }
     }
     
