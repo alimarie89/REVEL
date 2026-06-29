@@ -705,6 +705,7 @@
 .friday-glance-grid {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
   font-family: 'Montserrat', sans-serif;
   background: transparent;
 }
@@ -1004,6 +1005,7 @@
 .saturday-glance-grid {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
   font-family: 'Montserrat', sans-serif;
   background: transparent;
 }
