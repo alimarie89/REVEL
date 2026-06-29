@@ -361,7 +361,8 @@ function DayScheduleGrid({ day }) {
                           'Lean In Closer: Building the Village You Wish Existed',
                           'Transmuting Anger Into Bliss',
                           'Inheritance Talks',
-                          'Tea Lounge'
+                          'Tea Lounge',
+                          'Downtempo Cuddle, Improvisational Music, Tea Lounge'
                         ].includes(event.title);
                         
                         return (
@@ -697,7 +698,8 @@ function DayGrid({ day }) {
                             'Lean In Closer: Building the Village You Wish Existed',
                             'Transmuting Anger Into Bliss',
                             'Inheritance Talks',
-                            'Tea Lounge'
+                            'Tea Lounge',
+                            'Downtempo Cuddle, Improvisational Music, Tea Lounge'
                           ].includes(event.title);
                           
                           return (
