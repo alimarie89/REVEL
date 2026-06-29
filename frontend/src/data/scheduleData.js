@@ -85,7 +85,7 @@ export const scheduleData = {
     ],
     'Sunday 7/5': [
       { title: 'Breakfast', time: '7:30 AM – 9:00 AM', location: 'Dining Hall' },
-      { title: 'Lunch', time: '12:00 PM – 1:30 PM', location: 'Dining Hall' },
+      { title: 'Lunch', time: '12:30 PM – 2:00 PM', location: 'Dining Hall' },
     ],
   }
 };

@@ -683,26 +683,24 @@ function DayGrid({ day }) {
           <tbody>
             {timesToDisplay.map((time, idx) => {
               const meal = dayMeals.find(m => mealOverlapsWithTimeBucket(m.time, time));
-
-              if (meal) {
-                return (
-                  <tr key={`meal-${idx}`} className="meal-banner-row">
-                    <td colSpan="6" className="meal-banner-cell">
-                      <div className="meal-banner-content">
-                        <span className="meal-badge">Meal</span>
-                        <span className="meal-title">{meal.title}</span>
-                        <span className="meal-divider">•</span>
-                        <span className="meal-time">{meal.time}</span>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              }
-
               const eventsForTime = dayEvents.filter(event => eventFallsInTimeBucket(event.time, time));
-              if (eventsForTime.length === 0) return null;
 
-              return (
+              // Show meal banner if meal exists in this time bucket
+              const mealRow = meal ? (
+                <tr key={`meal-${idx}`} className="meal-banner-row">
+                  <td colSpan="6" className="meal-banner-cell">
+                    <div className="meal-banner-content">
+                      <span className="meal-badge">Meal</span>
+                      <span className="meal-title">{meal.title}</span>
+                      <span className="meal-divider">•</span>
+                      <span className="meal-time">{meal.time}</span>
+                    </div>
+                  </td>
+                </tr>
+              ) : null;
+
+              // Show workshops for this time bucket (regardless of meal)
+              const workshopRow = eventsForTime.length > 0 ? (
                 <tr key={`time-${idx}`} className="glance-time-row">
                   <td className="glance-time-cell">{time}</td>
                   
@@ -711,7 +709,6 @@ function DayGrid({ day }) {
                     return (
                       <td key={space} className="glance-event-cell">
                         {events.map((event, eventIdx) => {
-
                           return (
                             <div key={eventIdx} className="glance-event-block">
                               <div className="glance-title">{event.title}</div>
@@ -751,7 +748,10 @@ function DayGrid({ day }) {
                     })}
                   </td>
                 </tr>
-              );
+              ) : null;
+
+              // Return both meal banner (if any) and workshop row (if any)
+              return [mealRow, workshopRow].filter(Boolean);
             })}
           </tbody>
         </table>
