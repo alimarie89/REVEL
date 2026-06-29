@@ -355,7 +355,13 @@ function DayScheduleGrid({ day }) {
                         const shouldShowTime = [
                           'Embodying Mantra, Yantra & Deity - Naughty Monkey',
                           'Talk Kinky to Me - Sasha Loves You',
-                          'Meditation - Venus'
+                          'Meditation - Venus',
+                          'REVEL Grief, Eros and Dance Ritual',
+                          'The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates',
+                          'Lean In Closer: Building the Village You Wish Existed',
+                          'Transmuting Anger Into Bliss',
+                          'Inheritance Talks',
+                          'Tea Lounge'
                         ].includes(event.title);
                         
                         return (
@@ -685,7 +691,13 @@ function DayGrid({ day }) {
                           const shouldShowTime = [
                             'Embodying Mantra, Yantra & Deity - Naughty Monkey',
                             'Talk Kinky to Me - Sasha Loves You',
-                            'Meditation - Venus'
+                            'Meditation - Venus',
+                            'REVEL Grief, Eros and Dance Ritual',
+                            'The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates',
+                            'Lean In Closer: Building the Village You Wish Existed',
+                            'Transmuting Anger Into Bliss',
+                            'Inheritance Talks',
+                            'Tea Lounge'
                           ].includes(event.title);
                           
                           return (
