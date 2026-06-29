@@ -326,16 +326,10 @@ function DayScheduleGrid({ day }) {
                       return (
                         <td key={space} className="glance-event-cell">
                           {events.map((event, eventIdx) => {
-                            const shouldShowTime = [
-                              'Embodying Mantra, Yantra & Deity - Naughty Monkey',
-                              'Talk Kinky to Me - Sasha Loves You',
-                              'Meditation - Venus'
-                            ].includes(event.title);
-                            
                             return (
                               <div key={eventIdx} className="glance-event-block">
                                 <div className="glance-title">{event.title}</div>
-                                {shouldShowTime && (
+                                {event.time && (
                                   <div className="glance-time-small">{event.time}</div>
                                 )}
                                 {formatFacilitatorNames(event.facilitators) && (
@@ -352,23 +346,10 @@ function DayScheduleGrid({ day }) {
 
                     <td className="glance-event-cell">
                       {getEventsForTimeInOtherSpaces(time).map((event, eventIdx) => {
-                        const shouldShowTime = [
-                          'Embodying Mantra, Yantra & Deity - Naughty Monkey',
-                          'Talk Kinky to Me - Sasha Loves You',
-                          'Meditation - Venus',
-                          'REVEL Grief, Eros and Dance Ritual',
-                          'The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates',
-                          'Lean In Closer: Building the Village You Wish Existed',
-                          'Transmuting Anger Into Bliss',
-                          'Inheritance Talks',
-                          'Tea Lounge',
-                          'Downtempo Cuddle, Improvisational Music, Tea Lounge'
-                        ].includes(event.title);
-                        
                         return (
                           <div key={eventIdx} className="glance-event-block glance-other">
                             <div className="glance-title">{event.title}</div>
-                            {shouldShowTime && (
+                            {event.time && (
                               <div className="glance-time-small">{event.time}</div>
                             )}
                             {event.space && (
@@ -689,23 +670,11 @@ function DayGrid({ day }) {
                     return (
                       <td key={space} className="glance-event-cell">
                         {events.map((event, eventIdx) => {
-                          const shouldShowTime = [
-                            'Embodying Mantra, Yantra & Deity - Naughty Monkey',
-                            'Talk Kinky to Me - Sasha Loves You',
-                            'Meditation - Venus',
-                            'REVEL Grief, Eros and Dance Ritual',
-                            'The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates',
-                            'Lean In Closer: Building the Village You Wish Existed',
-                            'Transmuting Anger Into Bliss',
-                            'Inheritance Talks',
-                            'Tea Lounge',
-                            'Downtempo Cuddle, Improvisational Music, Tea Lounge'
-                          ].includes(event.title);
-                          
+
                           return (
                             <div key={eventIdx} className="glance-event-block">
                               <div className="glance-title">{event.title}</div>
-                              {shouldShowTime && (
+                              {event.time && (
                                 <div className="glance-time-small">{event.time}</div>
                               )}
                               {formatFacilitatorNames(event.facilitators) && (
@@ -722,16 +691,10 @@ function DayGrid({ day }) {
 
                   <td className="glance-event-cell">
                     {getEventsForTimeInOtherSpaces(time).map((event, eventIdx) => {
-                      const shouldShowTime = [
-                        'Embodying Mantra, Yantra & Deity - Naughty Monkey',
-                        'Talk Kinky to Me - Sasha Loves You',
-                        'Meditation - Venus'
-                      ].includes(event.title);
-                      
                       return (
                         <div key={eventIdx} className="glance-event-block glance-other">
                           <div className="glance-title">{event.title}</div>
-                          {shouldShowTime && (
+                          {event.time && (
                             <div className="glance-time-small">{event.time}</div>
                           )}
                           {event.space && (
