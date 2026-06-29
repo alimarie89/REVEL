@@ -588,8 +588,8 @@ function DayGrid({ day }) {
     const bucketStartMin = timeToMinutes(adjustedBucketStart);
     const bucketEndMin = timeToMinutes(bucketEnd);
 
-    // Check for overlap
-    return mealStartMin < bucketEndMin && mealEndMin > bucketStartMin;
+    // Check for overlap (including boundary touching)
+    return mealStartMin <= bucketEndMin && mealEndMin >= bucketStartMin;
   };
 
   const getTimesToDisplay = () => {
