@@ -73,6 +73,9 @@ export const scheduleData = {
   ],
 
   meals: {
+    'Thursday 7/2': [
+      { title: 'Dinner', time: '5:30 PM – 7:00 PM', location: 'Dining Hall' },
+    ],
     'Friday 7/3': [
       { title: 'Breakfast', time: '7:30 AM – 9:00 AM', location: 'Dining Hall' },
       { title: 'Lunch', time: '12:00 PM – 1:30 PM', location: 'Dining Hall' },
