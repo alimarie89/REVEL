@@ -10,22 +10,22 @@ import '../styles/SchedulePoster.css';
  * Print-optimized schedule poster (24x36" portrait).
  * 
  * Routes:
- * - /schedule-poster              → Friday grid (default)
+ * - /schedule-poster              → Full schedule list view (default)
+ * - /schedule-poster/list         → Full schedule list view (same)
  * - /schedule-poster/friday       → Friday 7/3 grid
  * - /schedule-poster/saturday     → Saturday 7/4 grid
  * - /schedule-poster/sunday       → Sunday 7/5 grid
- * - /schedule-poster/list         → Full schedule list view
  */
 export default function SchedulePoster() {
   const { day } = useParams();
 
-  // Show list view for full schedule
-  if (day === 'list' || day === 'full') {
-    return <FullScheduleList />;
+  // Show specific day grid if requested
+  if (day && day !== 'list' && day !== 'full') {
+    return <DayScheduleGrid day={day} />;
   }
 
-  // Original grid view
-  return <DayScheduleGrid day={day} />;
+  // Default: show full schedule list (matches both /schedule-poster and /schedule-poster/list)
+  return <FullScheduleList />;
 }
 
 /**
