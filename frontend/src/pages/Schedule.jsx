@@ -441,6 +441,22 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
+              {/* 2:30–3:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">2:30–3:30 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Talk Kinky to Me')}>
+                    <div className="glance-title">Talk Kinky to Me</div>
+                    <div className="glance-facilitators">Sasha Loves You</div>
+                    <div className="glance-actual-time">2:30–3:15 PM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
               {/* 3:15–3:45 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">3:15–3:45 PM</td>
