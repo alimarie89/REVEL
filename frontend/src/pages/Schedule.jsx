@@ -409,9 +409,9 @@ export default function Schedule() {
                 </td>
               </tr>
 
-              {/* 1:30–3:30 PM - Stacked Events */}
-              <tr className="glance-time-row glance-time-row-tall">
-                <td className="glance-time-cell">1:30–3:30 PM</td>
+              {/* 1:30–2:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">1:30–2:30 PM</td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('REPAIR the Divide Ritual')}>
                     <div className="glance-title">REPAIR the Divide Ritual</div>
