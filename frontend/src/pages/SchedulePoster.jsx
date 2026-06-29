@@ -167,10 +167,23 @@ function DayScheduleGrid({ day }) {
       }
     }
     
+    // Determine the period for eventStart
+    let eventStartPeriod = parseTimeForSort.extractPeriod(eventEnd);
+    
+    // Smart logic: if event end is AM and event start hour > event end hour, 
+    // then event start is PM (e.g., "11:00 - 1:00am" = 11:00 PM - 1:00 AM)
+    if (eventEnd.toLowerCase().includes('am')) {
+      const eventEndHour = parseInt(eventEnd.split(':')[0], 10);
+      const eventStartHour = parseInt(eventStart.split(':')[0], 10);
+      if (eventStartHour > eventEndHour) {
+        eventStartPeriod = 'pm';
+      }
+    }
+    
     // Parse times for comparison using the new single-time parser
     const bucketStartMin = parseSingleTime(bucketStart);
     const bucketEndMin = parseSingleTime(bucketEnd);
-    const eventStartMin = parseSingleTime(eventStart + ' ' + parseTimeForSort.extractPeriod(eventEnd));
+    const eventStartMin = parseSingleTime(eventStart + ' ' + eventStartPeriod);
     const eventEndMin = parseSingleTime(eventEnd);
     
     // If bucket end is AM and start is PM, it crosses midnight
@@ -488,9 +501,22 @@ function DayGrid({ day }) {
       }
     }
     
+    // Determine the period for eventStart
+    let eventStartPeriod = parseTimeForSort.extractPeriod(eventEnd);
+    
+    // Smart logic: if event end is AM and event start hour > event end hour, 
+    // then event start is PM (e.g., "11:00 - 1:00am" = 11:00 PM - 1:00 AM)
+    if (eventEnd.toLowerCase().includes('am')) {
+      const eventEndHour = parseInt(eventEnd.split(':')[0], 10);
+      const eventStartHour = parseInt(eventStart.split(':')[0], 10);
+      if (eventStartHour > eventEndHour) {
+        eventStartPeriod = 'pm';
+      }
+    }
+    
     const bucketStartMin = parseTimeForSort(bucketStart);
     const bucketEndMin = parseTimeForSort(bucketEnd);
-    const eventStartMin = parseTimeForSort(eventStart + ' ' + parseTimeForSort.extractPeriod(eventEnd));
+    const eventStartMin = parseTimeForSort(eventStart + ' ' + eventStartPeriod);
     
     if (bucketEndMin < bucketStartMin) {
       return eventStartMin >= bucketStartMin || eventStartMin < bucketEndMin;
