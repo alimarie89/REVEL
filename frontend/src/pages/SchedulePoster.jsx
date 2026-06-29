@@ -551,11 +551,52 @@ function DayGrid({ day }) {
     }
   };
 
+  const mealOverlapsWithTimeBucket = (mealTime, bucketTime) => {
+    // Parse meal time (e.g., "12:00 PM – 1:30 PM")
+    const mealParts = mealTime.split('–').map(p => p.trim());
+    if (mealParts.length < 2) return false;
+
+    const mealStart = mealParts[0];
+    const mealEnd = mealParts[1];
+
+    // Parse bucket time (e.g., "10:00 AM–12:00 PM")
+    const bucketParts = bucketTime.split('–');
+    if (bucketParts.length < 2) return false;
+
+    const bucketStart = bucketParts[0].trim();
+    let bucketEnd = bucketParts[1].trim();
+
+    // If bucket start doesn't have AM/PM, use the end's period
+    let adjustedBucketStart = bucketStart;
+    if (!bucketStart.match(/[ap]m/i)) {
+      const periodMatch = bucketEnd.match(/[ap]m/i);
+      if (periodMatch) {
+        adjustedBucketStart = bucketStart + ' ' + periodMatch[0];
+      }
+    }
+
+    // Convert times to minutes for comparison
+    const timeToMinutes = (timeStr) => {
+      const cleanStr = timeStr.toLowerCase().replace(/[ap]m/i, '').trim();
+      const [hours, mins] = cleanStr.split(':').map(Number);
+      const isPM = timeStr.toLowerCase().includes('pm');
+      return (isPM && hours !== 12 ? hours + 12 : hours === 12 && !isPM ? 0 : hours) * 60 + (mins || 0);
+    };
+
+    const mealStartMin = timeToMinutes(mealStart);
+    const mealEndMin = timeToMinutes(mealEnd);
+    const bucketStartMin = timeToMinutes(adjustedBucketStart);
+    const bucketEndMin = timeToMinutes(bucketEnd);
+
+    // Check for overlap
+    return mealStartMin < bucketEndMin && mealEndMin > bucketStartMin;
+  };
+
   const getTimesToDisplay = () => {
     const curated = getCuratedTimes();
     return curated.filter(time => {
       const hasEvent = dayEvents.some(e => eventFallsInTimeBucket(e.time, time));
-      const hasMeal = dayMeals.some(m => m.time === time);
+      const hasMeal = dayMeals.some(m => mealOverlapsWithTimeBucket(m.time, time));
       return hasEvent || hasMeal;
     });
   };
@@ -641,7 +682,7 @@ function DayGrid({ day }) {
           </thead>
           <tbody>
             {timesToDisplay.map((time, idx) => {
-              const meal = dayMeals.find(m => m.time === time);
+              const meal = dayMeals.find(m => mealOverlapsWithTimeBucket(m.time, time));
 
               if (meal) {
                 return (
