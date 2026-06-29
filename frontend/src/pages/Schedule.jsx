@@ -441,25 +441,25 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 2:30–3:30 PM */}
+              {/* 2:30–3:00 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">2:30–3:30 PM</td>
+                <td className="glance-time-cell">2:30–3:00 PM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Talk Kinky to Me - Sasha Loves You')}>
-                    <div className="glance-title">Talk Kinky to Me</div>
-                    <div className="glance-facilitators">Sasha Loves You</div>
-                    <div className="glance-actual-time">2:30–3:15 PM</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Lean In Closer: Building the Village You Wish Existed')}>
+                    <div className="glance-title">Lean In Closer</div>
+                    <div className="glance-facilitators">Steph Shinaberry</div>
+                    <div className="glance-actual-time">2:30–3:00 PM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 3:15–3:45 PM */}
+              {/* 3:00–3:30 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">3:15–3:45 PM</td>
+                <td className="glance-time-cell">3:00–3:30 PM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
@@ -680,16 +680,16 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 11:30 AM–12:00 PM */}
+              {/* 11:30 AM–12:15 PM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">11:30 AM–12:00 PM</td>
+                <td className="glance-time-cell">11:30 AM–12:15 PM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Lean In Closer: Building the Village You Wish Existed')}>
-                    <div className="glance-title">Lean In Closer: Building the Village You Wish Existed</div>
-                    <div className="glance-facilitators">Steph Shinaberry</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Talk Kinky to Me - Sasha Loves You')}>
+                    <div className="glance-title">Talk Kinky to Me</div>
+                    <div className="glance-facilitators">Sasha Loves You</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
