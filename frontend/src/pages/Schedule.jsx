@@ -446,6 +446,22 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
+              {/* 2:30–3:30 PM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">2:30–3:30 PM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Talk Kinky to Me')}>
+                    <div className="glance-title">Talk Kinky to Me</div>
+                    <div className="glance-facilitators">Sasha Loves You</div>
+                    <div className="glance-actual-time">2:30–3:15 PM</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
+              </tr>
+
               {/* 4:00–6:00 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">4:00–6:00 PM</td>
@@ -699,26 +715,6 @@ export default function Schedule() {
                     <div className="glance-title">Transmuting Anger Into Bliss</div>
                     <div className="glance-facilitators">Ethan Henson</div>
                     <div className="glance-actual-time">1:30–2:30 PM</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell"></td>
-              </tr>
-
-              {/* 2:30–3:30 PM */}
-              <tr className="glance-time-row">
-                <td className="glance-time-cell">2:30–3:30 PM</td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell"></td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Inheritance Talks')}>
-                    <div className="glance-title">Inheritance Talks</div>
-                    <div className="glance-facilitators">Ali Katz</div>
-                  </div>
-                  <div className="glance-event-block" onClick={() => openEventModal('Talk Kinky to Me')}>
-                    <div className="glance-title">Talk Kinky to Me</div>
-                    <div className="glance-facilitators">Sasha Loves You</div>
-                    <div className="glance-actual-time">2:30–3:15 PM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
