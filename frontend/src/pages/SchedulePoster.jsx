@@ -124,8 +124,29 @@ function DayScheduleGrid({ day }) {
     return getUniqueTimes();
   };
 
+  // Parse a single time string like "8:15 AM" or "12:00pm" into minutes
+  const parseSingleTime = (timeStr) => {
+    if (!timeStr) return 0;
+    
+    const clean = timeStr.toLowerCase().replace(/[ap]m/gi, '').trim();
+    const [hoursStr, minsStr] = clean.split(':');
+    const hours = parseInt(hoursStr, 10);
+    const mins = minsStr ? parseInt(minsStr, 10) : 0;
+    
+    const isPM = timeStr.toLowerCase().includes('pm');
+    
+    let finalHours = hours;
+    if (isPM && hours !== 12) {
+      finalHours = hours + 12;
+    } else if (!isPM && hours === 12) {
+      finalHours = 0; // midnight
+    }
+    
+    return finalHours * 60 + mins;
+  };
+
   // Check if an event time falls within a time bucket
-  // E.g., event '8:15 - 9:30am' falls in bucket '8:15–9:30 AM'
+  // E.g., event '8:15am - 12:00pm' falls in bucket '8:15–9:30 AM'
   const eventFallsInTimeBucket = (eventTime, bucketTime) => {
     const bucketParts = bucketTime.split('–'); // en-dash
     if (bucketParts.length < 2) return false;
@@ -141,26 +162,26 @@ function DayScheduleGrid({ day }) {
     
     // If bucket start doesn't have AM/PM, infer from end
     if (!bucketStart.match(/[ap]m/i)) {
-      // Get period from bucket end
       const periodMatch = bucketEnd.match(/[ap]m/i);
       if (periodMatch) {
         bucketStart = bucketStart + ' ' + periodMatch[0];
       }
     }
     
-    // Parse times for comparison
-    const bucketStartMin = parseTimeForSort(bucketStart);
-    const bucketEndMin = parseTimeForSort(bucketEnd);
-    const eventStartMin = parseTimeForSort(eventStart + ' ' + parseTimeForSort.extractPeriod(eventEnd));
+    // Parse times for comparison using the new single-time parser
+    const bucketStartMin = parseSingleTime(bucketStart);
+    const bucketEndMin = parseSingleTime(bucketEnd);
+    const eventStartMin = parseSingleTime(eventStart + ' ' + parseTimeForSort.extractPeriod(eventEnd));
+    const eventEndMin = parseSingleTime(eventEnd);
     
     // If bucket end is AM and start is PM, it crosses midnight
-    // So bucketEnd will be less than bucketStart in minutes (0-1440)
     if (bucketEndMin < bucketStartMin) {
-      // Crosses midnight: check if event is >= start OR < end
+      // Crosses midnight: check if event starts >= bucket start OR starts < bucket end
       return eventStartMin >= bucketStartMin || eventStartMin < bucketEndMin;
     } else {
-      // Normal range: check if event is >= start AND < end
-      return eventStartMin >= bucketStartMin && eventStartMin < bucketEndMin;
+      // Normal range: check if event overlaps with bucket
+      // Event overlaps if: event start < bucket end AND event end > bucket start
+      return eventStartMin < bucketEndMin && eventEndMin > bucketStartMin;
     }
   };
   
