@@ -292,8 +292,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Tea Lounge')}>
                     <div className="glance-title">Tea Lounge</div>
-                    <div className="glance-facilitators">Elowan</div>
                     <div className="glance-actual-time">9pm–12am</div>
+                    <div className="glance-facilitators">Elowan</div>
                   </div>
                 </td>
               </tr>
@@ -415,8 +415,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('REPAIR the Divide Ritual')}>
                     <div className="glance-title">REPAIR the Divide Ritual</div>
-                    <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
                     <div className="glance-actual-time">1:30–4:30 PM</div>
+                    <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -450,8 +450,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Lean In Closer: Building the Village You Wish Existed')}>
                     <div className="glance-title">Lean In Closer</div>
-                    <div className="glance-facilitators">Steph Shinaberry</div>
                     <div className="glance-actual-time">2:30–3:00 PM</div>
+                    <div className="glance-facilitators">Steph Shinaberry</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -478,14 +478,15 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Integration Space')}>
                     <div className="glance-title">Integration Space</div>
+                    <div className="glance-actual-time">4:00–6:00 PM</div>
                     <div className="glance-facilitators">Dr. Hazel-Grace Yates & Spencer Jacobson</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Dance of Devotion')}>
                     <div className="glance-title">Dance of Devotion</div>
-                    <div className="glance-facilitators">Rachel Rickards & Devorah Bry</div>
                     <div className="glance-actual-time">4–5:30 PM</div>
+                    <div className="glance-facilitators">Rachel Rickards & Devorah Bry</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -497,15 +498,15 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Dakini Council')}>
                     <div className="glance-title">Dakini Council</div>
-                    <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana, Hannah Heart</div>
                     <div className="glance-actual-time">4–5:30 PM</div>
+                    <div className="glance-facilitators">Soraya Masi, Janelle Orion, Nicole Marie Rose, Ayce Kyptyn, LaVina Iyana, Hannah Heart</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block glance-other" onClick={() => openEventModal('Inclusive Shabbat Service')}>
                     <div className="glance-title">Inclusive Shabbat Service</div>
-                    <div className="glance-location">The Grove</div>
                     <div className="glance-actual-time">6:00–6:30 PM</div>
+                    <div className="glance-location">The Grove</div>
                   </div>
                 </td>
               </tr>
@@ -562,8 +563,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Touch as Prayer')}>
                     <div className="glance-title">Touch as Prayer</div>
-                    <div className="glance-facilitators">Signa</div>
                     <div className="glance-actual-time">9:45–11 PM</div>
+                    <div className="glance-facilitators">Signa</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -627,15 +628,15 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Heart Connection Circle')}>
                     <div className="glance-title">Heart Connection Circle</div>
-                    <div className="glance-facilitators">Violet Starkey & Ali Williams</div>
                     <div className="glance-actual-time">9–10 AM</div>
+                    <div className="glance-facilitators">Violet Starkey & Ali Williams</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('REVEL Grief, Eros and Dance Ritual')}>
                     <div className="glance-title">REVEL Grief, Eros and Dance Ritual</div>
-                    <div className="glance-facilitators">John Wolfstone, Cari Caldwell & Yana</div>
                     <div className="glance-actual-time">9am–12pm</div>
+                    <div className="glance-facilitators">John Wolfstone, Cari Caldwell & Yana</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -672,9 +673,9 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('The Future of our Field: Facilitating intimacy, dance, and erotic communities - Zahava Griss, Victor Warring, Dr. Hazel-Grace Yates')}>
                     <div className="glance-title">The Future of our Field</div>
+                    <div className="glance-actual-time">10:00–11:30 AM</div>
                     <div className="glance-subtitle">Facilitating intimacy, dance, and erotic communities</div>
                     <div className="glance-facilitators">Zahava Griss, Victor Warring & Dr. Hazel-Grace Yates</div>
-                    <div className="glance-actual-time">10:00–11:30 AM</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -733,8 +734,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Transmuting Anger Into Bliss')}>
                     <div className="glance-title">Transmuting Anger Into Bliss</div>
-                    <div className="glance-facilitators">Ethan Henson</div>
                     <div className="glance-actual-time">1:30–2:30 PM</div>
+                    <div className="glance-facilitators">Ethan Henson</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -826,8 +827,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Live set by Will Sage')}>
                     <div className="glance-title">Live set by Will Sage</div>
-                    <div className="glance-facilitators">Will Sage</div>
                     <div className="glance-actual-time">12:00–1:00 AM</div>
+                    <div className="glance-facilitators">Will Sage</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -877,8 +878,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Sounds like…mmmmmammals! :: singing for pleasure, resource, and co-regulation - Lyndsey Scott', 'Sunday 7/5')}>
                     <div className="glance-title">Sounds like…mmmmmammals! :: singing for pleasure, resource, and co-regulation - Lyndsey Scott</div>
-                    <div className="glance-facilitators">Lyndsey Scott</div>
                     <div className="glance-actual-time">8:30–9:45 AM</div>
+                    <div className="glance-facilitators">Lyndsey Scott</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -890,16 +891,16 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Shamanic Bondage')}>
                     <div className="glance-title">Shamanic Bondage</div>
-                    <div className="glance-facilitators">Sequoia & Signa</div>
                     <div className="glance-actual-time">8:30–9:45 AM</div>
+                    <div className="glance-facilitators">Sequoia & Signa</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block glance-other" onClick={() => openEventModal('Initiation', 'Sunday 7/5')}>
                     <div className="glance-title">Initiation</div>
-                    <div className="glance-facilitators">Movement by Design</div>
                     <div className="glance-actual-time">8:15–9:30 AM</div>
+                    <div className="glance-facilitators">Movement by Design</div>
                     <div className="glance-location">Lawn by The Threshold</div>
                   </div>
                 </td>
@@ -911,8 +912,8 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Dance Church')}>
                     <div className="glance-title">Dance Church</div>
-                    <div className="glance-facilitators">Codestar</div>
                     <div className="glance-actual-time">10:00–11:30 AM</div>
+                    <div className="glance-facilitators">Codestar</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
