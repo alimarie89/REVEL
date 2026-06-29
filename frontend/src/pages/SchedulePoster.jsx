@@ -231,9 +231,25 @@ function DayScheduleGrid({ day }) {
 
   // Get events in other locations
   const getEventsForTimeInOtherSpaces = (timeBucket) => {
-    return dayEvents.filter(event =>
-      eventFallsInTimeBucket(event.time, timeBucket) && normalizeVenue(event.space) === null
-    );
+    const curated = getCuratedTimes();
+    const timeBucketIndex = curated.indexOf(timeBucket);
+    
+    return dayEvents.filter(event => {
+      // Event must match this bucket and be in other spaces
+      if (!eventFallsInTimeBucket(event.time, timeBucket) || normalizeVenue(event.space) !== null) {
+        return false;
+      }
+      
+      // Check if event should appear in a narrower bucket instead
+      for (let i = timeBucketIndex + 1; i < curated.length; i++) {
+        const narrowerBucket = curated[i];
+        if (eventFallsInTimeBucket(event.time, narrowerBucket)) {
+          return false;
+        }
+      }
+      
+      return true;
+    });
   };
 
   // Format facilitator names
