@@ -218,6 +218,15 @@
   margin-top: 0.02in;
 }
 
+.glance-time-small {
+  font-size: 0.5rem;
+  color: #8b7355;
+  font-weight: 600;
+  margin-top: 0.02in;
+  margin-bottom: 0.02in;
+  line-height: 1;
+}
+
 .glance-actual-time {
   font-size: 0.5rem;
   color: #a89a87;
@@ -471,6 +480,14 @@
   color: #888;
   margin: 0.01in 0 0 0;
   line-height: 1.2;
+}
+
+.glance-time-small {
+  font-size: 0.58rem;
+  color: #6b2e24;
+  font-weight: 600;
+  margin: 0.01in 0;
+  line-height: 1;
 }
 
 /* Meal row styling */
