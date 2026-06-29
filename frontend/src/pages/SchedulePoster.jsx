@@ -681,34 +681,56 @@ function DayGrid({ day }) {
                     const events = getEventsForTimeAndSpace(time, space);
                     return (
                       <td key={space} className="glance-event-cell">
-                        {events.map((event, eventIdx) => (
-                          <div key={eventIdx} className="glance-event-block">
-                            <div className="glance-title">{event.title}</div>
-                            {formatFacilitatorNames(event.facilitators) && (
-                              <div className="glance-facilitators">
-                                {formatFacilitatorNames(event.facilitators)}
-                              </div>
-                            )}
-                          </div>
-                        ))}
+                        {events.map((event, eventIdx) => {
+                          const shouldShowTime = [
+                            'Embodying Mantra, Yantra & Deity - Naughty Monkey',
+                            'Talk Kinky to Me - Sasha Loves You',
+                            'Meditation - Venus'
+                          ].includes(event.title);
+                          
+                          return (
+                            <div key={eventIdx} className="glance-event-block">
+                              <div className="glance-title">{event.title}</div>
+                              {shouldShowTime && (
+                                <div className="glance-time-small">{event.time}</div>
+                              )}
+                              {formatFacilitatorNames(event.facilitators) && (
+                                <div className="glance-facilitators">
+                                  {formatFacilitatorNames(event.facilitators)}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                       </td>
                     );
                   })}
 
                   <td className="glance-event-cell">
-                    {getEventsForTimeInOtherSpaces(time).map((event, eventIdx) => (
-                      <div key={eventIdx} className="glance-event-block glance-other">
-                        <div className="glance-title">{event.title}</div>
-                        {event.space && (
-                          <div className="glance-location">{event.space}</div>
-                        )}
-                        {formatFacilitatorNames(event.facilitators) && (
-                          <div className="glance-facilitators">
-                            {formatFacilitatorNames(event.facilitators)}
-                          </div>
-                        )}
-                      </div>
-                    ))}
+                    {getEventsForTimeInOtherSpaces(time).map((event, eventIdx) => {
+                      const shouldShowTime = [
+                        'Embodying Mantra, Yantra & Deity - Naughty Monkey',
+                        'Talk Kinky to Me - Sasha Loves You',
+                        'Meditation - Venus'
+                      ].includes(event.title);
+                      
+                      return (
+                        <div key={eventIdx} className="glance-event-block glance-other">
+                          <div className="glance-title">{event.title}</div>
+                          {shouldShowTime && (
+                            <div className="glance-time-small">{event.time}</div>
+                          )}
+                          {event.space && (
+                            <div className="glance-location">{event.space}</div>
+                          )}
+                          {formatFacilitatorNames(event.facilitators) && (
+                            <div className="glance-facilitators">
+                              {formatFacilitatorNames(event.facilitators)}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </td>
                 </tr>
               );
