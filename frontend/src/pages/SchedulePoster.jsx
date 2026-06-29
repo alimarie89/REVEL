@@ -530,15 +530,50 @@ function DayGrid({ day }) {
   };
 
   const getEventsForTimeAndSpace = (timeBucket, space) => {
-    return dayEvents.filter(event => 
-      eventFallsInTimeBucket(event.time, timeBucket) && normalizeVenue(event.space) === space
-    );
+    const curated = getCuratedTimes();
+    const timeBucketIndex = curated.indexOf(timeBucket);
+    
+    return dayEvents.filter(event => {
+      // Event must match this bucket and space
+      if (!eventFallsInTimeBucket(event.time, timeBucket) || normalizeVenue(event.space) !== space) {
+        return false;
+      }
+      
+      // Check if event should appear in a narrower bucket instead
+      // Look for narrower buckets that come after this one
+      for (let i = timeBucketIndex + 1; i < curated.length; i++) {
+        const narrowerBucket = curated[i];
+        // Only consider narrower buckets (ones that don't include the broader bucket's start time)
+        if (eventFallsInTimeBucket(event.time, narrowerBucket)) {
+          // Event fits in this narrower bucket, so exclude it from the broader one
+          return false;
+        }
+      }
+      
+      return true;
+    });
   };
 
   const getEventsForTimeInOtherSpaces = (timeBucket) => {
-    return dayEvents.filter(event =>
-      eventFallsInTimeBucket(event.time, timeBucket) && normalizeVenue(event.space) === null
-    );
+    const curated = getCuratedTimes();
+    const timeBucketIndex = curated.indexOf(timeBucket);
+    
+    return dayEvents.filter(event => {
+      // Event must match this bucket and be in other spaces
+      if (!eventFallsInTimeBucket(event.time, timeBucket) || normalizeVenue(event.space) !== null) {
+        return false;
+      }
+      
+      // Check if event should appear in a narrower bucket instead
+      for (let i = timeBucketIndex + 1; i < curated.length; i++) {
+        const narrowerBucket = curated[i];
+        if (eventFallsInTimeBucket(event.time, narrowerBucket)) {
+          return false;
+        }
+      }
+      
+      return true;
+    });
   };
 
   const formatFacilitatorNames = (facilitatorNames) => {
