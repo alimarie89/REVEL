@@ -179,7 +179,7 @@ export const facilitatorData = {
     'sasha-loves-you': {
       name: 'Sasha Loves You',
       role: 'Sexuality & Communication Coach',
-      bio: 'Sasha creates conversations and spaces exploring sexuality, desire, communication, and authentic self-expression with playfulness, wisdom, and care.',
+      bio: 'Sasha\'s biggest turn-on is deep connection. He loves the feeling of excitement, awkwardness and wonder that follows big scary self-disclosures. Sasha has been teaching the Alchemy of Kink workshop since 2013 and had rave reviews at Firelight and the Alchemy Society in Oakland this June.\n\nEntering the kink scene in 2008, he discovered that consensual power dynamics could create a container for healing and empowerment. Since then, and with amazing collaborators like ghost sonata and Dr. Hazel-Grace Yates, PhD, his approach has distilled into simple, down-to-earth tools for creating profound connection, hotness, and wonder.\n\nOutside of kink, Sasha Loves You has taught embodied leadership, improv theatre, and group process work since 1999. With his collaborators his work has been offered at Burning Man, Colorado Leatherfest, the Rocky Mountain Poly Living conference and the Integral Center Circling Summit.',
       photo: '/facilitators/sasha-loves-you.jpg',
       slug: 'sasha-loves-you'
     },
