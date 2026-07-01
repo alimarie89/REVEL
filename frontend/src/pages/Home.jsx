@@ -763,14 +763,6 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* CTA */}
-          <div className="healing-cta">
-            <button className="healing-cta-button">Reserve Your Session</button>
-            <p className="healing-cta-supporting">
-              Availability is limited. We encourage you to reserve your session before arriving at REVEL.
-            </p>
-          </div>
         </div>
       </section>
 
