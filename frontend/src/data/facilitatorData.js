@@ -32,7 +32,7 @@ export const facilitatorData = {
     'maxwell-wilson': {
       name: 'Maxwell Wilson',
       role: 'Meditation Guide',
-      bio: 'Maxwell facilitates meditation practices designed to cultivate inner peace, clarity, and connection. His teaching style is gentle, accessible, and deeply rooted in contemplative traditions.',
+      bio: 'I love meditation. Do you? Let\'s sit together.\n\nMax is a long-term contemplative practitioner who has studied extensively in Vajrayana and Zen Buddhist traditions, as well as Kashmir Shaivism and Advaita Vedanta. He has a clinical background in somatic psychotherapy and supports individuals and couples with relational healing, personal unfolding, and medicine work through his business Luminous Emptiness Healing.',
       photo: '/facilitators/maxwell-wilson.jpeg',
       slug: 'maxwell-wilson'
     },
