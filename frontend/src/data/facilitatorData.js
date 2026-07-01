@@ -214,7 +214,7 @@ export const facilitatorData = {
     'michaela-winters': {
       name: 'Michaela Winters',
       role: 'Facilitator',
-      bio: 'Michaela brings depth, presence, and transformational experience to her facilitation work.',
+      bio: 'Michaela is the owner and founder of Carnival DNGN: A conscious kink and BDSM organization focused on reintroducing the sacredness of ALL forms of sexuality back into the world of adult play and pleasure. Michaela works as a tantric sexual healer, medicine guide, coach, and professional dominatrix with over 10 years of experience helping clients rediscover, rewire, and reclaim their bodies, their lives, and their pleasure. Michaela spends her time producing and facilitating events and runs medicine and sexuality-based experiences across the globe. You can find out more about her work here - liberatefromsuffering.com & carnivaldngncolorado.com',
       photo: '/facilitators/michaela-winters.jpg',
       slug: 'michaela-winters'
     },
