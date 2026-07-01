@@ -343,7 +343,12 @@ export default function Schedule() {
                     <div className="glance-facilitators">Movement by Design</div>
                   </div>
                 </td>
-                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Desires & Intentions Connection Circle', 'Friday 7/3')}>
+                    <div className="glance-title">Desires & Intentions Connection Circle</div>
+                    <div className="glance-facilitators">Briana Cribeyer</div>
+                  </div>
+                </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Soul Motion: Opening the Gates')}>
                     <div className="glance-title">Soul Motion: Opening the Gates</div>
