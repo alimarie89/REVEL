@@ -887,7 +887,7 @@ export default function Schedule() {
                   <div className="glance-event-block" onClick={() => openEventModal('Embodied Integration with Dev')}>
                     <div className="glance-title">Embodied Integration with Dev</div>
                     <div className="glance-actual-time">9:00–9:45 AM</div>
-                    <div className="glance-facilitators">Dev</div>
+                    <div className="glance-facilitators">Devorah Bry</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
