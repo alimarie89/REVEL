@@ -481,7 +481,7 @@ function DayGrid({ day }) {
 
   const getCuratedTimes = () => {
     if (day === 'Thursday 7/2') {
-      return ['4:30–5:30 PM', '5:30–7:15 PM', '7:15–8:45 PM', '9:00 PM–11:00 PM'];
+      return ['4:30–5:30 PM', '5:30–7:15 PM', '7:15–8:45 PM', '9:00 PM–12:00 AM'];
     } else if (day === 'Friday 7/3') {
       return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM', '11:00 PM–1:00 AM'];
     } else if (day === 'Saturday 7/4') {
