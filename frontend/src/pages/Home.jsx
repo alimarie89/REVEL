@@ -764,32 +764,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Session Pricing */}
-          <div className="healing-pricing">
-            <h3 className="healing-pricing-title">Session Pricing</h3>
-            <div className="healing-pricing-grid">
-              <div className="healing-pricing-card">
-                <div className="healing-pricing-price">$100</div>
-                <div className="healing-pricing-description">60 min Craniosacral Session</div>
-              </div>
-              <div className="healing-pricing-card">
-                <div className="healing-pricing-price">$120</div>
-                <div className="healing-pricing-description">60 min Massage / Bodywork Blend</div>
-              </div>
-              <div className="healing-pricing-card">
-                <div className="healing-pricing-price">$150</div>
-                <div className="healing-pricing-description">90 min Craniosacral Session</div>
-              </div>
-              <div className="healing-pricing-card">
-                <div className="healing-pricing-price">$165</div>
-                <div className="healing-pricing-description">90 min Massage / Bodywork Blend</div>
-              </div>
-            </div>
-            <p className="healing-pricing-note">
-              Not sure which session is right for you? Gemma and Rachel can help guide you toward the best fit for your needs.
-            </p>
-          </div>
-
           {/* CTA */}
           <div className="healing-cta">
             <button className="healing-cta-button">Reserve Your Session</button>
