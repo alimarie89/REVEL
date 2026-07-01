@@ -797,13 +797,13 @@ export default function Schedule() {
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('The Art of REPAIR - Turning Conflict into Connection')}>
                     <div className="glance-title">The Art of REPAIR</div>
-                    <div className="glance-actual-time">4:00–6:00 PM</div>
+                    <div className="glance-actual-time">4:00–5:30 PM</div>
                     <div className="glance-facilitators">Dr. Hazel-Grace Yates</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Feel Your Gravity (Women Only)')}>
-                    <div className="glance-title">Feel Your Gravity</div>
+                    <div className="glance-title">Feel Your Gravity (Women Only)</div>
                     <div className="glance-actual-time">4:00–6:00 PM</div>
                     <div className="glance-facilitators">Ali, Courtney & Jehaan Rehman</div>
                   </div>

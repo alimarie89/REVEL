@@ -116,7 +116,7 @@ function DayScheduleGrid({ day }) {
     } else if (selectedDay === 'Friday 7/3') {
       return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '12:00 PM – 1:30 PM', '1:30–3:30 PM', '4:00–6:00 PM', '5:30 PM – 7:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM', '11:00 PM–1:00 AM'];
     } else if (selectedDay === 'Saturday 7/4') {
-      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM'];
+      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–5:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM'];
     } else if (selectedDay === 'Sunday 7/5') {
       return ['8:15–9:45 AM', '10:00–11:45 AM', '11:30 AM–12:30 PM'];
     }
@@ -485,7 +485,7 @@ function DayGrid({ day }) {
     } else if (day === 'Friday 7/3') {
       return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '12:00 PM – 1:30 PM', '1:30–3:30 PM', '4:00–6:00 PM', '5:30 PM – 7:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM', '11:00 PM–1:00 AM'];
     } else if (day === 'Saturday 7/4') {
-      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM'];
+      return ['8:15–9:30 AM', '10:00 AM–12:00 PM', '1:30–3:30 PM', '4:00–5:30 PM', '4:00–6:00 PM', '7:15–9:15 PM', '9:45 PM–1:00 AM'];
     } else if (day === 'Sunday 7/5') {
       return ['8:15–9:45 AM', '10:00–11:45 AM', '11:30 AM–12:30 PM'];
     }
@@ -603,7 +603,7 @@ function DayGrid({ day }) {
     const curated = getCuratedTimes();
     return curated.filter(time => {
       const hasEvent = dayEvents.some(e => eventFallsInTimeBucket(e.time, time));
-      const hasMeal = dayMeals.some(m => mealOverlapsWithTimeBucket(m.time, time));
+      const hasMeal = dayMeals.some(m => m.time === time);
       return hasEvent || hasMeal;
     });
   };
@@ -689,7 +689,7 @@ function DayGrid({ day }) {
           </thead>
           <tbody>
             {timesToDisplay.map((time, idx) => {
-              const meal = dayMeals.find(m => mealOverlapsWithTimeBucket(m.time, time));
+              const meal = dayMeals.find(m => m.time === time);
               const eventsForTime = dayEvents.filter(event => eventFallsInTimeBucket(event.time, time));
 
               // Show meal banner if meal exists in this time bucket
