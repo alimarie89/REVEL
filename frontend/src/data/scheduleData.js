@@ -9,7 +9,6 @@ export const scheduleData = {
     { day: 'Thursday 7/2', time: '7:15 - 8:45pm', title: 'Opening Ceremony', facilitators: [], space: 'The Marquee', description: '(Mandatory)', isMandatory: true, type: 'Ceremony' },
     { day: 'Thursday 7/2', time: '9 - 11pm', title: 'Opening Dance Journey', facilitators: ['Anaia', 'Spencer Jacobson'], space: 'The Hearth', description: '', type: 'Ritual/Dance' },
     { day: 'Thursday 7/2', time: '9:00 - 11:00pm', title: 'Building the Relational Field', facilitators: ['Ali Williams', 'Courtney Babbidge', 'Dragon Academy Team'], space: 'The Marquee', description: 'How do we transform from a room full of strangers into a "we"?\n\nThrough a series of playful, structured connection exercises, you\'ll have opportunities to meet new people, explore what brought you here, and begin creating the relationships that will shape your weekend. Through conversation, movement, and simple consent-based touch, we\'ll create an easy on-ramp into the connections, adventures, and discoveries waiting for you at REVEL.\n\nTogether, we\'ll create enough safety to take small risks, enough structure to make connection easy, and enough playfulness to help everyone settle into the relational field we\'re building together.', type: 'Talk & Light Touch Workshop' },
-    { day: 'Thursday 7/2', time: '9:00 - 12am', title: 'Tea Lounge', facilitators: ['Elowan'], space: 'The Living Room', description: 'A nurturing, contemplative tea lounge space where you can gather, reflect, and deepen connection in an intimate, welcoming atmosphere adjacent to the Hearth.' },
 
     // Friday 7/3
     { day: 'Friday 7/3', time: '8:15 - 9:30am', title: 'Initiation', facilitators: ['Movement by Design'], space: 'The Marquee', description: 'Start your day with intention by creating a container that enhances your senses, stimulates your mind, and expands your emotional awareness through guided movement.\n\nThe quality of our experience is directly proportional to our capacity to perceive and engage with reality. By refining the way we sense, think, feel, and move, we optimize not only how we navigate the day—but how we experience life itself. Start here.' },
@@ -74,6 +73,7 @@ export const scheduleData = {
   meals: {
     'Thursday 7/2': [
       { title: 'Dinner', time: '5:30 PM – 7:00 PM', location: 'Dining Hall' },
+      { title: 'Tea Lounge', time: '9:00 PM – 12:00 AM', location: 'The Living Room' },
     ],
     'Friday 7/3': [
       { title: 'Breakfast', time: '7:30 AM – 9:00 AM', location: 'Dining Hall' },
