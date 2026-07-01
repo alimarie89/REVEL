@@ -356,13 +356,6 @@ export default function Schedule() {
                     <div className="glance-facilitators">Maxwell Wilson</div>
                   </div>
                 </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block glance-other" onClick={() => openEventModal('Kundalini Yoga')}>
-                    <div className="glance-title">Kundalini Yoga</div>
-                    <div className="glance-facilitators">Signa</div>
-                    <div className="glance-location">Lawn by The Threshold</div>
-                  </div>
-                </td>
               </tr>
 
               {/* 10:00 AM–12:00 PM */}
