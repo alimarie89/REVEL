@@ -308,6 +308,13 @@ export const facilitatorData = {
       bio: '',
       photo: '',
       slug: 'venus'
+    },
+    'the-human-experience': {
+      name: 'The Human Experience',
+      role: '',
+      bio: '',
+      photo: '',
+      slug: 'the-human-experience'
     }
   },
 
