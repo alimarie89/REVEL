@@ -463,7 +463,7 @@ export default function Schedule() {
                   <div className="glance-event-block" onClick={() => openEventModal('Lean In Closer: Building the Village You Wish Existed')}>
                     <div className="glance-title">Lean In Closer</div>
                     <div className="glance-actual-time">2:30–3:00 PM</div>
-                    <div className="glance-facilitators">Steph Shinaberry</div>
+                    <div className="glance-facilitators">Steph Shinabery</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
@@ -589,15 +589,15 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* 11:00 PM–1:00 AM */}
+              {/* 11:15 PM–1:00 AM */}
               <tr className="glance-time-row">
-                <td className="glance-time-cell">11:00 PM–1:00 AM</td>
+                <td className="glance-time-cell">11:15 PM–1:00 AM</td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Connection, Decompression, & Integration Temple')}>
                     <div className="glance-title">Connection, Decompression, & Integration Temple</div>
-                    <div className="glance-actual-time">11:00 PM–1:00 AM</div>
+                    <div className="glance-actual-time">11:15 PM–1:00 AM</div>
                     <div className="glance-facilitators">Michaela Winters</div>
                   </div>
                 </td>
