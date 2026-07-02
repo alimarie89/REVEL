@@ -645,10 +645,10 @@ export default function Schedule() {
               <tr className="glance-time-row">
                 <td className="glance-time-cell">8:15–9:30 AM</td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Heart Connection')}>
-                    <div className="glance-title">Heart Connection</div>
-                    <div className="glance-actual-time">8:45–9:45 AM</div>
-                    <div className="glance-facilitators">Chloe Good</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('5Rhythms')}>
+                    <div className="glance-title">5Rhythms</div>
+                    <div className="glance-actual-time">8:15–9:30 AM</div>
+                    <div className="glance-facilitators">Nima Yazdanfar</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
@@ -659,10 +659,10 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('5Rhythms')}>
-                    <div className="glance-title">5Rhythms</div>
-                    <div className="glance-actual-time">8:15–9:30 AM</div>
-                    <div className="glance-facilitators">Nima Yazdanfar</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Heart Connection')}>
+                    <div className="glance-title">Heart Connection</div>
+                    <div className="glance-actual-time">8:45–9:45 AM</div>
+                    <div className="glance-facilitators">Chloe Good</div>
                   </div>
                 </td>
                 <td className="glance-event-cell">
