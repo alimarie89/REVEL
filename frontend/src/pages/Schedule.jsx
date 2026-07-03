@@ -348,20 +348,8 @@ export default function Schedule() {
                     <div className="glance-facilitators">Movement by Design</div>
                   </div>
                 </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Soul Motion: Opening the Gates', 'Friday 7/3')}>
-                    <div className="glance-title">Soul Motion: Opening the Gates</div>
-                    <div className="glance-actual-time">8:15–9:30 AM</div>
-                    <div className="glance-facilitators">Devorah Bry</div>
-                  </div>
-                </td>
-                <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Desires & Intentions Connection Circle')}>
-                    <div className="glance-title">Desires & Intentions Connection Circle</div>
-                    <div className="glance-actual-time">9–9:45 AM</div>
-                    <div className="glance-facilitators">Briana Cribeyer</div>
-                  </div>
-                </td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell"></td>
                 <td className="glance-event-cell">
                   <div className="glance-event-block" onClick={() => openEventModal('Meditation')}>
                     <div className="glance-title">Meditation</div>
@@ -369,6 +357,27 @@ export default function Schedule() {
                     <div className="glance-facilitators">Maxwell Wilson</div>
                   </div>
                 </td>
+              </tr>
+
+              {/* 9:00–9:45 AM */}
+              <tr className="glance-time-row">
+                <td className="glance-time-cell">9:00–9:45 AM</td>
+                <td className="glance-event-cell"></td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Soul Motion: Opening the Gates', 'Friday 7/3')}>
+                    <div className="glance-title">Soul Motion: Opening the Gates</div>
+                    <div className="glance-actual-time">9:00–9:45 AM</div>
+                    <div className="glance-facilitators">Devorah Bry</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell">
+                  <div className="glance-event-block" onClick={() => openEventModal('Desires & Intentions Connection Circle')}>
+                    <div className="glance-title">Desires & Intentions Connection Circle</div>
+                    <div className="glance-actual-time">9:00–9:45 AM</div>
+                    <div className="glance-facilitators">Briana Cribeyer</div>
+                  </div>
+                </td>
+                <td className="glance-event-cell"></td>
               </tr>
 
               {/* 10:00 AM–12:00 PM */}
