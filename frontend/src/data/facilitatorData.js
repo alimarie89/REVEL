@@ -302,6 +302,13 @@ export const facilitatorData = {
       photo: '',
       slug: 'venus'
     },
+    'will-sage': {
+      name: 'Will Sage',
+      role: 'Musician & Storyteller',
+      bio: 'Will Sage is a musician, storyteller, and collector of impossible moments. Part electronic alchemist, part campfire philosopher, he creates immersive musical journeys that blur the line between concert, ceremony, and shared dream.',
+      photo: '/facilitators/will-sage.jpg',
+      slug: 'will-sage'
+    },
     'the-human-experience': {
       name: 'The Human Experience',
       role: '',
