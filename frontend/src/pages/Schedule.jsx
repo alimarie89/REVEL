@@ -981,20 +981,6 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
               </tr>
 
-              {/* Lunch Meal Row */}
-              <tr className="meal-banner-row">
-                <td colSpan="6" className="meal-banner-cell">
-                  <div className="meal-banner-content">
-                    <span className="meal-badge">Meal</span>
-                    <span className="meal-title">Lunch</span>
-                    <span className="meal-divider">•</span>
-                    <span className="meal-time">12:30 PM–2:00 PM</span>
-                    <span className="meal-divider">•</span>
-                    <span className="meal-location">Dining Hall</span>
-                  </div>
-                </td>
-              </tr>
-
               {/* 11:30 AM–12:30 PM */}
               <tr className="glance-time-row">
                 <td className="glance-time-cell">11:30 AM–12:30 PM</td>
@@ -1009,6 +995,20 @@ export default function Schedule() {
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
                 <td className="glance-event-cell"></td>
+              </tr>
+
+              {/* Lunch Meal Row */}
+              <tr className="meal-banner-row">
+                <td colSpan="6" className="meal-banner-cell">
+                  <div className="meal-banner-content">
+                    <span className="meal-badge">Meal</span>
+                    <span className="meal-title">Lunch</span>
+                    <span className="meal-divider">•</span>
+                    <span className="meal-time">12:30 PM–2:00 PM</span>
+                    <span className="meal-divider">•</span>
+                    <span className="meal-location">Dining Hall</span>
+                  </div>
+                </td>
               </tr>
 
               {/* 2:00–3:00 PM */}
