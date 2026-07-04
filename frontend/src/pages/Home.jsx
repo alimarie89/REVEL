@@ -392,12 +392,7 @@ function Home() {
       photo: '/facilitators/john-wolfstone.jpg',
       bio: 'John facilitates deep ritual work and ceremony, creating sacred containers for collective grief, transformation, and the integration of the full spectrum of human experience. His work honors ancestral wisdom and contemporary consciousness.'
     },
-    {
-      id: 23,
-      name: 'Ethan Henson',
-      role: 'Tantric Alchemist',
-      workshop: 'Transmuting Anger Into Bliss',
-      photo: '/facilitators/ethan-henson.jpg',
+
       bio: 'Ethan teaches tantric practices for transmuting emotional energy into bliss, connection, and profound union with the Soul. His work offers powerful doorways into intimacy, power, and spiritual awakening through embodied practice.'
     },
     {

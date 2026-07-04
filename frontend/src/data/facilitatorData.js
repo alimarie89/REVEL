@@ -183,13 +183,6 @@ export const facilitatorData = {
       photo: '/facilitators/sasha-loves-you.jpg',
       slug: 'sasha-loves-you'
     },
-    'ethan-henson': {
-      name: 'Ethan Henson',
-      role: 'Tantric Alchemist',
-      bio: 'CEO of the Luminous Awareness Institute & Awakened Relationship Teacher for Holographic Flow\n\nAt the early age of 20, Ethan J. Henson had a near death experience that shifted his consciousness and began a spiritual awakening. Along with new levels of awareness, the near death experience opened his ability to see the Human Energy Field. This capacity to both see and work with the Human Energy Field grew through intensive training and private mentorship with Reverend Lemuria Torling (a 3rd Generation Psychic Healer) for over 15 years.\n\nFor the past 18 years, Ethan has taught Advanced Psychic Development, Spiritual Healing, and the Infinite Way, a non-dual meditative and healing practice originally transmitted by Joel S. Goldsmith. Along with a 25 year meditation practice and many hours of observing the Human Energy Field between couples in Relationship, Ethan also trained in Advanced Taoist Sexual Nei Gong and Kundalini Yoga. The integration of all these approaches inspired the foundation of his work which brings the Masculine and Feminine into relational harmony. He teaches that Relationship is a path of Spiritual Awakening.',
-      photo: '/facilitators/ethan-henson.jpg',
-      slug: 'ethan-henson'
-    },
     'ali-katz': {
       name: 'Ali Katz',
       role: 'Inheritance & Wealth Coach',

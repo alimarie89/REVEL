@@ -768,10 +768,10 @@ export default function Schedule() {
                   </div>
                 </td>
                 <td className="glance-event-cell">
-                  <div className="glance-event-block" onClick={() => openEventModal('Transmuting Anger Into Bliss')}>
-                    <div className="glance-title">Transmuting Anger Into Bliss</div>
+                  <div className="glance-event-block" onClick={() => openEventModal('Wise and Wild: Council of Elders')}>
+                    <div className="glance-title">Wise and Wild: Council of Elders</div>
                     <div className="glance-actual-time">1:30–2:30 PM</div>
-                    <div className="glance-facilitators">Ethan Henson</div>
+                    <div className="glance-facilitators">Evelin Dacker, Barbara Penningroth, Tom Marbois, Anne More</div>
                   </div>
                 </td>
                 <td className="glance-event-cell"></td>
